@@ -10,7 +10,7 @@
 #   SITTING (boolean)       → raccoon.sitting
 #   BEGGING (boolean)       → raccoon.begging
 #   WASHING (boolean)       → raccoon.washing
-#   CARPET_COLOR (int)      → raccoon.carpet_color
+#   CARPET_COLOR (int)      → raccoon.carpetColor
 #   COMMAND (int)           → raccoon.command
 #
 # Champs privés non-synched → variables:
@@ -59,6 +59,12 @@ variables:
     persistent: true
     desc: "Le raton est apprivoisé"
 
+  raccoon.forcedSit:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Le raton est forcé de s'asseoir (command du propriétaire)"
+
   raccoon.bondedBlueJay:
     type: BOOLEAN
     default: false
@@ -72,7 +78,7 @@ variables:
     persistent: true
     desc: "Commande actuelle: 0=wander, 1=follow, 2=sit"
 
-  raccoon.carpet_color:
+  raccoon.carpetColor:
     type: INTEGER
     default: -1
     persistent: true
@@ -135,6 +141,18 @@ variables:
     persistent: false
     desc: "Ticks écoulés depuis le début du lavage de l'item"
 
+  raccoon.pickupCooldown:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Cooldown avant de pouvoir ramasser/donner un item (60 ticks)"
+
+  raccoon.maxStandTime:
+    type: INTEGER
+    default: 75
+    persistent: false
+    desc: "Durée max debout (75 + random)"
+
   raccoon.stealCooldown:
     type: INTEGER
     default: 0
@@ -147,7 +165,7 @@ variables:
     persistent: false
     desc: "Tick actuel de l'animation BetterModel en cours"
 
-  raccoon.standTime:
+  raccoon.standingTime:
     type: INTEGER
     default: 0
     persistent: false

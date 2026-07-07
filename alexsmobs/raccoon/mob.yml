@@ -29,7 +29,7 @@
 #   SynchedEntityData (4 booleans)  → MythicMobs stance + variables
 #   registerGoals() (15+4 goals)    → AIGoalSelectors + AITargetSelectors
 #   WASH_POS Optional<BlockPos>     → MythicMobs variables (washPosX/Y/Z)
-#   CARPET_COLOR int                → MythicMobs variable raccoon.carpet_color
+#   CARPET_COLOR int                → MythicMobs variable raccoon.carpetColor
 #   COMMAND int                     → MythicMobs variable raccoon.command
 #   lookForWaterBeforeEatingTimer   → MythicMobs variable raccoon.lookForWaterTimer
 #   AIStealFromVillagers            → onTimer skill + cooldown variable
@@ -94,7 +94,7 @@ raccoon:
 
     # Quand attaque une cible — déclenche l'animation ANIMATION_ATTACK
     - onAttack:
-      - skill:raccoon_on_attack @target
+      - skill:raccoon_attack @target
 
     # Clic droit du joueur — egg taming, carpet, shears, command cycle
     - onInteract:
