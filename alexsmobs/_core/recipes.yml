@@ -1,0 +1,340 @@
+# Recipes — Alex's Mobs
+# Auto-generated from data/recipes/ (84 recipes)
+
+recipes:
+  animal_dictionary:
+    type: "minecraft:crafting_shapeless"
+    result: "animal_dictionary"
+    count: 1
+  banana_slug_slime:
+    type: "minecraft:crafting_shapeless"
+    result: "banana_slug_slime"
+    count: 9
+  banana_slug_slime_block:
+    type: "minecraft:crafting_shaped"
+    result: "banana_slug_slime_block"
+    count: 1
+  banner_pattern_australia_0:
+    type: "minecraft:crafting_shapeless"
+    result: "banner_pattern_australia_0"
+    count: 1
+  banner_pattern_australia_1:
+    type: "minecraft:crafting_shapeless"
+    result: "banner_pattern_australia_1"
+    count: 1
+  banner_pattern_bear:
+    type: "minecraft:crafting_shapeless"
+    result: "banner_pattern_bear"
+    count: 1
+  banner_pattern_brazil:
+    type: "minecraft:crafting_shapeless"
+    result: "banner_pattern_brazil"
+    count: 1
+  banner_pattern_new_mexico:
+    type: "minecraft:crafting_shapeless"
+    result: "banner_pattern_new_mexico"
+    count: 1
+  bison_carpet:
+    type: "minecraft:crafting_shaped"
+    result: "bison_carpet"
+    count: 3
+  bison_fur_block:
+    type: "minecraft:crafting_shaped"
+    result: "bison_fur_block"
+    count: 1
+  bison_fur_from_block:
+    type: "minecraft:crafting_shapeless"
+    result: "bison_fur"
+    count: 9
+  bison_fur_to_wool:
+    type: "minecraft:crafting_shaped"
+    result: "brown_wool"
+    count: 1
+  bison_upgrade:
+    type: "alexsmobs:bison_upgrade"
+    result: ""
+    count: 1
+  blood_sprayer:
+    type: "minecraft:crafting_shaped"
+    result: "blood_sprayer"
+    count: 1
+  boiled_emu_egg:
+    type: "minecraft:smelting"
+    result: "alexsmobs:boiled_emu_egg"
+    count: 1
+  boiled_emu_egg_campfire:
+    type: "minecraft:campfire_cooking"
+    result: "alexsmobs:boiled_emu_egg"
+    count: 1
+  boiled_emu_egg_smoke:
+    type: "minecraft:smoking"
+    result: "alexsmobs:boiled_emu_egg"
+    count: 1
+  bonemeal_from_fish_bones:
+    type: "minecraft:crafting_shapeless"
+    result: "bone_meal"
+    count: 2
+  centipede_leggings:
+    type: "minecraft:crafting_shaped"
+    result: "centipede_leggings"
+    count: 1
+  chorus_on_a_stick:
+    type: "minecraft:crafting_shapeless"
+    result: "chorus_on_a_stick"
+    count: 1
+  cockroach_wing:
+    type: "minecraft:crafting_shaped"
+    result: "cockroach_wing"
+    count: 1
+  cooked_catfish:
+    type: "minecraft:smelting"
+    result: "alexsmobs:cooked_catfish"
+    count: 1
+  cooked_catfish_campfire:
+    type: "minecraft:campfire_cooking"
+    result: "alexsmobs:cooked_catfish"
+    count: 1
+  cooked_catfish_smoke:
+    type: "minecraft:smoking"
+    result: "alexsmobs:cooked_catfish"
+    count: 1
+  cooked_kangaroo_meat:
+    type: "minecraft:smelting"
+    result: "alexsmobs:cooked_kangaroo_meat"
+    count: 1
+  cooked_kangaroo_meat_campfire:
+    type: "minecraft:campfire_cooking"
+    result: "alexsmobs:cooked_kangaroo_meat"
+    count: 1
+  cooked_kangaroo_meat_smoke:
+    type: "minecraft:smoking"
+    result: "alexsmobs:cooked_kangaroo_meat"
+    count: 1
+  cooked_lobster_tail:
+    type: "minecraft:smelting"
+    result: "alexsmobs:cooked_lobster_tail"
+    count: 1
+  cooked_lobster_tail_campfire:
+    type: "minecraft:campfire_cooking"
+    result: "alexsmobs:cooked_lobster_tail"
+    count: 1
+  cooked_lobster_tail_smoke:
+    type: "minecraft:smoking"
+    result: "alexsmobs:cooked_lobster_tail"
+    count: 1
+  cooked_moose_ribs:
+    type: "minecraft:smelting"
+    result: "alexsmobs:cooked_moose_ribs"
+    count: 1
+  cooked_moose_ribs_campfire:
+    type: "minecraft:campfire_cooking"
+    result: "alexsmobs:cooked_moose_ribs"
+    count: 1
+  cooked_moose_ribs_smoke:
+    type: "minecraft:smoking"
+    result: "alexsmobs:cooked_moose_ribs"
+    count: 1
+  crocodile_chestplate:
+    type: "minecraft:crafting_shaped"
+    result: "crocodile_chestplate"
+    count: 1
+  dimensional_carver:
+    type: "minecraft:crafting_shaped"
+    result: "dimensional_carver"
+    count: 1
+  echolocator:
+    type: "minecraft:crafting_shaped"
+    result: "echolocator"
+    count: 1
+  emu_leggings:
+    type: "minecraft:crafting_shaped"
+    result: "emu_leggings"
+    count: 1
+  enderiophage_rocket:
+    type: "minecraft:crafting_shaped"
+    result: "enderiophage_rocket"
+    count: 3
+  endolocator:
+    type: "minecraft:crafting_shaped"
+    result: "endolocator"
+    count: 1
+  falconry_glove:
+    type: "minecraft:crafting_shaped"
+    result: "falconry_glove"
+    count: 1
+  falconry_hood:
+    type: "minecraft:crafting_shaped"
+    result: "falconry_hood"
+    count: 1
+  falconry_hood_alt:
+    type: "minecraft:crafting_shaped"
+    result: "falconry_hood"
+    count: 1
+  fish_oil:
+    type: "minecraft:crafting_shapeless"
+    result: "fish_oil"
+    count: 1
+  flint_n_steel_dropbear_claw:
+    type: "minecraft:crafting_shapeless"
+    result: "flint_and_steel"
+    count: 1
+  flying_fish_boots:
+    type: "minecraft:crafting_shaped"
+    result: "flying_fish_boots"
+    count: 1
+  frontier_cap:
+    type: "minecraft:crafting_shaped"
+    result: "frontier_cap"
+    count: 1
+  frontier_cap_alt:
+    type: "minecraft:crafting_shaped"
+    result: "frontier_cap"
+    count: 1
+  froststalker_helmet:
+    type: "minecraft:crafting_shaped"
+    result: "froststalker_helmet"
+    count: 1
+  gustmaker:
+    type: "minecraft:crafting_shaped"
+    result: "gustmaker"
+    count: 1
+  hemolymph_blaster:
+    type: "minecraft:crafting_shaped"
+    result: "hemolymph_blaster"
+    count: 1
+  hummingbird_feeder:
+    type: "minecraft:crafting_shaped"
+    result: "hummingbird_feeder"
+    count: 1
+  kangaroo_burger:
+    type: "minecraft:crafting_shaped"
+    result: "kangaroo_burger"
+    count: 1
+  kangaroo_hide_to_leather:
+    type: "minecraft:crafting_shapeless"
+    result: "leather"
+    count: 1
+  komodo_spit_bottle:
+    type: "minecraft:crafting_shapeless"
+    result: "komodo_spit_bottle"
+    count: 1
+  komodo_spit_to_slime:
+    type: "minecraft:crafting_shapeless"
+    result: "slime_ball"
+    count: 1
+  maraca:
+    type: "minecraft:crafting_shaped"
+    result: "maraca"
+    count: 1
+  mimicream_repair_recipe:
+    type: "alexsmobs:mimicream_repair"
+    result: ""
+    count: 1
+  moose_headgear:
+    type: "minecraft:crafting_shaped"
+    result: "moose_headgear"
+    count: 1
+  mosquito_larva:
+    type: "minecraft:crafting_shapeless"
+    result: "mosquito_larva"
+    count: 1
+  mosquito_repellent_stew:
+    type: "minecraft:crafting_shapeless"
+    result: "mosquito_repellent_stew"
+    count: 1
+  pocket_sand:
+    type: "minecraft:crafting_shaped"
+    result: "pocket_sand"
+    count: 1
+  pupfish_locator:
+    type: "minecraft:crafting_shaped"
+    result: "pupfish_locator"
+    count: 1
+  rainbow_glass:
+    type: "minecraft:crafting_shaped"
+    result: "rainbow_glass"
+    count: 8
+  roadrunner_boots:
+    type: "minecraft:crafting_shaped"
+    result: "roadrunner_boots"
+    count: 1
+  rocky_chestplate:
+    type: "minecraft:crafting_shaped"
+    result: "rocky_chestplate"
+    count: 1
+  sculk_boomer:
+    type: "minecraft:crafting_shaped"
+    result: "sculk_boomer"
+    count: 1
+  shark_tooth_arrow:
+    type: "minecraft:crafting_shaped"
+    result: "shark_tooth_arrow"
+    count: 6
+  shield_of_the_deep:
+    type: "minecraft:crafting_shaped"
+    result: "shield_of_the_deep"
+    count: 1
+  sopa_de_macaco:
+    type: "minecraft:crafting_shapeless"
+    result: "sopa_de_macaco"
+    count: 1
+  spiked_turtle_shell:
+    type: "minecraft:crafting_shaped"
+    result: "spiked_turtle_shell"
+    count: 1
+  squid_grapple:
+    type: "minecraft:crafting_shaped"
+    result: "squid_grapple"
+    count: 1
+  stink_ray:
+    type: "minecraft:crafting_shaped"
+    result: "stink_ray"
+    count: 1
+  straddle_helmet:
+    type: "minecraft:crafting_shaped"
+    result: "straddle_helmet"
+    count: 1
+  straddle_saddle:
+    type: "minecraft:crafting_shaped"
+    result: "straddle_saddle"
+    count: 1
+  straddleboard:
+    type: "minecraft:crafting_shaped"
+    result: "straddleboard"
+    count: 1
+  straddlite_block:
+    type: "minecraft:crafting_shaped"
+    result: "straddlite_block"
+    count: 1
+  straddlite_from_block:
+    type: "minecraft:crafting_shapeless"
+    result: "straddlite"
+    count: 9
+  tarantula_hawk_elytra:
+    type: "minecraft:crafting_shaped"
+    result: "tarantula_hawk_elytra"
+    count: 1
+  tarantula_hawk_wing:
+    type: "minecraft:crafting_shaped"
+    result: "tarantula_hawk_wing"
+    count: 1
+  tendon_whip:
+    type: "minecraft:crafting_shaped"
+    result: "tendon_whip"
+    count: 1
+  transmutation_table:
+    type: "minecraft:crafting_shaped"
+    result: "transmutation_table"
+    count: 1
+  vine_lasso:
+    type: "minecraft:crafting_shaped"
+    result: "vine_lasso"
+    count: 1
+  void_worm_beak:
+    type: "minecraft:crafting_shapeless"
+    result: "void_worm_beak"
+    count: 1
+  void_worm_effigy:
+    type: "minecraft:crafting_shaped"
+    result: "void_worm_effigy"
+    count: 1

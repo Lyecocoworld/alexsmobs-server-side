@@ -1,7 +1,10 @@
-# CROCODILE — Drops
+# Crocodile — Drops
+# Source: data/loot_tables/entities/crocodile.json
 
 crocodile_drops:
   Conditions:
     - playerkill{}
   Drops:
+    - alexsmobs:crocodile_scute 0-2 1.0
+    - alexsmobs:crocodile_egg 0-1 1.0
     - exp{amount=1-3} 1.0

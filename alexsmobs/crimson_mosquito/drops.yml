@@ -1,14 +1,9 @@
-# ════════════════════════════════════════════════════════════════
-# CRIMSON MOSQUITO — Drops
-# ════════════════════════════════════════════════════════════════
+# Crimson Mosquito — Drops
+# Source: data/loot_tables/entities/crimson_mosquito.json
 
 crimson_mosquito_drops:
   Conditions:
     - playerkill{}
   Drops:
-    # Mosquito spit item
-    - alexsmobs:mosquito_spit 1-3 0.5
-    # Si sick → different drop
-    - alexsmobs:blood_sprayer 1 0.05
-    # Expérience
-    - exp{amount=3-5} 1.0
+    - alexsmobs:mosquito_proboscis 1 0.1
+    - exp{amount=1-3} 1.0

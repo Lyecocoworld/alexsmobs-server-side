@@ -1,7 +1,10 @@
-# ROADRUNNER — Drops
+# Roadrunner — Drops
+# Source: data/loot_tables/entities/roadrunner.json
 
 roadrunner_drops:
   Conditions:
     - playerkill{}
   Drops:
+    - alexsmobs:roadrunner_feather 0-1 1.0
+    - alexsmobs:feather 0-2 1.0
     - exp{amount=1-3} 1.0

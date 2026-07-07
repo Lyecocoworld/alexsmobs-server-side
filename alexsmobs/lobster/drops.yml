@@ -1,21 +1,9 @@
-# ════════════════════════════════════════════════════════════════
-# LOBSTER — Drops
-# ─────────────────────────────────────────────────────────────────
-# Source: loot table Alex's Mobs (data/alexsmobs/loot_tables/entities/lobster.json)
-# Drops principaux: shellfish items (tropical_fish, ink sac equivalent)
-# Le lobster donne principalement des items marins (coquillages).
-# ════════════════════════════════════════════════════════════════
+# Lobster — Drops
+# Source: data/loot_tables/entities/lobster.json
 
 lobster_drops:
   Conditions:
-    - playerkill{}                    # Seulement si tué par un joueur
+    - playerkill{}
   Drops:
-    # TROPICAL_FISH — drop principal (item vanilla, équivalent shellfish)
-    # Le mod drop un item custom de type "shellfish" ; vanilla proxy = tropical_fish
-    - TROPICAL_FISH 0-1 0.5
-
-    # INK_SAC — drop secondaire (encre de mer)
-    - INK_SAC 0-2 0.3
-
-    # Expérience (lobster simple: 1-3 exp)
+    - alexsmobs:lobster_tail 0-1 1.0
     - exp{amount=1-3} 1.0

@@ -1,7 +1,10 @@
-# SOUL VULTURE — Drops
+# Soul Vulture — Drops
+# Source: data/loot_tables/entities/soul_vulture.json
 
 soul_vulture_drops:
   Conditions:
     - playerkill{}
   Drops:
+    - alexsmobs:bone 0-2 1.0
+    - alexsmobs:coal 0-1 1.0
     - exp{amount=1-3} 1.0

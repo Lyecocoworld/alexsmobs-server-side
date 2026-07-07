@@ -1,7 +1,10 @@
-# WARPED MOSCO — Drops
+# Warped Mosco — Drops
+# Source: data/loot_tables/entities/warped_mosco.json
 
 warped_mosco_drops:
   Conditions:
     - playerkill{}
   Drops:
+    - alexsmobs:warped_muscle 1 0.7
+    - alexsmobs:hemolymph_sac 1-5 1.0
     - exp{amount=1-3} 1.0

@@ -1,7 +1,9 @@
-# CENTIPEDE — Drops
+# Centipede Head — Drops
+# Source: data/loot_tables/entities/centipede_head.json
 
 centipede_head_drops:
   Conditions:
     - playerkill{}
   Drops:
+    - alexsmobs:centipede_leg 0-2 1.0
     - exp{amount=1-3} 1.0

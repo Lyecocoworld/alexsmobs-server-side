@@ -1,10 +1,10 @@
-# ════════════════════════════════════════════════════════════════
-# KANGAROO — Drops
-# ════════════════════════════════════════════════════════════════
+# Kangaroo — Drops
+# Source: data/loot_tables/entities/kangaroo.json
 
 kangaroo_drops:
   Conditions:
     - playerkill{}
   Drops:
-    - LEATHER 0-2 0.3
+    - alexsmobs:kangaroo_hide 0-2 1.0
+    - alexsmobs:kangaroo_meat 1-2 1.0
     - exp{amount=1-3} 1.0

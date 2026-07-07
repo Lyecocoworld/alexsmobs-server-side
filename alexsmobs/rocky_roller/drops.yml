@@ -1,7 +1,11 @@
-# ROCKY ROLLER — Drops
+# Rocky Roller — Drops
+# Source: data/loot_tables/entities/rocky_roller.json
 
 rocky_roller_drops:
   Conditions:
     - playerkill{}
   Drops:
+    - alexsmobs:rocky_shell 1 0.75
+    - alexsmobs:tuff 0-2 1.0
+    - alexsmobs:pointed_dripstone 0-2 1.0
     - exp{amount=1-3} 1.0

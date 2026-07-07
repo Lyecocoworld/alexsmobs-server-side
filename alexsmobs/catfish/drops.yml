@@ -1,7 +1,9 @@
-# CATFISH — Drops
+# Catfish — Drops
+# Source: data/loot_tables/entities/catfish.json
 
 catfish_drops:
   Conditions:
     - playerkill{}
   Drops:
+    - alexsmobs:raw_catfish 0-1 1.0
     - exp{amount=1-3} 1.0

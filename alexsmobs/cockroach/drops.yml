@@ -1,7 +1,9 @@
-# COCKROACH — Drops
+# Cockroach — Drops
+# Source: data/loot_tables/entities/cockroach.json
 
 cockroach_drops:
   Conditions:
     - playerkill{}
   Drops:
+    - alexsmobs:cockroach_wing_fragment 0-1 1.0
     - exp{amount=1-3} 1.0
