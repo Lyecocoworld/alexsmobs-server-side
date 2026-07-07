@@ -1,154 +1,97 @@
-# Alex's Mobs — Server-Side Folia Reimplementation
+# Alex's Mobs Server-Side — Reconstruction Complète
 
 Réimplémentation **100% server-side** d'Alex's Mobs pour serveurs **Folia**, utilisant **MythicMobs** + **BetterModel** + **CraftEngine**.
 
-> Ce n'est **pas** un port Forge. C'est une réimplémentation native qui reproduit fidèlement chaque comportement du mod original via les APIs des plugins ci-dessus. Le code source de [Alex's Mobs](https://github.com/AlexModGuy/AlexsMobs) est étudié pour comprendre chaque mécanique, mais **aucun code n'est copié**.
+> **Aucun mod client requis.** Tout passe par le resource pack généré par BetterModel + CraftEngine.
 
----
+## État du projet
 
-## Pourquoi ce projet ?
-
-Alex's Mobs est un mod client+serveur. Les joueurs doivent l'installer côté client pour voir les modèles 3D et animations. Ce projet élimine ce besoin :
-
-- **Aucun mod client requis** — tout passe par le resource pack généré par BetterModel + CraftEngine
-- **100% Folia** — profite du multithreading par région
-- **Scalable** — pensé pour des milliers de créatures et des centaines de joueurs
-- **Modulaire** — chaque créature est un dossier indépendant
-
----
+| Composant | Statut | Détail |
+|-----------|--------|--------|
+| **Créatures** | ✅ 87/89 | Chaque créature a 8 fichiers YAML (mob, skills, ai, drops, spawn, sounds, variables, model) |
+| **Items CraftEngine** | ✅ 301 configs | Materials, food, tools, armor, spawn eggs |
+| **Blocks CraftEngine** | ✅ 137 configs | Decorations, spawn blocks, building |
+| **Assets** | ✅ Importés | 739 textures, 575 sons, 438 modèles 3D |
+| **Data** | ✅ Importée | 139 loot tables, 223 tags, 84 recipes |
+| **Resource Pack** | ✅ sounds.json | 575 sound events mappés |
+| **Worldgen Analysis** | ✅ Document | Nature's Spirit + Larion analysés pour port Folia |
 
 ## Stack technique
 
-| Plugin | Rôle | Priorité |
-|--------|------|----------|
-| **MythicMobs** | IA, skills, drops, spawners, variantes | 🔴 Primaire |
-| **BetterModel** | Modèles 3D Blockbench + animations | 🔴 Primaire |
-| **CraftEngine** | Items/blocks custom, nourriture, décorations | 🟡 Secondaire |
-| **Nexo** | Resource pack merge (dernier recours) | 🟢 Tertiaire |
-| **PlaceholderAPI** | Variables exposées aux autres plugins | 🟡 Support |
-| **WorldGuard/WorldEdit** | Protection, spawning zones | 🟡 Support |
-| **ProtocolLib** | Packets custom si nécessaire | 🟢 Optionnel |
-| **PacketEvents** | Détection packets avancée | 🟢 Optionnel |
+| Plugin | Rôle |
+|--------|------|
+| **MythicMobs** 5.12+ | IA, skills, drops, spawners |
+| **BetterModel** 3.2+ | Modèles 3D + animations Blockbench |
+| **CraftEngine** | Items/blocks custom |
+| **PlaceholderAPI** | Variables exposées |
+| **WorldGuard/WorldEdit** | Protection |
 
----
-
-## Architecture du projet
+## Structure
 
 ```
 alexsmobs/
-├── grizzly_bear/          # Chaque créature = 1 dossier totalement indépendant
-│   ├── mob.yml            # Définition MythicMobs (type, health, display, etc.)
-│   ├── skills.yml         # Toutes les compétences (attaques, capacités,特效)
-│   ├── ai.yml             # AIGoals + ThreatTable
-│   ├── drops.yml          # Tables de loot
-│   ├── spawn.yml          # Conditions de spawn (biomes, lumière, groupes)
-│   ├── sounds.yml         # Banque de sons (.ogg → resource pack)
-│   ├── variables.yml      # Variables persistantes (honeyed, snowy, etc.)
-│   └── model/             # Référence BetterModel (nom du modèle, animations)
-│       └── model.yml      # Mapping animation → état MythicMobs
-│
-├── alligator_snapping_turtle/
+├── grizzly_bear/          # 8 fichiers par créature
+│   ├── mob.yml            # Définition MythicMobs
+│   ├── skills.yml         # Compétences (IA, attacks, interactions)
+│   ├── ai.yml             # AIGoals + TargetSelectors
+│   ├── drops.yml          # Loot tables (vraies données du mod)
+│   ├── spawn.yml          # Spawners (biomes, conditions)
+│   ├── sounds.yml         # Banque de sons
+│   ├── variables.yml      # Variables persistantes
+│   └── model/model.yml    # Mapping BetterModel
 ├── elephant/
-├── ...
-│
+├── crimson_mosquito/
+├── ... (87 dossiers)
+
 _core/                     # Infrastructure partagée
-├── globals.yml            # Skills/conditions globaux réutilisables
-├── placeholders.yml       # PAPI placeholders
-├── sounds_registry.yml    # Registry global des sons
-├── items_registry.yml     # Registry global des items CraftEngine
-└── biome_tags.yml         # Tags de biomes pour spawns
+├── globals.yml            # Skills globaux
+├── items_registry.yml     # Registry 301 items
+├── blocks_registry.yml    # Registry 137 blocks
+├── item_tags.yml          # 124 tags (food/taming groups)
+├── drops_mapping.yml      # Loot table parsing
+├── recipes.yml            # 84 recipes
+├── sounds_registry.yml    # Registry sons
+└── biome_tags.yml         # Tags de biomes
+
+craftengine/               # Configs CraftEngine
+├── items/                 # 301 fichiers YAML
+└── blocks/                # 137 fichiers YAML
+
+assets/                    # Assets (GPL-3.0, Alex's Mobs)
+├── textures/              # 739 PNG
+├── sounds/                # 575 OGG
+├── models/                # 438 JSON
+├── sounds.json            # 575 events mappés
+└── pack.mcmeta
+
+data/                      # Data (loot tables, tags, recipes)
+├── loot_tables/           # 139 fichiers
+├── tags/                  # 223 fichiers
+└── recipes/               # 84 fichiers
 
 _docs/                     # Documentation
-├── CONVENTIONS.md         # Standards de codage du projet
-├── CREATURE_TEMPLATE.md   # Template pour créer une nouvelle créature
-├── FOLIA_OPTIMIZATION.md  # Patterns d'optimisation Folia
-├── CREATURE_CATALOG.md    # Catalogue des 120 créatures avec priorités
-├── MYTHICMOBS_PATTERNS.md # Patterns MythicMobs réutilisables
-└── STACK_NOTES.md         # Notes sur le stack technique
+├── CONVENTIONS.md
+├── CREATURE_TEMPLATE.md
+├── CREATURE_CATALOG.md
+├── FOLIA_OPTIMIZATION.md
+├── MYTHICMOBS_PATTERNS.md
+├── STACK_NOTES.md
+├── MOD_WORLDGEN_ANALYSIS.md
+└── WORLDGEN_ANALYSIS_NATURES_SPIRIT_LARION.md
 ```
 
----
+## Installation
 
-## Créatures — État d'avancement
-
-Voir [`_docs/CREATURE_CATALOG.md`](_docs/CREATURE_CATALOG.md) pour le catalogue complet des 120 créatures.
-
-### Niveaux de priorité
-
-| Niveau | Description | Critères |
-|--------|-------------|----------|
-| **P0** | Critique (signature mobs) | GrizzlyBear, Elephant, Crocodile, CrimsonMosquito, VoidWorm |
-| **P1** | Haute (gameplay-defining) | Mobs avec mécaniques uniques majeures |
-| **P2** | Standard | Mobs terrestres/aquatiques standards |
-| **P3** | Simple | Mobs avec peu de mécaniques (passeifs décoratifs) |
-
-### Niveaux de complexité
-
-| Niveau | Description | Exemples |
-|--------|-------------|----------|
-| **C1** | Simple AI (wander + melee) | Gazelle, Raccoon |
-| **C2** | AI modérée (states, breeding, tame) | GrizzlyBear, Crow |
-| **C3** | AI complexe (multipart, special attacks) | Anaconda, GiantSquid |
-| **C4** | AI très complexe (boss-tier) | VoidWorm, Murmur, CachalotWhale |
-
----
-
-## Installation serveur
-
-### Prérequis
-
-1. **Folia** (recommandé Canvas/Folia 26.1.x)
-2. **MythicMobs** 5.12+
-3. **BetterModel** 3.2+
-4. **CraftEngine** (dernière version)
-5. **PlaceholderAPI** (dernière version)
-
-### Déploiement
-
-1. Copier le contenu de `alexsmobs/` dans `plugins/MythicMobs/Mobs/`, `plugins/MythicMobs/Skills/`, etc.
-2. Copier les modèles BetterModel dans le dossier resource pack
-3. Copier les définitions CraftEngine dans `plugins/CraftEngine/`
+1. Copier `alexsmobs/` dans `plugins/MythicMobs/`
+2. Copier `craftengine/` dans `plugins/CraftEngine/`
+3. Packager `assets/` comme resource pack
 4. `/mm reload`
-
-### Vérification
-
-```
-/mm mobs list    # Vérifier que toutes les créatures sont chargées
-/mm i info grizzly_bear    # Tester une créature
-```
-
----
-
-## Optimisation Folia
-
-Ce projet est conçu dès le départ pour le modèle multithread de Folia. Voir [`_docs/FOLIA_OPTIMIZATION.md`](_docs/FOLIA_OPTIMIZATION.md) pour les détails.
-
-Principes directeurs :
-
-- ✅ **Événements** déclenchent les skills, pas des boucles globales
-- ✅ **Cache local** à chaque entité via MythicMobs variables
-- ✅ **Timers indépendants** par entité (pas de scheduler global)
-- ✅ **Threat Tables** natives MythicMobs (pas de recherche globale)
-- ✅ **Skills conditionnels** — exécutés uniquement quand nécessaire
-
-- ❌ Pas de `BukkitScheduler` (synchrone global)
-- ❌ Pas de scan de monde (`getNearbyEntities` aveugle)
-- ❌ Pas de pathfinding coûteux non maîtrisé
-- ❌ Pas de boucles sur toutes les entités
-
----
 
 ## Crédits
 
-- **Original** : [Alex's Mobs](https://www.curseforge.com/minecraft/mc-mods/alexs-mobs) par AlexModGuy — sans lequel ce projet n'existerait pas
-- **Réimplémentation** : Ce projet ne copie aucun code source. Il étudie les comportements et les reproduit via les APIs MythicMobs/BetterModel/CraftEngine.
+- **Original**: [Alex's Mobs](https://www.curseforge.com/minecraft/mc-mods/alexs-mobs) par AlexModGuy (GPL-3.0)
+- **Réimplémentation**: Aucun code Java copié. Comportements reproduits via MythicMobs/BetterModel/CraftEngine.
 
 ## Licence
 
-Alex's Mobs est distribué sous **GPL-3.0-only**. Cette licence permet d'inclure et redistribuer les assets originaux (modèles Blockbench, textures, sons) tant que le projet dérivé reste sous GPL-3.0.
-
-**Notre projet inclut donc les assets d'Alex's Mobs** pour permettre les tests en conditions réelles. Dans le projet final, les assets seront séparés dans un dossier dédié (`assets/`) pour faciliter la maintenance et d'éventuelles mises à jour depuis le mod original.
-
-- Le **code** de ce projet (fichiers YAML MythicMobs, configs BetterModel/CraftEngine) est original — aucune ligne du code Java d'Alex's Mobs n'est copiée.
-- Les **assets** (modèles, textures, sons) proviennent du mod original et sont utilisés conformément à la GPL-3.0.
-- Le projet dérivé est distribué sous **GPL-3.0-only**.
+GPL-3.0-only (héritée d'Alex's Mobs)
