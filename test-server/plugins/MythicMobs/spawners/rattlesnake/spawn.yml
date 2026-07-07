@@ -1,0 +1,28 @@
+# ════════════════════════════════════════════════════════════════
+# RATTLESNAKE — Spawn Configuration
+# ─────────────────────────────────────────────────────────────────
+# Source: AMEntityRegistry + AMConfig (biome tags, spawn rolls)
+# Biomes: DESERT (chaud), badlands, savane sèche
+# Height: 60-120 (surface désertique)
+# Light: 7-15 (évite le noir total, spawn de jour)
+# ════════════════════════════════════════════════════════════════
+
+rattlesnake_spawner:
+  Type: rattlesnake
+  SpawnRate: 4 # ticks entre checks (Folia-safe, region-local)
+  MaxMobs: 3 # max par spawner
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=DESERT,BADLANDS,ERODED_BADLANDS, WOODED_BADLANDS,SAVANNA,SAVANNA_PLATEAU,
+    WINDSWEPT_SAVANNA}
+  - height{h=60to120}
+  - lightlevel{l=7to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=SAND,RED_SAND,TERRACOTTA,DIRT, STONE,SANDSTONE,RED_SANDSTONE} @origin
+  - playerdistance{d=>24}
+  - onblock{m=SAND,RED_SAND,SANDSTONE,RED_SANDSTONE, TERRACOTTA,STONE,AIR} @origin
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

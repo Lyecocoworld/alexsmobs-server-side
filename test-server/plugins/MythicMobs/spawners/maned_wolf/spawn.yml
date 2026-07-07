@@ -1,0 +1,19 @@
+# MANED WOLF — Spawn
+
+maned_wolf_spawner:
+  Type: maned_wolf
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=SAVANNA,SAVANNA_PLATEAU,WINDSWEPT_SAVANNA,BIRCH_FOREST,FOREST}
+  - height{h=60to150}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=GRASS_BLOCK,DIRT,COARSE_DIRT,PODZOL} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

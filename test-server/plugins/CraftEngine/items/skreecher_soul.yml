@@ -1,0 +1,9 @@
+# CraftEngine Item: Skreecher Soul
+items:
+  alexsmobs:skreecher_soul:
+    display_name: "Skreecher Soul"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/skreecher_soul
+      textures:
+        default: alexsmobs:item/skreecher_soul

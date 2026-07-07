@@ -1,0 +1,9 @@
+# CraftEngine Item: Potted Flutter
+items:
+  alexsmobs:potted_flutter:
+    display_name: "Potted Flutter"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/potted_flutter
+      textures:
+        default: alexsmobs:item/potted_flutter

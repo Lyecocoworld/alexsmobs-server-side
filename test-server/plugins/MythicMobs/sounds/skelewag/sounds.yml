@@ -1,0 +1,22 @@
+# SKELEWAG — Sons
+
+sounds:
+  alexsmobs:entity.skelewag.idle:
+    sound: "alexsmobs:skelewag/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.skelewag.hurt:
+    sound: "alexsmobs:skelewag/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.skelewag.die:
+    sound: "alexsmobs:skelewag/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

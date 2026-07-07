@@ -1,0 +1,9 @@
+# CraftEngine Item: Sombrero Upside Down
+items:
+  alexsmobs:sombrero_upside_down:
+    display_name: "Sombrero Upside Down"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/sombrero_upside_down
+      textures:
+        default: alexsmobs:item/sombrero_upside_down

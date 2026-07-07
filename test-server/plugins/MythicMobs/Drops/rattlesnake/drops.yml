@@ -1,0 +1,9 @@
+# Rattlesnake — Drops
+# Source: data/loot_tables/entities/rattlesnake.json
+
+rattlesnake_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:rattlesnake_rattle 0-1 1.0
+    - exp{amount=1-3} 1.0

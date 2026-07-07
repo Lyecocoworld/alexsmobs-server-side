@@ -1,0 +1,19 @@
+# STRADPOLE — Spawn
+
+stradpole_spawner:
+  Type: stradpole
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=CRIMSON_FOREST,NETHER_WASTES}
+  - height{h=0to127}
+  - lightlevel{l=0to15}
+  - worldtype{wt=NETHER}
+  - blocktype{m=LAVA,NETHERRACK,CRIMSON_NYLIUM} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

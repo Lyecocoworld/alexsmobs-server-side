@@ -1,0 +1,9 @@
+# Crow — Drops
+# Source: data/loot_tables/entities/crow.json
+
+crow_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:feather 0-1 1.0
+    - exp{amount=1-3} 1.0

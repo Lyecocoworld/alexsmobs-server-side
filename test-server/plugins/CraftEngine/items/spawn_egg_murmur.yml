@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Murmur
+items:
+  alexsmobs:spawn_egg_murmur:
+    display_name: "Spawn Egg Murmur"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_murmur

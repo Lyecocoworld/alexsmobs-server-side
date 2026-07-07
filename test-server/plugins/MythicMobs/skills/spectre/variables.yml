@@ -1,0 +1,8 @@
+# SPECTRE — Variables
+
+variables:
+  spectre.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

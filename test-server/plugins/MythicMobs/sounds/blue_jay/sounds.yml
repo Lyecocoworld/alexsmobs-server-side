@@ -1,0 +1,22 @@
+# BLUE JAY — Sons
+
+sounds:
+  alexsmobs:entity.blue_jay.idle:
+    sound: "alexsmobs:blue_jay/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.blue_jay.hurt:
+    sound: "alexsmobs:blue_jay/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.blue_jay.die:
+    sound: "alexsmobs:blue_jay/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

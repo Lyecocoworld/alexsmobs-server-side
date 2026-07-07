@@ -1,0 +1,22 @@
+# SPECTRE — Sons
+
+sounds:
+  alexsmobs:entity.spectre.idle:
+    sound: "alexsmobs:spectre/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.spectre.hurt:
+    sound: "alexsmobs:spectre/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.spectre.die:
+    sound: "alexsmobs:spectre/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

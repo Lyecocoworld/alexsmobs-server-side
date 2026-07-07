@@ -1,0 +1,7 @@
+# CraftEngine Block: Gustmaker
+blocks:
+  alexsmobs:gustmaker:
+    display_name: "Gustmaker"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/gustmaker

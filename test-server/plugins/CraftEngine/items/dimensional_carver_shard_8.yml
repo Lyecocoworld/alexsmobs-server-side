@@ -1,0 +1,7 @@
+# CraftEngine Item: Dimensional Carver Shard 8
+items:
+  alexsmobs:dimensional_carver_shard_8:
+    display_name: "Dimensional Carver Shard 8"
+    rarity: EPIC
+    resource:
+      model: alexsmobs:item/dimensional_carver_shard_8

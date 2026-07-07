@@ -1,0 +1,28 @@
+# GIANT SQUID — Sons
+
+sounds:
+  alexsmobs:entity.giant_squid.idle:
+    sound: "alexsmobs:giant_squid/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.giant_squid.hurt:
+    sound: "alexsmobs:giant_squid/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.giant_squid.die:
+    sound: "alexsmobs:giant_squid/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.giant_squid.attack:
+    sound: "alexsmobs:giant_squid/attack"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

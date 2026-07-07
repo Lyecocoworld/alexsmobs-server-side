@@ -1,0 +1,7 @@
+# CraftEngine Block: Phantom Sail Single
+blocks:
+  alexsmobs:phantom_sail_single:
+    display_name: "Phantom Sail Single"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/phantom_sail_single

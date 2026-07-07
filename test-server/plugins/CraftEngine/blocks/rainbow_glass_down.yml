@@ -1,0 +1,7 @@
+# CraftEngine Block: Rainbow Glass Down
+blocks:
+  alexsmobs:rainbow_glass_down:
+    display_name: "Rainbow Glass Down"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/rainbow_glass_down

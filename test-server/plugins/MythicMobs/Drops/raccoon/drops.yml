@@ -1,0 +1,9 @@
+# Raccoon — Drops
+# Source: data/loot_tables/entities/raccoon.json
+
+raccoon_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:raccoon_tail 0-1 1.0
+    - exp{amount=1-3} 1.0

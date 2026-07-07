@@ -1,0 +1,7 @@
+# CraftEngine Item: Triops Eggs
+items:
+  alexsmobs:triops_eggs:
+    display_name: "Triops Eggs"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/triops_eggs

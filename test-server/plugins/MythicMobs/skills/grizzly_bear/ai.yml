@@ -1,0 +1,126 @@
+# ════════════════════════════════════════════════════════════════
+# GRIZZLY BEAR — AI Goals & Target Selectors
+# ─────────────────────────────────────────────────────────────────
+# Source: registerGoals() (EntityGrizzlyBear.java lignes 198-222)
+# ════════════════════════════════════════════════════════════════
+#
+# AI GOALS du mod original (goalSelector):
+#   0: FloatGoal                    → flotte dans l'eau
+#   1: SitWhenOrderedToGoal         → assis quand commandé
+#   2: TameableAIFollowOwner        → suit le propriétaire (tamed)
+#   3: GrizzlyBearAIAprilFools      → comportement Freddy (1er avril)
+#   4: MeleeAttackGoal              → attaque melee (custom: déclenche anims)
+#   4: PanicGoal                    → panique si baby ou on fire
+#   5: TameableAITempt              → attiré par la nourriture
+#   5: FollowParentGoal             → suit le parent (baby)
+#   5: GrizzlyBearAIBeehive         → raid les ruches
+#   6: GrizzlyBearAIFleeBees        → fuit les abeilles (14 blocs)
+#   6: BreedGoal                    → reproduction
+#   7: RandomStrollGoal             → marche aléatoire
+#   8: LookAtPlayerGoal             → regarde le joueur
+#   8: RandomLookAroundGoal         → regard aléatoire
+#
+# TARGET SELECTORS du mod original (targetSelector):
+#   1: OwnerHurtByTargetGoal        → attaque celui qui blesse le propriétaire
+#   2: OwnerHurtTargetGoal          → attaque la cible du propriétaire
+#   3: HurtByTargetGoal             → attaque celui qui le blesse (alerte autres)
+#   4: CreatureAITargetItems        → ramasse les items au sol
+#   5: AttackPlayerGoal             → attaque joueur si de près (5 blocs)
+#   6: NearestAttackableTargetGoal  → attaque joueur angry
+#   7: NonTameRandomTargetGoal Fox  → attaque renards (non-tamed)
+#   8: NonTameRandomTargetGoal Wolf → attaque loups (non-tamed)
+#   7: ResetUniversalAngerTargetGoal→ reset anger
+# ════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════
+# AI GOALS (comportement)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_ai:
+  Goals:
+    # 0 — Survie: flotter dans l'eau
+    - float{p=0}
+
+    # 1 — Assis quand commandé (forcedSit)
+    - tempt{p=1;speed=1.1;item=SALMON,HONEYCOMB,HONEY_BOTTLE;include_players=false}
+      ?!stance{s=mauling}
+      ?!stance{s=swiping_left}
+      ?!stance{s=swiping_right}
+
+    # 2 — Suivre le propriétaire (tamed, command=1)
+    - followowner{p=2;speed=1.2;stop_distance=5;start_distance=2}
+      ?variable{var=grizzly_bear.tamed;value=true}
+      ?variable{var=grizzly_bear.command;value=1}
+
+    # 3 — Attaque melee (déclenche les animations via skill)
+    - melee{p=3;speed=1.25;memory=true}
+      ?variable{var=grizzly_bear.sitting;value=false}
+
+    # 3 — Panique (baby ou on fire) (mod ligne 812-820)
+    - panic{p=3;speed=2.0}
+      ?baby{}
+    - panic{p=3;speed=2.0}
+      ?isonfire{}
+
+    # 4 — Suivre le parent (baby)
+    - followparent{p=4;speed=1.25}
+      ?baby{}
+
+    # 5 — Reproduction
+    - breed{p=5;speed=1.0}
+
+    # 6 — Beehive raiding (cherche les ruches proches)
+    # Reproduit via skill trigger: onTimer vérifie ruches proches
+    # (voir grizzly_bear_beehive_raid dans skills étendus)
+
+    # 7 — Marche aléatoire
+    - randomstroll{p=7;speed=0.75}
+      ?variable{var=grizzly_bear.sitting;value=false}
+
+    # 8 — Regarder le joueur / regard aléatoire
+    - lookatplayer{p=8;range=6}
+    - randomlookaround{p=8}
+
+
+# ════════════════════════════════════════════════════════════════
+# TARGET SELECTORS (cibles)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_targets:
+  TargetSelectors:
+    # Vider les selectors vanilla de polar_bear
+    - clear
+
+    # 1 — Attaque celui qui blesse le propriétaire (tamed)
+    - ownerhurtbytarget{}
+      ?variable{var=grizzly_bear.tamed;value=true}
+
+    # 2 — Attaque la cible du propriétaire (tamed)
+    - ownerhurttarget{}
+      ?variable{var=grizzly_bear.tamed;value=true}
+
+    # 3 — Attaque celui qui le blesse (HurtByTarget, mod 745-768)
+    # AlertOthers: seulement les adults non-baby
+    - hurtbytarget{}
+      ?!baby{}
+
+    # 4 — Threat Table: ceux qui l'ont attaqué
+    - attackers
+
+    # 5 — Ramasser les items comestibles au sol (mod 217)
+    # Reproduit CreatureAITargetItems
+    # MythicMobs: pas de selector natif, géré via onPickupItem trigger
+
+    # 6 — Attaquer les joueurs proches (5 blocs) si pas baby/honeyed (mod 794-810)
+    - players
+      ?!baby{}
+      ?variable{var=grizzly_bear.honeyed;value=false}
+      ?variable{var=grizzly_bear.aprilFools;value=<1}
+      ?distance{d=<5}
+
+    # 7 — Attaquer Fox et Wolf (non-tamed) (mod 220-221)
+    - specific.entities{types=FOX,WOLF}
+      ?variable{var=grizzly_bear.tamed;value=false}
+
+    # 8 — Reset universal anger (mod 222)
+    - resetanger{}

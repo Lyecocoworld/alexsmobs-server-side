@@ -1,0 +1,28 @@
+# ════════════════════════════════════════════════════════════════
+# GRIZZLY BEAR — Spawn Configuration
+# ─────────────────────────────────────────────────────────────────
+# Source: AMEntityRegistry + AMConfig (biome tags, spawn rolls)
+# Biomes: taigas, forêts, montagnes froides
+# Spawn rolls: configurable (default 1)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_spawner:
+  Type: grizzly_bear
+  SpawnRate: 4 # ticks entre checks (Folia-safe, region-local)
+  MaxMobs: 3 # max par spawner
+  CheckTime: true # vérifier le temps de jeu
+  CheckDistance: 64 # distance de check des joueurs
+  Conditions:
+  - biome{b=TAIGA,OLD_GROWTH_TAIGA,SNOWY_TAIGA,OLD_GROWTH_SPRUCE_TAIGA, FOREST,FLOWER_FOREST,DARK_FOREST,BIRCH_FOREST,OLD_GROWTH_BIRCH_FOREST,
+    MEADOW,GROVE,SNOWY_SLOPES,JAGGED_PEAKS,ICE_SPIKES, PLAINS,SUNFLOWER_PLAINS}
+  - height{h=60to150}
+  - lightlevel{l=0to7}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=GRASS_BLOCK,DIRT,PODZOL,COARSE_DIRT,STONE,SNOW_BLOCK, ICE,PACKED_ICE,SNOW}
+    @origin
+  - playerdistance{d=>24}
+  - onblock{m=GRASS_BLOCK,DIRT,PODZOL,COARSE_DIRT,STONE,SNOW_BLOCK} @origin
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

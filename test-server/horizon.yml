@@ -1,0 +1,5 @@
+pluginsDirectory: plugins
+serverJar: paper.jar
+cacheLocation: cache/horizon
+extraPlugins: [ ]
+serverName: horizon

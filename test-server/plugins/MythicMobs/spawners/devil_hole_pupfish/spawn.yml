@@ -1,0 +1,19 @@
+# DEVILS HOLE PUPFISH — Spawn
+
+devil_hole_pupfish_spawner:
+  Type: devil_hole_pupfish
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=DESERT}
+  - height{h=40to70}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=WATER,SAND,RED_SAND} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

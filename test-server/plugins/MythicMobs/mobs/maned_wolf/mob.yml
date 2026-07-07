@@ -1,0 +1,42 @@
+# ===============================================================
+# MANED WOLF (Alex's Mobs)
+# HP=22 DMG=4 SPD=0.3
+# ===============================================================
+maned_wolf:
+  Type: wolf
+  Display: '&fManed Wolf'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 22
+  Damage: 4
+  MovementSpeed: 0.3
+  Faction: creature_maned_wolf
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - maned_wolf_ai
+  AITargetSelectors:
+    - clear
+    - maned_wolf_targets
+  Drops:
+    - maned_wolf_drops
+  Skills:
+    - onTimer:10
+    - skill:maned_wolf_tick @self
+    - onSpawn:
+      - skill:maned_wolf_init @self
+    - onDeath:
+      - skill:maned_wolf_death @self
+    - onDamaged:
+      - skill:maned_wolf_on_hurt @self

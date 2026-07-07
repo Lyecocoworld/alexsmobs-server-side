@@ -1,0 +1,42 @@
+#===============================================================
+# COSMAW (Alex's Mobs)
+# HP=10 DMG=2 SPD=0.2
+#===============================================================
+cosmaw:
+  Type: cod
+  Display: '&fCosmaw'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 10
+  Damage: 2
+  MovementSpeed: 0.2
+  Faction: creature_cosmaw
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - cosmaw_ai
+  AITargetSelectors:
+    - clear
+    - cosmaw_targets
+  Drops:
+    - cosmaw_drops
+  Skills:
+    - onTimer:10
+    - skill:cosmaw_tick @self
+    - onSpawn:
+      - skill:cosmaw_init @self
+    - onDeath:
+      - skill:cosmaw_death @self
+    - onDamaged:
+      - skill:cosmaw_on_hurt @self

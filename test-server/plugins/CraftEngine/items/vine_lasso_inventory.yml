@@ -1,0 +1,7 @@
+# CraftEngine Item: Vine Lasso Inventory
+items:
+  alexsmobs:vine_lasso_inventory:
+    display_name: "Vine Lasso Inventory"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/vine_lasso_inventory

@@ -1,0 +1,9 @@
+# CraftEngine Item: Rocky Shell
+items:
+  alexsmobs:rocky_shell:
+    display_name: "Rocky Shell"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/rocky_shell
+      textures:
+        default: alexsmobs:item/rocky_shell

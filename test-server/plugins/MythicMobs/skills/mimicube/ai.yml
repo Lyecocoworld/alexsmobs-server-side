@@ -1,0 +1,17 @@
+# ===============================================================
+# MIMICUBE — AI
+# ===============================================================
+
+mimicube_ai:
+  Goals:
+    - float{p=0}
+    - randomstroll{p=1;speed=0.5}
+    - lookatplayer{p=2;range=6}
+    - randomlookaround{p=2}
+
+mimicube_targets:
+  TargetSelectors:
+    - clear
+    - players
+    - attackers
+    - monofocused

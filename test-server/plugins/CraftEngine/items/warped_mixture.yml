@@ -1,0 +1,9 @@
+# CraftEngine Item: Warped Mixture
+items:
+  alexsmobs:warped_mixture:
+    display_name: "Warped Mixture"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/warped_mixture
+      textures:
+        default: alexsmobs:item/warped_mixture

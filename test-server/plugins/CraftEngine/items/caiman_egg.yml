@@ -1,0 +1,9 @@
+# CraftEngine Item: Caiman Egg
+items:
+  alexsmobs:caiman_egg:
+    display_name: "Caiman Egg"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/caiman_egg
+      textures:
+        default: alexsmobs:item/caiman_egg

@@ -1,0 +1,22 @@
+# ════════════════════════════════════════════════════════════════
+# KANGAROO — Spawn
+# ════════════════════════════════════════════════════════════════
+
+kangaroo_spawner:
+  Type: kangaroo
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=SAVANNA,SAVANNA_PLATEAU,WINDSWEPT_SAVANNA, PLAINS,SUNFLOWER_PLAINS,MEADOW,BADLANDS,ERODED_BADLANDS,
+    WOODED_BADLANDS}
+  - height{h=60to150}
+  - lightlevel{l=7to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=GRASS_BLOCK,DIRT,COARSE_DIRT,RED_SAND,TERRACOTTA, COARSE_DIRT} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

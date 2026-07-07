@@ -1,0 +1,19 @@
+# FROSTSTALKER — Spawn
+
+froststalker_spawner:
+  Type: froststalker
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=SNOWY_PLAINS,ICE_SPIKES,SNOWY_TAIGA,GROVE,SNOWY_SLOPES,FROZEN_PEAKS}
+  - height{h=60to150}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=SNOW_BLOCK,ICE,PACKED_ICE,STONE,BLUE_ICE} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

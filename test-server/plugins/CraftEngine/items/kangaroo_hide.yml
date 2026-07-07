@@ -1,0 +1,9 @@
+# CraftEngine Item: Kangaroo Hide
+items:
+  alexsmobs:kangaroo_hide:
+    display_name: "Kangaroo Hide"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/kangaroo_hide
+      textures:
+        default: alexsmobs:item/kangaroo_hide

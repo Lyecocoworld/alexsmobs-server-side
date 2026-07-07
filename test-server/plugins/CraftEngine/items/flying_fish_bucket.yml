@@ -1,0 +1,7 @@
+# CraftEngine Item: Flying Fish Bucket
+items:
+  alexsmobs:flying_fish_bucket:
+    display_name: "Flying Fish Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/flying_fish_bucket

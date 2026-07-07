@@ -1,0 +1,7 @@
+# CraftEngine Block: Phantom Sail Bottom
+blocks:
+  alexsmobs:phantom_sail_bottom:
+    display_name: "Phantom Sail Bottom"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/phantom_sail_bottom

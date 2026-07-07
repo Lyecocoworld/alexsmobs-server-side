@@ -1,0 +1,45 @@
+# ===============================================================
+# CAIMAN (Alex's Mobs)
+# Classification: C2 (tamable)
+# HP=20 DMG=3 SPD=0.2
+# ===============================================================
+caiman:
+  Type: turtle
+  Display: '&fCaiman'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 20
+  Damage: 3
+  MovementSpeed: 0.2
+  Faction: creature_caiman
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - caiman_ai
+  AITargetSelectors:
+    - clear
+    - caiman_targets
+  Drops:
+    - caiman_drops
+  Skills:
+    - onTimer:10
+    - skill:caiman_tick @self
+    - onSpawn:
+      - skill:caiman_init @self
+    - onDeath:
+      - skill:caiman_death @self
+    - onDamaged:
+      - skill:caiman_on_hurt @self
+    - onInteract:
+      - skill:caiman_on_interact @self

@@ -1,0 +1,9 @@
+# CraftEngine Item: Straddle Saddle
+items:
+  alexsmobs:straddle_saddle:
+    display_name: "Straddle Saddle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/straddle_saddle
+      textures:
+        default: alexsmobs:item/straddle_saddle

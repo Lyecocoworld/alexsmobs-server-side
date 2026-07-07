@@ -1,0 +1,7 @@
+# CraftEngine Item: Crystalized Banana Slug Mucus
+items:
+  alexsmobs:crystalized_banana_slug_mucus:
+    display_name: "Crystalized Banana Slug Mucus"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/crystalized_banana_slug_mucus

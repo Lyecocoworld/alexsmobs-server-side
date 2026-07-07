@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Tusklin
+items:
+  alexsmobs:spawn_egg_tusklin:
+    display_name: "Spawn Egg Tusklin"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_tusklin

@@ -1,0 +1,7 @@
+# CraftEngine Item: Purpur Planks Slab
+items:
+  alexsmobs:purpur_planks_slab:
+    display_name: "Purpur Planks Slab"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/purpur_planks_slab

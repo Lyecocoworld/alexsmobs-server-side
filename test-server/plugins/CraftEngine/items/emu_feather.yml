@@ -1,0 +1,9 @@
+# CraftEngine Item: Emu Feather
+items:
+  alexsmobs:emu_feather:
+    display_name: "Emu Feather"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/emu_feather
+      textures:
+        default: alexsmobs:item/emu_feather

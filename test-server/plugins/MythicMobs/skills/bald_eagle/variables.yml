@@ -1,0 +1,75 @@
+# BALD EAGLE — Variables
+
+variables:
+  bald_eagle.flying:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  bald_eagle.tackling:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  bald_eagle.hasCap:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  bald_eagle.attackTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  bald_eagle.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: ""
+
+  bald_eagle.sitting:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  bald_eagle.launched:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  bald_eagle.tamed:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  bald_eagle.forcedSit:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  bald_eagle.owner:
+    type: STRING
+    default: NONE
+    persistent: true
+    desc: ""
+
+  bald_eagle.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  bald_eagle.flyProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: ""
+

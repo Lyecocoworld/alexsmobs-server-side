@@ -1,0 +1,45 @@
+# ===============================================================
+# CAPUCHIN MONKEY (Alex's Mobs)
+# Classification: C2 (tamable)
+# HP=10 DMG=2 SPD=0.4
+# ===============================================================
+capuchin_monkey:
+  Type: fox
+  Display: '&fCapuchin Monkey'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 10
+  Damage: 2
+  MovementSpeed: 0.4
+  Faction: creature_capuchin_monkey
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - capuchin_monkey_ai
+  AITargetSelectors:
+    - clear
+    - capuchin_monkey_targets
+  Drops:
+    - capuchin_monkey_drops
+  Skills:
+    - onTimer:10
+    - skill:capuchin_monkey_tick @self
+    - onSpawn:
+      - skill:capuchin_monkey_init @self
+    - onDeath:
+      - skill:capuchin_monkey_death @self
+    - onDamaged:
+      - skill:capuchin_monkey_on_hurt @self
+    - onInteract:
+      - skill:capuchin_monkey_on_interact @self

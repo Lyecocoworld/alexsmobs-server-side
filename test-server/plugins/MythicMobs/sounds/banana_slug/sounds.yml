@@ -1,0 +1,22 @@
+# BANANA SLUG — Sons
+
+sounds:
+  alexsmobs:entity.banana_slug.idle:
+    sound: "alexsmobs:banana_slug/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.banana_slug.hurt:
+    sound: "alexsmobs:banana_slug/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.banana_slug.die:
+    sound: "alexsmobs:banana_slug/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

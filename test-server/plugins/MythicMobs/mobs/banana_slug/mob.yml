@@ -1,0 +1,42 @@
+#===============================================================
+# BANANA SLUG (Alex's Mobs)
+# HP=4 DMG=0 SPD=0.1
+#===============================================================
+banana_slug:
+  Type: silverfish
+  Display: '&fBanana Slug'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 4
+  Damage: 0
+  MovementSpeed: 0.1
+  Faction: creature_banana_slug
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - banana_slug_ai
+  AITargetSelectors:
+    - clear
+    - banana_slug_targets
+  Drops:
+    - banana_slug_drops
+  Skills:
+    - onTimer:10
+    - skill:banana_slug_tick @self
+    - onSpawn:
+      - skill:banana_slug_init @self
+    - onDeath:
+      - skill:banana_slug_death @self
+    - onDamaged:
+      - skill:banana_slug_on_hurt @self

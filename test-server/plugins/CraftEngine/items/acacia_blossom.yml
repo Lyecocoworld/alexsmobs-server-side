@@ -1,0 +1,9 @@
+# CraftEngine Item: Acacia Blossom
+items:
+  alexsmobs:acacia_blossom:
+    display_name: "Acacia Blossom"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/acacia_blossom
+      textures:
+        default: alexsmobs:item/acacia_blossom

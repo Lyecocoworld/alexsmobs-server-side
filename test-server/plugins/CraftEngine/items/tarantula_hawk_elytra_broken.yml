@@ -1,0 +1,9 @@
+# CraftEngine Item: Tarantula Hawk Elytra Broken
+items:
+  alexsmobs:tarantula_hawk_elytra_broken:
+    display_name: "Tarantula Hawk Elytra Broken"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/tarantula_hawk_elytra_broken
+      textures:
+        default: alexsmobs:item/tarantula_hawk_elytra_broken

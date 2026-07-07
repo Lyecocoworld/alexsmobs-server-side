@@ -1,0 +1,42 @@
+# ===============================================================
+# DROP BEAR (Alex's Mobs)
+# HP=20 DMG=3 SPD=0.3
+# ===============================================================
+drop_bear:
+  Type: zombie
+  Display: '&fDrop Bear'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 20
+  Damage: 3
+  MovementSpeed: 0.3
+  Faction: creature_drop_bear
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - drop_bear_ai
+  AITargetSelectors:
+    - clear
+    - drop_bear_targets
+  Drops:
+    - drop_bear_drops
+  Skills:
+    - onTimer:10
+    - skill:drop_bear_tick @self
+    - onSpawn:
+      - skill:drop_bear_init @self
+    - onDeath:
+      - skill:drop_bear_death @self
+    - onDamaged:
+      - skill:drop_bear_on_hurt @self

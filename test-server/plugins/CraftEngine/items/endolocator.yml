@@ -1,0 +1,9 @@
+# CraftEngine Item: Endolocator
+items:
+  alexsmobs:endolocator:
+    display_name: "Endolocator"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/endolocator
+      textures:
+        default: alexsmobs:item/endolocator

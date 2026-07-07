@@ -1,0 +1,7 @@
+# CraftEngine Block: Spectre Sail Middle
+blocks:
+  alexsmobs:spectre_sail_middle:
+    display_name: "Spectre Sail Middle"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/spectre_sail_middle

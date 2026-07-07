@@ -1,0 +1,8 @@
+# ENDERIOPHAGE — Variables
+
+variables:
+  enderiophage.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

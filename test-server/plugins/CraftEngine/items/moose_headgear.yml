@@ -1,0 +1,9 @@
+# CraftEngine Item: Moose Headgear
+items:
+  alexsmobs:moose_headgear:
+    display_name: "Moose Headgear"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/moose_headgear
+      textures:
+        default: alexsmobs:item/moose_headgear

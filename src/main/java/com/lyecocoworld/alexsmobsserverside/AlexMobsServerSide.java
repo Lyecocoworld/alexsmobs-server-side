@@ -29,16 +29,13 @@ public class AlexMobsServerSide extends JavaPlugin {
 
     @Override
     public void onLoad() {
-        // Register Larion density functions BEFORE any world loads.
-        // Uses reflection to temporarily unfreeze the registry.
-        // Window: after Bootstrap.bootStrap() freezes, before world load reads.
+        // Larion registration attempt only — extraction moved to onEnable
         try {
             int count = com.lyecocoworld.alexsmobsserverside.larion.LarionRegistryHack.tryRegisterLarionTypes();
             if (count > 0) {
-                getLogger().info("[Larion] Registered " + count + " custom density function types via reflection");
+                getLogger().info("[Larion] Registered " + count + " custom density function types");
             } else {
-                getLogger().warning("[Larion] Could not register custom types — datapack may not load correctly");
-                getLogger().warning("[Larion] Fallback: use Terralith (100% vanilla) or Horizon (Mixin loader)");
+                getLogger().warning("[Larion] Could not register — datapack may not load correctly");
             }
         } catch (Throwable e) {
             getLogger().warning("[Larion] Registration failed: " + e.getMessage());
@@ -55,7 +52,7 @@ public class AlexMobsServerSide extends JavaPlugin {
         log.info("║   Folia-native reimplementation          ║");
         log.info("╚══════════════════════════════════════════╝");
 
-        // Check dependencies
+        // Configs already extracted in onLoad() — just check deps now
         DependencyChecker checker = new DependencyChecker(this);
         DependencyChecker.Result deps = checker.checkAll();
         deps.logResults(log);
@@ -67,10 +64,22 @@ public class AlexMobsServerSide extends JavaPlugin {
             log.warning("Config files are still extracted — install missing plugins to enable full functionality.");
         }
 
-        // Extract all configs (Folia-safe: pure file I/O, no scheduler needed)
-        extractor.extractAll();
+        // Extract all configs then reload MythicMobs
+        try {
+            extractor.extractAll();
+            log.info(PREFIX + "Configs extracted. Reloading MythicMobs...");
+        } catch (Throwable e) {
+            log.warning(PREFIX + "Extraction failed: " + e.getMessage());
+            e.printStackTrace();
+        }
 
-        log.info(PREFIX + "All configs extracted. Run /amss reload to apply.");
+        // Reload MythicMobs so it picks up our extracted configs
+        try {
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "mm reload");
+            log.info(PREFIX + ChatColor.GREEN + "MythicMobs reloaded with Alex's Mobs configs!");
+        } catch (Throwable e) {
+            log.warning(PREFIX + "Could not auto-reload MythicMobs. Run /mm reload manually.");
+        }
     }
 
     @Override

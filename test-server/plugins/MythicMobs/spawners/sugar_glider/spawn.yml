@@ -1,0 +1,19 @@
+# SUGAR GLIDER — Spawn
+
+sugar_glider_spawner:
+  Type: sugar_glider
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=FOREST,FLOWER_FOREST,BIRCH_FOREST,TALL_BIRCH_FOREST}
+  - height{h=60to150}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=GRASS_BLOCK,DIRT,PODZOL} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

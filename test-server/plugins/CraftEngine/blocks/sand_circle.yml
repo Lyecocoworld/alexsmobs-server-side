@@ -1,0 +1,7 @@
+# CraftEngine Block: Sand Circle
+blocks:
+  alexsmobs:sand_circle:
+    display_name: "Sand Circle"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/sand_circle

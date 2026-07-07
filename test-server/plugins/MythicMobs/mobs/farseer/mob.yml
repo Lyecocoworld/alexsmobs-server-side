@@ -1,0 +1,42 @@
+# ===============================================================
+# FARSEER (Alex's Mobs)
+# HP=70 DMG=4.5 SPD=0.35
+# ===============================================================
+farseer:
+  Type: warden
+  Display: '&fFarseer'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 70
+  Damage: 4.5
+  MovementSpeed: 0.35
+  Faction: creature_farseer
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - farseer_ai
+  AITargetSelectors:
+    - clear
+    - farseer_targets
+  Drops:
+    - farseer_drops
+  Skills:
+    - onTimer:10
+    - skill:farseer_tick @self
+    - onSpawn:
+      - skill:farseer_init @self
+    - onDeath:
+      - skill:farseer_death @self
+    - onDamaged:
+      - skill:farseer_on_hurt @self

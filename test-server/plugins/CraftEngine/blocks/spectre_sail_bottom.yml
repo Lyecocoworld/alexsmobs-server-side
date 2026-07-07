@@ -1,0 +1,7 @@
+# CraftEngine Block: Spectre Sail Bottom
+blocks:
+  alexsmobs:spectre_sail_bottom:
+    display_name: "Spectre Sail Bottom"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/spectre_sail_bottom

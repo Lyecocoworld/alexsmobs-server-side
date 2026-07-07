@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Comb Jelly
+items:
+  alexsmobs:spawn_egg_comb_jelly:
+    display_name: "Spawn Egg Comb Jelly"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_comb_jelly

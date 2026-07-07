@@ -1,0 +1,46 @@
+# ===============================================================
+# SNOW LEOPARD — Skills
+# ===============================================================
+
+snow_leopard_tick:
+  Skills:
+    - skill{s=snow_leopard_idle_check} @self
+
+snow_leopard_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=snow_leopard.tackling;value=False;type=BOOLEAN}
+    - setvariable{var=snow_leopard.sleeping;value=False;type=BOOLEAN}
+    - setvariable{var=snow_leopard.sitting;value=False;type=BOOLEAN}
+    - setvariable{var=snow_leopard.sneaking;value=False;type=BOOLEAN}
+    - setvariable{var=snow_leopard.animTick;value=0;type=INTEGER}
+    - setmodelstate{state=idle}
+
+snow_leopard_attack_r:
+  Skills:
+    - setstance{stance=attack_r}
+    - setmodelstate{state=attack_r}
+    - setvariable{var=snow_leopard.animTick;value=0;type=INTEGER}
+    - damage{amount=6} @target
+    - sound{s=alexsmobs:entity.snow_leopard.attack_r;v=1.0;p=0.9-1.1} @self
+
+snow_leopard_attack_l:
+  Skills:
+    - setstance{stance=attack_l}
+    - setmodelstate{state=attack_l}
+    - setvariable{var=snow_leopard.animTick;value=0;type=INTEGER}
+    - damage{amount=6} @target
+    - sound{s=alexsmobs:entity.snow_leopard.attack_l;v=1.0;p=0.9-1.1} @self
+
+snow_leopard_idle_check:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+snow_leopard_on_hurt:
+  Skills:
+
+snow_leopard_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.snow_leopard.die;v=1.0;p=0.8-1.2} @self

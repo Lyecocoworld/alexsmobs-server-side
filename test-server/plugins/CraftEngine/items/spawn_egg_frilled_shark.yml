@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Frilled Shark
+items:
+  alexsmobs:spawn_egg_frilled_shark:
+    display_name: "Spawn Egg Frilled Shark"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_frilled_shark

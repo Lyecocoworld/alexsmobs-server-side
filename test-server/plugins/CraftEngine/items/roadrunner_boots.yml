@@ -1,0 +1,9 @@
+# CraftEngine Item: Roadrunner Boots
+items:
+  alexsmobs:roadrunner_boots:
+    display_name: "Roadrunner Boots"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/roadrunner_boots
+      textures:
+        default: alexsmobs:item/roadrunner_boots

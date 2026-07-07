@@ -1,0 +1,9 @@
+# CraftEngine Item: Elastic Tendon
+items:
+  alexsmobs:elastic_tendon:
+    display_name: "Elastic Tendon"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/elastic_tendon
+      textures:
+        default: alexsmobs:item/elastic_tendon

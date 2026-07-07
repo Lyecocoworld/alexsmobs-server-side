@@ -1,0 +1,9 @@
+# CraftEngine Item: Farseer Arm
+items:
+  alexsmobs:farseer_arm:
+    display_name: "Farseer Arm"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/farseer_arm
+      textures:
+        default: alexsmobs:item/farseer_arm

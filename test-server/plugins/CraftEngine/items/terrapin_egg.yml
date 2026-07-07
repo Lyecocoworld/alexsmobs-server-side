@@ -1,0 +1,9 @@
+# CraftEngine Item: Terrapin Egg
+items:
+  alexsmobs:terrapin_egg:
+    display_name: "Terrapin Egg"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/terrapin_egg
+      textures:
+        default: alexsmobs:item/terrapin_egg

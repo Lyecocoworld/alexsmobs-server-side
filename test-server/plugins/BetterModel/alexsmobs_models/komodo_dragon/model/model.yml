@@ -1,0 +1,29 @@
+# KOMODO DRAGON — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:komodo_dragon"
+  type: "salamander"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/komodo_dragon.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/komodo_dragon.png"
+  animations:
+    idle: "animation.komodo_dragon.idle"
+    walk: "animation.komodo_dragon.walk"
+    run: "animation.komodo_dragon.run"
+    sit: "animation.komodo_dragon.sit"
+    death: "animation.komodo_dragon.death"
+
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": true}
+
+  scale:
+    adult: 1.0
+    baby: 0.5

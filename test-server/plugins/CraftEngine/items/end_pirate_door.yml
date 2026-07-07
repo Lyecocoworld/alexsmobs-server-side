@@ -1,0 +1,9 @@
+# CraftEngine Item: End Pirate Door
+items:
+  alexsmobs:end_pirate_door:
+    display_name: "End Pirate Door"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/end_pirate_door
+      textures:
+        default: alexsmobs:item/end_pirate_door

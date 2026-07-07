@@ -1,0 +1,7 @@
+# CraftEngine Item: End Pirate Anchor Winch
+items:
+  alexsmobs:end_pirate_anchor_winch:
+    display_name: "End Pirate Anchor Winch"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/end_pirate_anchor_winch

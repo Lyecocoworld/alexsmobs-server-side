@@ -1,0 +1,43 @@
+# ===============================================================
+# STRADDLER (Alex's Mobs)
+# Classification: C1
+# HP=28 DMG=2 SPD=0.3
+# ===============================================================
+straddler:
+  Type: zombie
+  Display: '&fStraddler'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 28
+  Damage: 2
+  MovementSpeed: 0.3
+  Faction: creature_straddler
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - straddler_ai
+  AITargetSelectors:
+    - clear
+    - straddler_targets
+  Drops:
+    - straddler_drops
+  Skills:
+    - onTimer:10
+    - skill:straddler_tick @self
+    - onSpawn:
+      - skill:straddler_init @self
+    - onDeath:
+      - skill:straddler_death @self
+    - onDamaged:
+      - skill:straddler_on_hurt @self

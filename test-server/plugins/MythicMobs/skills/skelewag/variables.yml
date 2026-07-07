@@ -1,0 +1,8 @@
+# SKELEWAG — Variables
+
+variables:
+  skelewag.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

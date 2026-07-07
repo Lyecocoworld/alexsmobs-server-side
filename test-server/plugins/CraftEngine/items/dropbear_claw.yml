@@ -1,0 +1,9 @@
+# CraftEngine Item: Dropbear Claw
+items:
+  alexsmobs:dropbear_claw:
+    display_name: "Dropbear Claw"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/dropbear_claw
+      textures:
+        default: alexsmobs:item/dropbear_claw

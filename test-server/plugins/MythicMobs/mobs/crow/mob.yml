@@ -1,0 +1,86 @@
+# ════════════════════════════════════════════════════════════════
+# CROW (Alex's Mobs)
+# Source: EntityCrow.java (1134 lignes, branch 1.20)
+# Classification: C2 (AI modérée — flying + tamable + perch), P1
+# ─────────────────────────────────────────────────────────────────
+# Comportements reproduits:
+#   - [x] Flying entity (switch navigator ground↔flight, FlightMoveController)
+#   - [x] Tamable (pumpkin seeds, 30% chance via seedThrowerID)
+#   - [x] Shoulder perch (comme perroquet — joueur peut porter sur l'épaule)
+#   - [x] Item pickup (ramasse items au sol, les stocke en main)
+#   - [x] Item deposit (AIDepositChests — dépose items dans coffres proches)
+#   - [x] Circle crops (CrowAICircleCrops — vole au-dessus des cultures)
+#   - [x] Scatter items (AIScatter — disperse items ramassés)
+#   - [x] Avoid pumpkins (AIAvoidPumpkins — fuit les citrouilles tressées)
+#   - [x] Command system (0/1/2/3 — wander/follow/sit/perch_on_player)
+#   - [x] Fall damage immune (causeFallDamage retourne false)
+#   - [x] No fall damage (checkFallCheck vide)
+#   - [x] Cannot trample crops (canTrample retourne false)
+#   - [x] Hurts target with attack animation (ATTACK_TICK)
+#   - [x] Drops held item on death/hurt
+#   - [x] Breedable (tamed only, CROW_BREEDABLES)
+# ─────────────────────────────────────────────────────────────────
+# Équivalences mod → plugin:
+#   switchNavigator(ground↔flight)   → Type=parrot (volant natif)
+#   FlightMoveController             → parrot move controller
+#   DirectPathNavigator              → parrot navigation
+#   FLYING (SynchedEntityData)       → crow.flying variable
+#   ATTACK_TICK (SynchedEntityData)  → crow.attackTick variable
+#   PERCH_POS (Optional<BlockPos>)   → crow.perchX/Y/Z variables
+#   rideTick (shoulder perch)        → mount{} mechanic (sur épaule joueur)
+#   CrowAICircleCrops                → skill timer + randomstroll aérien
+#   AIAvoidPumpkins                  → flee{types=...} AI goal
+#   AIDepositChests                  → onTimer + search nearest chest
+# ─────────────────═══════════════════════════════════════════════
+crow:
+  Type: parrot
+  Display: '&8Crow'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 8
+  Damage: 1
+  MovementSpeed: 0.2
+  Faction: creature_crow
+  Options:
+    PreventOtherDrops: false
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 12000               # 10 minutes → adulte
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - crow_ai
+  AITargetSelectors:
+    - clear
+    - crow_targets
+  DamageModifiers:
+    - FALL 0.0                     # Immunisé fall damage (mod ligne 169)
+  Drops:
+    - crow_drops
+  Skills:
+    # Tick principal — toutes les 10 ticks
+    - onTimer:10
+    - skill:crow_tick @self
+
+    # Au spawn
+    - onSpawn:
+      - skill:crow_init @self
+
+    # À la mort
+    - onDeath:
+      - skill:crow_death @self
+
+    # Quand blessé — relâche l'item tenu + stop riding (mod 186-198)
+    - onDamaged:
+      - skill:crow_on_hurt @self
+
+    # Clic droit
+    - onInteract:
+      - skill:crow_on_interact @self

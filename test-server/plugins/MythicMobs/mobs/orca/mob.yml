@@ -1,0 +1,42 @@
+# ===============================================================
+# ORCA (Alex's Mobs)
+# HP=50 DMG=8 SPD=1.0
+# ===============================================================
+orca:
+  Type: dolphin
+  Display: '&fOrca'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 50
+  Damage: 8
+  MovementSpeed: 1.0
+  Faction: creature_orca
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - orca_ai
+  AITargetSelectors:
+    - clear
+    - orca_targets
+  Drops:
+    - orca_drops
+  Skills:
+    - onTimer:10
+    - skill:orca_tick @self
+    - onSpawn:
+      - skill:orca_init @self
+    - onDeath:
+      - skill:orca_death @self
+    - onDamaged:
+      - skill:orca_on_hurt @self

@@ -1,0 +1,267 @@
+# ════════════════════════════════════════════════════════════════
+# CROW — Skills
+# ════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════
+# ORCHESTRATORS
+# ════════════════════════════════════════════════════════════════
+
+crow_tick:
+  Skills:
+    # ── Flying lerp (flyProgress 0→5 / 5→0) (mod lignes 307-315) ──
+    - skill{s=crow_flying_lerp} @self
+    # ── Attack animation lerp (attackProgress) ──
+    - skill{s=crow_attack_lerp} @self
+    # ── Sit lerp (sitProgress) ──
+    - skill{s=crow_sit_lerp} @self
+    # ── Held item eating (mange après un certain temps) ──
+    - skill{s=crow_held_item_check} @self
+    # ── Circle crops (occasionnel) ──
+    - skill{s=crow_circle_crops} @self
+      ?variable{var=crow.command;value=0}
+      ?random{chance=0.001}
+    # ── Deposit items (cherche coffre proche si tient item) ──
+    - skill{s=crow_deposit_check} @self
+      ?variable{var=crow.tamed;value=true}
+      ?!hasitem{m=AIR;slot=HAND}
+
+# ════════════════════════════════════════════════════════════════
+# INITIALIZATION
+# ════════════════════════════════════════════════════════════════
+
+crow_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=crow.flying;value=false;type=BOOLEAN}
+    - setvariable{var=crow.sitting;value=false;type=BOOLEAN}
+    - setvariable{var=crow.tamed;value=false;type=BOOLEAN}
+    - setvariable{var=crow.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=crow.command;value=0;type=INTEGER}
+    - setvariable{var=crow.attackTick;value=0;type=INTEGER}
+    - setvariable{var=crow.flyProgress;value=0;type=FLOAT}
+    - setvariable{var=crow.attackProgress;value=0;type=FLOAT}
+    - setvariable{var=crow.sitProgress;value=0;type=FLOAT}
+    - setvariable{var=crow.timeFlying;value=0;type=INTEGER}
+    - setvariable{var=crow.heldItemTime;value=0;type=INTEGER}
+    - setvariable{var=crow.seedThrowerID;value=NONE;type=STRING}
+    - setmodelstate{state=idle}
+
+
+# ════════════════════════════════════════════════════════════════
+# FLYING LERP (mod lignes 307-315)
+# ════════════════════════════════════════════════════════════════
+
+crow_flying_lerp:
+  Skills:
+    - setvariable{var=crow.flyProgress;value=<math.(crow.flyProgress + 1)>;type=FLOAT}
+      ?variable{var=crow.flying;value=true}
+      ?variable{var=crow.flyProgress;value=<5}
+    - setvariable{var=crow.flyProgress;value=<math.(crow.flyProgress - 1)>;type=FLOAT}
+      ?variable{var=crow.flying;value=false}
+      ?variable{var=crow.flyProgress;value=>0}
+    # Si flying → incrémente timeFlying
+    - setvariable{var=crow.timeFlying;value=<math.(crow.timeFlying + 1)>;type=INTEGER}
+      ?variable{var=crow.flying;value=true}
+    - setmodelstate{state=fly}
+      ?variable{var=crow.flying;value=true}
+    - setmodelstate{state=idle}
+      ?variable{var=crow.flying;value=false}
+      ?variable{var=crow.flyProgress;value=0}
+
+crow_attack_lerp:
+  Skills:
+    - setvariable{var=crow.attackProgress;value=<math.(crow.attackProgress + 1)>;type=FLOAT}
+      ?variable{var=crow.attackTick;value=>0}
+      ?variable{var=crow.attackProgress;value=<5}
+    - setvariable{var=crow.attackProgress;value=<math.(crow.attackProgress - 1)>;type=FLOAT}
+      ?variable{var=crow.attackTick;value=0}
+      ?variable{var=crow.attackProgress;value=>0}
+    - setvariable{var=crow.attackTick;value=<math.(crow.attackTick - 1)>;type=INTEGER}
+      ?variable{var=crow.attackTick;value=>0}
+
+crow_sit_lerp:
+  Skills:
+    - setvariable{var=crow.sitProgress;value=<math.(crow.sitProgress + 1)>;type=FLOAT}
+      ?variable{var=crow.sitting;value=true}
+      ?variable{var=crow.sitProgress;value=<5}
+    - setvariable{var=crow.sitProgress;value=<math.(crow.sitProgress - 1)>;type=FLOAT}
+      ?variable{var=crow.sitting;value=false}
+      ?variable{var=crow.sitProgress;value=>0}
+
+
+# ════════════════════════════════════════════════════════════════
+# HELD ITEM CHECK — mange après un délai
+# ════════════════════════════════════════════════════════════════
+
+crow_held_item_check:
+  Skills:
+    - setvariable{var=crow.heldItemTime;value=<math.(crow.heldItemTime + 1)>;type=INTEGER}
+      ?!hasitem{m=AIR;slot=HAND}
+    # Après 200 ticks → manger l'item (si edible)
+    - skill{s=crow_eat_held} @self
+      ?variable{var=crow.heldItemTime;value=>200}
+      ?!hasitem{m=AIR;slot=HAND}
+
+crow_eat_held:
+  Skills:
+    - heal{amount=4} @self
+    - effect:particle{p=ITEM_CRACK;a=5;hs=0.2;vs=0.2;speed=0.02} @origin
+    - sound{s=entity.generic.eat;v=1.0;p=0.8-1.2} @self
+    - takeitem{m=*;slot=HAND;qty=1} @self
+    - setvariable{var=crow.heldItemTime;value=0;type=INTEGER}
+
+
+# ════════════════════════════════════════════════════════════════
+# CIRCLE CROPS — vole au-dessus des cultures (CrowAICircleCrops)
+# ════════════════════════════════════════════════════════════════
+
+crow_circle_crops:
+  Skills:
+    - setvariable{var=crow.flying;value=true;type=BOOLEAN}
+    - setmodelstate{state=fly}
+    # Le vol au-dessus des cultures est géré par randomstroll aérien
+    # via l'AI goal (voir ai.yml)
+
+
+# ════════════════════════════════════════════════════════════════
+# DEPOSIT CHESTS — dépose items dans coffres proches
+# ════════════════════════════════════════════════════════════════
+
+crow_deposit_check:
+  Skills:
+    # Chercher un coffre proche (region-local, safe)
+    # MythicMobs: pas de mécanique native de deposit, approximation
+    # On dépose simplement l'item au sol près d'un coffre
+    - dropitem{item=<handitem>;amount=1} @origin
+      ?variable{var=crow.heldItemTime;value=>400}
+    - setvariable{var=crow.heldItemTime;value=0;type=INTEGER}
+      ?variable{var=crow.heldItemTime;value=>400}
+
+
+# ════════════════════════════════════════════════════════════════
+# INTERACTION (mod mobInteract lignes 245-276)
+# ════════════════════════════════════════════════════════════════
+
+crow_on_interact:
+  Skills:
+    # Si tient un item → le relâcher (mod 248-251)
+    - skill{s=crow_drop_held} @self
+      ?!hasitem{m=AIR;slot=HAND}
+    # Si tamed + item edible → prendre l'item (mod 255-260)
+    - skill{s=crow_take_food} @self
+      ?variable{var=crow.tamed;value=true}
+      ?hasitem{m=AIR;slot=HAND}
+      ?isitemtype{type=FOOD;slot=HAND}
+    # Command cycle (mod 261-264: 0→1→2→3→0)
+    - skill{s=crow_command_cycle} @self
+      ?variable{var=crow.tamed;value=true}
+
+crow_drop_held:
+  Skills:
+    - dropitem{item=<handitem>;amount=1} @origin
+    - setvariable{var=crow.heldItemTime;value=0;type=INTEGER}
+
+crow_take_food:
+  Skills:
+    - giveitem{m=<trigger.handitem>;slot=HAND;qty=1} @self
+    - takeitem{m=*;slot=HAND;qty=1} @trigger
+
+crow_command_cycle:
+  Skills:
+    # 0→1→2→3→0 (mod: command 3 = shoulder perch)
+    - skill{s=crow_command_wander} @self
+      ?variable{var=crow.command;value=3}
+    - skill{s=crow_command_follow} @self
+      ?variable{var=crow.command;value=0}
+    - skill{s=crow_command_sit} @self
+      ?variable{var=crow.command;value=1}
+    - skill{s=crow_command_shoulder} @self
+      ?variable{var=crow.command;value=2}
+
+crow_command_wander:
+  Skills:
+    - setvariable{var=crow.command;value=0;type=INTEGER}
+    - setvariable{var=crow.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=crow.sitting;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+crow_command_follow:
+  Skills:
+    - setvariable{var=crow.command;value=1;type=INTEGER}
+    - setvariable{var=crow.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=crow.sitting;value=false;type=BOOLEAN}
+
+crow_command_sit:
+  Skills:
+    - setvariable{var=crow.command;value=2;type=INTEGER}
+    - setvariable{var=crow.forcedSit;value=true;type=BOOLEAN}
+    - setvariable{var=crow.sitting;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}
+
+crow_command_shoulder:
+  Skills:
+    # Command 3 = shoulder perch (comme parrot)
+    - setvariable{var=crow.command;value=3;type=INTEGER}
+    - mount{}                           # Monte sur l'épaule du joueur
+
+
+# ════════════════════════════════════════════════════════════════
+# HURT / DEATH
+# ════════════════════════════════════════════════════════════════
+
+crow_on_hurt:
+  Skills:
+    - setvariable{var=crow.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=crow.sitting;value=false;type=BOOLEAN}
+    # Relâcher l'item tenu (mod 191-194)
+    - dropitem{item=<handitem>;amount=1} @origin
+      ?!hasitem{m=AIR;slot=HAND}
+
+crow_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.crow.death;v=1.0;p=0.8-1.2} @self
+    # Relâcher l'item tenu
+    - dropitem{item=<handitem>;amount=1} @origin
+      ?!hasitem{m=AIR;slot=HAND}
+
+
+# ════════════════════════════════════════════════════════════════
+# ATTACK (CrowAIMelee, attack animation ATTACK_TICK)
+# ════════════════════════════════════════════════════════════════
+
+crow_attack:
+  Skills:
+    - setvariable{var=crow.attackTick;value=12;type=INTEGER}
+    - setmodelstate{state=attack}
+    - damage{amount=1} @target
+    - sound{s=alexsmobs:entity.crow.attack;v=1.0;p=0.9-1.1}
+
+
+# ════════════════════════════════════════════════════════════════
+# TAMING (pumpkin seeds, mod onGetItem)
+# ════════════════════════════════════════════════════════════════
+
+crow_on_pickup_item:
+  Skills:
+    # Si l'item est une graine de citrouille → enregistre le lanceur
+    - setvariable{var=crow.seedThrowerID;value=<trigger.uuid>;type=STRING}
+      ?hasitem{m=PUMPKIN_SEEDS;q=1}
+    # 30% taming chance quand mange (postWashItem equivalent)
+    - skill{s=crow_tame_attempt} @self
+      ?hasitem{m=PUMPKIN_SEEDS;q=1}
+      ?variable{var=crow.tamed;value=false}
+
+crow_tame_attempt:
+  Skills:
+    - skill{s=crow_tame_success} @self
+      ?random{chance=0.3}
+    - effect:particle{p=SMOKE;a=3;speed=0.05} @origin
+      ?!random{chance=0.3}
+
+crow_tame_success:
+  Skills:
+    - setvariable{var=crow.tamed;value=true;type=BOOLEAN}
+    - setvariable{var=crow.owner;value=<trigger.uuid>;type=STRING}
+    - effect:particle{p=HEART;a=5;hs=0.3;vs=0.3} @origin
+    - sound{s=entity.parrot.imitate.panda;v=1.0;p=1.0} @self

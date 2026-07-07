@@ -1,0 +1,9 @@
+# CraftEngine Item: Moose Ribs
+items:
+  alexsmobs:moose_ribs:
+    display_name: "Moose Ribs"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/moose_ribs
+      textures:
+        default: alexsmobs:item/moose_ribs

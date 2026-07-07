@@ -1,0 +1,9 @@
+# CraftEngine Item: Ambergris
+items:
+  alexsmobs:ambergris:
+    display_name: "Ambergris"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/ambergris
+      textures:
+        default: alexsmobs:item/ambergris

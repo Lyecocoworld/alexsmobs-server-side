@@ -1,0 +1,89 @@
+# ════════════════════════════════════════════════════════════════
+# LOBSTER (Alex's Mobs)
+# Source: EntityLobster.java (311 lignes, branch 1.20)
+# Classification: C1 (simple), P0 (passive mob)
+# ─────────────────────────────────────────────────────────────────
+# Comportements reproduits:
+#   - [x] Passif, semi-aquatique (crawfish-like)
+#   - [x] Pas tamable, pas neutral — purement passif
+#   - [x] Health: 8, Damage: 1 (défense minimale)
+#   - [x] Variant system: CLAW_TYPE (int 0-3) — 4 variantes de pinces
+#   - [x] ANIMATION_SNIP (attack with claws, ~12 ticks)
+#   - [x] Semi-aquatique: nage au fond de l'eau (BottomFeederAIWander)
+#   - [x] Water-breathing + AIR-breathing (peut respirer eau et air)
+#   - [x] Melee weak attack avec snip animation
+#   - [x] Attaque si attaqué d'abord (self-defense via HurtByTarget)
+#   - [x] Panic quand baby
+#   - [x] Ne se noie jamais (waterbreather)
+#   - [x] Reproduction: breed avec tropical_fish ou seaweed
+# ─────────────────────────────────────────────────────────────────
+# Équivalences mod → plugin:
+#   AnimationHandler (Citadel)     → BetterModel animation states (via stance)
+#   SynchedEntityData: CLAW_TYPE   → MythicMobs variable lobster.clawType
+#   registerGoals() (10 goals)     → AIGoalSelectors + AITargetSelectors
+#   BottomFeederAIWander           → RandomSwimGoal + conditions underwater
+#   AnimalAILeaveWater             → handled by vanilla aquatic behavior
+#   HurtByTarget (self-defense)    → AITargetSelectors
+#   CLAW_TYPE random on spawn      → onSpawn skill (random 0-3)
+# ════════════════════════════════════════════════════════════════
+lobster:
+  Type: tropical_fish              # Vanilla base la plus proche (semi-aquatique)
+  Display: '&cLobster'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    ImmunityTable: true
+  Health: 8
+  Damage: 1
+  KnockbackResistance: 0.0
+  MovementSpeed: 0.2
+  Faction: creature_lobster
+  Options:
+    PreventOtherDrops: false
+    Persistent: true
+    FollowRange: 16
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 24000                # 20 minutes → adulte
+    PreventRandomEquipment: true
+    # Semi-aquatique: ne prend pas de dégâts de noyade
+    # (géré via ImmunityTable + DROWN damage modifier)
+  AIGoalSelectors:
+    - clear
+    - lobster_ai
+  AITargetSelectors:
+    - clear
+    - lobster_targets
+  DamageModifiers:
+    - DROWN 0.0                     # Waterbreather: ne se noie jamais
+    - DRYOUT 0.0                    # Peut respirer hors de l'eau aussi
+  Drops:
+    - lobster_drops
+  # ── Skills déclenchés par événements (Folia-safe, region-local) ──
+  Skills:
+    # Tick principal — toutes les 10 ticks (0.5s)
+    # Gère: idle sounds, anim tick advance, snip timeout
+    - onTimer:10
+    - skill:lobster_tick @self
+
+    # Au spawn — initialiser les variables (CLAW_TYPE aléatoire)
+    - onSpawn:
+      - skill:lobster_init @self
+
+    # À la mort
+    - onDeath:
+      - skill:lobster_death @self
+
+    # Quand blessé — déclencher self-defense
+    - onDamaged:
+      - skill:lobster_on_hurt @self
+
+    # Quand attaque une cible (snip animation)
+    - onAttack:
+      - skill:lobster_on_attack @target
+
+    # Clic droit du joueur (breeding check)
+    - onInteract:
+      - skill:lobster_on_interact @self

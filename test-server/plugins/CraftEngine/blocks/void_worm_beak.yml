@@ -1,0 +1,7 @@
+# CraftEngine Block: Void Worm Beak
+blocks:
+  alexsmobs:void_worm_beak:
+    display_name: "Void Worm Beak"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/void_worm_beak

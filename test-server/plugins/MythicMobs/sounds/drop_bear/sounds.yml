@@ -1,0 +1,22 @@
+# DROP BEAR — Sons
+
+sounds:
+  alexsmobs:entity.drop_bear.idle:
+    sound: "alexsmobs:drop_bear/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.drop_bear.hurt:
+    sound: "alexsmobs:drop_bear/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.drop_bear.die:
+    sound: "alexsmobs:drop_bear/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

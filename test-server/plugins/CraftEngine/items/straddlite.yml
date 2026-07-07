@@ -1,0 +1,9 @@
+# CraftEngine Item: Straddlite
+items:
+  alexsmobs:straddlite:
+    display_name: "Straddlite"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/straddlite
+      textures:
+        default: alexsmobs:item/straddlite

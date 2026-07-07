@@ -1,0 +1,7 @@
+# CraftEngine Block: Two Slightly Cracked Terrapin Eggs
+blocks:
+  alexsmobs:two_slightly_cracked_terrapin_eggs:
+    display_name: "Two Slightly Cracked Terrapin Eggs"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/two_slightly_cracked_terrapin_eggs

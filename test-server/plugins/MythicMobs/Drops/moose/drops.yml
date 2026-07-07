@@ -1,0 +1,9 @@
+# Moose — Drops
+# Source: data/loot_tables/entities/moose.json
+
+moose_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:moose_ribs 1-3 1.0
+    - exp{amount=1-3} 1.0

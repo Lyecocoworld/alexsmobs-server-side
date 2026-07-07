@@ -1,0 +1,22 @@
+# STRADPOLE — Sons
+
+sounds:
+  alexsmobs:entity.stradpole.idle:
+    sound: "alexsmobs:stradpole/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.stradpole.hurt:
+    sound: "alexsmobs:stradpole/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.stradpole.die:
+    sound: "alexsmobs:stradpole/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

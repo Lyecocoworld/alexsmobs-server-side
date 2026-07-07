@@ -1,0 +1,42 @@
+# ===============================================================
+# CENTIPEDE (Alex's Mobs)
+# HP=35 DMG=8 SPD=0.22
+# ===============================================================
+centipede_head:
+  Type: silverfish
+  Display: '&fCentipede'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 35
+  Damage: 8
+  MovementSpeed: 0.22
+  Faction: creature_centipede_head
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - centipede_head_ai
+  AITargetSelectors:
+    - clear
+    - centipede_head_targets
+  Drops:
+    - centipede_head_drops
+  Skills:
+    - onTimer:10
+    - skill:centipede_head_tick @self
+    - onSpawn:
+      - skill:centipede_head_init @self
+    - onDeath:
+      - skill:centipede_head_death @self
+    - onDamaged:
+      - skill:centipede_head_on_hurt @self

@@ -1,0 +1,42 @@
+# ════════════════════════════════════════════════════════════════
+# CRIMSON MOSQUITO — BetterModel
+# ════════════════════════════════════════════════════════════════
+
+model:
+  bettermodel_id: "alexsmobs:crimson_mosquito"
+  type: "phantom"
+  hitbox:
+    width: 1.2
+    height: 1.2
+
+  blockbench_model: "assets/alexsmobs/blockbench/crimson_mosquito.bbmodel"
+
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/crimson_mosquito.png"
+    sick:
+      path: "assets/alexsmobs/textures/entity/crimson_mosquito_sick.png"
+
+  animations:
+    idle:      "animation.crimson_mosquito.idle"
+    fly:       "animation.crimson_mosquito.fly"
+    shooting:  "animation.crimson_mosquito.shoot"
+    shrink:    "animation.crimson_mosquito.shrink"
+    death:     "animation.crimson_mosquito.death"
+
+  animation_state_mapping:
+    idle:      {"animation": "idle",     "texture": "normal", "loop": true}
+    fly:       {"animation": "fly",      "texture": "normal", "loop": true}
+    shooting:  {"animation": "shooting", "texture": "normal", "loop": true}
+    death:     {"animation": "death",    "texture": "normal", "loop": false, "duration": 20}
+
+  variants:
+    sick:
+      texture: sick
+      condition:
+        mythicmobs_variable: "crimson_mosquito.sick"
+        value: true
+
+  scale:
+    adult: 1.0
+    baby: 0.5

@@ -1,0 +1,22 @@
+# MIMIC OCTOPUS — Sons
+
+sounds:
+  alexsmobs:entity.mimic_octopus.idle:
+    sound: "alexsmobs:mimic_octopus/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.mimic_octopus.hurt:
+    sound: "alexsmobs:mimic_octopus/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.mimic_octopus.die:
+    sound: "alexsmobs:mimic_octopus/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

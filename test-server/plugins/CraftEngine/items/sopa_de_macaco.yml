@@ -1,0 +1,9 @@
+# CraftEngine Item: Sopa De Macaco
+items:
+  alexsmobs:sopa_de_macaco:
+    display_name: "Sopa De Macaco"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/sopa_de_macaco
+      textures:
+        default: alexsmobs:item/sopa_de_macaco

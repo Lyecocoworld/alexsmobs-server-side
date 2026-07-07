@@ -1,0 +1,57 @@
+# CAPUCHIN MONKEY — Variables
+
+variables:
+  capuchin_monkey.dart:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  capuchin_monkey.sitting:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  capuchin_monkey.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: ""
+
+  capuchin_monkey.variant:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  capuchin_monkey.dartTarget:
+    type: INTEGER
+    default: -1
+    persistent: false
+    desc: ""
+
+  capuchin_monkey.tamed:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  capuchin_monkey.forcedSit:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  capuchin_monkey.owner:
+    type: STRING
+    default: NONE
+    persistent: true
+    desc: ""
+
+  capuchin_monkey.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+

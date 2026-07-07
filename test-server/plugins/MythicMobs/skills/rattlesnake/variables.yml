@@ -1,0 +1,35 @@
+# ════════════════════════════════════════════════════════════════
+# RATTLESNAKE — Variables persistantes
+# ─────────────────────────────────────────────────────────────────
+# Source: SynchedEntityData + champs privés (EntityRattlesnake.java)
+# Toutes les variables sont stockées sur l'entité MythicMobs.
+# Persistent: true dans mob.yml assure la sauvegarde NBT au restart.
+# ════════════════════════════════════════════════════════════════
+# Mapping SynchedEntityData → MythicMobs variable:
+#   RATTLING (bool)   → rattlesnake.rattling
+#   CURLED (bool)     → rattlesnake.curled
+#
+# Champs runtime (animation):
+#   animTick (int)     → rattlesnake.animTick
+# ════════════════════════════════════════════════════════════════
+
+variables:
+  # ── SynchedEntityData (booléens synchronisés client) ──
+  rattlesnake.rattling:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Si true: le serpent secoue sa queue (avertissement)"
+
+  rattlesnake.curled:
+    type: BOOLEAN
+    default: true
+    persistent: true
+    desc: "Si true: le serpent est enroulé au repos (idle)"
+
+  # ── Champs runtime (animation) ──
+  rattlesnake.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick actuel de l'animation BITE en cours (max 20 ticks)"

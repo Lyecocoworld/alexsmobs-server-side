@@ -1,0 +1,105 @@
+# ════════════════════════════════════════════════════════════════
+# RACCOON (Alex's Mobs)
+# Source: EntityRaccoon.java (801 lignes, branch 1.20)
+# Classification: C2 (AI modérée), P1 (signature mob)
+# ─────────────────────────────────────────────────────────────────
+# Comportements reproduits:
+#   - [x] Tamable (egg throw + wash sequence — 30% chance, mod postWashItem)
+#   - [x] TamableAnimal + NeutralMob + IAnimatedEntity + IFollower
+#   - [x] ITargetsDroppedItems + ILootsChests
+#   - [x] 4 stances SynchedEntityData: STANDING, SITTING, BEGGING, WASHING
+#   - [x] WASH_POS: Optional<BlockPos> — position où le raton lave sa nourriture
+#   - [x] CARPET_COLOR: int (-1 = pas de tapis) — équiper un tapis comme un llama
+#   - [x] COMMAND: int (0/1/2 — wander/follow/sit)
+#   - [x] 4 lerps: standProgress, begProgress, washProgress, sitProgress (0→5)
+#   - [x] WASHING mechanic: cherche un point d'eau, y va, lave l'item, puis le mange (heal 10)
+#   - [x] lookForWaterBeforeEatingTimer: 100 ticks après pickup, cherche eau pour laver
+#   - [x] EGG throw taming: RACCOON_TAMEABLES + taming via wash
+#   - [x] bondWithBlueJays: cherche BlueJays à 48 blocs, les "lie" au raton
+#   - [x] Villager stealing: AIStealFromVillagers — vole items, fuit, cooldown 24k-72k ticks
+#   - [x] Loot chests: AnimalAILootChests (16 blocs)
+#   - [x] Carpet equip/drop: wool carpet → carpet_color, shears → drop, dropEquipment au mort
+#   - [x] isRigby() easter egg: nom "Rigby" → behavior special
+#   - [x] Immune: si tamed + attaquant non-joueur → (amount+1)/4 (réduction 75%)
+#   - [x] 1 animation: ANIMATION_ATTACK (12 ticks)
+#   - [x] Sounds: RACCOON_IDLE, RACCOON_HURT (death = hurt)
+# ─────────────────────────────────────────────────────────────────
+# Équivalences mod → plugin:
+#   AnimationHandler (Citadel)      → BetterModel animation states (via stance)
+#   SynchedEntityData (4 booleans)  → MythicMobs stance + variables
+#   registerGoals() (15+4 goals)    → AIGoalSelectors + AITargetSelectors
+#   WASH_POS Optional<BlockPos>     → MythicMobs variables (washPosX/Y/Z)
+#   CARPET_COLOR int                → MythicMobs variable raccoon.carpetColor
+#   COMMAND int                     → MythicMobs variable raccoon.command
+#   lookForWaterBeforeEatingTimer   → MythicMobs variable raccoon.lookForWaterTimer
+#   AIStealFromVillagers            → onTimer skill + cooldown variable
+#   AnimalAILootChests              → onTimer skill (16 blocs)
+#   RACCOON_TAMEABLES Ingredient    → MythicMobs item conditions
+#   bondWithBlueJays()              → onTimer skill (cherche BlueJays à 48 blocs)
+#   isRigby() name check            → MythicMobs entityname condition
+#   hurt() immunity override        → DamageModifiers + onDamaged skill
+#   postWashItem taming             → skill after wash consume (30% chance)
+# ════════════════════════════════════════════════════════════════
+raccoon:
+  Type: fox
+  Display: '&8Raccoon'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 9
+  Damage: 2
+  KnockbackResistance: 0.0
+  MovementSpeed: 0.25
+  Faction: creature_raccoon
+  Options:
+    PreventOtherDrops: false
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 24000                # 20 minutes → adulte
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - raccoon_ai
+  AITargetSelectors:
+    - clear
+    - raccoon_targets
+  DamageModifiers:
+    - FALL 0.0                      # Immunisé chute (comme le mod)
+  Drops:
+    - raccoon_drops
+  # ── Skills déclenchés par événements (Folia-safe, region-local) ──
+  Skills:
+    # Tick principal — toutes les 10 ticks (0.5s)
+    # Gère: standing/begging/washing/sitting lerp, wash check, steal cooldown, loot chest
+    - onTimer:10
+    - skill:raccoon_tick @self
+
+    # Au spawn — initialiser les variables
+    - onSpawn:
+      - skill:raccoon_init @self
+
+    # À la mort — relâcher le tapis et l'item tenu
+    - onDeath:
+      - skill:raccoon_death @self
+
+    # Quand blessé — réduction de dégâts si tamed + attaquant non-joueur
+    - onDamaged:
+      - skill:raccoon_on_hurt @self
+
+    # Quand attaque une cible — déclenche l'animation ANIMATION_ATTACK
+    - onAttack:
+      - skill:raccoon_attack @target
+
+    # Clic droit du joueur — egg taming, carpet, shears, command cycle
+    - onInteract:
+      - skill:raccoon_on_interact @self
+
+    # Quand un item est ramassé (ITargetsDroppedItems)
+    - onPickupItem:
+      - skill:raccoon_on_pickup_item @self

@@ -1,0 +1,7 @@
+# CraftEngine Block: Leafcutter Anthill
+blocks:
+  alexsmobs:leafcutter_anthill:
+    display_name: "Leafcutter Anthill"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/leafcutter_anthill

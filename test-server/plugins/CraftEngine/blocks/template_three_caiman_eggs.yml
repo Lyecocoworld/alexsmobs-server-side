@@ -1,0 +1,7 @@
+# CraftEngine Block: Template Three Caiman Eggs
+blocks:
+  alexsmobs:template_three_caiman_eggs:
+    display_name: "Template Three Caiman Eggs"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/template_three_caiman_eggs

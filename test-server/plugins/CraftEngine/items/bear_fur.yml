@@ -1,0 +1,9 @@
+# CraftEngine Item: Bear Fur
+items:
+  alexsmobs:bear_fur:
+    display_name: "Bear Fur"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/bear_fur
+      textures:
+        default: alexsmobs:item/bear_fur

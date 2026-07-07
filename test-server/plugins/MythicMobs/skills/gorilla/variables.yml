@@ -1,0 +1,57 @@
+# GORILLA — Variables
+
+variables:
+  gorilla.silverback:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  gorilla.standing:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  gorilla.sitting:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  gorilla.eating:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  gorilla.tamed:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  gorilla.forcedSit:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  gorilla.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: ""
+
+  gorilla.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  gorilla.owner:
+    type: STRING
+    default: NONE
+    persistent: true
+    desc: ""
+

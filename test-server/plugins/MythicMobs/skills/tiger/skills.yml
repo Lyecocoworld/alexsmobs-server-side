@@ -1,0 +1,68 @@
+# ===============================================================
+# TIGER — Skills
+# ===============================================================
+
+tiger_tick:
+  Skills:
+    - skill{s=tiger_idle_check} @self
+
+tiger_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=tiger.white;value=False;type=BOOLEAN}
+    - setvariable{var=tiger.running;value=False;type=BOOLEAN}
+    - setvariable{var=tiger.sitting;value=False;type=BOOLEAN}
+    - setvariable{var=tiger.sleeping;value=False;type=BOOLEAN}
+    - setvariable{var=tiger.stealthMode;value=False;type=BOOLEAN}
+    - setvariable{var=tiger.holding;value=False;type=BOOLEAN}
+    - setvariable{var=tiger.angerTime;value=0;type=INTEGER}
+    - setvariable{var=tiger.lastScaredMobId;value=-1;type=INTEGER}
+    - setvariable{var=tiger.animTick;value=0;type=INTEGER}
+    - setmodelstate{state=idle}
+
+tiger_paw_r:
+  Skills:
+    - setstance{stance=paw_r}
+    - setmodelstate{state=paw_r}
+    - setvariable{var=tiger.animTick;value=0;type=INTEGER}
+    - damage{amount=12} @target
+    - sound{s=alexsmobs:entity.tiger.paw_r;v=1.0;p=0.9-1.1} @self
+
+tiger_paw_l:
+  Skills:
+    - setstance{stance=paw_l}
+    - setmodelstate{state=paw_l}
+    - setvariable{var=tiger.animTick;value=0;type=INTEGER}
+    - damage{amount=12} @target
+    - sound{s=alexsmobs:entity.tiger.paw_l;v=1.0;p=0.9-1.1} @self
+
+tiger_tail_flick:
+  Skills:
+    - setstance{stance=tail_flick}
+    - setmodelstate{state=tail_flick}
+    - setvariable{var=tiger.animTick;value=0;type=INTEGER}
+    - damage{amount=12} @target
+    - sound{s=alexsmobs:entity.tiger.tail_flick;v=1.0;p=0.9-1.1} @self
+
+tiger_leap:
+  Skills:
+    - setstance{stance=leap}
+    - setmodelstate{state=leap}
+    - setvariable{var=tiger.animTick;value=0;type=INTEGER}
+    - damage{amount=12} @target
+    - sound{s=alexsmobs:entity.tiger.leap;v=1.0;p=0.9-1.1} @self
+
+tiger_idle_check:
+  Skills:
+    - setvariable{var=tiger.white;value=<random.0to3>;type=INTEGER}
+      ?variable{var=tiger.white;value=-1}
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+tiger_on_hurt:
+  Skills:
+
+tiger_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.tiger.die;v=1.0;p=0.8-1.2} @self

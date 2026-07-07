@@ -1,0 +1,42 @@
+#===============================================================
+# ROADRUNNER (Alex's Mobs)
+# HP=6 DMG=1 SPD=0.35
+#===============================================================
+roadrunner:
+  Type: chicken
+  Display: '&fRoadrunner'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 6
+  Damage: 1
+  MovementSpeed: 0.35
+  Faction: creature_roadrunner
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - roadrunner_ai
+  AITargetSelectors:
+    - clear
+    - roadrunner_targets
+  Drops:
+    - roadrunner_drops
+  Skills:
+    - onTimer:10
+    - skill:roadrunner_tick @self
+    - onSpawn:
+      - skill:roadrunner_init @self
+    - onDeath:
+      - skill:roadrunner_death @self
+    - onDamaged:
+      - skill:roadrunner_on_hurt @self

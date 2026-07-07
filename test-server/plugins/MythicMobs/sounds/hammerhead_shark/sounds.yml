@@ -1,0 +1,22 @@
+# HAMMERHEAD SHARK — Sons
+
+sounds:
+  alexsmobs:entity.hammerhead_shark.idle:
+    sound: "alexsmobs:hammerhead_shark/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.hammerhead_shark.hurt:
+    sound: "alexsmobs:hammerhead_shark/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.hammerhead_shark.die:
+    sound: "alexsmobs:hammerhead_shark/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

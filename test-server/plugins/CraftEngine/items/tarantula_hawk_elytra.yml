@@ -1,0 +1,9 @@
+# CraftEngine Item: Tarantula Hawk Elytra
+items:
+  alexsmobs:tarantula_hawk_elytra:
+    display_name: "Tarantula Hawk Elytra"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/tarantula_hawk_elytra
+      textures:
+        default: alexsmobs:item/tarantula_hawk_elytra

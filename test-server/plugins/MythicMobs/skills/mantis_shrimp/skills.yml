@@ -1,0 +1,80 @@
+# ===============================================================
+# MANTIS SHRIMP — Skills
+# ===============================================================
+
+mantis_shrimp_tick:
+  Skills:
+    - skill{s=mantis_shrimp_idle_check} @self
+
+mantis_shrimp_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=mantis_shrimp.rightEyePitch;value=0.0;type=FLOAT}
+    - setvariable{var=mantis_shrimp.rightEyeYaw;value=0.0;type=FLOAT}
+    - setvariable{var=mantis_shrimp.leftEyePitch;value=0.0;type=FLOAT}
+    - setvariable{var=mantis_shrimp.leftEyeYaw;value=0.0;type=FLOAT}
+    - setvariable{var=mantis_shrimp.punchTick;value=0;type=INTEGER}
+    - setvariable{var=mantis_shrimp.sitting;value=False;type=BOOLEAN}
+    - setvariable{var=mantis_shrimp.command;value=0;type=INTEGER}
+    - setvariable{var=mantis_shrimp.variant;value=0;type=INTEGER}
+    - setvariable{var=mantis_shrimp.moistness;value=100;type=INTEGER}
+    - setvariable{var=mantis_shrimp.tamed;value=False;type=BOOLEAN}
+    - setvariable{var=mantis_shrimp.forcedSit;value=False;type=BOOLEAN}
+    - setvariable{var=mantis_shrimp.owner;value=NONE;type=STRING}
+    - setmodelstate{state=idle}
+
+mantis_shrimp_punch:
+  Skills:
+    - setstance{stance=punch}
+    - setmodelstate{state=punch}
+    - setvariable{var=mantis_shrimp.animTick;value=0;type=INTEGER}
+    - damage{amount=3} @target
+    - sound{s=alexsmobs:entity.mantis_shrimp.punch;v=1.0;p=0.9-1.1} @self
+
+mantis_shrimp_idle_check:
+  Skills:
+    - setvariable{var=mantis_shrimp.variant;value=<random.0to3>;type=INTEGER}
+      ?variable{var=mantis_shrimp.variant;value=-1}
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+mantis_shrimp_on_hurt:
+  Skills:
+    - setvariable{var=mantis_shrimp.forcedSit;value=false;type=BOOLEAN}
+
+mantis_shrimp_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.mantis_shrimp.die;v=1.0;p=0.8-1.2} @self
+
+mantis_shrimp_on_interact:
+  Skills:
+    - skill{s=mantis_shrimp_command_cycle} @self
+      ?variable{var=mantis_shrimp.tamed;value=true}
+      ?playersneaking{}
+
+mantis_shrimp_command_cycle:
+  Skills:
+    - skill{s=mantis_shrimp_command_sit} @self
+      ?variable{var=mantis_shrimp.command;value=1}
+    - skill{s=mantis_shrimp_command_follow} @self
+      ?variable{var=mantis_shrimp.command;value=0}
+    - skill{s=mantis_shrimp_command_wander} @self
+      ?variable{var=mantis_shrimp.command;value=2}
+
+mantis_shrimp_command_wander:
+  Skills:
+    - setvariable{var=mantis_shrimp.command;value=0;type=INTEGER}
+    - setvariable{var=mantis_shrimp.forcedSit;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+mantis_shrimp_command_follow:
+  Skills:
+    - setvariable{var=mantis_shrimp.command;value=1;type=INTEGER}
+    - setvariable{var=mantis_shrimp.forcedSit;value=false;type=BOOLEAN}
+
+mantis_shrimp_command_sit:
+  Skills:
+    - setvariable{var=mantis_shrimp.command;value=2;type=INTEGER}
+    - setvariable{var=mantis_shrimp.forcedSit;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}

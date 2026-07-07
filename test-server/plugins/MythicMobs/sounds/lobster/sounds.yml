@@ -1,0 +1,45 @@
+# ════════════════════════════════════════════════════════════════
+# LOBSTER — Sons
+# ─────────────────────────────────────────────────────────────────
+# Source: AMSoundRegistry (LOBSTER_IDLE, LOBSTER_HURT, LOBSTER_DIE)
+# Fichiers son: assets/alexsmobs/sounds/lobster/
+# ─────────────────────────────────────────────────────────────────
+# Les sons sont référencés dans le resource pack généré par
+# BetterModel + CraftEngine. MythicMobs les joue via sound{}
+# ════════════════════════════════════════════════════════════════
+
+# Registry des sons (chemin resource pack)
+sounds:
+  # Sons principaux (3: idle, hurt, death)
+  alexsmobs:entity.lobster.idle:
+    sound: "alexsmobs:lobster/idle1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    # Le mod joue l'ambient toutes les ~200-400 ticks
+    interval_ticks: 200-400
+
+  alexsmobs:entity.lobster.hurt:
+    sound: "alexsmobs:lobster/hurt1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.lobster.death:
+    sound: "alexsmobs:lobster/death1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  # Son d'attaque (animation SNIP)
+  alexsmobs:entity.lobster.snip:
+    sound: "alexsmobs:lobster/snip1"
+    volume: 1.0
+    pitch_min: 0.9
+    pitch_max: 1.1
+
+# Mapping pour MythicMobs (références dans skills.yml)
+# Format: sound{s=<sound_id>;v=<volume>;p=<pitch>} @self
+#
+# Exemple d'utilisation dans skills.yml:
+#   - sound{s=alexsmobs:entity.lobster.idle;v=1.0;p=0.8-1.2} @self

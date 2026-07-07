@@ -1,0 +1,19 @@
+# MIMIC OCTOPUS — Spawn
+
+mimic_octopus_spawner:
+  Type: mimic_octopus
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=WARM_OCEAN,LUKEWARM_OCEAN,OCEAN}
+  - height{h=0to50}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=WATER,SAND,GRAVEL,CLAY} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

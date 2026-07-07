@@ -1,0 +1,22 @@
+# MOOSE — Sons
+
+sounds:
+  alexsmobs:entity.moose.idle:
+    sound: "alexsmobs:moose/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.moose.hurt:
+    sound: "alexsmobs:moose/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.moose.die:
+    sound: "alexsmobs:moose/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

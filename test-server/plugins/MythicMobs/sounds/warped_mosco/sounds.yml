@@ -1,0 +1,22 @@
+# WARPED MOSCO — Sons
+
+sounds:
+  alexsmobs:entity.warped_mosco.idle:
+    sound: "alexsmobs:warped_mosco/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.warped_mosco.hurt:
+    sound: "alexsmobs:warped_mosco/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.warped_mosco.die:
+    sound: "alexsmobs:warped_mosco/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

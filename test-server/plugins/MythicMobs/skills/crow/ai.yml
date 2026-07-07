@@ -1,0 +1,70 @@
+# ════════════════════════════════════════════════════════════════
+# CROW — AI Goals & Target Selectors
+# Source: registerGoals() (EntityCrow.java lignes 105-124)
+# ════════════════════════════════════════════════════════════════
+
+crow_ai:
+  Goals:
+    # 0 — Survival: flotter
+    - float{p=0}
+
+    # 1 — Assis quand commandé
+    - randomstroll{p=1;speed=0.3}
+      ?variable{var=crow.sitting;value=false}
+      ?variable{var=crow.flying;value=true}
+
+    # 2 — Melee (CrowAIMelee)
+    - melee{p=2;speed=1.0;memory=true}
+      ?variable{var=crow.sitting;value=false}
+
+    # 3 — Suivre le propriétaire (tamed, command=1, flying)
+    - followowner{p=3;speed=1.0;stop_distance=4;start_distance=2}
+      ?variable{var=crow.tamed;value=true}
+      ?variable{var=crow.command;value=1}
+
+    # 4 — Avoid pumpkins (AIAvoidPumpkins, mod ligne 113)
+    # Fuit les jack-o-lanterns et carved pumpkins
+    - flee{p=4;speed=1.0;types=CARVED_PUMPKIN,JACK_O_LANTERN;distance=8}
+      ?variable{var=crow.fleePumpkinFlag;value=>0}
+
+    # 5 — Breed (tamed only)
+    - breed{p=5;speed=1.0}
+      ?variable{var=crow.tamed;value=true}
+
+    # 6 — Circle crops (vol au-dessus des cultures)
+    # Approximation: randomstroll aérien
+    - randomstroll{p=6;speed=0.7}
+      ?variable{var=crow.flying;value=true}
+      ?variable{var=crow.command;value=0}
+
+    # 7 — Idle walk (AIWalkIdle)
+    - randomstroll{p=7;speed=0.5}
+      ?variable{var=crow.sitting;value=false}
+      ?variable{var=crow.flying;value=false}
+      ?variable{var=crow.command;value=0}
+
+    # 8-10 — Look at players/mobs
+    - lookatplayer{p=8;range=6}
+    - randomlookaround{p=10}
+
+
+# ════════════════════════════════════════════════════════════════
+# TARGET SELECTORS (mod lignes 120-123)
+# ════════════════════════════════════════════════════════════════
+
+crow_targets:
+  TargetSelectors:
+    - clear
+    # 1 — Target items au sol (AITargetItems, mod ligne 120)
+    # Radius 16, cooldown 40
+    # MythicMobs: géré via onPickupItem trigger
+    # 2 — Owner hurt by
+    - ownerhurtbytarget{}
+      ?variable{var=crow.tamed;value=true}
+    # 3 — Owner hurt target
+    - ownerhurttarget{}
+      ?variable{var=crow.tamed;value=true}
+    # 4 — Hurt by (alert others, mod ligne 123)
+    - hurtbytarget{}
+    # Threat Table
+    - attackers

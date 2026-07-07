@@ -1,0 +1,9 @@
+# CraftEngine Item: Void Worm Eye
+items:
+  alexsmobs:void_worm_eye:
+    display_name: "Void Worm Eye"
+    rarity: EPIC
+    resource:
+      model: alexsmobs:item/void_worm_eye
+      textures:
+        default: alexsmobs:item/void_worm_eye

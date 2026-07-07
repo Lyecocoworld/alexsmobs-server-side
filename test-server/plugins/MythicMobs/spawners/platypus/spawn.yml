@@ -1,0 +1,19 @@
+# PLATYPUS — Spawn
+
+platypus_spawner:
+  Type: platypus
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=SWAMP,MANGROVE_SWAMP,RIVER}
+  - height{h=50to80}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=WATER,GRASS_BLOCK,MUD,CLAY} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

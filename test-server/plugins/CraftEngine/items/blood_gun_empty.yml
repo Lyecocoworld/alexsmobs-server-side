@@ -1,0 +1,7 @@
+# CraftEngine Item: Blood Gun Empty
+items:
+  alexsmobs:blood_gun_empty:
+    display_name: "Blood Gun Empty"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/blood_gun_empty

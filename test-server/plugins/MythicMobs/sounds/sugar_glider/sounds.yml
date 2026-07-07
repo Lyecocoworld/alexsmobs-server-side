@@ -1,0 +1,22 @@
+# SUGAR GLIDER — Sons
+
+sounds:
+  alexsmobs:entity.sugar_glider.idle:
+    sound: "alexsmobs:sugar_glider/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.sugar_glider.hurt:
+    sound: "alexsmobs:sugar_glider/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.sugar_glider.die:
+    sound: "alexsmobs:sugar_glider/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

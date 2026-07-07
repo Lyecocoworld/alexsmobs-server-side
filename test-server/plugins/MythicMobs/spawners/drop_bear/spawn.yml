@@ -1,0 +1,19 @@
+# DROP BEAR — Spawn
+
+drop_bear_spawner:
+  Type: drop_bear
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=DRIPSTONE_CAVES,LUSH_CAVES,DEEP_DARK}
+  - height{h=-64to40}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=STONE,DEEPSLATE,DRIPSTONE_BLOCK,MOSS_BLOCK} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

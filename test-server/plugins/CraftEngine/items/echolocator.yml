@@ -1,0 +1,9 @@
+# CraftEngine Item: Echolocator
+items:
+  alexsmobs:echolocator:
+    display_name: "Echolocator"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/echolocator
+      textures:
+        default: alexsmobs:item/echolocator

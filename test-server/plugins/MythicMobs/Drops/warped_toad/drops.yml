@@ -1,0 +1,10 @@
+# Warped Toad — Drops
+# Source: data/loot_tables/entities/warped_toad.json
+
+warped_toad_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:shroomlight 0-1 0.5
+    - alexsmobs:nether_wart 0-1 0.5
+    - exp{amount=1-3} 1.0

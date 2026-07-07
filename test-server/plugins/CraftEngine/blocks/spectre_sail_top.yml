@@ -1,0 +1,7 @@
+# CraftEngine Block: Spectre Sail Top
+blocks:
+  alexsmobs:spectre_sail_top:
+    display_name: "Spectre Sail Top"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/spectre_sail_top

@@ -1,0 +1,19 @@
+# SUNBIRD — Spawn
+
+sunbird_spawner:
+  Type: sunbird
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=SAVANNA,SAVANNA_PLATEAU,BADLANDS,DESERT,ERODED_BADLANDS}
+  - height{h=80to200}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=AIR,SAND,RED_SAND,SANDSTONE,TERRACOTTA} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

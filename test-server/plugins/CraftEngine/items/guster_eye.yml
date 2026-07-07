@@ -1,0 +1,9 @@
+# CraftEngine Item: Guster Eye
+items:
+  alexsmobs:guster_eye:
+    display_name: "Guster Eye"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/guster_eye
+      textures:
+        default: alexsmobs:item/guster_eye

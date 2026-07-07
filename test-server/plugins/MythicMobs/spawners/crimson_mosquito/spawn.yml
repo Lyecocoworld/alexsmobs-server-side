@@ -1,0 +1,20 @@
+# ════════════════════════════════════════════════════════════════
+# CRIMSON MOSQUITO — Spawn
+# ════════════════════════════════════════════════════════════════
+
+crimson_mosquito_spawner:
+  Type: crimson_mosquito
+  SpawnRate: 6
+  MaxMobs: 2
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=CRIMSON_FOREST,NETHER_WASTES}
+  - height{h=0to127}
+  - lightlevel{l=0to15}
+  - worldtype{wt=NETHER}
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

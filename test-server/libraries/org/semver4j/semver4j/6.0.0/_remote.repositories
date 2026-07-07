@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Jul 07 12:53:51 CEST 2026
+semver4j-6.0.0.jar>=
+semver4j-6.0.0.pom>=

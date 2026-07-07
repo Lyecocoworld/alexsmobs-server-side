@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Snow Leopard
+items:
+  alexsmobs:spawn_egg_snow_leopard:
+    display_name: "Spawn Egg Snow Leopard"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_snow_leopard

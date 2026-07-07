@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Bald Eagle
+items:
+  alexsmobs:spawn_egg_bald_eagle:
+    display_name: "Spawn Egg Bald Eagle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_bald_eagle

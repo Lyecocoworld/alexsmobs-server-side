@@ -1,0 +1,9 @@
+# CraftEngine Item: Cachalot Whale Tooth
+items:
+  alexsmobs:cachalot_whale_tooth:
+    display_name: "Cachalot Whale Tooth"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/cachalot_whale_tooth
+      textures:
+        default: alexsmobs:item/cachalot_whale_tooth

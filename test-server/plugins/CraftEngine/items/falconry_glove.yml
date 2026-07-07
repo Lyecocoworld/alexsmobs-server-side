@@ -1,0 +1,9 @@
+# CraftEngine Item: Falconry Glove
+items:
+  alexsmobs:falconry_glove:
+    display_name: "Falconry Glove"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/falconry_glove
+      textures:
+        default: alexsmobs:item/falconry_glove

@@ -1,0 +1,22 @@
+# MANED WOLF — Sons
+
+sounds:
+  alexsmobs:entity.maned_wolf.idle:
+    sound: "alexsmobs:maned_wolf/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.maned_wolf.hurt:
+    sound: "alexsmobs:maned_wolf/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.maned_wolf.die:
+    sound: "alexsmobs:maned_wolf/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

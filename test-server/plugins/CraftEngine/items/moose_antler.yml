@@ -1,0 +1,9 @@
+# CraftEngine Item: Moose Antler
+items:
+  alexsmobs:moose_antler:
+    display_name: "Moose Antler"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/moose_antler
+      textures:
+        default: alexsmobs:item/moose_antler

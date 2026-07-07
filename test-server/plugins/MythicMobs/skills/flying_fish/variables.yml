@@ -1,0 +1,8 @@
+# FLYING FISH — Variables
+
+variables:
+  flying_fish.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

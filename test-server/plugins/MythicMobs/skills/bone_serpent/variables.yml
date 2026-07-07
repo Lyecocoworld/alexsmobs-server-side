@@ -1,0 +1,8 @@
+# BONE SERPENT — Variables
+
+variables:
+  bone_serpent.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

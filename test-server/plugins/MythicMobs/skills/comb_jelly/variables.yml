@@ -1,0 +1,8 @@
+# COMB JELLY — Variables
+
+variables:
+  comb_jelly.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

@@ -1,0 +1,9 @@
+# CraftEngine Item: Crocodile Egg
+items:
+  alexsmobs:crocodile_egg:
+    display_name: "Crocodile Egg"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/crocodile_egg
+      textures:
+        default: alexsmobs:item/crocodile_egg

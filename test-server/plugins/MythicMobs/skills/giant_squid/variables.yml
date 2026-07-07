@@ -1,0 +1,45 @@
+# GIANT SQUID — Variables
+
+variables:
+  giant_squid.squidPitch:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: ""
+
+  giant_squid.depressurization:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: ""
+
+  giant_squid.overridingBodyRot:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  giant_squid.grabbing:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  giant_squid.captured:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  giant_squid.blue:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  giant_squid.grabEntity:
+    type: INTEGER
+    default: -1
+    persistent: false
+    desc: ""
+

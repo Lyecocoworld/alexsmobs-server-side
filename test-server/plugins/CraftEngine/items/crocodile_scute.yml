@@ -1,0 +1,9 @@
+# CraftEngine Item: Crocodile Scute
+items:
+  alexsmobs:crocodile_scute:
+    display_name: "Crocodile Scute"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/crocodile_scute
+      textures:
+        default: alexsmobs:item/crocodile_scute

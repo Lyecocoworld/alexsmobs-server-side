@@ -1,0 +1,22 @@
+# SKREECHER — Sons
+
+sounds:
+  alexsmobs:entity.skreecher.idle:
+    sound: "alexsmobs:skreecher/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.skreecher.hurt:
+    sound: "alexsmobs:skreecher/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.skreecher.die:
+    sound: "alexsmobs:skreecher/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

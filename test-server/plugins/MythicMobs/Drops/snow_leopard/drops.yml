@@ -1,0 +1,8 @@
+# SNOW LEOPARD — Drops
+
+snow_leopard_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - LEATHER 0-1 0.2
+    - exp{amount=1-3} 1.0

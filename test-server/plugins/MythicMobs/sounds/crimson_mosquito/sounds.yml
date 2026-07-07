@@ -1,0 +1,41 @@
+# ════════════════════════════════════════════════════════════════
+# CRIMSON MOSQUITO — Sons
+# ════════════════════════════════════════════════════════════════
+
+sounds:
+  alexsmobs:entity.crimson_mosquito.idle:
+    sound: "alexsmobs:crimson_mosquito/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 100-300
+
+  alexsmobs:entity.crimson_mosquito.hurt:
+    sound: "alexsmobs:crimson_mosquito/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.crimson_mosquito.die:
+    sound: "alexsmobs:crimson_mosquito/die"
+    volume: 1.0
+    pitch_min: 0.7
+    pitch_max: 1.0
+
+  alexsmobs:entity.crimson_mosquito.bite:
+    sound: "alexsmobs:crimson_mosquito/bite"
+    volume: 1.0
+    pitch_min: 0.9
+    pitch_max: 1.1
+
+  alexsmobs:entity.crimson_mosquito.spit:
+    sound: "alexsmobs:crimson_mosquito/spit"
+    volume: 1.0
+    pitch_min: 0.9
+    pitch_max: 1.1
+
+  alexsmobs:entity.crimson_mosquito.charge:
+    sound: "alexsmobs:crimson_mosquito/charge"
+    volume: 1.0
+    pitch_min: 0.9
+    pitch_max: 1.1

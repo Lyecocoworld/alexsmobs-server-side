@@ -1,0 +1,7 @@
+# CraftEngine Item: Void Worm Effigy
+items:
+  alexsmobs:void_worm_effigy:
+    display_name: "Void Worm Effigy"
+    rarity: EPIC
+    resource:
+      model: alexsmobs:item/void_worm_effigy

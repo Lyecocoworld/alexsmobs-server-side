@@ -1,0 +1,7 @@
+# CraftEngine Block: Template Three Crocodile Eggs
+blocks:
+  alexsmobs:template_three_crocodile_eggs:
+    display_name: "Template Three Crocodile Eggs"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/template_three_crocodile_eggs

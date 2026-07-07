@@ -1,0 +1,9 @@
+# Lobster — Drops
+# Source: data/loot_tables/entities/lobster.json
+
+lobster_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:lobster_tail 0-1 1.0
+    - exp{amount=1-3} 1.0

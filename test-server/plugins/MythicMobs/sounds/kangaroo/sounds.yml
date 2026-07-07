@@ -1,0 +1,35 @@
+# ════════════════════════════════════════════════════════════════
+# KANGAROO — Sons
+# ════════════════════════════════════════════════════════════════
+
+sounds:
+  alexsmobs:entity.kangaroo.idle:
+    sound: "alexsmobs:kangaroo/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.kangaroo.hurt:
+    sound: "alexsmobs:kangaroo/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.kangaroo.die:
+    sound: "alexsmobs:kangaroo/die"
+    volume: 1.0
+    pitch_min: 0.7
+    pitch_max: 1.0
+
+  alexsmobs:entity.kangaroo.punch:
+    sound: "alexsmobs:kangaroo/punch"
+    volume: 0.8
+    pitch_min: 0.9
+    pitch_max: 1.1
+
+  alexsmobs:entity.kangaroo.kick:
+    sound: "alexsmobs:kangaroo/kick"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.0

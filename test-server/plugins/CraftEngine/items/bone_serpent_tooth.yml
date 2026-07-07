@@ -1,0 +1,9 @@
+# CraftEngine Item: Bone Serpent Tooth
+items:
+  alexsmobs:bone_serpent_tooth:
+    display_name: "Bone Serpent Tooth"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/bone_serpent_tooth
+      textures:
+        default: alexsmobs:item/bone_serpent_tooth

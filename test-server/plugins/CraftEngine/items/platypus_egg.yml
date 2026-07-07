@@ -1,0 +1,9 @@
+# CraftEngine Item: Platypus Egg
+items:
+  alexsmobs:platypus_egg:
+    display_name: "Platypus Egg"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/platypus_egg
+      textures:
+        default: alexsmobs:item/platypus_egg

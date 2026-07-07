@@ -1,0 +1,7 @@
+# CraftEngine Item: Mudskipper Bucket
+items:
+  alexsmobs:mudskipper_bucket:
+    display_name: "Mudskipper Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/mudskipper_bucket

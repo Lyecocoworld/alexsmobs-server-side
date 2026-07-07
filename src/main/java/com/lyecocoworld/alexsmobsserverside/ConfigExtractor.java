@@ -58,8 +58,14 @@ public class ConfigExtractor {
         Path pluginsDir = dataFolder.getParent();
         mythicMobsDir = pluginsDir.resolve("MythicMobs");
         craftEngineDir = pluginsDir.resolve("CraftEngine");
-        Path worldContainer = Bukkit.getWorldContainer().toPath();
-        datapackDir = worldContainer.resolve("datapacks");
+        // Default Paper world folder is "world" relative to server root.
+        Path serverRoot = pluginsDir.getParent();
+        if (serverRoot == null) serverRoot = dataFolder; // fallback
+        datapackDir = serverRoot.resolve("world").resolve("datapacks");
+        // Create it if it doesn't exist
+        try {
+            Files.createDirectories(datapackDir);
+        } catch (Exception ignored) {}
 
         // Create resource pack output dir
         resourcePackDir = dataFolder.resolve("resourcepack");
@@ -95,15 +101,21 @@ public class ConfigExtractor {
         }
 
         // Target: MythicMobs/Mobs/, MythicMobs/Skills/, etc.
-        Path mmMobsDir = mythicMobsDir.resolve("Mobs");
-        Path mmSkillsDir = mythicMobsDir.resolve("Skills");
-        Path mmSpawnersDir = mythicMobsDir.resolve("Spawners");
-        Path mmDropsDir = mythicMobsDir.resolve("Drops");
-        Path mmSoundsDir = mythicMobsDir.resolve("Sounds");
+        // MythicMobs 5.x uses lowercase directory names
+        Path mmMobsDir = mythicMobsDir.resolve("mobs");
+        Path mmSkillsDir = mythicMobsDir.resolve("skills");
+        Path mmSpawnersDir = mythicMobsDir.resolve("spawners");
+        Path mmDropsDir = mythicMobsDir.resolve("droptables");
+        Path mmSoundsDir = mythicMobsDir.resolve("sounds");
+        Path mmItemsDir = mythicMobsDir.resolve("items");
+        Path mmAiDir = mythicMobsDir.resolve("skills"); // ai.yml goes in skills dir for MM5
+        Path mmVarsDir = mythicMobsDir.resolve("skills"); // variables.yml too
 
         // Source in JAR: alexsmobs/<creature>/*.yml
         extractDirectoryFromJar("alexsmobs", mmMobsDir, ".yml", "mob.yml");
         extractDirectoryFromJar("alexsmobs", mmSkillsDir, ".yml", "skills.yml");
+        extractDirectoryFromJar("alexsmobs", mmSkillsDir, ".yml", "ai.yml");
+        extractDirectoryFromJar("alexsmobs", mmSkillsDir, ".yml", "variables.yml");
         extractDirectoryFromJar("alexsmobs", mmSpawnersDir, ".yml", "spawn.yml");
         extractDirectoryFromJar("alexsmobs", mmDropsDir, ".yml", "drops.yml");
         extractDirectoryFromJar("alexsmobs", mmSoundsDir, ".yml", "sounds.yml");
@@ -111,6 +123,7 @@ public class ConfigExtractor {
         // Core configs
         extractFileFromJar("alexsmobs/_core/globals.yml", mmSkillsDir.resolve("alexsmobs_globals.yml"));
         extractFileFromJar("alexsmobs/_core/biome_tags.yml", mmMobsDir.resolve("alexsmobs_biome_tags.yml"));
+        extractFileFromJar("alexsmobs/_core/mm_items.yml", mmItemsDir.resolve("alexsmobs_items.yml"));
 
         log.info("MythicMobs configs extracted: " + filesExtracted + " files so far");
     }

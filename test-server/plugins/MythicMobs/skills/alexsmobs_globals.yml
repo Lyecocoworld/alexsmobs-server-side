@@ -1,0 +1,35 @@
+# ════════════════════════════════════════════════════════════════
+# GLOBAL SKILLS & CONDITIONS — Réutilisables par toutes les créatures
+# ════════════════════════════════════════════════════════════════
+# Ce fichier contient les compétences atomiques partagées entre
+# plusieurs créatures. Évite la duplication de code.
+# ════════════════════════════════════════════════════════════════
+
+# ── Idle sound player ──
+# Joue le son ambient d'une créature à intervalle aléatoire
+# Usage: skill{s=global_play_idle_sound} @self
+# Paramètres: var <mob>.ambient_sound, <mob>.ambient_interval
+global_play_idle_sound:
+  Skills:
+    - sound{s=<mob>.ambient_sound;v=1.0;p=0.8-1.2} @self
+
+# ── Particle burst générique ──
+global_particle_burst:
+  Skills:
+    - effect:particle{p=VILLAGER_HAPPY;a=5;hs=0.3;vs=0.3;speed=0.1} @origin
+
+# ── Taming heart effect ──
+global_tame_effect:
+  Skills:
+    - effect:particle{p=HEART;a=5;hs=0.3;vs=0.3;speed=0.1} @origin
+    - sound{s=entity.parrot.imitate.panda;v=1.0;p=1.0} @self
+
+# ── Hurt blood particle ──
+global_hurt_particle:
+  Skills:
+    - effect:particle{p=DAMAGE_INDICATOR;a=3;hs=0.3;vs=0.3;speed=0.1} @origin
+
+# ── Death fade effect ──
+global_death_effect:
+  Skills:
+    - effect:particle{p=SMOKE;a=10;hs=0.5;vs=0.5;speed=0.05} @origin

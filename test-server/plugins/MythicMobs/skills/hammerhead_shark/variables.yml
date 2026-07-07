@@ -1,0 +1,8 @@
+# HAMMERHEAD SHARK — Variables
+
+variables:
+  hammerhead_shark.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

@@ -1,0 +1,15 @@
+# MIMICUBE — Variables
+
+variables:
+  mimicube.attackTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  mimicube.throwCooldown:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+

@@ -1,0 +1,42 @@
+# ════════════════════════════════════════════════════════════════
+# KANGAROO — BetterModel
+# ════════════════════════════════════════════════════════════════
+
+model:
+  bettermodel_id: "alexsmobs:kangaroo"
+  type: "cow"
+  hitbox:
+    width: 1.0
+    height: 1.6
+
+  blockbench_model: "assets/alexsmobs/blockbench/kangaroo.bbmodel"
+
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/kangaroo.png"
+
+  animations:
+    idle:        "animation.kangaroo.idle"
+    walk:        "animation.kangaroo.walk"
+    run:         "animation.kangaroo.run"
+    sit:         "animation.kangaroo.sit"
+    eat_grass:   "animation.kangaroo.eat_grass"
+    punch_r:     "animation.kangaroo.punch_r"
+    punch_l:     "animation.kangaroo.punch_l"
+    kick:        "animation.kangaroo.kick"
+    death:       "animation.kangaroo.death"
+
+  animation_state_mapping:
+    idle:        {"animation": "idle",       "texture": "normal", "loop": true}
+    walk:        {"animation": "walk",       "texture": "normal", "loop": true}
+    run:         {"animation": "run",        "texture": "normal", "loop": true}
+    sit:         {"animation": "sit",        "texture": "normal", "loop": true}
+    eat_grass:   {"animation": "eat_grass",  "texture": "normal", "loop": false, "duration": 30}
+    punch_r:     {"animation": "punch_r",    "texture": "normal", "loop": false, "duration": 13}
+    punch_l:     {"animation": "punch_l",    "texture": "normal", "loop": false, "duration": 13}
+    kick:        {"animation": "kick",       "texture": "normal", "loop": false, "duration": 15}
+    death:       {"animation": "death",      "texture": "normal", "loop": false, "duration": 20}
+
+  scale:
+    adult: 1.0
+    baby: 0.5

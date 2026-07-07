@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Toucan
+items:
+  alexsmobs:spawn_egg_toucan:
+    display_name: "Spawn Egg Toucan"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_toucan

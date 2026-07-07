@@ -1,0 +1,12 @@
+# CraftEngine Item: Banana
+items:
+  alexsmobs:banana:
+    display_name: "Banana"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/banana
+      textures:
+        default: alexsmobs:item/banana
+    food:
+      nutrition: 3
+      saturation: 0.4

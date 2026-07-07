@@ -1,0 +1,7 @@
+# CraftEngine Item: End Pirate Ship Wheel
+items:
+  alexsmobs:end_pirate_ship_wheel:
+    display_name: "End Pirate Ship Wheel"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/end_pirate_ship_wheel

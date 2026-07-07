@@ -1,0 +1,42 @@
+#===============================================================
+# JERBOA (Alex's Mobs)
+# HP=4 DMG=0 SPD=0.3
+#===============================================================
+jerboa:
+  Type: rabbit
+  Display: '&fJerboa'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 4
+  Damage: 0
+  MovementSpeed: 0.3
+  Faction: creature_jerboa
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - jerboa_ai
+  AITargetSelectors:
+    - clear
+    - jerboa_targets
+  Drops:
+    - jerboa_drops
+  Skills:
+    - onTimer:10
+    - skill:jerboa_tick @self
+    - onSpawn:
+      - skill:jerboa_init @self
+    - onDeath:
+      - skill:jerboa_death @self
+    - onDamaged:
+      - skill:jerboa_on_hurt @self

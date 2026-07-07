@@ -1,0 +1,43 @@
+# ===============================================================
+# CACHALOT WHALE — Skills
+# ===============================================================
+
+cachalot_whale_tick:
+  Skills:
+    - skill{s=cachalot_whale_idle_check} @self
+
+cachalot_whale_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=cachalot_whale.charging;value=False;type=BOOLEAN}
+    - setvariable{var=cachalot_whale.sleeping;value=False;type=BOOLEAN}
+    - setvariable{var=cachalot_whale.beached;value=False;type=BOOLEAN}
+    - setvariable{var=cachalot_whale.albino;value=False;type=BOOLEAN}
+    - setvariable{var=cachalot_whale.despawnBeach;value=False;type=BOOLEAN}
+    - setvariable{var=cachalot_whale.grabbing;value=False;type=BOOLEAN}
+    - setvariable{var=cachalot_whale.holdingSquidLeft;value=False;type=BOOLEAN}
+    - setvariable{var=cachalot_whale.caughtId;value=-1;type=INTEGER}
+    - setmodelstate{state=idle}
+
+cachalot_whale_charge:
+  Skills:
+    - setstance{stance=charge}
+    - setmodelstate{state=charge}
+    - setvariable{var=cachalot_whale.animTick;value=0;type=INTEGER}
+    - damage{amount=30} @target
+    - sound{s=alexsmobs:entity.cachalot_whale.charge;v=1.0;p=0.9-1.1} @self
+
+cachalot_whale_idle_check:
+  Skills:
+    - setvariable{var=cachalot_whale.albino;value=<random.0to3>;type=INTEGER}
+      ?variable{var=cachalot_whale.albino;value=-1}
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+cachalot_whale_on_hurt:
+  Skills:
+
+cachalot_whale_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.cachalot_whale.die;v=1.0;p=0.8-1.2} @self

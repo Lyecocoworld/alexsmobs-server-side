@@ -1,0 +1,28 @@
+# CACHALOT WHALE — Sons
+
+sounds:
+  alexsmobs:entity.cachalot_whale.idle:
+    sound: "alexsmobs:cachalot_whale/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.cachalot_whale.hurt:
+    sound: "alexsmobs:cachalot_whale/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.cachalot_whale.die:
+    sound: "alexsmobs:cachalot_whale/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.cachalot_whale.attack:
+    sound: "alexsmobs:cachalot_whale/attack"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

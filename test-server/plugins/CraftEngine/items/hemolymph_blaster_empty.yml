@@ -1,0 +1,9 @@
+# CraftEngine Item: Hemolymph Blaster Empty
+items:
+  alexsmobs:hemolymph_blaster_empty:
+    display_name: "Hemolymph Blaster Empty"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/hemolymph_blaster_empty
+      textures:
+        default: alexsmobs:item/hemolymph_blaster_empty

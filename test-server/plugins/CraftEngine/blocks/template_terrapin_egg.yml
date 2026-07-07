@@ -1,0 +1,7 @@
+# CraftEngine Block: Template Terrapin Egg
+blocks:
+  alexsmobs:template_terrapin_egg:
+    display_name: "Template Terrapin Egg"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/template_terrapin_egg

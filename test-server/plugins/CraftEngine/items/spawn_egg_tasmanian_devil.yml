@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Tasmanian Devil
+items:
+  alexsmobs:spawn_egg_tasmanian_devil:
+    display_name: "Spawn Egg Tasmanian Devil"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_tasmanian_devil

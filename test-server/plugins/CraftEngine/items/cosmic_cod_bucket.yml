@@ -1,0 +1,9 @@
+# CraftEngine Item: Cosmic Cod Bucket
+items:
+  alexsmobs:cosmic_cod_bucket:
+    display_name: "Cosmic Cod Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/cosmic_cod_bucket
+      textures:
+        default: alexsmobs:item/cosmic_cod_bucket

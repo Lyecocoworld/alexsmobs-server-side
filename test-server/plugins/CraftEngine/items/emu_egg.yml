@@ -1,0 +1,9 @@
+# CraftEngine Item: Emu Egg
+items:
+  alexsmobs:emu_egg:
+    display_name: "Emu Egg"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/emu_egg
+      textures:
+        default: alexsmobs:item/emu_egg

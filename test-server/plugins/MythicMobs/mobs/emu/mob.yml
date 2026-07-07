@@ -1,0 +1,43 @@
+# ===============================================================
+# EMU (Alex's Mobs)
+# Classification: C1
+# HP=20 DMG=3 SPD=0.35
+# ===============================================================
+emu:
+  Type: chicken
+  Display: '&fEmu'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 20
+  Damage: 3
+  MovementSpeed: 0.35
+  Faction: creature_emu
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - emu_ai
+  AITargetSelectors:
+    - clear
+    - emu_targets
+  Drops:
+    - emu_drops
+  Skills:
+    - onTimer:10
+    - skill:emu_tick @self
+    - onSpawn:
+      - skill:emu_init @self
+    - onDeath:
+      - skill:emu_death @self
+    - onDamaged:
+      - skill:emu_on_hurt @self

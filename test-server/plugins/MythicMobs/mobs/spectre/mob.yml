@@ -1,0 +1,42 @@
+#===============================================================
+# SPECTRE (Alex's Mobs)
+# HP=15 DMG=2 SPD=0.3
+#===============================================================
+spectre:
+  Type: phantom
+  Display: '&fSpectre'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 15
+  Damage: 2
+  MovementSpeed: 0.3
+  Faction: creature_spectre
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - spectre_ai
+  AITargetSelectors:
+    - clear
+    - spectre_targets
+  Drops:
+    - spectre_drops
+  Skills:
+    - onTimer:10
+    - skill:spectre_tick @self
+    - onSpawn:
+      - skill:spectre_init @self
+    - onDeath:
+      - skill:spectre_death @self
+    - onDamaged:
+      - skill:spectre_on_hurt @self

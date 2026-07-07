@@ -1,0 +1,8 @@
+# UNDERMINER — Variables
+
+variables:
+  underminer.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

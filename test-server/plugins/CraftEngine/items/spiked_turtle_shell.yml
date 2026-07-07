@@ -1,0 +1,9 @@
+# CraftEngine Item: Spiked Turtle Shell
+items:
+  alexsmobs:spiked_turtle_shell:
+    display_name: "Spiked Turtle Shell"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spiked_turtle_shell
+      textures:
+        default: alexsmobs:item/spiked_turtle_shell

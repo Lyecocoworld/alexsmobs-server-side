@@ -1,0 +1,7 @@
+# CraftEngine Block: Phantom Sail Middle
+blocks:
+  alexsmobs:phantom_sail_middle:
+    display_name: "Phantom Sail Middle"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/phantom_sail_middle

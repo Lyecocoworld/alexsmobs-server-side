@@ -1,0 +1,57 @@
+# TIGER — Variables
+
+variables:
+  tiger.white:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  tiger.running:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  tiger.sitting:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  tiger.sleeping:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  tiger.stealthMode:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  tiger.holding:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  tiger.angerTime:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  tiger.lastScaredMobId:
+    type: INTEGER
+    default: -1
+    persistent: false
+    desc: ""
+
+  tiger.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+

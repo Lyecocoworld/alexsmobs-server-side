@@ -1,0 +1,33 @@
+# WARPED TOAD — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:warped_toad"
+  type: "frog"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/warped_toad.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/warped_toad.png"
+  animations:
+    idle: "animation.warped_toad.idle"
+    walk: "animation.warped_toad.walk"
+    run: "animation.warped_toad.run"
+    sit: "animation.warped_toad.sit"
+    death: "animation.warped_toad.death"
+    tongue: "animation.warped_toad.tongue"
+    jump: "animation.warped_toad.jump"
+
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": true}
+    tongue: {"animation": "tongue", "texture": "normal", "loop": false, "duration": 15}
+    jump: {"animation": "jump", "texture": "normal", "loop": false, "duration": 20}
+
+  scale:
+    adult: 1.0
+    baby: 0.5

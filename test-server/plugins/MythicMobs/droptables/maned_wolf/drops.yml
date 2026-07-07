@@ -1,0 +1,7 @@
+# MANED WOLF — Drops
+
+maned_wolf_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - exp{amount=1-3} 1.0

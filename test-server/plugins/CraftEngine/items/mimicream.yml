@@ -1,0 +1,9 @@
+# CraftEngine Item: Mimicream
+items:
+  alexsmobs:mimicream:
+    display_name: "Mimicream"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/mimicream
+      textures:
+        default: alexsmobs:item/mimicream

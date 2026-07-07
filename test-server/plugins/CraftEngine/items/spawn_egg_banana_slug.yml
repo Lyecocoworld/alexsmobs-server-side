@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Banana Slug
+items:
+  alexsmobs:spawn_egg_banana_slug:
+    display_name: "Spawn Egg Banana Slug"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_banana_slug

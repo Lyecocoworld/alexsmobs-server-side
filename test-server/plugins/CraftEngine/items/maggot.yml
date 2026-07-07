@@ -1,0 +1,9 @@
+# CraftEngine Item: Maggot
+items:
+  alexsmobs:maggot:
+    display_name: "Maggot"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/maggot
+      textures:
+        default: alexsmobs:item/maggot

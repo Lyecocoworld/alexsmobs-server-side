@@ -1,0 +1,7 @@
+# CraftEngine Block: Three Terrapin Eggs
+blocks:
+  alexsmobs:three_terrapin_eggs:
+    display_name: "Three Terrapin Eggs"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/three_terrapin_eggs

@@ -1,0 +1,42 @@
+# ===============================================================
+# ANACONDA (Alex's Mobs)
+# HP=40 DMG=6 SPD=0.15
+# ===============================================================
+anaconda:
+  Type: salamander
+  Display: '&fAnaconda'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 40
+  Damage: 6
+  MovementSpeed: 0.15
+  Faction: creature_anaconda
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - anaconda_ai
+  AITargetSelectors:
+    - clear
+    - anaconda_targets
+  Drops:
+    - anaconda_drops
+  Skills:
+    - onTimer:10
+    - skill:anaconda_tick @self
+    - onSpawn:
+      - skill:anaconda_init @self
+    - onDeath:
+      - skill:anaconda_death @self
+    - onDamaged:
+      - skill:anaconda_on_hurt @self

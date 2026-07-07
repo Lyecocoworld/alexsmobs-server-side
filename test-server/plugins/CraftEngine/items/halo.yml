@@ -1,0 +1,9 @@
+# CraftEngine Item: Halo
+items:
+  alexsmobs:halo:
+    display_name: "Halo"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/halo
+      textures:
+        default: alexsmobs:item/halo

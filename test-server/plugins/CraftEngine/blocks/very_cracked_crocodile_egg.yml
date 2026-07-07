@@ -1,0 +1,7 @@
+# CraftEngine Block: Very Cracked Crocodile Egg
+blocks:
+  alexsmobs:very_cracked_crocodile_egg:
+    display_name: "Very Cracked Crocodile Egg"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/very_cracked_crocodile_egg

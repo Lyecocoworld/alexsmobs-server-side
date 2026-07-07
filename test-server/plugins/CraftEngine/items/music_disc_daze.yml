@@ -1,0 +1,9 @@
+# CraftEngine Item: Music Disc Daze
+items:
+  alexsmobs:music_disc_daze:
+    display_name: "Music Disc Daze"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/music_disc_daze
+      textures:
+        default: alexsmobs:item/music_disc_daze

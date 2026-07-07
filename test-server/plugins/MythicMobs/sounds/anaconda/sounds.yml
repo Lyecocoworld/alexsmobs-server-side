@@ -1,0 +1,22 @@
+# ANACONDA — Sons
+
+sounds:
+  alexsmobs:entity.anaconda.idle:
+    sound: "alexsmobs:anaconda/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.anaconda.hurt:
+    sound: "alexsmobs:anaconda/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.anaconda.die:
+    sound: "alexsmobs:anaconda/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

@@ -1,0 +1,9 @@
+# CraftEngine Item: Pigshoes
+items:
+  alexsmobs:pigshoes:
+    display_name: "Pigshoes"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/pigshoes
+      textures:
+        default: alexsmobs:item/pigshoes

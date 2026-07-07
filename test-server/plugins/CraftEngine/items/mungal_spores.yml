@@ -1,0 +1,9 @@
+# CraftEngine Item: Mungal Spores
+items:
+  alexsmobs:mungal_spores:
+    display_name: "Mungal Spores"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/mungal_spores
+      textures:
+        default: alexsmobs:item/mungal_spores

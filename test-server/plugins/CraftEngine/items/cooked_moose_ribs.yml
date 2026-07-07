@@ -1,0 +1,12 @@
+# CraftEngine Item: Cooked Moose Ribs
+items:
+  alexsmobs:cooked_moose_ribs:
+    display_name: "Cooked Moose Ribs"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/cooked_moose_ribs
+      textures:
+        default: alexsmobs:item/cooked_moose_ribs
+    food:
+      nutrition: 10
+      saturation: 1.0

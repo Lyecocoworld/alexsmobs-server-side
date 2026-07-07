@@ -1,0 +1,10 @@
+# Guster — Drops
+# Source: data/loot_tables/entities/guster.json
+
+guster_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:guster_eye 1 0.2
+    - alexsmobs:sand 0-3 1.0
+    - exp{amount=1-3} 1.0

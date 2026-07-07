@@ -1,0 +1,7 @@
+# CraftEngine Block: Bird Feeder Sugar Hanging
+blocks:
+  alexsmobs:bird_feeder_sugar_hanging:
+    display_name: "Bird Feeder Sugar Hanging"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/bird_feeder_sugar_hanging

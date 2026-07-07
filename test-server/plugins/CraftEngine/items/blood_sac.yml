@@ -1,0 +1,9 @@
+# CraftEngine Item: Blood Sac
+items:
+  alexsmobs:blood_sac:
+    display_name: "Blood Sac"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/blood_sac
+      textures:
+        default: alexsmobs:item/blood_sac

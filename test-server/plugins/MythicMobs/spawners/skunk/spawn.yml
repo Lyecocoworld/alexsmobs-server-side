@@ -1,0 +1,19 @@
+# SKUNK — Spawn
+
+skunk_spawner:
+  Type: skunk
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=TAIGA,OLD_GROWTH_TAIGA,FOREST,FLOWER_FOREST,DARK_FOREST,BIRCH_FOREST}
+  - height{h=60to150}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=GRASS_BLOCK,DIRT,PODZOL,COARSE_DIRT} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

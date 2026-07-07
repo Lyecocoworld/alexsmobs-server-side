@@ -1,0 +1,7 @@
+# CraftEngine Block: Purpur Planks Outer Stairs
+blocks:
+  alexsmobs:purpur_planks_outer_stairs:
+    display_name: "Purpur Planks Outer Stairs"
+    category: BUILDING
+    resource:
+      model: alexsmobs:block/purpur_planks_outer_stairs

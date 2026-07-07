@@ -1,0 +1,564 @@
+# ════════════════════════════════════════════════════════════════
+# GRIZZLY BEAR — Skills (MythicMobs 5.x)
+# ─────────────────────────────────────────────────────────────────
+# Syntaxe: conditions inline avec ? (true) / ! (false)
+#   - mechanic{params} @target ?condition{params} !condition{params}
+# ─────────────────────────────────────────────────────────────────
+# Source mapping (EntityGrizzlyBear.java):
+#   tick()           → grizzly_bear_tick (orchestrator)
+#   mobInteract()    → grizzly_bear_on_interact
+#   hurt()           → grizzly_bear_on_hurt
+#   doHurtTarget()   → grizzly_bear_on_attack
+#   MeleeAttackGoal  → grizzly_bear_melee_trigger
+#   onGetItem()      → grizzly_bear_on_pickup_item
+#   isSnowingAt()    → grizzly_bear_check_snow
+# ════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════
+# ORCHESTRATORS
+# ════════════════════════════════════════════════════════════════
+
+# Tick principal — toutes les 10 ticks via onTimer:10 dans mob.yml
+# Reproduit tick() du mod original (lignes 362-553)
+grizzly_bear_tick:
+  Skills:
+    # ── Standing lerp (standProgress 0→10 / 10→0) ──
+    - skill{s=grizzly_bear_standing_lerp} @self
+    # ── Sitting lerp (sitProgress 0→10 / 10→0) ──
+    - skill{s=grizzly_bear_sitting_lerp} @self
+    # ── Eating logic ──
+    - skill{s=grizzly_bear_eating_check} @self
+    # ── Random idle sit (1/150 chance, mod ligne 459) ──
+    - skill{s=grizzly_bear_random_sit} @self
+      ?stance{s=idle}
+      ?variable{var=grizzly_bear.standing;value=false}
+      ?variable{var=grizzly_bear.sitting;value=false}
+      ?random{chance=0.0067}
+    # ── Random sniff animation ──
+    - skill{s=grizzly_bear_sniff_trigger} @self
+    # ── Snow check ──
+    - skill{s=grizzly_bear_check_snow} @self
+    # ── Honeyed decay ──
+    - skill{s=grizzly_bear_honeyed_decay} @self
+      ?variable{var=grizzly_bear.honeyed;value=true}
+    # ── Fur drop (adult + tamed) ──
+    - skill{s=grizzly_bear_fur_drop} @self
+      ?isAdult{}
+      ?variable{var=grizzly_bear.tamed;value=true}
+    # ── Attack animation handler ──
+    - skill{s=grizzly_bear_attack_anim_handler} @self
+      ?hastarget{}
+    # ── Auto-stand timeout ──
+    - skill{s=grizzly_bear_stand_timeout} @self
+      ?variable{var=grizzly_bear.standing;value=true}
+    # ── Auto-sit timeout ──
+    - skill{s=grizzly_bear_sit_timeout} @self
+      ?variable{var=grizzly_bear.sitting;value=true}
+      ?variable{var=grizzly_bear.forcedSit;value=false}
+    # ── Sprint management ──
+    - skill{s=grizzly_bear_sprint_check} @self
+
+
+# ════════════════════════════════════════════════════════════════
+# INITIALIZATION
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=grizzly_bear.standing;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.sitting;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.honeyed;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.snowy;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.eating;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.tamed;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.permSnow;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.command;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.aprilFools;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.standProgress;value=0;type=FLOAT}
+    - setvariable{var=grizzly_bear.sitProgress;value=0;type=FLOAT}
+    - setvariable{var=grizzly_bear.standingTime;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.sittingTime;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.eatingTime;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.honeyedTime;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.snowTimer;value=200;type=INTEGER}
+    - setvariable{var=grizzly_bear.timeUntilNextFur;value=24000;type=INTEGER}
+    - setvariable{var=grizzly_bear.maxStandTime;value=75;type=INTEGER}
+    - setvariable{var=grizzly_bear.maxSitTime;value=75;type=INTEGER}
+    - setvariable{var=grizzly_bear.salmonThrowerID;value=NONE;type=STRING}
+
+
+# ════════════════════════════════════════════════════════════════
+# STATE LERP — Standing & Sitting (mod lignes 370-387)
+# BetterModel interpole automatiquement entre les states
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_standing_lerp:
+  Skills:
+    - setvariable{var=grizzly_bear.standProgress;value=<math.(grizzly_bear.standProgress + 1)>;type=FLOAT}
+      ?variable{var=grizzly_bear.standing;value=true}
+      ?variable{var=grizzly_bear.standProgress;value=<10}
+    - setvariable{var=grizzly_bear.standProgress;value=<math.(grizzly_bear.standProgress - 1)>;type=FLOAT}
+      ?variable{var=grizzly_bear.standing;value=false}
+      ?variable{var=grizzly_bear.standProgress;value=>0}
+
+grizzly_bear_sitting_lerp:
+  Skills:
+    - setvariable{var=grizzly_bear.sitProgress;value=<math.(grizzly_bear.sitProgress + 1)>;type=FLOAT}
+      ?variable{var=grizzly_bear.sitting;value=true}
+      ?variable{var=grizzly_bear.sitProgress;value=<10}
+    - setvariable{var=grizzly_bear.sitProgress;value=<math.(grizzly_bear.sitProgress - 1)>;type=FLOAT}
+      ?variable{var=grizzly_bear.sitting;value=false}
+      ?variable{var=grizzly_bear.sitProgress;value=>0}
+
+
+# ════════════════════════════════════════════════════════════════
+# EATING MECHANIC (mod lignes 389-448)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_eating_check:
+  Skills:
+    # Commencer à manger
+    - skill{s=grizzly_bear_start_eating} @self
+      ?variable{var=grizzly_bear.eating;value=false}
+      ?hasitem{m=SALMON;q=1;slot=HAND}
+    - skill{s=grizzly_bear_start_eating} @self
+      ?variable{var=grizzly_bear.eating;value=false}
+      ?hasitem{m=HONEY_BOTTLE;q=1;slot=HAND}
+    - skill{s=grizzly_bear_start_eating} @self
+      ?variable{var=grizzly_bear.eating;value=false}
+      ?hasitem{m=HONEYCOMB;q=1;slot=HAND}
+    # Process eating
+    - skill{s=grizzly_bear_process_eating} @self
+      ?variable{var=grizzly_bear.eating;value=true}
+    # Arrêter de manger
+    - skill{s=grizzly_bear_stop_eating} @self
+      ?variable{var=grizzly_bear.eating;value=true}
+      ?hasitem{m=AIR;slot=HAND}
+
+grizzly_bear_start_eating:
+  Skills:
+    - setvariable{var=grizzly_bear.eating;value=true;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.eatingTime;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.sitting;value=true;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.standing;value=false;type=BOOLEAN}
+    - setmodelstate{state=eating}
+
+grizzly_bear_process_eating:
+  Skills:
+    - setvariable{var=grizzly_bear.eatingTime;value=<math.(grizzly_bear.eatingTime + 1)>;type=INTEGER}
+    # Particules (3/tick, mod ligne 408)
+    - effect:particle{p=ITEM_CRACK;a=3;hs=0.2;vs=0.2;speed=0.02} @origin
+    # Son tous les 5 ticks (mod ligne 414)
+    - sound{s=entity.generic.eat;v=1.0;p=0.8-1.2} @self
+      ?variable{var=grizzly_bear.eatingTime;value=%5}
+    # À 100 ticks → consommer (mod ligne 418)
+    - skill{s=grizzly_bear_consume_food} @self
+      ?variable{var=grizzly_bear.eatingTime;value=>100}
+
+grizzly_bear_consume_food:
+  Skills:
+    # Honey → heal 10 + honeyed buff
+    - skill{s=grizzly_bear_consume_honey} @self
+      ?hasitem{m=HONEY_BOTTLE;q=1;slot=HAND}
+    - skill{s=grizzly_bear_consume_honey} @self
+      ?hasitem{m=HONEYCOMB;q=1;slot=HAND}
+    # Nourriture normale → heal 4
+    - heal{amount=4} @self
+      ?hasitem{m=SALMON;q=1;slot=HAND}
+    # Taming attempt (salmon + honeyed, mod ligne 429)
+    - skill{s=grizzly_bear_taming_attempt} @self
+      ?hasitem{m=SALMON;q=1;slot=HAND}
+      ?variable{var=grizzly_bear.honeyed;value=true}
+      ?variable{var=grizzly_bear.tamed;value=false}
+    # Consommer 1 item
+    - takeitem{m=*;slot=HAND;qty=1} @self
+    - setvariable{var=grizzly_bear.eatingTime;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.eating;value=false;type=BOOLEAN}
+
+grizzly_bear_consume_honey:
+  Skills:
+    - setvariable{var=grizzly_bear.honeyed;value=true;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.honeyedTime;value=700;type=INTEGER}
+    - heal{amount=10} @self
+    - effect:particle{p=VILLAGER_HAPPY;a=5;hs=0.5;vs=0.5} @origin
+
+grizzly_bear_taming_attempt:
+  Skills:
+    # 30% chance success (mod ligne 429)
+    - skill{s=grizzly_bear_tame_success} @self
+      ?random{chance=0.3}
+    - effect:particle{p=SMOKE;a=3;speed=0.05} @origin
+      ?!random{chance=0.3}
+
+grizzly_bear_tame_success:
+  Skills:
+    - setvariable{var=grizzly_bear.tamed;value=true;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.owner;value=<trigger.uuid>;type=STRING}
+    - effect:particle{p=HEART;a=5;hs=0.3;vs=0.3} @origin
+    - sound{s=entity.parrot.imitate.panda;v=1.0;p=1.0} @self
+
+grizzly_bear_stop_eating:
+  Skills:
+    - setvariable{var=grizzly_bear.eating;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.eatingTime;value=0;type=INTEGER}
+    - setmodelstate{state=idle}
+    - setvariable{var=grizzly_bear.sitting;value=false;type=BOOLEAN}
+      ?variable{var=grizzly_bear.forcedSit;value=false}
+
+
+# ════════════════════════════════════════════════════════════════
+# ATTACK ANIMATIONS (mod lignes 478-510, 776-792)
+# ════════════════════════════════════════════════════════════════
+
+# MeleeAttackGoal: choisit une animation aléatoirement (mod 776-781)
+grizzly_bear_melee_trigger:
+  Skills:
+    - skill{s=grizzly_bear_set_maul} @self
+      ?random{chance=0.33}
+    - skill{s=grizzly_bear_set_swipe_left} @self
+      ?!random{chance=0.33}
+      ?random{chance=0.5}
+    - skill{s=grizzly_bear_set_swipe_right} @self
+      ?!random{chance=0.33}
+      ?!random{chance=0.5}
+
+# Handler: applique les dommages aux bons ticks (mod 496-508)
+grizzly_bear_attack_anim_handler:
+  Skills:
+    # MAUL: damage tous les 5 ticks après tick 3
+    - skill{s=grizzly_bear_maul_damage} @target
+      ?stance{s=mauling}
+      ?variable{var=grizzly_bear.animTick;value=%5}
+      ?variable{var=grizzly_bear.animTick;value=>3}
+    # SWIPE LEFT: damage au tick 7
+    - skill{s=grizzly_bear_swipe_left_hit} @target
+      ?stance{s=swiping_left}
+      ?variable{var=grizzly_bear.animTick;value=7}
+    # SWIPE RIGHT: damage au tick 7
+    - skill{s=grizzly_bear_swipe_right_hit} @target
+      ?stance{s=swiping_right}
+      ?variable{var=grizzly_bear.animTick;value=7}
+
+# ── MAUL (Animation: 20 ticks) ──
+grizzly_bear_set_maul:
+  Skills:
+    - setstance{stance=mauling}
+    - setmodelstate{state=maul}
+    - setvariable{var=grizzly_bear.standing;value=true;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.maxStandTime;value=21;type=INTEGER}
+    - setvariable{var=grizzly_bear.animTick;value=0;type=INTEGER}
+
+grizzly_bear_maul_damage:
+  Skills:
+    - damage{amount=8}
+    - effect:particle{p=SWEEP_ATTACK;a=1} @origin
+    - sound{s=alexsmobs:entity.grizzly_bear.maul;v=1.0;p=0.9-1.1}
+
+# ── SWIPE LEFT (Animation: 20 ticks) ──
+grizzly_bear_set_swipe_left:
+  Skills:
+    - setstance{stance=swiping_left}
+    - setmodelstate{state=swipe_left}
+    - setvariable{var=grizzly_bear.standing;value=true;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.maxStandTime;value=5;type=INTEGER}
+    - setvariable{var=grizzly_bear.animTick;value=0;type=INTEGER}
+
+grizzly_bear_swipe_left_hit:
+  Skills:
+    - damage{amount=8}
+    - throw{velocity=0.5;velocityY=0}   # knockback gauche (+90°)
+    - effect:particle{p=SWEEP_ATTACK;a=1} @origin
+    - sound{s=alexsmobs:entity.grizzly_bear.swipe;v=1.0;p=0.9-1.1}
+
+# ── SWIPE RIGHT (Animation: 15 ticks) ──
+grizzly_bear_set_swipe_right:
+  Skills:
+    - setstance{stance=swiping_right}
+    - setmodelstate{state=swipe_right}
+    - setvariable{var=grizzly_bear.standing;value=true;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.maxStandTime;value=5;type=INTEGER}
+    - setvariable{var=grizzly_bear.animTick;value=0;type=INTEGER}
+
+grizzly_bear_swipe_right_hit:
+  Skills:
+    - damage{amount=8}
+    - throw{velocity=0.5;velocityY=0}   # knockback droit (-90°)
+    - effect:particle{p=SWEEP_ATTACK;a=1} @origin
+    - sound{s=alexsmobs:entity.grizzly_bear.swipe;v=1.0;p=0.9-1.1}
+
+# ── SNIFF (idle, mod ligne 472) ──
+grizzly_bear_sniff_trigger:
+  Skills:
+    - skill{s=grizzly_bear_set_sniff} @self
+      ?stance{s=idle}
+      ?variable{var=grizzly_bear.aprilFools;value=<1}
+      ?variable{var=grizzly_bear.standing;value=true}
+      ?random{chance=0.0029}
+    - skill{s=grizzly_bear_set_sniff} @self
+      ?stance{s=idle}
+      ?variable{var=grizzly_bear.aprilFools;value=<1}
+      ?variable{var=grizzly_bear.standing;value=false}
+      ?random{chance=0.0004}
+
+grizzly_bear_set_sniff:
+  Skills:
+    - setstance{stance=sniffing}
+    - setmodelstate{state=sniff}
+    - setvariable{var=grizzly_bear.animTick;value=0;type=INTEGER}
+
+
+# ════════════════════════════════════════════════════════════════
+# HURT / ATTACK CALLBACKS (mod lignes 118-129)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_on_hurt:
+  Skills:
+    - setvariable{var=grizzly_bear.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.sitting;value=false;type=BOOLEAN}
+
+grizzly_bear_on_attack:
+  Skills:
+    - sound{s=alexsmobs:entity.grizzly_bear.attack;v=1.0;p=0.8-1.2} @self
+
+
+# ════════════════════════════════════════════════════════════════
+# SNOW VARIANT (mod lignes 530-546)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_check_snow:
+  Skills:
+    - setvariable{var=grizzly_bear.snowTimer;value=<math.(grizzly_bear.snowTimer - 1)>;type=INTEGER}
+    - skill{s=grizzly_bear_snow_apply} @self
+      ?variable{var=grizzly_bear.snowTimer;value=0}
+
+grizzly_bear_snow_apply:
+  Skills:
+    # Reset timer: 200-600 ticks (mod ligne 534)
+    - setvariable{var=grizzly_bear.snowTimer;value=400;type=INTEGER}
+    # Retirer neige si conditions perdues
+    - skill{s=grizzly_bear_snow_remove} @self
+      ?variable{var=grizzly_bear.snowy;value=true}
+      ?variable{var=grizzly_bear.permSnow;value=false}
+      ?!israining{}
+    # Gagner neige si il neige
+    - skill{s=grizzly_bear_snow_gain} @self
+      ?variable{var=grizzly_bear.snowy;value=false}
+      ?israining{}
+      ?biome{b=SNOWY_PLAINS,ICE_SPIKES,SNOWY_TAIGA,SNOWY_BEACH,FROZEN_OCEAN,DEEP_FROZEN_OCEAN,GROVE,SNOWY_SLOPES,JAGGED_PEAKS,FROZEN_RIVER}
+
+grizzly_bear_snow_gain:
+  Skills:
+    - setvariable{var=grizzly_bear.snowy;value=true;type=BOOLEAN}
+    - setmodelstate{state=snowy}
+    - effect:particle{p=SNOWFLAKE;a=10;hs=0.5;vs=0.5} @origin
+
+grizzly_bear_snow_remove:
+  Skills:
+    - setvariable{var=grizzly_bear.snowy;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+    - effect:particle{p=SNOWFLAKE;a=5;hs=0.3;vs=0.3} @origin
+
+
+# ════════════════════════════════════════════════════════════════
+# HONEYED DECAY (mod lignes 516-519)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_honeyed_decay:
+  Skills:
+    - setvariable{var=grizzly_bear.honeyedTime;value=<math.(grizzly_bear.honeyedTime - 1)>;type=INTEGER}
+    - setvariable{var=grizzly_bear.honeyed;value=false;type=BOOLEAN}
+      ?variable{var=grizzly_bear.honeyedTime;value=0}
+
+
+# ════════════════════════════════════════════════════════════════
+# FUR DROP (mod lignes 526-529)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_fur_drop:
+  Skills:
+    - setvariable{var=grizzly_bear.timeUntilNextFur;value=<math.(grizzly_bear.timeUntilNextFur - 1)>;type=INTEGER}
+    - dropitem{item=alexsmobs:bear_fur;amount=1} @origin
+      ?variable{var=grizzly_bear.timeUntilNextFur;value=0}
+    - setvariable{var=grizzly_bear.timeUntilNextFur;value=36000;type=INTEGER}
+      ?variable{var=grizzly_bear.timeUntilNextFur;value=0}
+
+
+# ════════════════════════════════════════════════════════════════
+# TIMEOUTS — Auto-stand & Auto-sit (mod lignes 449-462)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_stand_timeout:
+  Skills:
+    - setvariable{var=grizzly_bear.standingTime;value=<math.(grizzly_bear.standingTime + 1)>;type=INTEGER}
+    - skill{s=grizzly_bear_stop_standing} @self
+      ?variable{var=grizzly_bear.standingTime;value=>100}
+
+grizzly_bear_stop_standing:
+  Skills:
+    - setvariable{var=grizzly_bear.standing;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.standingTime;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.maxStandTime;value=100;type=INTEGER}
+    - setmodelstate{state=idle}
+    - setstance{stance=idle}
+
+grizzly_bear_sit_timeout:
+  Skills:
+    - setvariable{var=grizzly_bear.sittingTime;value=<math.(grizzly_bear.sittingTime + 1)>;type=INTEGER}
+    - skill{s=grizzly_bear_stop_sitting} @self
+      ?variable{var=grizzly_bear.sittingTime;value=>100}
+
+grizzly_bear_stop_sitting:
+  Skills:
+    - setvariable{var=grizzly_bear.sitting;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.sittingTime;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.maxSitTime;value=100;type=INTEGER}
+    - setmodelstate{state=idle}
+
+grizzly_bear_random_sit:
+  Skills:
+    - setvariable{var=grizzly_bear.maxSitTime;value=400;type=INTEGER}
+    - setvariable{var=grizzly_bear.sitting;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}
+
+
+# ════════════════════════════════════════════════════════════════
+# SPRINT MANAGEMENT (mod lignes 491-515)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_sprint_check:
+  Skills:
+    - setsprinting{s=true} @self
+      ?hastarget{}
+    - setsprinting{s=false} @self
+      ?!hastarget{}
+
+
+# ════════════════════════════════════════════════════════════════
+# INTERACTION (mod mobInteract lignes 278-325)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_on_interact:
+  Skills:
+    # Neige: SNOW → snowy permanent
+    - skill{s=grizzly_bear_interact_snow} @self
+      ?hasitem{m=SNOW;slot=HAND}
+      ?variable{var=grizzly_bear.snowy;value=false}
+    # Shovel → retirer neige
+    - skill{s=grizzly_bear_interact_shovel} @self
+      ?isitemtype{type=SHOVEL;slot=HAND}
+      ?variable{var=grizzly_bear.snowy;value=true}
+    # Monter (tamed + adult + !sneak)
+    - skill{s=grizzly_bear_interact_ride} @self
+      ?variable{var=grizzly_bear.tamed;value=true}
+      ?isAdult{}
+      ?!playersneaking{}
+    # Sneak + tamed → cycle command
+    - skill{s=grizzly_bear_interact_command} @self
+      ?variable{var=grizzly_bear.tamed;value=true}
+      ?playersneaking{}
+
+grizzly_bear_interact_snow:
+  Skills:
+    - setvariable{var=grizzly_bear.permSnow;value=true;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.snowy;value=true;type=BOOLEAN}
+    - setmodelstate{state=snowy}
+    - takeitem{m=SNOW;slot=HAND;qty=1} @self
+    - sound{s=block.snow.place;v=1.0;p=0.8-1.2}
+
+grizzly_bear_interact_shovel:
+  Skills:
+    - setvariable{var=grizzly_bear.permSnow;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.snowy;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+    - damageitem{slot=HAND;amount=1} @self
+    - sound{s=block.snow.break;v=1.0;p=0.8-1.2}
+
+grizzly_bear_interact_ride:
+  Skills:
+    - mount{}
+
+grizzly_bear_interact_command:
+  Skills:
+    # Cycle: 0 → 1 → 2 → 0 (mod ligne 306)
+    - skill{s=grizzly_bear_command_to_sit} @self
+      ?variable{var=grizzly_bear.command;value=1}
+    - skill{s=grizzly_bear_command_to_follow} @self
+      ?variable{var=grizzly_bear.command;value=0}
+    - skill{s=grizzly_bear_command_to_wander} @self
+      ?variable{var=grizzly_bear.command;value=2}
+
+grizzly_bear_command_to_sit:
+  Skills:
+    - setvariable{var=grizzly_bear.command;value=2;type=INTEGER}
+    - setvariable{var=grizzly_bear.forcedSit;value=true;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.sitting;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}
+
+grizzly_bear_command_to_follow:
+  Skills:
+    - setvariable{var=grizzly_bear.command;value=1;type=INTEGER}
+    - setvariable{var=grizzly_bear.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.sitting;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+grizzly_bear_command_to_wander:
+  Skills:
+    - setvariable{var=grizzly_bear.command;value=0;type=INTEGER}
+    - setvariable{var=grizzly_bear.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=grizzly_bear.sitting;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+
+# ════════════════════════════════════════════════════════════════
+# PICKUP ITEMS (mod onGetItem lignes 716-729)
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_on_pickup_item:
+  Skills:
+    - setvariable{var=grizzly_bear.salmonThrowerID;value=<trigger.uuid>;type=STRING}
+      ?hasitem{m=SALMON;q=1}
+      ?variable{var=grizzly_bear.honeyed;value=true}
+    - setvariable{var=grizzly_bear.salmonThrowerID;value=NONE;type=STRING}
+      ?!hasitem{m=SALMON;q=1}
+
+
+# ════════════════════════════════════════════════════════════════
+# DEATH
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.grizzly_bear.death;v=1.0;p=0.8-1.2} @self
+
+
+# ════════════════════════════════════════════════════════════════
+# ANIMATION TICK COUNTER
+# Incrémente animTick pour synchroniser avec BetterModel
+# ════════════════════════════════════════════════════════════════
+
+grizzly_bear_anim_tick_advance:
+  Skills:
+    - setvariable{var=grizzly_bear.animTick;value=<math.(grizzly_bear.animTick + 1)>;type=INTEGER}
+      ?!stance{s=idle}
+    # Retour à idle quand l'animation est terminée
+    - skill{s=grizzly_bear_anim_end} @self
+      ?variable{var=grizzly_bear.animTick;value=>20}
+      ?stance{s=mauling}
+    - skill{s=grizzly_bear_anim_end} @self
+      ?variable{var=grizzly_bear.animTick;value=>20}
+      ?stance{s=swiping_left}
+    - skill{s=grizzly_bear_anim_end} @self
+      ?variable{var=grizzly_bear.animTick;value=>15}
+      ?stance{s=swiping_right}
+    - skill{s=grizzly_bear_anim_end} @self
+      ?variable{var=grizzly_bear.animTick;value=>12}
+      ?stance{s=sniffing}
+
+grizzly_bear_anim_end:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+    - setvariable{var=grizzly_bear.animTick;value=0;type=INTEGER}

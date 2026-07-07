@@ -1,0 +1,22 @@
+# COMB JELLY — Sons
+
+sounds:
+  alexsmobs:entity.comb_jelly.idle:
+    sound: "alexsmobs:comb_jelly/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.comb_jelly.hurt:
+    sound: "alexsmobs:comb_jelly/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.comb_jelly.die:
+    sound: "alexsmobs:comb_jelly/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

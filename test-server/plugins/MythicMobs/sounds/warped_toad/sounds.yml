@@ -1,0 +1,28 @@
+# WARPED TOAD — Sons
+
+sounds:
+  alexsmobs:entity.warped_toad.idle:
+    sound: "alexsmobs:warped_toad/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.warped_toad.hurt:
+    sound: "alexsmobs:warped_toad/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.warped_toad.die:
+    sound: "alexsmobs:warped_toad/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.warped_toad.tongue:
+    sound: "alexsmobs:warped_toad/tongue"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

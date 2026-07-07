@@ -1,0 +1,19 @@
+# DEVILS HOLE PUPFISH — Skills
+
+devil_hole_pupfish_tick:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+devil_hole_pupfish_init:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+
+devil_hole_pupfish_on_hurt:
+  Skills: []
+
+devil_hole_pupfish_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.devil_hole_pupfish.die;v=1.0;p=0.8-1.2} @self

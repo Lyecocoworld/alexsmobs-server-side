@@ -1,0 +1,9 @@
+# CraftEngine Item: Serrated Shark Tooth
+items:
+  alexsmobs:serrated_shark_tooth:
+    display_name: "Serrated Shark Tooth"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/serrated_shark_tooth
+      textures:
+        default: alexsmobs:item/serrated_shark_tooth

@@ -1,0 +1,9 @@
+# CraftEngine Item: Fish Bones
+items:
+  alexsmobs:fish_bones:
+    display_name: "Fish Bones"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/fish_bones
+      textures:
+        default: alexsmobs:item/fish_bones

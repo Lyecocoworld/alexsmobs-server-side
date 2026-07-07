@@ -1,0 +1,42 @@
+# ===============================================================
+# SKUNK (Alex's Mobs)
+# HP=14 DMG=2 SPD=0.25
+# ===============================================================
+skunk:
+  Type: fox
+  Display: '&fSkunk'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 14
+  Damage: 2
+  MovementSpeed: 0.25
+  Faction: creature_skunk
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - skunk_ai
+  AITargetSelectors:
+    - clear
+    - skunk_targets
+  Drops:
+    - skunk_drops
+  Skills:
+    - onTimer:10
+    - skill:skunk_tick @self
+    - onSpawn:
+      - skill:skunk_init @self
+    - onDeath:
+      - skill:skunk_death @self
+    - onDamaged:
+      - skill:skunk_on_hurt @self

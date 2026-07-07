@@ -1,0 +1,9 @@
+# CraftEngine Item: Dimensional Carver
+items:
+  alexsmobs:dimensional_carver:
+    display_name: "Dimensional Carver"
+    rarity: EPIC
+    resource:
+      model: alexsmobs:item/dimensional_carver
+      textures:
+        default: alexsmobs:item/dimensional_carver

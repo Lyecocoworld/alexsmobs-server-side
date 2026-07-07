@@ -1,0 +1,7 @@
+# CraftEngine Item: Stradpole Bucket
+items:
+  alexsmobs:stradpole_bucket:
+    display_name: "Stradpole Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/stradpole_bucket

@@ -1,0 +1,19 @@
+# ROADRUNNER — Skills
+
+roadrunner_tick:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+roadrunner_init:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+
+roadrunner_on_hurt:
+  Skills: []
+
+roadrunner_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.roadrunner.die;v=1.0;p=0.8-1.2} @self

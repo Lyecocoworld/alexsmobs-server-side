@@ -1,0 +1,8 @@
+# GUSTER — Variables
+
+variables:
+  guster.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

@@ -1,0 +1,9 @@
+# CraftEngine Item: Maraca
+items:
+  alexsmobs:maraca:
+    display_name: "Maraca"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/maraca
+      textures:
+        default: alexsmobs:item/maraca

@@ -1,0 +1,64 @@
+# ════════════════════════════════════════════════════════════════
+# GRIZZLY BEAR — Sons
+# ─────────────────────────────────────────────────────────────────
+# Source: AMSoundRegistry (GRIZZLY_BEAR_IDLE, HURT, DIE)
+# Fichiers son: assets/alexsmobs/sounds/grizzly_bear/
+# ─────────────────────────────────────────────────────────────────
+# Les sons sont référencés dans le resource pack généré par
+# BetterModel + CraftEngine. MythicMobs les joue via sound{}
+# ════════════════════════════════════════════════════════════════
+
+# Registry des sons (chemin resource pack)
+sounds:
+  # Sons principaux (3 variantes: idle, hurt, death)
+  alexsmobs:entity.grizzly_bear.idle:
+    sound: "alexsmobs:grizzly_bear/idle1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    # Le mod joue l'ambient toutes les ~200-400 ticks
+    interval_ticks: 200-400
+
+  alexsmobs:entity.grizzly_bear.hurt:
+    sound: "alexsmobs:grizzly_bear/hurt1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.grizzly_bear.death:
+    sound: "alexsmobs:grizzly_bear/death1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  # Sons d'attaque (4 animations)
+  alexsmobs:entity.grizzly_bear.maul:
+    sound: "alexsmobs:grizzly_bear/maul1"
+    volume: 1.0
+    pitch_min: 0.9
+    pitch_max: 1.1
+
+  alexsmobs:entity.grizzly_bear.swipe:
+    sound: "alexsmobs:gr3zzly_bear/swipe1"
+    volume: 1.0
+    pitch_min: 0.9
+    pitch_max: 1.1
+
+  alexsmobs:entity.grizzly_bear.attack:
+    sound: "alexsmobs:grizzly_bear/attack1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  # Sons spéciaux
+  alexsmobs:entity.grizzly_bear.sniff:
+    sound: "alexsmobs:grizzly_bear/sniff1"
+    volume: 0.8
+    pitch_min: 0.9
+    pitch_max: 1.1
+
+# Mapping pour MythicMobs (références dans skills.yml)
+# Format: sound{s=<sound_id>;v=<volume>;p=<pitch>} @self
+#
+# Exemple d'utilisation dans skills.yml:
+#   - sound{s=alexsmobs:entity.grizzly_bear.idle;v=1.0;p=0.8-1.2} @self

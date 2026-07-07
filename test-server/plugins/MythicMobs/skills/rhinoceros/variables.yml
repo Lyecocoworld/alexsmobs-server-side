@@ -1,0 +1,8 @@
+# RHINOCEROS — Variables
+
+variables:
+  rhinoceros.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

@@ -1,0 +1,7 @@
+# CraftEngine Block: Sculk Boomer Locked
+blocks:
+  alexsmobs:sculk_boomer_locked:
+    display_name: "Sculk Boomer Locked"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/sculk_boomer_locked

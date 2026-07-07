@@ -1,0 +1,74 @@
+# ===============================================================
+# CAIMAN — Skills
+# ===============================================================
+
+caiman_tick:
+  Skills:
+    - skill{s=caiman_idle_check} @self
+
+caiman_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=caiman.command;value=0;type=INTEGER}
+    - setvariable{var=caiman.sitting;value=False;type=BOOLEAN}
+    - setvariable{var=caiman.bellowing;value=False;type=BOOLEAN}
+    - setvariable{var=caiman.heldMobId;value=-1;type=INTEGER}
+    - setvariable{var=caiman.hasEgg;value=False;type=BOOLEAN}
+    - setvariable{var=caiman.tamed;value=False;type=BOOLEAN}
+    - setvariable{var=caiman.forcedSit;value=False;type=BOOLEAN}
+    - setvariable{var=caiman.owner;value=NONE;type=STRING}
+    - setmodelstate{state=idle}
+
+caiman_bellow:
+  Skills:
+    - setstance{stance=bellow}
+    - setmodelstate{state=bellow}
+    - setvariable{var=caiman.animTick;value=0;type=INTEGER}
+    - damage{amount=3} @target
+    - sound{s=alexsmobs:entity.caiman.bellow;v=1.0;p=0.9-1.1} @self
+
+caiman_idle_check:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+caiman_on_hurt:
+  Skills:
+    - setvariable{var=caiman.forcedSit;value=false;type=BOOLEAN}
+
+caiman_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.caiman.die;v=1.0;p=0.8-1.2} @self
+
+caiman_on_interact:
+  Skills:
+    - skill{s=caiman_command_cycle} @self
+      ?variable{var=caiman.tamed;value=true}
+      ?playersneaking{}
+
+caiman_command_cycle:
+  Skills:
+    - skill{s=caiman_command_sit} @self
+      ?variable{var=caiman.command;value=1}
+    - skill{s=caiman_command_follow} @self
+      ?variable{var=caiman.command;value=0}
+    - skill{s=caiman_command_wander} @self
+      ?variable{var=caiman.command;value=2}
+
+caiman_command_wander:
+  Skills:
+    - setvariable{var=caiman.command;value=0;type=INTEGER}
+    - setvariable{var=caiman.forcedSit;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+caiman_command_follow:
+  Skills:
+    - setvariable{var=caiman.command;value=1;type=INTEGER}
+    - setvariable{var=caiman.forcedSit;value=false;type=BOOLEAN}
+
+caiman_command_sit:
+  Skills:
+    - setvariable{var=caiman.command;value=2;type=INTEGER}
+    - setvariable{var=caiman.forcedSit;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}

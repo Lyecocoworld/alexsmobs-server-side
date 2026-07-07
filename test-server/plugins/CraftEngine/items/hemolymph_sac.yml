@@ -1,0 +1,9 @@
+# CraftEngine Item: Hemolymph Sac
+items:
+  alexsmobs:hemolymph_sac:
+    display_name: "Hemolymph Sac"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/hemolymph_sac
+      textures:
+        default: alexsmobs:item/hemolymph_sac

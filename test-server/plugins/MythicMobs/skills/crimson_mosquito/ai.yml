@@ -1,0 +1,35 @@
+# ════════════════════════════════════════════════════════════════
+# CRIMSON MOSQUITO — AI & Targets
+# Source: registerGoals() (EntityCrimsonMosquito.java)
+# ════════════════════════════════════════════════════════════════
+
+crimson_mosquito_ai:
+  Goals:
+    # 0 — Survival
+    - float{p=0}
+
+    # 1 — Fly random quand pas de cible
+    - randomstroll{p=1;speed=0.3}
+      ?variable{var=crimson_mosquito.flying;value=true}
+
+    # 2 — Attaque melee (sang)
+    - melee{p=2;speed=1.0;memory=true}
+      ?variable{var=crimson_mosquito.flying;value=false}
+
+    # 3 — Marche au sol
+    - randomstroll{p=3;speed=0.5}
+      ?variable{var=crimson_mosquito.flying;value=false}
+      ?!hastarget{}
+
+    # 4 — Look
+    - lookatplayer{p=4;range=8}
+    - randomlookaround{p=5}
+
+
+crimson_mosquito_targets:
+  TargetSelectors:
+    - clear
+    - players
+      ?variable{var=crimson_mosquito.sick;value=false}
+    - attackers
+    - monofocused

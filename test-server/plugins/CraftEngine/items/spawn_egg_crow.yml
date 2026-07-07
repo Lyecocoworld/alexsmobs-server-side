@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Crow
+items:
+  alexsmobs:spawn_egg_crow:
+    display_name: "Spawn Egg Crow"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_crow

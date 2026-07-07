@@ -1,0 +1,45 @@
+# ===============================================================
+# WARPED TOAD (Alex's Mobs)
+# Classification: C2 (tamable)
+# HP=30 DMG=2 SPD=0.2
+# ===============================================================
+warped_toad:
+  Type: frog
+  Display: '&fWarped Toad'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 30
+  Damage: 2
+  MovementSpeed: 0.2
+  Faction: creature_warped_toad
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - warped_toad_ai
+  AITargetSelectors:
+    - clear
+    - warped_toad_targets
+  Drops:
+    - warped_toad_drops
+  Skills:
+    - onTimer:10
+    - skill:warped_toad_tick @self
+    - onSpawn:
+      - skill:warped_toad_init @self
+    - onDeath:
+      - skill:warped_toad_death @self
+    - onDamaged:
+      - skill:warped_toad_on_hurt @self
+    - onInteract:
+      - skill:warped_toad_on_interact @self

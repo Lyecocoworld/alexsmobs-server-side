@@ -1,0 +1,9 @@
+# CraftEngine Item: Komodo Spit Bottle
+items:
+  alexsmobs:komodo_spit_bottle:
+    display_name: "Komodo Spit Bottle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/komodo_spit_bottle
+      textures:
+        default: alexsmobs:item/komodo_spit_bottle

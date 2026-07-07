@@ -1,0 +1,42 @@
+#===============================================================
+# PLATYPUS (Alex's Mobs)
+# HP=10 DMG=1 SPD=0.2
+#===============================================================
+platypus:
+  Type: axolotl
+  Display: '&fPlatypus'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 10
+  Damage: 1
+  MovementSpeed: 0.2
+  Faction: creature_platypus
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - platypus_ai
+  AITargetSelectors:
+    - clear
+    - platypus_targets
+  Drops:
+    - platypus_drops
+  Skills:
+    - onTimer:10
+    - skill:platypus_tick @self
+    - onSpawn:
+      - skill:platypus_init @self
+    - onDeath:
+      - skill:platypus_death @self
+    - onDamaged:
+      - skill:platypus_on_hurt @self

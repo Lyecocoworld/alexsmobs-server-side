@@ -1,0 +1,56 @@
+# ════════════════════════════════════════════════════════════════
+# CROW — BetterModel Configuration
+# Source: crow.bbmodel (Blockbench) + Citadel animation system
+# ════════════════════════════════════════════════════════════════
+# Le mod utilise parrot comme base (volant, shoulder perch natif)
+# Animations:
+#   - flyProgress lerp (0-5)
+#   - attackProgress lerp (0-5)
+#   - sitProgress lerp (0-5)
+# ════════════════════════════════════════════════════════════════
+
+model:
+  bettermodel_id: "alexsmobs:crow"
+  type: "parrot"
+  hitbox:
+    width: 0.5
+    height: 0.9
+
+  blockbench_model: "assets/alexsmobs/blockbench/crow.bbmodel"
+
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/crow/crow.png"
+
+  animations:
+    idle:   "animation.crow.idle"
+    walk:   "animation.crow.walk"
+    fly:    "animation.crow.fly"
+    sit:    "animation.crow.sit"
+    attack: "animation.crow.attack"
+    death:  "animation.crow.death"
+
+  animation_state_mapping:
+    idle:   {"animation": "idle",   "texture": "normal", "loop": true}
+    fly:    {"animation": "fly",    "texture": "normal", "loop": true}
+    sit:    {"animation": "sit",    "texture": "normal", "loop": true}
+    attack: {"animation": "attack", "texture": "normal", "loop": false, "duration": 12}
+    death:  {"animation": "death",  "texture": "normal", "loop": false, "duration": 15}
+
+  variants:
+    normal:
+      texture: normal
+
+  scale:
+    adult: 1.0
+    baby: 0.5
+
+  rider_offset:
+    # Shoulder perch offset (comme parrot vanilla)
+    y_base: 0.45
+
+  sounds:
+    ambient: "alexsmobs:entity.crow.idle"
+    hurt:    "alexsmobs:entity.crow.hurt"
+    death:   "alexsmobs:entity.crow.death"
+    attack:  "alexsmobs:entity.crow.attack"

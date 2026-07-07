@@ -1,0 +1,27 @@
+# GELADA MONKEY — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:gelada_monkey"
+  type: "fox"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/gelada_monkey.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/gelada_monkey.png"
+  animations:
+    idle: "animation.gelada_monkey.idle"
+    walk: "animation.gelada_monkey.walk"
+    run: "animation.gelada_monkey.run"
+    sit: "animation.gelada_monkey.sit"
+    death: "animation.gelada_monkey.death"
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": false, "duration": 20}
+  scale:
+    adult: 1.0
+    baby: 0.5

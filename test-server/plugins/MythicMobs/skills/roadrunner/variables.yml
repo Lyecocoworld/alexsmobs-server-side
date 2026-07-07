@@ -1,0 +1,8 @@
+# ROADRUNNER — Variables
+
+variables:
+  roadrunner.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

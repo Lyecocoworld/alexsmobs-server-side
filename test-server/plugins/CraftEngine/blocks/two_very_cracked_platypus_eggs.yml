@@ -1,0 +1,7 @@
+# CraftEngine Block: Two Very Cracked Platypus Eggs
+blocks:
+  alexsmobs:two_very_cracked_platypus_eggs:
+    display_name: "Two Very Cracked Platypus Eggs"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/two_very_cracked_platypus_eggs

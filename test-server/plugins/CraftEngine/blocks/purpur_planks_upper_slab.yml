@@ -1,0 +1,7 @@
+# CraftEngine Block: Purpur Planks Upper Slab
+blocks:
+  alexsmobs:purpur_planks_upper_slab:
+    display_name: "Purpur Planks Upper Slab"
+    category: BUILDING
+    resource:
+      model: alexsmobs:block/purpur_planks_upper_slab

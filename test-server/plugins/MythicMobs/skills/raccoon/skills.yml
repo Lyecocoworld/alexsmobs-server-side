@@ -1,0 +1,350 @@
+# ════════════════════════════════════════════════════════════════
+# RACCOON — Skills
+# ════════════════════════════════════════════════════════════════
+# Source mapping (EntityRaccoon.java):
+#   tick()                    → raccoon_tick (orchestrator)
+#   mobInteract()             → raccoon_on_interact
+#   hurt()                    → raccoon_on_hurt
+#   doHurtTarget()            → raccoon_attack (ANIMATION_ATTACK 12t)
+#   onGetItem()               → raccoon_on_pickup_item
+#   onEatItem()               → raccoon_eat_item (heal 10)
+#   postWashItem()            → raccoon_wash_complete (taming 30%)
+#   AIStealFromVillagers      → raccoon_steal_check
+#   RaccoonAIWash             → raccoon_wash_search
+#   RaccoonAIBeg              → raccoon_beg_check
+#   bondWithBlueJays()        → raccoon_bond_bluejays
+# ════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════
+# ORCHESTRATORS
+# ════════════════════════════════════════════════════════════════
+
+raccoon_tick:
+  Skills:
+    # ── Lerp animations (standProgress, begProgress, washProgress, sitProgress) ──
+    - skill{s=raccoon_standing_lerp} @self
+    - skill{s=raccoon_begging_lerp} @self
+    - skill{s=raccoon_washing_lerp} @self
+    - skill{s=raccoon_sitting_lerp} @self
+    # ── Stand timeout (auto-stop après maxStandTime) ──
+    - skill{s=raccoon_stand_timeout} @self
+      ?variable{var=raccoon.standing;value=true}
+    # ── Eat held item après lookForWaterBeforeEatingTimer ──
+    - skill{s=raccoon_eat_timer_check} @self
+    # ── Steal cooldown decay ──
+    - skill{s=raccoon_steal_cooldown_decay} @self
+    # ── Pickup cooldown decay ──
+    - skill{s=raccoon_pickup_cooldown_decay} @self
+
+
+# ════════════════════════════════════════════════════════════════
+# INITIALIZATION
+# ════════════════════════════════════════════════════════════════
+
+raccoon_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=raccoon.standing;value=false;type=BOOLEAN}
+    - setvariable{var=raccoon.sitting;value=false;type=BOOLEAN}
+    - setvariable{var=raccoon.begging;value=false;type=BOOLEAN}
+    - setvariable{var=raccoon.washing;value=false;type=BOOLEAN}
+    - setvariable{var=raccoon.tamed;value=false;type=BOOLEAN}
+    - setvariable{var=raccoon.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=raccoon.command;value=0;type=INTEGER}
+    - setvariable{var=raccoon.carpetColor;value=-1;type=INTEGER}
+    - setvariable{var=raccoon.standProgress;value=0;type=FLOAT}
+    - setvariable{var=raccoon.begProgress;value=0;type=FLOAT}
+    - setvariable{var=raccoon.washProgress;value=0;type=FLOAT}
+    - setvariable{var=raccoon.sitProgress;value=0;type=FLOAT}
+    - setvariable{var=raccoon.standingTime;value=0;type=INTEGER}
+    - setvariable{var=raccoon.maxStandTime;value=75;type=INTEGER}
+    - setvariable{var=raccoon.lookForWaterTimer;value=0;type=INTEGER}
+    - setvariable{var=raccoon.stealCooldown;value=0;type=INTEGER}
+    - setvariable{var=raccoon.pickupCooldown;value=0;type=INTEGER}
+    - setvariable{var=raccoon.eggThrowerID;value=NONE;type=STRING}
+    - setvariable{var=raccoon.animTick;value=0;type=INTEGER}
+    - setmodelstate{state=idle}
+
+
+# ════════════════════════════════════════════════════════════════
+# LERP ANIMATIONS (mod lignes 354-391, 0→5 progression)
+# ════════════════════════════════════════════════════════════════
+
+raccoon_standing_lerp:
+  Skills:
+    - setvariable{var=raccoon.standProgress;value=<math.(raccoon.standProgress + 1)>;type=FLOAT}
+      ?variable{var=raccoon.standing;value=true}
+      ?variable{var=raccoon.standProgress;value=<5}
+    - setvariable{var=raccoon.standProgress;value=<math.(raccoon.standProgress - 1)>;type=FLOAT}
+      ?variable{var=raccoon.standing;value=false}
+      ?variable{var=raccoon.standProgress;value=>0}
+
+raccoon_begging_lerp:
+  Skills:
+    - setvariable{var=raccoon.begProgress;value=<math.(raccoon.begProgress + 1)>;type=FLOAT}
+      ?variable{var=raccoon.begging;value=true}
+      ?variable{var=raccoon.begProgress;value=<5}
+    - setvariable{var=raccoon.begProgress;value=<math.(raccoon.begProgress - 1)>;type=FLOAT}
+      ?variable{var=raccoon.begging;value=false}
+      ?variable{var=raccoon.begProgress;value=>0}
+
+raccoon_washing_lerp:
+  Skills:
+    - setvariable{var=raccoon.washProgress;value=<math.(raccoon.washProgress + 1)>;type=FLOAT}
+      ?variable{var=raccoon.washing;value=true}
+      ?variable{var=raccoon.washProgress;value=<5}
+    - setvariable{var=raccoon.washProgress;value=<math.(raccoon.washProgress - 1)>;type=FLOAT}
+      ?variable{var=raccoon.washing;value=false}
+      ?variable{var=raccoon.washProgress;value=>0}
+
+raccoon_sitting_lerp:
+  Skills:
+    - setvariable{var=raccoon.sitProgress;value=<math.(raccoon.sitProgress + 1)>;type=FLOAT}
+      ?variable{var=raccoon.sitting;value=true}
+      ?variable{var=raccoon.sitProgress;value=<5}
+    - setvariable{var=raccoon.sitProgress;value=<math.(raccoon.sitProgress - 1)>;type=FLOAT}
+      ?variable{var=raccoon.sitting;value=false}
+      ?variable{var=raccoon.sitProgress;value=>0}
+
+
+# ════════════════════════════════════════════════════════════════
+# STAND TIMEOUT (mod lignes 393-397)
+# ════════════════════════════════════════════════════════════════
+
+raccoon_stand_timeout:
+  Skills:
+    - setvariable{var=raccoon.standingTime;value=<math.(raccoon.standingTime + 1)>;type=INTEGER}
+    - skill{s=raccoon_stop_standing} @self
+      ?variable{var=raccoon.standingTime;value=>100}
+
+raccoon_stop_standing:
+  Skills:
+    - setvariable{var=raccoon.standing;value=false;type=BOOLEAN}
+    - setvariable{var=raccoon.standingTime;value=0;type=INTEGER}
+    - setvariable{var=raccoon.maxStandTime;value=100;type=INTEGER}
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+
+
+# ════════════════════════════════════════════════════════════════
+# EATING / WASHING MECHANIC (mod lignes 398-408, 440-461)
+# ════════════════════════════════════════════════════════════════
+
+# Le raton mange après un délai (lookForWaterBeforeEatingTimer)
+raccoon_eat_timer_check:
+  Skills:
+    # Décrémenter le timer
+    - setvariable{var=raccoon.lookForWaterTimer;value=<math.(raccoon.lookForWaterTimer - 1)>;type=INTEGER}
+      ?variable{var=raccoon.lookForWaterTimer;value=>0}
+    # Si timer == 0 + tient un item → manger
+    - skill{s=raccoon_eat_held} @self
+      ?variable{var=raccoon.lookForWaterTimer;value=0}
+      ?!hasitem{m=AIR;slot=HAND}
+      ?!variable{var=raccoon.washing;value=true}
+
+raccoon_eat_held:
+  Skills:
+    - skill{s=raccoon_eat_item} @self
+    # Check taming après lavage (postWashItem, mod 447-461)
+    - skill{s=raccoon_taming_attempt} @self
+      ?variable{var=raccoon.tamed;value=false}
+      ?variable{var=raccoon.eggThrowerID;value=!NONE}
+    - takeitem{m=*;slot=HAND;qty=1} @self
+
+raccoon_eat_item:
+  Skills:
+    - heal{amount=10} @self
+    - effect:particle{p=ITEM_CRACK;a=6;hs=0.2;vs=0.2;speed=0.02} @origin
+    - sound{s=entity.generic.eat;v=1.0;p=0.8-1.2} @self
+
+raccoon_taming_attempt:
+  Skills:
+    - skill{s=raccoon_tame_success} @self
+      ?random{chance=0.3}
+    - effect:particle{p=SMOKE;a=3;speed=0.05} @origin
+      ?!random{chance=0.3}
+
+raccoon_tame_success:
+  Skills:
+    - setvariable{var=raccoon.tamed;value=true;type=BOOLEAN}
+    - setvariable{var=raccoon.owner;value=<trigger.uuid>;type=STRING}
+    - effect:particle{p=HEART;a=5;hs=0.3;vs=0.3} @origin
+    - sound{s=entity.parrot.imitate.panda;v=1.0;p=1.0} @self
+
+
+# ════════════════════════════════════════════════════════════════
+# ATTACK (ANIMATION_ATTACK 12 ticks, mod doHurtTarget 168-173)
+# ════════════════════════════════════════════════════════════════
+
+raccoon_attack:
+  Skills:
+    - setstance{stance=attacking}
+    - setmodelstate{state=attack}
+    - setvariable{var=raccoon.animTick;value=0;type=INTEGER}
+    - setvariable{var=raccoon.standing;value=true;type=BOOLEAN}
+    - setvariable{var=raccoon.maxStandTime;value=15;type=INTEGER}
+
+# L'attaque applies damage au tick 5 (mod ligne 425-430)
+raccoon_attack_hit:
+  Skills:
+    - damage{amount=2} @target
+    - throw{velocity=0.35} @target
+    - effect:particle{p=SWEEP_ATTACK;a=1} @origin
+    - sound{s=alexsmobs:entity.raccoon.attack;v=1.0;p=0.9-1.1}
+
+
+# ════════════════════════════════════════════════════════════════
+# PICKUP ITEMS (mod onGetItem 590-608)
+# ════════════════════════════════════════════════════════════════
+
+raccoon_on_pickup_item:
+  Skills:
+    # Démarrer le timer de mangeage (100 ticks avant de manger)
+    - setvariable{var=raccoon.lookForWaterTimer;value=100;type=INTEGER}
+    # Si l'item est un taming item (egg) → enregistrer le lanceur
+    - setvariable{var=raccoon.eggThrowerID;value=<trigger.uuid>;type=STRING}
+      ?hasitem{m=EGG;q=1}
+    - setvariable{var=raccoon.eggThrowerID;value=NONE;type=STRING}
+      ?!hasitem{m=EGG;q=1}
+
+
+# ════════════════════════════════════════════════════════════════
+# VILLAGER STEALING (mod AIStealFromVillagers 687-800)
+# ════════════════════════════════════════════════════════════════
+
+raccoon_steal_cooldown_decay:
+  Skills:
+    - setvariable{var=raccoon.stealCooldown;value=<math.(raccoon.stealCooldown - 1)>;type=INTEGER}
+      ?variable{var=raccoon.stealCooldown;value=>0}
+
+raccoon_pickup_cooldown_decay:
+  Skills:
+    - setvariable{var=raccoon.pickupCooldown;value=<math.(raccoon.pickupCooldown - 1)>;type=INTEGER}
+      ?variable{var=raccoon.pickupCooldown;value=>0}
+
+
+# ════════════════════════════════════════════════════════════════
+# INTERACTION (mod mobInteract 207-285)
+# ════════════════════════════════════════════════════════════════
+
+raccoon_on_interact:
+  Skills:
+    # Si tamed + tient un item → le donner au joueur (mod 215-221)
+    - skill{s=raccoon_take_held_item} @self
+      ?variable{var=raccoon.tamed;value=true}
+      ?!hasitem{m=AIR;slot=HAND}
+    # Carpet: poser un tapis (mod 222-234)
+    - skill{s=raccoon_carpet_equip} @self
+      ?variable{var=raccoon.tamed;value=true}
+      ?hasitem{m=*_CARPET;slot=HAND}
+    # Shears: retirer tapis (mod 235-242)
+    - skill{s=raccoon_carpet_remove} @self
+      ?variable{var=raccoon.tamed;value=true}
+      ?variable{var=raccoon.carpetColor;value=>-1}
+      ?hasitem{m=SHEARS;slot=HAND}
+    # Food heal (mod 243-263)
+    - skill{s=raccoon_food_heal} @self
+      ?variable{var=raccoon.tamed;value=true}
+      ?isitemtype{type=FOOD;slot=HAND}
+    # Command cycle (mod 265-283)
+    - skill{s=raccoon_command_cycle} @self
+      ?variable{var=raccoon.tamed;value=true}
+      ?playersneaking{}
+
+raccoon_take_held_item:
+  Skills:
+    - dropitem{item=<handitem>;amount=1} @origin
+    - setvariable{var=raccoon.pickupCooldown;value=60;type=INTEGER}
+
+raccoon_carpet_equip:
+  Skills:
+    # Drop l'ancien tapis si existant
+    - dropitem{item=<carpetitem>;amount=1} @origin
+      ?variable{var=raccoon.carpetColor;value=>-1}
+    - setvariable{var=raccoon.carpetColor;value=<trigger.carpetcolor>;type=INTEGER}
+    - takeitem{m=*_CARPET;slot=HAND;qty=1} @trigger
+    - sound{s=entity.llama.swag;v=1.0;p=0.9-1.1}
+
+raccoon_carpet_remove:
+  Skills:
+    - dropitem{item=<carpetitem>;amount=1} @origin
+    - setvariable{var=raccoon.carpetColor;value=-1;type=INTEGER}
+    - sound{s=entity.sheep.shear;v=1.0;p=0.9-1.1}
+
+raccoon_food_heal:
+  Skills:
+    - heal{amount=5} @self
+    - sound{s=entity.generic.eat;v=1.0;p=0.8-1.2}
+    - takeitem{m=*;slot=HAND;qty=1} @trigger
+
+raccoon_command_cycle:
+  Skills:
+    # 0→1→2→0 (mod 267-269)
+    - skill{s=raccoon_command_wander} @self
+      ?variable{var=raccoon.command;value=2}
+    - skill{s=raccoon_command_follow} @self
+      ?variable{var=raccoon.command;value=0}
+    - skill{s=raccoon_command_sit} @self
+      ?variable{var=raccoon.command;value=1}
+
+raccoon_command_wander:
+  Skills:
+    - setvariable{var=raccoon.command;value=0;type=INTEGER}
+    - setvariable{var=raccoon.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=raccoon.sitting;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+raccoon_command_follow:
+  Skills:
+    - setvariable{var=raccoon.command;value=1;type=INTEGER}
+    - setvariable{var=raccoon.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=raccoon.sitting;value=false;type=BOOLEAN}
+
+raccoon_command_sit:
+  Skills:
+    - setvariable{var=raccoon.command;value=2;type=INTEGER}
+    - setvariable{var=raccoon.forcedSit;value=true;type=BOOLEAN}
+    - setvariable{var=raccoon.sitting;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}
+
+
+# ════════════════════════════════════════════════════════════════
+# HURT / DEATH
+# ════════════════════════════════════════════════════════════════
+
+raccoon_on_hurt:
+  Skills:
+    - setvariable{var=raccoon.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=raccoon.sitting;value=false;type=BOOLEAN}
+
+raccoon_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.raccoon.hurt;v=1.0;p=0.7-1.0} @self
+    # Drop le tapis si équipé
+    - dropitem{item=<carpetitem>;amount=1} @origin
+      ?variable{var=raccoon.carpetColor;value=>-1}
+
+
+# ════════════════════════════════════════════════════════════════
+# ANIMATION TICK ADVANCE
+# ════════════════════════════════════════════════════════════════
+
+raccoon_anim_tick_advance:
+  Skills:
+    - setvariable{var=raccoon.animTick;value=<math.(raccoon.animTick + 1)>;type=INTEGER}
+      ?stance{s=attacking}
+    # Apply damage au tick 5 (mod ligne 425)
+    - skill{s=raccoon_attack_hit} @target
+      ?stance{s=attacking}
+      ?variable{var=raccoon.animTick;value=5}
+    # Fin d'animation au tick 12
+    - skill{s=raccoon_anim_end} @self
+      ?stance{s=attacking}
+      ?variable{var=raccoon.animTick;value=>12}
+
+raccoon_anim_end:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+    - setvariable{var=raccoon.animTick;value=0;type=INTEGER}

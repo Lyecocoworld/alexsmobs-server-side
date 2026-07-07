@@ -1,0 +1,7 @@
+# CraftEngine Block: Purpur Planks Stairs
+blocks:
+  alexsmobs:purpur_planks_stairs:
+    display_name: "Purpur Planks Stairs"
+    category: BUILDING
+    resource:
+      model: alexsmobs:block/purpur_planks_stairs

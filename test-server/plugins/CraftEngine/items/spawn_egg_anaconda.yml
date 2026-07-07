@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Anaconda
+items:
+  alexsmobs:spawn_egg_anaconda:
+    display_name: "Spawn Egg Anaconda"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_anaconda

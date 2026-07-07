@@ -1,0 +1,8 @@
+# DROP BEAR — Variables
+
+variables:
+  drop_bear.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

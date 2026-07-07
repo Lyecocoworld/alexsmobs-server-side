@@ -1,0 +1,9 @@
+# CraftEngine Item: Ancient Dart
+items:
+  alexsmobs:ancient_dart:
+    display_name: "Ancient Dart"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/ancient_dart
+      textures:
+        default: alexsmobs:item/ancient_dart

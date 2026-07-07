@@ -1,0 +1,10 @@
+# Tusklin — Drops
+# Source: data/loot_tables/entities/tusklin.json
+
+tusklin_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:porkchop 3-6 1.0
+    - alexsmobs:snowball 0-1 1.0
+    - exp{amount=1-3} 1.0

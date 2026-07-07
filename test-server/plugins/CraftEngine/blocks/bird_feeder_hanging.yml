@@ -1,0 +1,7 @@
+# CraftEngine Block: Bird Feeder Hanging
+blocks:
+  alexsmobs:bird_feeder_hanging:
+    display_name: "Bird Feeder Hanging"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/bird_feeder_hanging

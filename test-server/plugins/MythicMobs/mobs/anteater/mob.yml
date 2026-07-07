@@ -1,0 +1,42 @@
+#===============================================================
+# ANTEATER (Alex's Mobs)
+# HP=20 DMG=2 SPD=0.2
+#===============================================================
+anteater:
+  Type: cow
+  Display: '&fAnteater'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 20
+  Damage: 2
+  MovementSpeed: 0.2
+  Faction: creature_anteater
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - anteater_ai
+  AITargetSelectors:
+    - clear
+    - anteater_targets
+  Drops:
+    - anteater_drops
+  Skills:
+    - onTimer:10
+    - skill:anteater_tick @self
+    - onSpawn:
+      - skill:anteater_init @self
+    - onDeath:
+      - skill:anteater_death @self
+    - onDamaged:
+      - skill:anteater_on_hurt @self

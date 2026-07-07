@@ -1,0 +1,7 @@
+# CraftEngine Block: Bison Fur Block
+blocks:
+  alexsmobs:bison_fur_block:
+    display_name: "Bison Fur Block"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/bison_fur_block

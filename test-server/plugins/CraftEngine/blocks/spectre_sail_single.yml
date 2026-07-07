@@ -1,0 +1,7 @@
+# CraftEngine Block: Spectre Sail Single
+blocks:
+  alexsmobs:spectre_sail_single:
+    display_name: "Spectre Sail Single"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/spectre_sail_single

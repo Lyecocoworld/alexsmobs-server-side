@@ -1,0 +1,19 @@
+# SEAL — Spawn
+
+seal_spawner:
+  Type: seal
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=FROZEN_OCEAN,SNOWY_BEACH,COLD_OCEAN,DEEP_FROZEN_OCEAN,FROZEN_RIVER}
+  - height{h=40to80}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=WATER,SAND,SNOW_BLOCK,GRAVEL,ICE} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

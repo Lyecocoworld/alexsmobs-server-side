@@ -1,0 +1,582 @@
+# ════════════════════════════════════════════════════════════════
+# Alex's Mobs — MythicMobs Items (proxy to CraftEngine)
+# These items wrap CraftEngine custom items so MythicMobs
+# can reference them in drops.yml
+# ════════════════════════════════════════════════════════════════
+
+am_ambergris:
+  Id: PAPER
+  Display: '&fAmbergris'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:ambergris
+  # When CraftEngine is installed, drops use the real item
+
+am_banana:
+  Id: PAPER
+  Display: '&fBanana'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:banana
+  # When CraftEngine is installed, drops use the real item
+
+am_banana_slug_slime:
+  Id: PAPER
+  Display: '&fBanana Slug Slime'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:banana_slug_slime
+  # When CraftEngine is installed, drops use the real item
+
+am_basalt:
+  Id: PAPER
+  Display: '&fBasalt'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:basalt
+  # When CraftEngine is installed, drops use the real item
+
+am_bear_dust:
+  Id: PAPER
+  Display: '&fBear Dust'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:bear_dust
+  # When CraftEngine is installed, drops use the real item
+
+am_bear_fur:
+  Id: PAPER
+  Display: '&fBear Fur'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:bear_fur
+  # When CraftEngine is installed, drops use the real item
+
+am_beef:
+  Id: PAPER
+  Display: '&fBeef'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:beef
+  # When CraftEngine is installed, drops use the real item
+
+am_bison_fur:
+  Id: PAPER
+  Display: '&fBison Fur'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:bison_fur
+  # When CraftEngine is installed, drops use the real item
+
+am_blackstone:
+  Id: PAPER
+  Display: '&fBlackstone'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:blackstone
+  # When CraftEngine is installed, drops use the real item
+
+am_blobfish:
+  Id: PAPER
+  Display: '&fBlobfish'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:blobfish
+  # When CraftEngine is installed, drops use the real item
+
+am_bone:
+  Id: PAPER
+  Display: '&fBone'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:bone
+  # When CraftEngine is installed, drops use the real item
+
+am_bone_block:
+  Id: PAPER
+  Display: '&fBone Block'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:bone_block
+  # When CraftEngine is installed, drops use the real item
+
+am_bone_meal:
+  Id: PAPER
+  Display: '&fBone Meal'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:bone_meal
+  # When CraftEngine is installed, drops use the real item
+
+am_bone_serpent_tooth:
+  Id: PAPER
+  Display: '&fBone Serpent Tooth'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:bone_serpent_tooth
+  # When CraftEngine is installed, drops use the real item
+
+am_cachalot_wax:
+  Id: PAPER
+  Display: '&fCachalot Wax'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:cachalot_wax
+  # When CraftEngine is installed, drops use the real item
+
+am_caiman_scute:
+  Id: PAPER
+  Display: '&fCaiman Scute'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:caiman_scute
+  # When CraftEngine is installed, drops use the real item
+
+am_capsid:
+  Id: PAPER
+  Display: '&fCapsid'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:capsid
+  # When CraftEngine is installed, drops use the real item
+
+am_centipede_leg:
+  Id: PAPER
+  Display: '&fCentipede Leg'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:centipede_leg
+  # When CraftEngine is installed, drops use the real item
+
+am_chorus_fruit:
+  Id: PAPER
+  Display: '&fChorus Fruit'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:chorus_fruit
+  # When CraftEngine is installed, drops use the real item
+
+am_coal:
+  Id: PAPER
+  Display: '&fCoal'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:coal
+  # When CraftEngine is installed, drops use the real item
+
+am_cockroach_wing_fragment:
+  Id: PAPER
+  Display: '&fCockroach Wing Fragment'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:cockroach_wing_fragment
+  # When CraftEngine is installed, drops use the real item
+
+am_cosmic_cod:
+  Id: PAPER
+  Display: '&fCosmic Cod'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:cosmic_cod
+  # When CraftEngine is installed, drops use the real item
+
+am_crocodile_egg:
+  Id: PAPER
+  Display: '&fCrocodile Egg'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:crocodile_egg
+  # When CraftEngine is installed, drops use the real item
+
+am_crocodile_scute:
+  Id: PAPER
+  Display: '&fCrocodile Scute'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:crocodile_scute
+  # When CraftEngine is installed, drops use the real item
+
+am_elastic_tendon:
+  Id: PAPER
+  Display: '&fElastic Tendon'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:elastic_tendon
+  # When CraftEngine is installed, drops use the real item
+
+am_emu_feather:
+  Id: PAPER
+  Display: '&fEmu Feather'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:emu_feather
+  # When CraftEngine is installed, drops use the real item
+
+am_farseer_arm:
+  Id: PAPER
+  Display: '&fFarseer Arm'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:farseer_arm
+  # When CraftEngine is installed, drops use the real item
+
+am_feather:
+  Id: PAPER
+  Display: '&fFeather'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:feather
+  # When CraftEngine is installed, drops use the real item
+
+am_fish_bones:
+  Id: PAPER
+  Display: '&fFish Bones'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:fish_bones
+  # When CraftEngine is installed, drops use the real item
+
+am_flying_fish:
+  Id: PAPER
+  Display: '&fFlying Fish'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:flying_fish
+  # When CraftEngine is installed, drops use the real item
+
+am_gazelle_horn:
+  Id: PAPER
+  Display: '&fGazelle Horn'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:gazelle_horn
+  # When CraftEngine is installed, drops use the real item
+
+am_guster_eye:
+  Id: PAPER
+  Display: '&fGuster Eye'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:guster_eye
+  # When CraftEngine is installed, drops use the real item
+
+am_hemolymph_sac:
+  Id: PAPER
+  Display: '&fHemolymph Sac'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:hemolymph_sac
+  # When CraftEngine is installed, drops use the real item
+
+am_ink_sac:
+  Id: PAPER
+  Display: '&fInk Sac'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:ink_sac
+  # When CraftEngine is installed, drops use the real item
+
+am_kangaroo_hide:
+  Id: PAPER
+  Display: '&fKangaroo Hide'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:kangaroo_hide
+  # When CraftEngine is installed, drops use the real item
+
+am_kangaroo_meat:
+  Id: PAPER
+  Display: '&fKangaroo Meat'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:kangaroo_meat
+  # When CraftEngine is installed, drops use the real item
+
+am_komodo_dragon_pelt:
+  Id: PAPER
+  Display: '&fKomodo Dragon Pelt'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:komodo_dragon_pelt
+  # When CraftEngine is installed, drops use the real item
+
+am_lobster_tail:
+  Id: PAPER
+  Display: '&fLobster Tail'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:lobster_tail
+  # When CraftEngine is installed, drops use the real item
+
+am_maggot:
+  Id: PAPER
+  Display: '&fMaggot'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:maggot
+  # When CraftEngine is installed, drops use the real item
+
+am_magma_block:
+  Id: PAPER
+  Display: '&fMagma Block'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:magma_block
+  # When CraftEngine is installed, drops use the real item
+
+am_mantis_shrimp_claw:
+  Id: PAPER
+  Display: '&fMantis Shrimp Claw'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:mantis_shrimp_claw
+  # When CraftEngine is installed, drops use the real item
+
+am_mimicream:
+  Id: PAPER
+  Display: '&fMimicream'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:mimicream
+  # When CraftEngine is installed, drops use the real item
+
+am_moose_ribs:
+  Id: PAPER
+  Display: '&fMoose Ribs'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:moose_ribs
+  # When CraftEngine is installed, drops use the real item
+
+am_mosquito_proboscis:
+  Id: PAPER
+  Display: '&fMosquito Proboscis'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:mosquito_proboscis
+  # When CraftEngine is installed, drops use the real item
+
+am_mutton:
+  Id: PAPER
+  Display: '&fMutton'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:mutton
+  # When CraftEngine is installed, drops use the real item
+
+am_nether_wart:
+  Id: PAPER
+  Display: '&fNether Wart'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:nether_wart
+  # When CraftEngine is installed, drops use the real item
+
+am_novelty_hat:
+  Id: PAPER
+  Display: '&fNovelty Hat'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:novelty_hat
+  # When CraftEngine is installed, drops use the real item
+
+am_pointed_dripstone:
+  Id: PAPER
+  Display: '&fPointed Dripstone'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:pointed_dripstone
+  # When CraftEngine is installed, drops use the real item
+
+am_porkchop:
+  Id: PAPER
+  Display: '&fPorkchop'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:porkchop
+  # When CraftEngine is installed, drops use the real item
+
+am_raccoon_tail:
+  Id: PAPER
+  Display: '&fRaccoon Tail'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:raccoon_tail
+  # When CraftEngine is installed, drops use the real item
+
+am_rainbow_jelly:
+  Id: PAPER
+  Display: '&fRainbow Jelly'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:rainbow_jelly
+  # When CraftEngine is installed, drops use the real item
+
+am_rattlesnake_rattle:
+  Id: PAPER
+  Display: '&fRattlesnake Rattle'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:rattlesnake_rattle
+  # When CraftEngine is installed, drops use the real item
+
+am_raw_catfish:
+  Id: PAPER
+  Display: '&fRaw Catfish'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:raw_catfish
+  # When CraftEngine is installed, drops use the real item
+
+am_red_mushroom:
+  Id: PAPER
+  Display: '&fRed Mushroom'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:red_mushroom
+  # When CraftEngine is installed, drops use the real item
+
+am_red_wool:
+  Id: PAPER
+  Display: '&fRed Wool'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:red_wool
+  # When CraftEngine is installed, drops use the real item
+
+am_roadrunner_feather:
+  Id: PAPER
+  Display: '&fRoadrunner Feather'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:roadrunner_feather
+  # When CraftEngine is installed, drops use the real item
+
+am_rocky_shell:
+  Id: PAPER
+  Display: '&fRocky Shell'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:rocky_shell
+  # When CraftEngine is installed, drops use the real item
+
+am_sand:
+  Id: PAPER
+  Display: '&fSand'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:sand
+  # When CraftEngine is installed, drops use the real item
+
+am_shroomlight:
+  Id: PAPER
+  Display: '&fShroomlight'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:shroomlight
+  # When CraftEngine is installed, drops use the real item
+
+am_skelewag_sword:
+  Id: PAPER
+  Display: '&fSkelewag Sword'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:skelewag_sword
+  # When CraftEngine is installed, drops use the real item
+
+am_skreecher_soul:
+  Id: PAPER
+  Display: '&fSkreecher Soul'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:skreecher_soul
+  # When CraftEngine is installed, drops use the real item
+
+am_snowball:
+  Id: PAPER
+  Display: '&fSnowball'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:snowball
+  # When CraftEngine is installed, drops use the real item
+
+am_spore_blossom:
+  Id: PAPER
+  Display: '&fSpore Blossom'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:spore_blossom
+  # When CraftEngine is installed, drops use the real item
+
+am_straddlite:
+  Id: PAPER
+  Display: '&fStraddlite'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:straddlite
+  # When CraftEngine is installed, drops use the real item
+
+am_tarantula_hawk_wing_fragment:
+  Id: PAPER
+  Display: '&fTarantula Hawk Wing Fragment'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:tarantula_hawk_wing_fragment
+  # When CraftEngine is installed, drops use the real item
+
+am_tiger_pelt:
+  Id: PAPER
+  Display: '&fTiger Pelt'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:tiger_pelt
+  # When CraftEngine is installed, drops use the real item
+
+am_tropical_fish:
+  Id: PAPER
+  Display: '&fTropical Fish'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:tropical_fish
+  # When CraftEngine is installed, drops use the real item
+
+am_tuff:
+  Id: PAPER
+  Display: '&fTuff'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:tuff
+  # When CraftEngine is installed, drops use the real item
+
+am_unsettling_kimono:
+  Id: PAPER
+  Display: '&fUnsettling Kimono'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:unsettling_kimono
+  # When CraftEngine is installed, drops use the real item
+
+am_void_worm_eye:
+  Id: PAPER
+  Display: '&fVoid Worm Eye'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:void_worm_eye
+  # When CraftEngine is installed, drops use the real item
+
+am_void_worm_mandible:
+  Id: PAPER
+  Display: '&fVoid Worm Mandible'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:void_worm_mandible
+  # When CraftEngine is installed, drops use the real item
+
+am_warped_muscle:
+  Id: PAPER
+  Display: '&fWarped Muscle'
+  Options:
+    CustomModelData: 0
+  # CraftEngine item: alexsmobs:warped_muscle
+  # When CraftEngine is installed, drops use the real item
+

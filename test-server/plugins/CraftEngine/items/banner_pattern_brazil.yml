@@ -1,0 +1,7 @@
+# CraftEngine Item: Banner Pattern Brazil
+items:
+  alexsmobs:banner_pattern_brazil:
+    display_name: "Banner Pattern Brazil"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/banner_pattern_brazil

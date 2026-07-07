@@ -1,0 +1,9 @@
+# CraftEngine Item: Banana Slug Slime
+items:
+  alexsmobs:banana_slug_slime:
+    display_name: "Banana Slug Slime"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/banana_slug_slime
+      textures:
+        default: alexsmobs:item/banana_slug_slime

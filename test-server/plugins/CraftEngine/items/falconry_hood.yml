@@ -1,0 +1,9 @@
+# CraftEngine Item: Falconry Hood
+items:
+  alexsmobs:falconry_hood:
+    display_name: "Falconry Hood"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/falconry_hood
+      textures:
+        default: alexsmobs:item/falconry_hood

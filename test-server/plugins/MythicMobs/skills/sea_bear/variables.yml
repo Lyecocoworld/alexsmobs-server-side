@@ -1,0 +1,8 @@
+# SEA BEAR — Variables
+
+variables:
+  sea_bear.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

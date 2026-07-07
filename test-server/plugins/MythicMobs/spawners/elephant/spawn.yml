@@ -1,0 +1,19 @@
+# ELEPHANT — Spawn
+
+elephant_spawner:
+  Type: elephant
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=SAVANNA,SAVANNA_PLATEAU,BADLANDS,JUNGLE,SPARSE_JUNGLE}
+  - height{h=60to150}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=GRASS_BLOCK,DIRT,COARSE_DIRT,RED_SAND,SAND} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

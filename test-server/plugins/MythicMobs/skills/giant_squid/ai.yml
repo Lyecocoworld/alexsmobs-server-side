@@ -1,0 +1,18 @@
+# ===============================================================
+# GIANT SQUID — AI
+# ===============================================================
+
+giant_squid_ai:
+  Goals:
+    - float{p=0}
+    - melee{p=2;speed=1.0;memory=true}
+    - randomstroll{p=3;speed=0.5}
+    - lookatplayer{p=4;range=6}
+    - randomlookaround{p=4}
+
+giant_squid_targets:
+  TargetSelectors:
+    - clear
+    - players
+    - attackers
+    - monofocused

@@ -1,0 +1,27 @@
+# ANACONDA — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:anaconda"
+  type: "salamander"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/anaconda.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/anaconda.png"
+  animations:
+    idle: "animation.anaconda.idle"
+    walk: "animation.anaconda.walk"
+    run: "animation.anaconda.run"
+    sit: "animation.anaconda.sit"
+    death: "animation.anaconda.death"
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": false, "duration": 20}
+  scale:
+    adult: 1.0
+    baby: 0.5

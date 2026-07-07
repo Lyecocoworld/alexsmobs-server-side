@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Farseer
+items:
+  alexsmobs:spawn_egg_farseer:
+    display_name: "Spawn Egg Farseer"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_farseer

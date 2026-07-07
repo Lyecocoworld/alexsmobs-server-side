@@ -1,0 +1,9 @@
+# CraftEngine Item: Mysterious Worm
+items:
+  alexsmobs:mysterious_worm:
+    display_name: "Mysterious Worm"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/mysterious_worm
+      textures:
+        default: alexsmobs:item/mysterious_worm

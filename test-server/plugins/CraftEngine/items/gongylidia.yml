@@ -1,0 +1,9 @@
+# CraftEngine Item: Gongylidia
+items:
+  alexsmobs:gongylidia:
+    display_name: "Gongylidia"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/gongylidia
+      textures:
+        default: alexsmobs:item/gongylidia

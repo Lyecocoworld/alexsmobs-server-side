@@ -1,0 +1,51 @@
+# WARPED TOAD — Variables
+
+variables:
+  warped_toad.tongueLength:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: ""
+
+  warped_toad.tongueOut:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  warped_toad.sitting:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  warped_toad.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: ""
+
+  warped_toad.jumpActive:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  warped_toad.tamed:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  warped_toad.forcedSit:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  warped_toad.owner:
+    type: STRING
+    default: NONE
+    persistent: true
+    desc: ""
+

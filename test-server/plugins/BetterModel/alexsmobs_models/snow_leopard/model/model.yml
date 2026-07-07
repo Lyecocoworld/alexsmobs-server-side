@@ -1,0 +1,33 @@
+# SNOW LEOPARD — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:snow_leopard"
+  type: "ocelot"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/snow_leopard.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/snow_leopard.png"
+  animations:
+    idle: "animation.snow_leopard.idle"
+    walk: "animation.snow_leopard.walk"
+    run: "animation.snow_leopard.run"
+    sit: "animation.snow_leopard.sit"
+    death: "animation.snow_leopard.death"
+    attack_r: "animation.snow_leopard.attack_r"
+    attack_l: "animation.snow_leopard.attack_l"
+
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": true}
+    attack_r: {"animation": "attack_r", "texture": "normal", "loop": false, "duration": 13}
+    attack_l: {"animation": "attack_l", "texture": "normal", "loop": false, "duration": 13}
+
+  scale:
+    adult: 1.0
+    baby: 0.5

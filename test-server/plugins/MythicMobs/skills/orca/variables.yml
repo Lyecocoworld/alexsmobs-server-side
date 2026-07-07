@@ -1,0 +1,8 @@
+# ORCA — Variables
+
+variables:
+  orca.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

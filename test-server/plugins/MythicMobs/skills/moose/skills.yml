@@ -1,0 +1,19 @@
+# MOOSE — Skills
+
+moose_tick:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+moose_init:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+
+moose_on_hurt:
+  Skills: []
+
+moose_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.moose.die;v=1.0;p=0.8-1.2} @self

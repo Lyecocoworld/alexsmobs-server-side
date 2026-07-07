@@ -1,0 +1,7 @@
+# CraftEngine Block: Void Worm Effigy Inventory
+blocks:
+  alexsmobs:void_worm_effigy_inventory:
+    display_name: "Void Worm Effigy Inventory"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/void_worm_effigy_inventory

@@ -1,0 +1,9 @@
+# CraftEngine Item: Tarantula Hawk Wing
+items:
+  alexsmobs:tarantula_hawk_wing:
+    display_name: "Tarantula Hawk Wing"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/tarantula_hawk_wing
+      textures:
+        default: alexsmobs:item/tarantula_hawk_wing

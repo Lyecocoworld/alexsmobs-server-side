@@ -1,0 +1,9 @@
+# CraftEngine Item: Shark Tooth
+items:
+  alexsmobs:shark_tooth:
+    display_name: "Shark Tooth"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/shark_tooth
+      textures:
+        default: alexsmobs:item/shark_tooth

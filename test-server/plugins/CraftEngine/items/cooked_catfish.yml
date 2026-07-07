@@ -1,0 +1,12 @@
+# CraftEngine Item: Cooked Catfish
+items:
+  alexsmobs:cooked_catfish:
+    display_name: "Cooked Catfish"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/cooked_catfish
+      textures:
+        default: alexsmobs:item/cooked_catfish
+    food:
+      nutrition: 8
+      saturation: 0.8

@@ -1,0 +1,7 @@
+# CraftEngine Item: Falconry Glove Hand
+items:
+  alexsmobs:falconry_glove_hand:
+    display_name: "Falconry Glove Hand"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/falconry_glove_hand

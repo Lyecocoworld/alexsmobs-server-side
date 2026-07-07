@@ -1,0 +1,9 @@
+# CraftEngine Item: Rattlesnake Rattle
+items:
+  alexsmobs:rattlesnake_rattle:
+    display_name: "Rattlesnake Rattle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/rattlesnake_rattle
+      textures:
+        default: alexsmobs:item/rattlesnake_rattle

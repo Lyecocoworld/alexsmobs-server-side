@@ -1,0 +1,9 @@
+# CraftEngine Item: Centipede Leg
+items:
+  alexsmobs:centipede_leg:
+    display_name: "Centipede Leg"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/centipede_leg
+      textures:
+        default: alexsmobs:item/centipede_leg

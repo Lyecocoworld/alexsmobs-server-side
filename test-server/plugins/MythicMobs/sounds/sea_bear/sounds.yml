@@ -1,0 +1,22 @@
+# SEA BEAR — Sons
+
+sounds:
+  alexsmobs:entity.sea_bear.idle:
+    sound: "alexsmobs:sea_bear/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.sea_bear.hurt:
+    sound: "alexsmobs:sea_bear/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.sea_bear.die:
+    sound: "alexsmobs:sea_bear/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

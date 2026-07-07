@@ -1,0 +1,9 @@
+# CraftEngine Item: Large Catfish Bucket
+items:
+  alexsmobs:large_catfish_bucket:
+    display_name: "Large Catfish Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/large_catfish_bucket
+      textures:
+        default: alexsmobs:item/large_catfish_bucket

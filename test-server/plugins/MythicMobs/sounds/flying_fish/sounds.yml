@@ -1,0 +1,22 @@
+# FLYING FISH — Sons
+
+sounds:
+  alexsmobs:entity.flying_fish.idle:
+    sound: "alexsmobs:flying_fish/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.flying_fish.hurt:
+    sound: "alexsmobs:flying_fish/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.flying_fish.die:
+    sound: "alexsmobs:flying_fish/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

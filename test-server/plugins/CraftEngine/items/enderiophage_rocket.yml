@@ -1,0 +1,9 @@
+# CraftEngine Item: Enderiophage Rocket
+items:
+  alexsmobs:enderiophage_rocket:
+    display_name: "Enderiophage Rocket"
+    rarity: EPIC
+    resource:
+      model: alexsmobs:item/enderiophage_rocket
+      textures:
+        default: alexsmobs:item/enderiophage_rocket

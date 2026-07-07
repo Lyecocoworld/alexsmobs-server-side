@@ -1,0 +1,7 @@
+# CraftEngine Block: Banana Peel
+blocks:
+  alexsmobs:banana_peel:
+    display_name: "Banana Peel"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/banana_peel

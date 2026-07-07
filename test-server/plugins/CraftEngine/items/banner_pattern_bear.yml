@@ -1,0 +1,7 @@
+# CraftEngine Item: Banner Pattern Bear
+items:
+  alexsmobs:banner_pattern_bear:
+    display_name: "Banner Pattern Bear"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/banner_pattern_bear

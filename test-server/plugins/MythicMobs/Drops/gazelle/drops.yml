@@ -1,0 +1,10 @@
+# Gazelle — Drops
+# Source: data/loot_tables/entities/gazelle.json
+
+gazelle_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:mutton 0-1 1.0
+    - alexsmobs:gazelle_horn 0-1 1.0
+    - exp{amount=1-3} 1.0

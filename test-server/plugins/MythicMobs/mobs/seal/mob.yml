@@ -1,0 +1,42 @@
+# ===============================================================
+# SEAL (Alex's Mobs)
+# HP=12 DMG=1 SPD=0.25
+# ===============================================================
+seal:
+  Type: axolotl
+  Display: '&fSeal'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 12
+  Damage: 1
+  MovementSpeed: 0.25
+  Faction: creature_seal
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - seal_ai
+  AITargetSelectors:
+    - clear
+    - seal_targets
+  Drops:
+    - seal_drops
+  Skills:
+    - onTimer:10
+    - skill:seal_tick @self
+    - onSpawn:
+      - skill:seal_init @self
+    - onDeath:
+      - skill:seal_death @self
+    - onDamaged:
+      - skill:seal_on_hurt @self

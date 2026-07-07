@@ -1,0 +1,8 @@
+# GELADA MONKEY — Variables
+
+variables:
+  gelada_monkey.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

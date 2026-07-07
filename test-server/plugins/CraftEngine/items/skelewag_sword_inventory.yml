@@ -1,0 +1,7 @@
+# CraftEngine Item: Skelewag Sword Inventory
+items:
+  alexsmobs:skelewag_sword_inventory:
+    display_name: "Skelewag Sword Inventory"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/skelewag_sword_inventory

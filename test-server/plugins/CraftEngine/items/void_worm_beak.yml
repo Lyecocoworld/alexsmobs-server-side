@@ -1,0 +1,9 @@
+# CraftEngine Item: Void Worm Beak
+items:
+  alexsmobs:void_worm_beak:
+    display_name: "Void Worm Beak"
+    rarity: EPIC
+    resource:
+      model: alexsmobs:item/void_worm_beak
+      textures:
+        default: alexsmobs:item/void_worm_beak

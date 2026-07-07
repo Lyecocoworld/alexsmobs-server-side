@@ -1,0 +1,77 @@
+# ════════════════════════════════════════════════════════════════
+# RATTLESNAKE (Alex's Mobs)
+# Source: EntityRattlesnake.java (311 lignes, branch 1.20)
+# Classification: C1 (simple), P0 (signature mob)
+# ─────────────────────────────────────────────────────────────────
+# Comportements reproduits:
+#   - [x] Animal hostile (poison bite)
+#   - [x] Health: 8, Damage: 2, Speed: 0.28
+#   - [x] RATTLING (bool) — secoue la queue en avertissement
+#   - [x] CURLED (bool) — enroulé au repos (idle)
+#   - [x] ANIMATION_BITE (20 ticks) — attaque avec morsure venimeuse
+#   - [x] Rattle warning: avertit avant d'attaquer (proximité joueur)
+#   - [x] Poison bite: applique POISON à la cible
+#   - [x] Curled idle state (immobile, enroulé)
+#   - [x] Spawn desert (sable, désert chaud)
+# ─────────────────────────────────────────────────────────────────
+# Équivalences mod → plugin:
+#   AnimationHandler (Citadel)     → BetterModel animation states (via stance)
+#   SynchedEntityData: RATTLING    → MythicMobs variable rattlesnake.rattling
+#   SynchedEntityData: CURLED      → MythicMobs variable rattlesnake.curled
+#   registerGoals() (8 goals)      → AIGoalSelectors + AITargetSelectors
+#   poison bite (doHurtTarget)     → onAttack skill (potion effect)
+#   rattle warning                 → onTimer proximity check (Folia-safe)
+# ════════════════════════════════════════════════════════════════
+rattlesnake:
+  Type: silverfish                # Vanilla base: petit mob terrestre rampant
+  Display: '&6Rattlesnake'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    ImmunityTable: true
+  Health: 8
+  Damage: 2
+  KnockbackResistance: 0.0
+  MovementSpeed: 0.28
+  Faction: creature_rattlesnake
+  Options:
+    PreventOtherDrops: false
+    Persistent: true
+    FollowRange: 16
+    Silent: true
+    Despawn: true
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - rattlesnake_ai
+  AITargetSelectors:
+    - clear
+    - rattlesnake_targets
+  DamageModifiers:
+    - FALL 0.0                     # Serpent: pas de dégâts de chute
+    - DROWN 0.0                    # Résiste à la noyade (désert)
+  Drops:
+    - rattlesnake_drops
+  # ── Skills déclenchés par événements (Folia-safe, region-local) ──
+  Skills:
+    # Tick principal — toutes les 10 ticks (0.5s)
+    # Gère: rattle warning, curled idle, anim tick advance
+    - onTimer:10
+    - skill:rattlesnake_tick @self
+
+    # Au spawn — initialiser les variables
+    - onSpawn:
+      - skill:rattlesnake_init @self
+
+    # À la mort
+    - onDeath:
+      - skill:rattlesnake_death @self
+
+    # Quand blessé
+    - onDamaged:
+      - skill:rattlesnake_on_hurt @self
+
+    # Quand attaque une cible (bite + poison)
+    - onAttack:
+      - skill:rattlesnake_on_attack @target

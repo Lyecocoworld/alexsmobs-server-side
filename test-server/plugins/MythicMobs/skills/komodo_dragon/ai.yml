@@ -1,0 +1,22 @@
+# ===============================================================
+# KOMODO DRAGON — AI
+# ===============================================================
+
+komodo_dragon_ai:
+  Goals:
+    - float{p=0}
+    - melee{p=2;speed=1.0;memory=true}
+    - followowner{p=1;speed=1.0;stop_distance=5;start_distance=2}
+    - breed{p=3;speed=1.0}
+    - followparent{p=4;speed=1.0}
+    - randomstroll{p=5;speed=0.5}
+    - lookatplayer{p=6;range=6}
+    - randomlookaround{p=6}
+
+komodo_dragon_targets:
+  TargetSelectors:
+    - clear
+    - ownerhurtbytarget
+    - ownerhurttarget
+    - hurtbytarget
+    - attackers

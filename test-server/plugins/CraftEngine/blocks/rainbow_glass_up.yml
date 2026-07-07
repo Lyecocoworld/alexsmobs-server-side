@@ -1,0 +1,7 @@
+# CraftEngine Block: Rainbow Glass Up
+blocks:
+  alexsmobs:rainbow_glass_up:
+    display_name: "Rainbow Glass Up"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/rainbow_glass_up

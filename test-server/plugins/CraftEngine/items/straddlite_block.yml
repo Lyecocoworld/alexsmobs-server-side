@@ -1,0 +1,7 @@
+# CraftEngine Item: Straddlite Block
+items:
+  alexsmobs:straddlite_block:
+    display_name: "Straddlite Block"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/straddlite_block

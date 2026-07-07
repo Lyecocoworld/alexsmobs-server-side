@@ -1,0 +1,7 @@
+# CraftEngine Block: Leafcutter Ant Chamber Fungus
+blocks:
+  alexsmobs:leafcutter_ant_chamber_fungus:
+    display_name: "Leafcutter Ant Chamber Fungus"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/leafcutter_ant_chamber_fungus

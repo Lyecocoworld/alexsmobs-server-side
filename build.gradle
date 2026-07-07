@@ -1,18 +1,18 @@
 plugins {
     id 'java'
-    id 'io.papermc.paperweight.userdev' version '1.7.7'
 }
 
 group = 'com.lyecocoworld'
-version = '1.1.0'
+version = '1.2.0'
 
 repositories {
     mavenCentral()
     maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url = 'https://jitpack.io' }
 }
 
 dependencies {
-    paperweight.paperDevBundle("1.21.1-R0.1-SNAPSHOT")
+    compileOnly "io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT"
 }
 
 java {
@@ -37,6 +37,12 @@ jar {
     from('data') { into('data') }
     from('worldgen_datapack') { into('worldgen_datapack/natures_spirit') }
     from('larion_worldgen_datapack') { into('worldgen_datapack/larion') }
+
+    // IMPORTANT: Exclude horizon.plugin.json — Paper detects it and tries
+    // to load as a Horizon plugin, which breaks the standard classloader.
+    // Only include it when building with the Horizon Gradle plugin.
+    exclude 'horizon.plugin.json'
+    exclude 'mixins.larion.json'
 }
 
 build {

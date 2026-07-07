@@ -1,0 +1,7 @@
+# CraftEngine Block: End Pirate Door
+blocks:
+  alexsmobs:end_pirate_door:
+    display_name: "End Pirate Door"
+    category: DOOR_FENCE
+    resource:
+      model: alexsmobs:block/end_pirate_door

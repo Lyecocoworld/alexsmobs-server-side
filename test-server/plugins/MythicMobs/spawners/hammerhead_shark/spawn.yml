@@ -1,0 +1,19 @@
+# HAMMERHEAD SHARK — Spawn
+
+hammerhead_shark_spawner:
+  Type: hammerhead_shark
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=OCEAN,WARM_OCEAN,LUKEWARM_OCEAN,DEEP_OCEAN}
+  - height{h=0to60}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=WATER,SAND,GRAVEL} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

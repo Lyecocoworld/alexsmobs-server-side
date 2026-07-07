@@ -1,0 +1,7 @@
+# CraftEngine Item: Stink Ray Hand
+items:
+  alexsmobs:stink_ray_hand:
+    display_name: "Stink Ray Hand"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/stink_ray_hand

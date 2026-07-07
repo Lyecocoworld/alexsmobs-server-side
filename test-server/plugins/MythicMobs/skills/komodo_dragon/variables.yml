@@ -1,0 +1,51 @@
+# KOMODO DRAGON — Variables
+
+variables:
+  komodo_dragon.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: ""
+
+  komodo_dragon.jostling:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  komodo_dragon.jostleAngle:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: ""
+
+  komodo_dragon.saddled:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  komodo_dragon.tamed:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  komodo_dragon.forcedSit:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  komodo_dragon.poisonCooldown:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  komodo_dragon.owner:
+    type: STRING
+    default: NONE
+    persistent: true
+    desc: ""
+

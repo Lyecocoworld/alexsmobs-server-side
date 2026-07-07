@@ -1,0 +1,36 @@
+# ===============================================================
+# STRADDLER — Skills
+# ===============================================================
+
+straddler_tick:
+  Skills:
+    - skill{s=straddler_idle_check} @self
+
+straddler_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=straddler.stradpoleCount;value=0;type=INTEGER}
+    - setvariable{var=straddler.launchCooldown;value=0;type=INTEGER}
+    - setvariable{var=straddler.animTick;value=0;type=INTEGER}
+    - setmodelstate{state=idle}
+
+straddler_launch:
+  Skills:
+    - setstance{stance=launch}
+    - setmodelstate{state=launch}
+    - setvariable{var=straddler.animTick;value=0;type=INTEGER}
+    - damage{amount=2} @target
+    - sound{s=alexsmobs:entity.straddler.launch;v=1.0;p=0.9-1.1} @self
+
+straddler_idle_check:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+straddler_on_hurt:
+  Skills:
+
+straddler_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.straddler.die;v=1.0;p=0.8-1.2} @self

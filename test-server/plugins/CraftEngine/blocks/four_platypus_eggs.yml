@@ -1,0 +1,7 @@
+# CraftEngine Block: Four Platypus Eggs
+blocks:
+  alexsmobs:four_platypus_eggs:
+    display_name: "Four Platypus Eggs"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/four_platypus_eggs

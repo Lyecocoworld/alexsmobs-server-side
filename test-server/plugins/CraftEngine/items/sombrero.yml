@@ -1,0 +1,9 @@
+# CraftEngine Item: Sombrero
+items:
+  alexsmobs:sombrero:
+    display_name: "Sombrero"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/sombrero
+      textures:
+        default: alexsmobs:item/sombrero

@@ -1,0 +1,48 @@
+# ════════════════════════════════════════════════════════════════
+# RATTLESNAKE — Sons
+# ─────────────────────────────────────────────────────────────────
+# Source: AMSoundRegistry
+# Sons: idle (hiss), hurt, death, rattle (tail warning), bite
+# ─────────────────────────────────────────────────────────────────
+# Les sons sont référencés dans le resource pack généré par
+# BetterModel + CraftEngine. MythicMobs les joue via sound{}
+# ════════════════════════════════════════════════════════════════
+
+# Registry des sons (chemin resource pack)
+sounds:
+  # Sons principaux (5: idle, hurt, death, rattle, bite)
+  alexsmobs:entity.rattlesnake.idle:
+    sound: "alexsmobs:rattlesnake/idle1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.rattlesnake.hurt:
+    sound: "alexsmobs:rattlesnake/hurt1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.rattlesnake.death:
+    sound: "alexsmobs:rattlesnake/death1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  # Son du rattle (avertissement de la queue)
+  alexsmobs:entity.rattlesnake.rattle:
+    sound: "alexsmobs:rattlesnake/rattle1"
+    volume: 0.8
+    pitch_min: 0.9
+    pitch_max: 1.1
+
+  # Son de la morsure (bite)
+  alexsmobs:entity.rattlesnake.bite:
+    sound: "alexsmobs:rattlesnake/bite1"
+    volume: 1.0
+    pitch_min: 0.9
+    pitch_max: 1.1
+
+# Mapping pour MythicMobs (références dans skills.yml)
+# Format: sound{s=<sound_id>;v=<volume>;p=<pitch>} @self

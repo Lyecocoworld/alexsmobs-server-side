@@ -1,0 +1,7 @@
+# CraftEngine Item: Devils Hole Pupfish Bucket
+items:
+  alexsmobs:devils_hole_pupfish_bucket:
+    display_name: "Devils Hole Pupfish Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/devils_hole_pupfish_bucket

@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Crimson Mosquito
+items:
+  alexsmobs:spawn_egg_crimson_mosquito:
+    display_name: "Spawn Egg Crimson Mosquito"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_crimson_mosquito

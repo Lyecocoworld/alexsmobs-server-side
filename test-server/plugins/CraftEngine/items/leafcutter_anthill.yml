@@ -1,0 +1,7 @@
+# CraftEngine Item: Leafcutter Anthill
+items:
+  alexsmobs:leafcutter_anthill:
+    display_name: "Leafcutter Anthill"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/leafcutter_anthill

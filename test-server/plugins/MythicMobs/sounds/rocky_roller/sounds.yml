@@ -1,0 +1,22 @@
+# ROCKY ROLLER — Sons
+
+sounds:
+  alexsmobs:entity.rocky_roller.idle:
+    sound: "alexsmobs:rocky_roller/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.rocky_roller.hurt:
+    sound: "alexsmobs:rocky_roller/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.rocky_roller.die:
+    sound: "alexsmobs:rocky_roller/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

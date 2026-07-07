@@ -1,0 +1,42 @@
+#===============================================================
+# COCKROACH (Alex's Mobs)
+# HP=3 DMG=0 SPD=0.25
+#===============================================================
+cockroach:
+  Type: silverfish
+  Display: '&fCockroach'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 3
+  Damage: 0
+  MovementSpeed: 0.25
+  Faction: creature_cockroach
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - cockroach_ai
+  AITargetSelectors:
+    - clear
+    - cockroach_targets
+  Drops:
+    - cockroach_drops
+  Skills:
+    - onTimer:10
+    - skill:cockroach_tick @self
+    - onSpawn:
+      - skill:cockroach_init @self
+    - onDeath:
+      - skill:cockroach_death @self
+    - onDamaged:
+      - skill:cockroach_on_hurt @self

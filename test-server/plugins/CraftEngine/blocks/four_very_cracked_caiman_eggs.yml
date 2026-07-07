@@ -1,0 +1,7 @@
+# CraftEngine Block: Four Very Cracked Caiman Eggs
+blocks:
+  alexsmobs:four_very_cracked_caiman_eggs:
+    display_name: "Four Very Cracked Caiman Eggs"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/four_very_cracked_caiman_eggs

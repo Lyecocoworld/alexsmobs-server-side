@@ -1,0 +1,7 @@
+# CraftEngine Item: Phantom Sail
+items:
+  alexsmobs:phantom_sail:
+    display_name: "Phantom Sail"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/phantom_sail

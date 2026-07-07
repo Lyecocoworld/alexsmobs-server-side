@@ -1,0 +1,9 @@
+# CraftEngine Item: Novelty Hat
+items:
+  alexsmobs:novelty_hat:
+    display_name: "Novelty Hat"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/novelty_hat
+      textures:
+        default: alexsmobs:item/novelty_hat

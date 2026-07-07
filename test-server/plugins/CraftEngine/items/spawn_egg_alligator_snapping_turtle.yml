@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Alligator Snapping Turtle
+items:
+  alexsmobs:spawn_egg_alligator_snapping_turtle:
+    display_name: "Spawn Egg Alligator Snapping Turtle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_alligator_snapping_turtle

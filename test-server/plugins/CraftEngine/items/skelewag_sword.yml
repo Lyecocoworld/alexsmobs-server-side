@@ -1,0 +1,9 @@
+# CraftEngine Item: Skelewag Sword
+items:
+  alexsmobs:skelewag_sword:
+    display_name: "Skelewag Sword"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/skelewag_sword
+      textures:
+        default: alexsmobs:item/skelewag_sword

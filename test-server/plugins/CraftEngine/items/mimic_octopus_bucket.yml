@@ -1,0 +1,9 @@
+# CraftEngine Item: Mimic Octopus Bucket
+items:
+  alexsmobs:mimic_octopus_bucket:
+    display_name: "Mimic Octopus Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/mimic_octopus_bucket
+      textures:
+        default: alexsmobs:item/mimic_octopus_bucket

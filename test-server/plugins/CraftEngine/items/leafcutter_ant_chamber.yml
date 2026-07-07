@@ -1,0 +1,7 @@
+# CraftEngine Item: Leafcutter Ant Chamber
+items:
+  alexsmobs:leafcutter_ant_chamber:
+    display_name: "Leafcutter Ant Chamber"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/leafcutter_ant_chamber

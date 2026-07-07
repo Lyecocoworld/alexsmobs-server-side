@@ -1,0 +1,7 @@
+# CraftEngine Item: Capsid
+items:
+  alexsmobs:capsid:
+    display_name: "Capsid"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/capsid

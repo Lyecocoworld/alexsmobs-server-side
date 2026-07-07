@@ -1,0 +1,42 @@
+# ===============================================================
+# TOUCAN (Alex's Mobs)
+# HP=8 DMG=2 SPD=0.25
+# ===============================================================
+toucan:
+  Type: parrot
+  Display: '&fToucan'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 8
+  Damage: 2
+  MovementSpeed: 0.25
+  Faction: creature_toucan
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - toucan_ai
+  AITargetSelectors:
+    - clear
+    - toucan_targets
+  Drops:
+    - toucan_drops
+  Skills:
+    - onTimer:10
+    - skill:toucan_tick @self
+    - onSpawn:
+      - skill:toucan_init @self
+    - onDeath:
+      - skill:toucan_death @self
+    - onDamaged:
+      - skill:toucan_on_hurt @self

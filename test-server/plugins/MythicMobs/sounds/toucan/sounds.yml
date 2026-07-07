@@ -1,0 +1,22 @@
+# TOUCAN — Sons
+
+sounds:
+  alexsmobs:entity.toucan.idle:
+    sound: "alexsmobs:toucan/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.toucan.hurt:
+    sound: "alexsmobs:toucan/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.toucan.die:
+    sound: "alexsmobs:toucan/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

@@ -1,0 +1,51 @@
+# CACHALOT WHALE — Variables
+
+variables:
+  cachalot_whale.charging:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  cachalot_whale.sleeping:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  cachalot_whale.beached:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  cachalot_whale.albino:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  cachalot_whale.despawnBeach:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  cachalot_whale.grabbing:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  cachalot_whale.holdingSquidLeft:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  cachalot_whale.caughtId:
+    type: INTEGER
+    default: -1
+    persistent: false
+    desc: ""
+

@@ -1,0 +1,8 @@
+# LAVIATHAN — Variables
+
+variables:
+  laviathan.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

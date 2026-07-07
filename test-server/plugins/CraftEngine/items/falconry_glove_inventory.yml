@@ -1,0 +1,7 @@
+# CraftEngine Item: Falconry Glove Inventory
+items:
+  alexsmobs:falconry_glove_inventory:
+    display_name: "Falconry Glove Inventory"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/falconry_glove_inventory

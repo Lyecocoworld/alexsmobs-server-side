@@ -1,0 +1,12 @@
+# CraftEngine Item: Cooked Kangaroo Meat
+items:
+  alexsmobs:cooked_kangaroo_meat:
+    display_name: "Cooked Kangaroo Meat"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/cooked_kangaroo_meat
+      textures:
+        default: alexsmobs:item/cooked_kangaroo_meat
+    food:
+      nutrition: 8
+      saturation: 0.8

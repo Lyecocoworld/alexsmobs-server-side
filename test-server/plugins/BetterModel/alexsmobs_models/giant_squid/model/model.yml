@@ -1,0 +1,29 @@
+# GIANT SQUID — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:giant_squid"
+  type: "squid"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/giant_squid.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/giant_squid.png"
+  animations:
+    idle: "animation.giant_squid.idle"
+    walk: "animation.giant_squid.walk"
+    run: "animation.giant_squid.run"
+    sit: "animation.giant_squid.sit"
+    death: "animation.giant_squid.death"
+
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": true}
+
+  scale:
+    adult: 1.0
+    baby: 0.5

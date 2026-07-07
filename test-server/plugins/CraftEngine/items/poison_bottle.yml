@@ -1,0 +1,9 @@
+# CraftEngine Item: Poison Bottle
+items:
+  alexsmobs:poison_bottle:
+    display_name: "Poison Bottle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/poison_bottle
+      textures:
+        default: alexsmobs:item/poison_bottle

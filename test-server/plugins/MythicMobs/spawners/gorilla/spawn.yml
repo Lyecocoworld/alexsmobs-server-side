@@ -1,0 +1,19 @@
+# GORILLA — Spawn
+
+gorilla_spawner:
+  Type: gorilla
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+  - biome{b=JUNGLE,SPARSE_JUNGLE,BAMBOO_JUNGLE}
+  - height{h=60to150}
+  - lightlevel{l=0to15}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=GRASS_BLOCK,DIRT,PODZOL,MOSS_BLOCK} @origin
+  - playerdistance{d=>24}
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

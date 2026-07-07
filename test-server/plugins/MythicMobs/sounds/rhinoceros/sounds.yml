@@ -1,0 +1,22 @@
+# RHINOCEROS — Sons
+
+sounds:
+  alexsmobs:entity.rhinoceros.idle:
+    sound: "alexsmobs:rhinoceros/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.rhinoceros.hurt:
+    sound: "alexsmobs:rhinoceros/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.rhinoceros.die:
+    sound: "alexsmobs:rhinoceros/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

@@ -1,0 +1,7 @@
+# CraftEngine Block: Crystalized Banana Slug Mucus
+blocks:
+  alexsmobs:crystalized_banana_slug_mucus:
+    display_name: "Crystalized Banana Slug Mucus"
+    category: ORE
+    resource:
+      model: alexsmobs:block/crystalized_banana_slug_mucus

@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Rain Frog
+items:
+  alexsmobs:spawn_egg_rain_frog:
+    display_name: "Spawn Egg Rain Frog"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_rain_frog

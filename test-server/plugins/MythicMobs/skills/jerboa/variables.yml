@@ -1,0 +1,8 @@
+# JERBOA — Variables
+
+variables:
+  jerboa.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

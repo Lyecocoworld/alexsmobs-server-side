@@ -1,0 +1,42 @@
+# ===============================================================
+# FLY (Alex's Mobs)
+# HP=2 DMG=0 SPD=0.25
+# ===============================================================
+fly:
+  Type: bee
+  Display: '&fFly'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 2
+  Damage: 0
+  MovementSpeed: 0.25
+  Faction: creature_fly
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - fly_ai
+  AITargetSelectors:
+    - clear
+    - fly_targets
+  Drops:
+    - fly_drops
+  Skills:
+    - onTimer:10
+    - skill:fly_tick @self
+    - onSpawn:
+      - skill:fly_init @self
+    - onDeath:
+      - skill:fly_death @self
+    - onDamaged:
+      - skill:fly_on_hurt @self

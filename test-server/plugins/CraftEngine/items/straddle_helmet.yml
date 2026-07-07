@@ -1,0 +1,9 @@
+# CraftEngine Item: Straddle Helmet
+items:
+  alexsmobs:straddle_helmet:
+    display_name: "Straddle Helmet"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/straddle_helmet
+      textures:
+        default: alexsmobs:item/straddle_helmet

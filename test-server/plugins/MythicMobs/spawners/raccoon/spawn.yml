@@ -1,0 +1,28 @@
+# ════════════════════════════════════════════════════════════════
+# RACCOON — Spawn Configuration
+# ─────────────────────────────────────────────────────────────────
+# Source: AMEntityRegistry + AMConfig (biome tags, spawn rolls)
+# Biomes: villages, plaines, forêts
+# Spawn rolls: configurable (default 1)
+# ════════════════════════════════════════════════════════════════
+
+raccoon_spawner:
+  Type: raccoon
+  SpawnRate: 4 # ticks entre checks (Folia-safe, region-local)
+  MaxMobs: 4 # max par spawner
+  CheckTime: true # vérifier le temps de jeu
+  CheckDistance: 64 # distance de check des joueurs
+  Conditions:
+  - biome{b=PLAINS,SUNFLOWER_PLAINS,FOREST,FLOWER_FOREST,BIRCH_FOREST, OLD_GROWTH_BIRCH_FOREST,DARK_FOREST,TAIGA,OLD_GROWTH_TAIGA,
+    MEADOW,CHERRY_GROVE,SWAMP,MANGROVE_SWAMP, BEACH,SNOWY_BEACH,RIVER,FROZEN_RIVER}
+  - height{h=60to150}
+  - lightlevel{l=0to7}
+  - worldtype{wt=OVERWORLD}
+  - blocktype{m=GRASS_BLOCK,DIRT,PODZOL,COARSE_DIRT,STONE,SAND, MOSS_BLOCK,MYCELIUM,SNOW_BLOCK}
+    @origin
+  - playerdistance{d=>24}
+  - onblock{m=GRASS_BLOCK,DIRT,PODZOL,COARSE_DIRT,STONE,SAND,MOSS_BLOCK} @origin
+  MobName: ''
+  CooldownTimer: 0
+  WarmupTimer: 0
+  ActiveMobs: 0

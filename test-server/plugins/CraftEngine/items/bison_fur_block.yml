@@ -1,0 +1,7 @@
+# CraftEngine Item: Bison Fur Block
+items:
+  alexsmobs:bison_fur_block:
+    display_name: "Bison Fur Block"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/bison_fur_block

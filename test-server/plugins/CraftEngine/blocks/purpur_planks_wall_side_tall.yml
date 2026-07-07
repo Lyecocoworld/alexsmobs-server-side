@@ -1,0 +1,7 @@
+# CraftEngine Block: Purpur Planks Wall Side Tall
+blocks:
+  alexsmobs:purpur_planks_wall_side_tall:
+    display_name: "Purpur Planks Wall Side Tall"
+    category: BUILDING
+    resource:
+      model: alexsmobs:block/purpur_planks_wall_side_tall

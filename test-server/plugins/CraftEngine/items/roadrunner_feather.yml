@@ -1,0 +1,9 @@
+# CraftEngine Item: Roadrunner Feather
+items:
+  alexsmobs:roadrunner_feather:
+    display_name: "Roadrunner Feather"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/roadrunner_feather
+      textures:
+        default: alexsmobs:item/roadrunner_feather

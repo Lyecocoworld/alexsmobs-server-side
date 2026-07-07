@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Anteater
+items:
+  alexsmobs:spawn_egg_anteater:
+    display_name: "Spawn Egg Anteater"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_anteater

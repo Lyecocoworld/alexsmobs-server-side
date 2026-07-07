@@ -1,0 +1,42 @@
+# ===============================================================
+# SHOEBILL (Alex's Mobs)
+# HP=16 DMG=3 SPD=0.25
+# ===============================================================
+shoebill:
+  Type: parrot
+  Display: '&fShoebill'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 16
+  Damage: 3
+  MovementSpeed: 0.25
+  Faction: creature_shoebill
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - shoebill_ai
+  AITargetSelectors:
+    - clear
+    - shoebill_targets
+  Drops:
+    - shoebill_drops
+  Skills:
+    - onTimer:10
+    - skill:shoebill_tick @self
+    - onSpawn:
+      - skill:shoebill_init @self
+    - onDeath:
+      - skill:shoebill_death @self
+    - onDamaged:
+      - skill:shoebill_on_hurt @self

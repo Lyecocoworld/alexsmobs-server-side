@@ -1,0 +1,7 @@
+# CraftEngine Block: Crocodile Egg
+blocks:
+  alexsmobs:crocodile_egg:
+    display_name: "Crocodile Egg"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/crocodile_egg

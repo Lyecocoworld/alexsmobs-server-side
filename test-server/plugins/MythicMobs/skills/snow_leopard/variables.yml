@@ -1,0 +1,33 @@
+# SNOW LEOPARD — Variables
+
+variables:
+  snow_leopard.tackling:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  snow_leopard.sleeping:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  snow_leopard.sitting:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  snow_leopard.sneaking:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  snow_leopard.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+

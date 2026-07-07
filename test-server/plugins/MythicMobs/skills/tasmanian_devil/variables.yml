@@ -1,0 +1,8 @@
+# TASMANIAN DEVIL — Variables
+
+variables:
+  tasmanian_devil.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"
