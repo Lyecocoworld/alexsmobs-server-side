@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Purple Kaolin
+items:
+  natures_spirit:purple_kaolin:
+    display_name: "Purple Kaolin"
+    rarity: COMMON

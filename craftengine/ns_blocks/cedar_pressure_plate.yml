@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cedar Pressure Plate
+blocks:
+  natures_spirit:cedar_pressure_plate:
+    display_name: "Cedar Pressure Plate"
+    category: utility

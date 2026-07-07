@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Helvola Flower
+items:
+  natures_spirit:helvola_flower:
+    display_name: "Helvola Flower"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/helvola_flower

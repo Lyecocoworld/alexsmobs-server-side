@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Stripped Aspen Wood
+blocks:
+  natures_spirit:stripped_aspen_wood:
+    display_name: "Stripped Aspen Wood"
+    category: wood

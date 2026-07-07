@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Scorched Grass
+items:
+  natures_spirit:scorched_grass:
+    display_name: "Scorched Grass"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/scorched_grass

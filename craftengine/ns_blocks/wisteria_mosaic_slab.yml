@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Mosaic Slab
+blocks:
+  natures_spirit:wisteria_mosaic_slab:
+    display_name: "Wisteria Mosaic Slab"
+    category: building

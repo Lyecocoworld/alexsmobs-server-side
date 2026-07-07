@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Sugi Sapling
+blocks:
+  natures_spirit:sugi_sapling:
+    display_name: "Sugi Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/sugi_sapling

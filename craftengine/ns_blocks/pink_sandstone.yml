@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Pink Sandstone
+blocks:
+  natures_spirit:pink_sandstone:
+    display_name: "Pink Sandstone"
+    category: terrain
+    resource:
+      textures:
+        default: natures_spirit:block/pink_sandstone

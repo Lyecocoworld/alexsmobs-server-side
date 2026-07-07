@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Milk Cauldron
+blocks:
+  natures_spirit:milk_cauldron:
+    display_name: "Milk Cauldron"
+    category: decoration

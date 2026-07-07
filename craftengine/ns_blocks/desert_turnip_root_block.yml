@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Desert Turnip Root Block
+blocks:
+  natures_spirit:desert_turnip_root_block:
+    display_name: "Desert Turnip Root Block"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/desert_turnip_root_block

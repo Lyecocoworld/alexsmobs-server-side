@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Sugi Sapling
+items:
+  natures_spirit:sugi_sapling:
+    display_name: "Sugi Sapling"
+    rarity: COMMON

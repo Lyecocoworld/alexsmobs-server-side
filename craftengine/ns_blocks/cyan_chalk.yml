@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cyan Chalk
+blocks:
+  natures_spirit:cyan_chalk:
+    display_name: "Cyan Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/cyan_chalk

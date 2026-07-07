@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Mossy Travertine Bricks
+blocks:
+  natures_spirit:mossy_travertine_bricks:
+    display_name: "Mossy Travertine Bricks"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/mossy_travertine_bricks

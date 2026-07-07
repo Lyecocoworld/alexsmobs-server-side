@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Chert Iron Ore
+blocks:
+  natures_spirit:chert_iron_ore:
+    display_name: "Chert Iron Ore"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/chert_iron_ore

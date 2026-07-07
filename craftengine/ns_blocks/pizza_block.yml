@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Pizza Block
+blocks:
+  natures_spirit:pizza_block:
+    display_name: "Pizza Block"
+    category: decoration

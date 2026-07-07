@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Leaves
+blocks:
+  natures_spirit:ghaf_leaves:
+    display_name: "Ghaf Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/ghaf_leaves

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Orange Kaolin Slab
+blocks:
+  natures_spirit:orange_kaolin_slab:
+    display_name: "Orange Kaolin Slab"
+    category: building

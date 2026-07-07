@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Pressure Plate
+blocks:
+  natures_spirit:wisteria_pressure_plate:
+    display_name: "Wisteria Pressure Plate"
+    category: utility

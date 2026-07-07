@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Ornate Succulent
+items:
+  natures_spirit:ornate_succulent:
+    display_name: "Ornate Succulent"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Yellow Maple Sapling
+blocks:
+  natures_spirit:yellow_maple_sapling:
+    display_name: "Yellow Maple Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/yellow_maple_sapling

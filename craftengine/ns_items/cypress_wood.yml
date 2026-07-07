@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cypress Wood
+items:
+  natures_spirit:cypress_wood:
+    display_name: "Cypress Wood"
+    rarity: COMMON

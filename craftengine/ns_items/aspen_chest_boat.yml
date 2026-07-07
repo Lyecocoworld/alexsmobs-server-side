@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Aspen Chest Boat
+items:
+  natures_spirit:aspen_chest_boat:
+    display_name: "Aspen Chest Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/aspen_chest_boat

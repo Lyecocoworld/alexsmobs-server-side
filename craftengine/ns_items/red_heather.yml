@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Red Heather
+items:
+  natures_spirit:red_heather:
+    display_name: "Red Heather"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/red_heather

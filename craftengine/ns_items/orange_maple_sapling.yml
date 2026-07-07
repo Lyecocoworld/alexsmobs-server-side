@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Orange Maple Sapling
+items:
+  natures_spirit:orange_maple_sapling:
+    display_name: "Orange Maple Sapling"
+    rarity: COMMON

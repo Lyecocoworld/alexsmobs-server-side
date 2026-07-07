@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Purple Heather
+blocks:
+  natures_spirit:potted_purple_heather:
+    display_name: "Potted Purple Heather"
+    category: decoration

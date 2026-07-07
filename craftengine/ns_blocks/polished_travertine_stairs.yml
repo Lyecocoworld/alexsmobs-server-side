@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Polished Travertine Stairs
+blocks:
+  natures_spirit:polished_travertine_stairs:
+    display_name: "Polished Travertine Stairs"
+    category: building

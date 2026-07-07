@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Log
+blocks:
+  natures_spirit:palo_verde_log:
+    display_name: "Palo Verde Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/palo_verde_log

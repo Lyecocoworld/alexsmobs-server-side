@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Willow Slab
+blocks:
+  natures_spirit:willow_slab:
+    display_name: "Willow Slab"
+    category: building

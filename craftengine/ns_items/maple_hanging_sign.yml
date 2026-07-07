@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Maple Hanging Sign
+items:
+  natures_spirit:maple_hanging_sign:
+    display_name: "Maple Hanging Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/maple_hanging_sign

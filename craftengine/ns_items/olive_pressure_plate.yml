@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Olive Pressure Plate
+items:
+  natures_spirit:olive_pressure_plate:
+    display_name: "Olive Pressure Plate"
+    rarity: COMMON

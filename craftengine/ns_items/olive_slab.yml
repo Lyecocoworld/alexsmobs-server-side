@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Olive Slab
+items:
+  natures_spirit:olive_slab:
+    display_name: "Olive Slab"
+    rarity: COMMON

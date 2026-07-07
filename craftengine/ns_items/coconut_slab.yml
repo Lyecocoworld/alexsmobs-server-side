@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Slab
+items:
+  natures_spirit:coconut_slab:
+    display_name: "Coconut Slab"
+    rarity: COMMON

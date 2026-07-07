@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Black Kaolin
+items:
+  natures_spirit:black_kaolin:
+    display_name: "Black Kaolin"
+    rarity: COMMON

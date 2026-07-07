@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Redwood Stairs
+items:
+  natures_spirit:redwood_stairs:
+    display_name: "Redwood Stairs"
+    rarity: COMMON

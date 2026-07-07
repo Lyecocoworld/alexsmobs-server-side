@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Ornate Succulent
+blocks:
+  natures_spirit:ornate_succulent:
+    display_name: "Ornate Succulent"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/ornate_succulent

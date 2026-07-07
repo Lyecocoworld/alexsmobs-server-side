@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cypress Stairs
+blocks:
+  natures_spirit:cypress_stairs:
+    display_name: "Cypress Stairs"
+    category: building

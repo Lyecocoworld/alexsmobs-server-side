@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chert Bricks
+items:
+  natures_spirit:chert_bricks:
+    display_name: "Chert Bricks"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Lime Chalk
+blocks:
+  natures_spirit:lime_chalk:
+    display_name: "Lime Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/lime_chalk

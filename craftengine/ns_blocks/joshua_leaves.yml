@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Joshua Leaves
+blocks:
+  natures_spirit:joshua_leaves:
+    display_name: "Joshua Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/joshua_leaves

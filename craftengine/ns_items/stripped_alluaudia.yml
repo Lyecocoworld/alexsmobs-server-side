@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Stripped Alluaudia
+items:
+  natures_spirit:stripped_alluaudia:
+    display_name: "Stripped Alluaudia"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/stripped_alluaudia

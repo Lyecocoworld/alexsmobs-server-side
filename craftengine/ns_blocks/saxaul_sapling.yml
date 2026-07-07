@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Sapling
+blocks:
+  natures_spirit:saxaul_sapling:
+    display_name: "Saxaul Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/saxaul_sapling

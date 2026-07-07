@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Frosty Redwood Leaves
+items:
+  natures_spirit:frosty_redwood_leaves:
+    display_name: "Frosty Redwood Leaves"
+    rarity: COMMON

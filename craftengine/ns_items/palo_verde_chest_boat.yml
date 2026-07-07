@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Palo Verde Chest Boat
+items:
+  natures_spirit:palo_verde_chest_boat:
+    display_name: "Palo Verde Chest Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/palo_verde_chest_boat

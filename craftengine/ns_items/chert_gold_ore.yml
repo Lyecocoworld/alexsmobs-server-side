@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chert Gold Ore
+items:
+  natures_spirit:chert_gold_ore:
+    display_name: "Chert Gold Ore"
+    rarity: COMMON

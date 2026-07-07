@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cyan Kaolin
+items:
+  natures_spirit:cyan_kaolin:
+    display_name: "Cyan Kaolin"
+    rarity: COMMON

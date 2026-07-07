@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Log
+blocks:
+  natures_spirit:ghaf_log:
+    display_name: "Ghaf Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/ghaf_log

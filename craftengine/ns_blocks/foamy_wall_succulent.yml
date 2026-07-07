@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Foamy Wall Succulent
+blocks:
+  natures_spirit:foamy_wall_succulent:
+    display_name: "Foamy Wall Succulent"
+    category: building

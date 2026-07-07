@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cobbled Travertine
+blocks:
+  natures_spirit:cobbled_travertine:
+    display_name: "Cobbled Travertine"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/cobbled_travertine

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Stairs
+blocks:
+  natures_spirit:ghaf_stairs:
+    display_name: "Ghaf Stairs"
+    category: building

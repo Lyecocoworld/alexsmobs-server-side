@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Sugi Trapdoor
+blocks:
+  natures_spirit:sugi_trapdoor:
+    display_name: "Sugi Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/sugi_trapdoor

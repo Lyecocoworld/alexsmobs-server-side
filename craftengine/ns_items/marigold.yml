@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Marigold
+items:
+  natures_spirit:marigold:
+    display_name: "Marigold"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/marigold

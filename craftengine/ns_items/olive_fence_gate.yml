@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Olive Fence Gate
+items:
+  natures_spirit:olive_fence_gate:
+    display_name: "Olive Fence Gate"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Leaves
+blocks:
+  natures_spirit:mahogany_leaves:
+    display_name: "Mahogany Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/mahogany_leaves

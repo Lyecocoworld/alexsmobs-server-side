@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Lotus Flower
+blocks:
+  natures_spirit:lotus_flower:
+    display_name: "Lotus Flower"
+    category: plant
+    resource:
+      textures:
+        default: natures_spirit:block/lotus_flower

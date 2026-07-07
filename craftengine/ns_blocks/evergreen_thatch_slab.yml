@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Evergreen Thatch Slab
+blocks:
+  natures_spirit:evergreen_thatch_slab:
+    display_name: "Evergreen Thatch Slab"
+    category: building

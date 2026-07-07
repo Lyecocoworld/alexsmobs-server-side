@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Redwood Slab
+blocks:
+  natures_spirit:redwood_slab:
+    display_name: "Redwood Slab"
+    category: wood

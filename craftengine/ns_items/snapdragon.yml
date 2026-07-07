@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Snapdragon
+items:
+  natures_spirit:snapdragon:
+    display_name: "Snapdragon"
+    rarity: COMMON

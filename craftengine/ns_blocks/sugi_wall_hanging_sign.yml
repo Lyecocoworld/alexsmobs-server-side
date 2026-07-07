@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Sugi Wall Hanging Sign
+blocks:
+  natures_spirit:sugi_wall_hanging_sign:
+    display_name: "Sugi Wall Hanging Sign"
+    category: building

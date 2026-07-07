@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Orange Paper Lantern
+items:
+  natures_spirit:orange_paper_lantern:
+    display_name: "Orange Paper Lantern"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/orange_paper_lantern

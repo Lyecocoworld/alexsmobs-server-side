@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Stripped Aspen Log
+blocks:
+  natures_spirit:stripped_aspen_log:
+    display_name: "Stripped Aspen Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/stripped_aspen_log

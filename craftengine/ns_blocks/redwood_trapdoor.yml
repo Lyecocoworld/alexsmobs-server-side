@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Redwood Trapdoor
+blocks:
+  natures_spirit:redwood_trapdoor:
+    display_name: "Redwood Trapdoor"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/redwood_trapdoor

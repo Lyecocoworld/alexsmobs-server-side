@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Cedar Sapling
+blocks:
+  natures_spirit:potted_cedar_sapling:
+    display_name: "Potted Cedar Sapling"
+    category: foliage

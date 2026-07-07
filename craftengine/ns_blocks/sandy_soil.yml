@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Sandy Soil
+blocks:
+  natures_spirit:sandy_soil:
+    display_name: "Sandy Soil"
+    category: terrain
+    resource:
+      textures:
+        default: natures_spirit:block/sandy_soil

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Redwood Sapling
+blocks:
+  natures_spirit:potted_redwood_sapling:
+    display_name: "Potted Redwood Sapling"
+    category: wood

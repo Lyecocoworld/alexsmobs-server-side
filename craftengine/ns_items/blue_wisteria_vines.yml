@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Blue Wisteria Vines
+items:
+  natures_spirit:blue_wisteria_vines:
+    display_name: "Blue Wisteria Vines"
+    rarity: COMMON

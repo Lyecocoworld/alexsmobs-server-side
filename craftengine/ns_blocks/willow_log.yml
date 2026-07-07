@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Willow Log
+blocks:
+  natures_spirit:willow_log:
+    display_name: "Willow Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/willow_log

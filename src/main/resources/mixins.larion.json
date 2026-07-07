@@ -1,0 +1,6 @@
+{
+  "mixins": [
+    "LarionDensityFunctionMixin"
+  ],
+  "package": "com.lyecocoworld.alexsmobsserverside.mixin"
+}

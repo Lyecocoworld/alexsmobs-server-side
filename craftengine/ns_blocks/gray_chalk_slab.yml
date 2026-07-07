@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Gray Chalk Slab
+blocks:
+  natures_spirit:gray_chalk_slab:
+    display_name: "Gray Chalk Slab"
+    category: building

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Log
+blocks:
+  natures_spirit:mahogany_log:
+    display_name: "Mahogany Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/mahogany_log

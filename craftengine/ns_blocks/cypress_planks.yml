@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cypress Planks
+blocks:
+  natures_spirit:cypress_planks:
+    display_name: "Cypress Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/cypress_planks

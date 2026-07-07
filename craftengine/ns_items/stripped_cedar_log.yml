@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Cedar Log
+items:
+  natures_spirit:stripped_cedar_log:
+    display_name: "Stripped Cedar Log"
+    rarity: COMMON

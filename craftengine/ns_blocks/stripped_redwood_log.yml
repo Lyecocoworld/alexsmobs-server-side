@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Stripped Redwood Log
+blocks:
+  natures_spirit:stripped_redwood_log:
+    display_name: "Stripped Redwood Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/stripped_redwood_log

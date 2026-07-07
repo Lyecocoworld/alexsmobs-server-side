@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cut Pink Sandstone
+blocks:
+  natures_spirit:cut_pink_sandstone:
+    display_name: "Cut Pink Sandstone"
+    category: terrain
+    resource:
+      textures:
+        default: natures_spirit:block/cut_pink_sandstone

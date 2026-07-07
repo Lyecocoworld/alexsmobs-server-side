@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Framed Sugi Trapdoor
+blocks:
+  natures_spirit:framed_sugi_trapdoor:
+    display_name: "Framed Sugi Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/framed_sugi_trapdoor

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Wood
+blocks:
+  natures_spirit:wisteria_wood:
+    display_name: "Wisteria Wood"
+    category: wood

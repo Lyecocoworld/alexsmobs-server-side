@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Quarter Pizza
+items:
+  natures_spirit:quarter_pizza:
+    display_name: "Quarter Pizza"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/quarter_pizza

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Red Maple Leaves
+items:
+  natures_spirit:red_maple_leaves:
+    display_name: "Red Maple Leaves"
+    rarity: COMMON

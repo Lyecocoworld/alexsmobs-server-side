@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Mossy Travertine Brick Stairs
+blocks:
+  natures_spirit:mossy_travertine_brick_stairs:
+    display_name: "Mossy Travertine Brick Stairs"
+    category: building

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Coconut Log
+blocks:
+  natures_spirit:coconut_log:
+    display_name: "Coconut Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/coconut_log

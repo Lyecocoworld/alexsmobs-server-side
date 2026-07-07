@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Aspen Button
+blocks:
+  natures_spirit:aspen_button:
+    display_name: "Aspen Button"
+    category: utility

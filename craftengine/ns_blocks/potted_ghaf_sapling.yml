@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Ghaf Sapling
+blocks:
+  natures_spirit:potted_ghaf_sapling:
+    display_name: "Potted Ghaf Sapling"
+    category: foliage

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Hanging Sign
+blocks:
+  natures_spirit:palo_verde_hanging_sign:
+    display_name: "Palo Verde Hanging Sign"
+    category: utility

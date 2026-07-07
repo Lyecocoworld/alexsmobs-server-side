@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Door
+blocks:
+  natures_spirit:saxaul_door:
+    display_name: "Saxaul Door"
+    category: building

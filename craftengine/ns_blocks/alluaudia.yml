@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Alluaudia
+blocks:
+  natures_spirit:alluaudia:
+    display_name: "Alluaudia"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/alluaudia

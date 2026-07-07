@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Wisteria Chest Boat
+items:
+  natures_spirit:wisteria_chest_boat:
+    display_name: "Wisteria Chest Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/wisteria_chest_boat

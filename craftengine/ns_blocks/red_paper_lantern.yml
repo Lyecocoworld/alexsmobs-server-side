@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Red Paper Lantern
+blocks:
+  natures_spirit:red_paper_lantern:
+    display_name: "Red Paper Lantern"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/red_paper_lantern

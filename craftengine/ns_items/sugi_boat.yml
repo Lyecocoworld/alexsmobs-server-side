@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Sugi Boat
+items:
+  natures_spirit:sugi_boat:
+    display_name: "Sugi Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/sugi_boat

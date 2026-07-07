@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Lush Fern
+blocks:
+  natures_spirit:potted_lush_fern:
+    display_name: "Potted Lush Fern"
+    category: plant

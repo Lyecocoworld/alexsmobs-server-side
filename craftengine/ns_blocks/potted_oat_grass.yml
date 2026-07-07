@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Oat Grass
+blocks:
+  natures_spirit:potted_oat_grass:
+    display_name: "Potted Oat Grass"
+    category: decoration

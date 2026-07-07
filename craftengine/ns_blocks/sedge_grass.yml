@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Sedge Grass
+blocks:
+  natures_spirit:sedge_grass:
+    display_name: "Sedge Grass"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/sedge_grass

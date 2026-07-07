@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Regal Succulent
+blocks:
+  natures_spirit:potted_regal_succulent:
+    display_name: "Potted Regal Succulent"
+    category: decoration

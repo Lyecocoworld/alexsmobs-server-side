@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Pink Kaolin
+blocks:
+  natures_spirit:pink_kaolin:
+    display_name: "Pink Kaolin"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/pink_kaolin

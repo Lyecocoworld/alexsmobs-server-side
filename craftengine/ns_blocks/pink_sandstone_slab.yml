@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Pink Sandstone Slab
+blocks:
+  natures_spirit:pink_sandstone_slab:
+    display_name: "Pink Sandstone Slab"
+    category: building

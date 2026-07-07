@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Ruby Blossoms
+blocks:
+  natures_spirit:ruby_blossoms:
+    display_name: "Ruby Blossoms"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/ruby_blossoms

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Begonia
+items:
+  natures_spirit:begonia:
+    display_name: "Begonia"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Red Maple Sapling
+blocks:
+  natures_spirit:red_maple_sapling:
+    display_name: "Red Maple Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/red_maple_sapling

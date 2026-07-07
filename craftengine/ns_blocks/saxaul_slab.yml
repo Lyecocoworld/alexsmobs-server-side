@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Slab
+blocks:
+  natures_spirit:saxaul_slab:
+    display_name: "Saxaul Slab"
+    category: building

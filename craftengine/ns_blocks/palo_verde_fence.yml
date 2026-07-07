@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Fence
+blocks:
+  natures_spirit:palo_verde_fence:
+    display_name: "Palo Verde Fence"
+    category: building

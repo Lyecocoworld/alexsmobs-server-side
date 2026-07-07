@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cypress Pressure Plate
+blocks:
+  natures_spirit:cypress_pressure_plate:
+    display_name: "Cypress Pressure Plate"
+    category: utility

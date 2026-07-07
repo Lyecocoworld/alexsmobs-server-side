@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Fir Fence
+blocks:
+  natures_spirit:fir_fence:
+    display_name: "Fir Fence"
+    category: building

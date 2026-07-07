@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Pink Wisteria Vines Plant
+blocks:
+  natures_spirit:pink_wisteria_vines_plant:
+    display_name: "Pink Wisteria Vines Plant"
+    category: plant
+    resource:
+      textures:
+        default: natures_spirit:block/pink_wisteria_vines_plant

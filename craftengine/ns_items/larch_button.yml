@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Larch Button
+items:
+  natures_spirit:larch_button:
+    display_name: "Larch Button"
+    rarity: COMMON

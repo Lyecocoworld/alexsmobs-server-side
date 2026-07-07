@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Aspen Sapling
+blocks:
+  natures_spirit:aspen_sapling:
+    display_name: "Aspen Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/aspen_sapling

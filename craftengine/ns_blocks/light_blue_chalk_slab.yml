@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Light Blue Chalk Slab
+blocks:
+  natures_spirit:light_blue_chalk_slab:
+    display_name: "Light Blue Chalk Slab"
+    category: building

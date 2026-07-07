@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Joshua Trapdoor
+blocks:
+  natures_spirit:joshua_trapdoor:
+    display_name: "Joshua Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/joshua_trapdoor

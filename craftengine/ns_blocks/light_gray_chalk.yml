@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Light Gray Chalk
+blocks:
+  natures_spirit:light_gray_chalk:
+    display_name: "Light Gray Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/light_gray_chalk

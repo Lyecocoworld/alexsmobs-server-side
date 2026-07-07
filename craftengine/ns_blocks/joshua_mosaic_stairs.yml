@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Joshua Mosaic Stairs
+blocks:
+  natures_spirit:joshua_mosaic_stairs:
+    display_name: "Joshua Mosaic Stairs"
+    category: building

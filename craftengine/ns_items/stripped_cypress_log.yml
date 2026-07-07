@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Cypress Log
+items:
+  natures_spirit:stripped_cypress_log:
+    display_name: "Stripped Cypress Log"
+    rarity: COMMON

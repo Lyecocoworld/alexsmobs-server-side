@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Purple Bearberries
+items:
+  natures_spirit:purple_bearberries:
+    display_name: "Purple Bearberries"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/purple_bearberries

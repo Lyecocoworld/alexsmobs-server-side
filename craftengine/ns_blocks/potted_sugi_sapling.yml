@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Sugi Sapling
+blocks:
+  natures_spirit:potted_sugi_sapling:
+    display_name: "Potted Sugi Sapling"
+    category: foliage

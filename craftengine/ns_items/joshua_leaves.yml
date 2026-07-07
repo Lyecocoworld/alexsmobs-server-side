@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Joshua Leaves
+items:
+  natures_spirit:joshua_leaves:
+    display_name: "Joshua Leaves"
+    rarity: COMMON

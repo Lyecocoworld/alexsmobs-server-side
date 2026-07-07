@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Cedar Door
+items:
+  natures_spirit:cedar_door:
+    display_name: "Cedar Door"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/cedar_door

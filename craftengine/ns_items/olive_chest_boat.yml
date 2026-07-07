@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Olive Chest Boat
+items:
+  natures_spirit:olive_chest_boat:
+    display_name: "Olive Chest Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/olive_chest_boat

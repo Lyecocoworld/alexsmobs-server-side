@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Joshua Button
+items:
+  natures_spirit:joshua_button:
+    display_name: "Joshua Button"
+    rarity: COMMON

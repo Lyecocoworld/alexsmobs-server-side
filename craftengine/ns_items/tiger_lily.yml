@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Tiger Lily
+items:
+  natures_spirit:tiger_lily:
+    display_name: "Tiger Lily"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/tiger_lily

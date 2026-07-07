@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Leaves
+blocks:
+  natures_spirit:saxaul_leaves:
+    display_name: "Saxaul Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/saxaul_leaves

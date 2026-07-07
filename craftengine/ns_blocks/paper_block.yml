@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Paper Block
+blocks:
+  natures_spirit:paper_block:
+    display_name: "Paper Block"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/paper_block

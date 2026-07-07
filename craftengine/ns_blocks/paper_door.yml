@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Paper Door
+blocks:
+  natures_spirit:paper_door:
+    display_name: "Paper Door"
+    category: building

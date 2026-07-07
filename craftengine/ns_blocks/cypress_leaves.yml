@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cypress Leaves
+blocks:
+  natures_spirit:cypress_leaves:
+    display_name: "Cypress Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/cypress_leaves

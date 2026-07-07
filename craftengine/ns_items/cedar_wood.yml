@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cedar Wood
+items:
+  natures_spirit:cedar_wood:
+    display_name: "Cedar Wood"
+    rarity: COMMON

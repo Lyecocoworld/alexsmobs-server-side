@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): White Paper Lantern
+blocks:
+  natures_spirit:white_paper_lantern:
+    display_name: "White Paper Lantern"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/white_paper_lantern

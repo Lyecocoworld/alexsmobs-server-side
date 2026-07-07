@@ -1,0 +1,20 @@
+{
+  "name": "AlexMobsServerSide",
+  "version": "${project.version}",
+  "description": "Native server-side reimplementation of Alex's Mobs + Larion + Nature's Spirit for Folia",
+  "entrypoints": [
+    {
+      "plugin_main": "com.lyecocoworld.alexsmobsserverside.AlexMobsServerSide"
+    }
+  ],
+  "authors": [
+    "Lyecocoworld"
+  ],
+  "mixins": [
+    "mixins.larion.json"
+  ],
+  "dependencies": {
+    "minecraft": ">=1.21"
+  },
+  "is_hybrid": true
+}

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Blue Iris
+blocks:
+  natures_spirit:blue_iris:
+    display_name: "Blue Iris"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/blue_iris

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Aspen Hanging Sign
+items:
+  natures_spirit:aspen_hanging_sign:
+    display_name: "Aspen Hanging Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/aspen_hanging_sign

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): White Kaolin
+items:
+  natures_spirit:white_kaolin:
+    display_name: "White Kaolin"
+    rarity: COMMON

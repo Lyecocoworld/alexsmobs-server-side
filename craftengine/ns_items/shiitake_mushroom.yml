@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Shiitake Mushroom
+items:
+  natures_spirit:shiitake_mushroom:
+    display_name: "Shiitake Mushroom"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Fir Planks
+blocks:
+  natures_spirit:fir_planks:
+    display_name: "Fir Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/fir_planks

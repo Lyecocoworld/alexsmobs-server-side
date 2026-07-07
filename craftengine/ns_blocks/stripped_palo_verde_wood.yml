@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Stripped Palo Verde Wood
+blocks:
+  natures_spirit:stripped_palo_verde_wood:
+    display_name: "Stripped Palo Verde Wood"
+    category: wood

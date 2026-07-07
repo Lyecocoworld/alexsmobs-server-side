@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Travertine Stairs
+items:
+  natures_spirit:travertine_stairs:
+    display_name: "Travertine Stairs"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chert Emerald Ore
+items:
+  natures_spirit:chert_emerald_ore:
+    display_name: "Chert Emerald Ore"
+    rarity: COMMON

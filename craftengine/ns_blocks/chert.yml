@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Chert
+blocks:
+  natures_spirit:chert:
+    display_name: "Chert"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/chert

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Maple Planks
+items:
+  natures_spirit:maple_planks:
+    display_name: "Maple Planks"
+    rarity: COMMON

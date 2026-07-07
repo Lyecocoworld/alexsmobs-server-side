@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Pressure Plate
+blocks:
+  natures_spirit:ghaf_pressure_plate:
+    display_name: "Ghaf Pressure Plate"
+    category: utility

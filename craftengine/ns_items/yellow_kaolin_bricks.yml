@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Yellow Kaolin Bricks
+items:
+  natures_spirit:yellow_kaolin_bricks:
+    display_name: "Yellow Kaolin Bricks"
+    rarity: COMMON

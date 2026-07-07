@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Bluebell
+items:
+  natures_spirit:bluebell:
+    display_name: "Bluebell"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/bluebell

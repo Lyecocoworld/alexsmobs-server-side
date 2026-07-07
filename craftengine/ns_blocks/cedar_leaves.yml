@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cedar Leaves
+blocks:
+  natures_spirit:cedar_leaves:
+    display_name: "Cedar Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/cedar_leaves

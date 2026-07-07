@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Redwood Leaves
+blocks:
+  natures_spirit:redwood_leaves:
+    display_name: "Redwood Leaves"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/redwood_leaves

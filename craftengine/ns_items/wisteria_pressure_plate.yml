@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Wisteria Pressure Plate
+items:
+  natures_spirit:wisteria_pressure_plate:
+    display_name: "Wisteria Pressure Plate"
+    rarity: COMMON

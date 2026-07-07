@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Fir Sapling
+blocks:
+  natures_spirit:fir_sapling:
+    display_name: "Fir Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/fir_sapling

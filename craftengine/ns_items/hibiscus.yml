@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Hibiscus
+items:
+  natures_spirit:hibiscus:
+    display_name: "Hibiscus"
+    rarity: COMMON

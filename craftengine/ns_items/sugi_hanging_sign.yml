@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Sugi Hanging Sign
+items:
+  natures_spirit:sugi_hanging_sign:
+    display_name: "Sugi Hanging Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/sugi_hanging_sign

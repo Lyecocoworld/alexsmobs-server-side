@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Orange Chalk Stairs
+blocks:
+  natures_spirit:orange_chalk_stairs:
+    display_name: "Orange Chalk Stairs"
+    category: building

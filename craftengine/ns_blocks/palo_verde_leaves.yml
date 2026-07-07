@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Leaves
+blocks:
+  natures_spirit:palo_verde_leaves:
+    display_name: "Palo Verde Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/palo_verde_leaves

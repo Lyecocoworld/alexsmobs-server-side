@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Olive Log
+blocks:
+  natures_spirit:olive_log:
+    display_name: "Olive Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/olive_log

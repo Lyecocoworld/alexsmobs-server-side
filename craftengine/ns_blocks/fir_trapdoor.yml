@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Fir Trapdoor
+blocks:
+  natures_spirit:fir_trapdoor:
+    display_name: "Fir Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/fir_trapdoor

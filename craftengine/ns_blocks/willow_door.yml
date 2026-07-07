@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Willow Door
+blocks:
+  natures_spirit:willow_door:
+    display_name: "Willow Door"
+    category: building

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Joshua Planks
+items:
+  natures_spirit:joshua_planks:
+    display_name: "Joshua Planks"
+    rarity: COMMON

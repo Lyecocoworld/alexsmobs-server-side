@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Maple Boat
+items:
+  natures_spirit:maple_boat:
+    display_name: "Maple Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/maple_boat

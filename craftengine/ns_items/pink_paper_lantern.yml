@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Pink Paper Lantern
+items:
+  natures_spirit:pink_paper_lantern:
+    display_name: "Pink Paper Lantern"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/pink_paper_lantern

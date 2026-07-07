@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Large Calcite Bud
+items:
+  natures_spirit:large_calcite_bud:
+    display_name: "Large Calcite Bud"
+    rarity: COMMON

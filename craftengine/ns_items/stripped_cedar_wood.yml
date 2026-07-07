@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Cedar Wood
+items:
+  natures_spirit:stripped_cedar_wood:
+    display_name: "Stripped Cedar Wood"
+    rarity: COMMON

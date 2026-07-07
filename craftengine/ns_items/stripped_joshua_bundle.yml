@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Joshua Bundle
+items:
+  natures_spirit:stripped_joshua_bundle:
+    display_name: "Stripped Joshua Bundle"
+    rarity: COMMON

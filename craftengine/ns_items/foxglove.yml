@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Foxglove
+items:
+  natures_spirit:foxglove:
+    display_name: "Foxglove"
+    rarity: COMMON

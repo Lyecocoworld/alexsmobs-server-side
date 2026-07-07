@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Redwood Button
+blocks:
+  natures_spirit:redwood_button:
+    display_name: "Redwood Button"
+    category: wood

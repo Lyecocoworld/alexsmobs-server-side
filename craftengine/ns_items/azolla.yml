@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Azolla
+items:
+  natures_spirit:azolla:
+    display_name: "Azolla"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/azolla

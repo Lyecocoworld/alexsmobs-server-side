@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Marigold
+blocks:
+  natures_spirit:potted_marigold:
+    display_name: "Potted Marigold"
+    category: decoration

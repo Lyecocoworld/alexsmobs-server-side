@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Magenta Chalk Stairs
+blocks:
+  natures_spirit:magenta_chalk_stairs:
+    display_name: "Magenta Chalk Stairs"
+    category: building

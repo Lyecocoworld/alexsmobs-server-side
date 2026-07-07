@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Xeric Thatch Carpet
+blocks:
+  natures_spirit:xeric_thatch_carpet:
+    display_name: "Xeric Thatch Carpet"
+    category: decoration

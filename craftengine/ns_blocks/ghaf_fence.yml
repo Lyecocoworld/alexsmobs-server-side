@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Fence
+blocks:
+  natures_spirit:ghaf_fence:
+    display_name: "Ghaf Fence"
+    category: building

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cypress Wall Hanging Sign
+blocks:
+  natures_spirit:cypress_wall_hanging_sign:
+    display_name: "Cypress Wall Hanging Sign"
+    category: building

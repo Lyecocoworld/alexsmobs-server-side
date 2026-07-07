@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Evergreen Thatch
+items:
+  natures_spirit:evergreen_thatch:
+    display_name: "Evergreen Thatch"
+    rarity: COMMON

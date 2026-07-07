@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Yellow Maple Leaves
+blocks:
+  natures_spirit:yellow_maple_leaves:
+    display_name: "Yellow Maple Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/yellow_maple_leaves

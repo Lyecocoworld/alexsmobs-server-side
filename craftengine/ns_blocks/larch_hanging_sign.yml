@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Larch Hanging Sign
+blocks:
+  natures_spirit:larch_hanging_sign:
+    display_name: "Larch Hanging Sign"
+    category: utility

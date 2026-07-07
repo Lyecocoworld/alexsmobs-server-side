@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Olive Sapling
+blocks:
+  natures_spirit:potted_olive_sapling:
+    display_name: "Potted Olive Sapling"
+    category: foliage

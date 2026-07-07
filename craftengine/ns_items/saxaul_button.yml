@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Button
+items:
+  natures_spirit:saxaul_button:
+    display_name: "Saxaul Button"
+    rarity: COMMON

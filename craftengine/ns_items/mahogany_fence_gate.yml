@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Fence Gate
+items:
+  natures_spirit:mahogany_fence_gate:
+    display_name: "Mahogany Fence Gate"
+    rarity: COMMON

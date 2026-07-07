@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Red Heather
+blocks:
+  natures_spirit:red_heather:
+    display_name: "Red Heather"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/red_heather

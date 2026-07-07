@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Olive Wood
+blocks:
+  natures_spirit:olive_wood:
+    display_name: "Olive Wood"
+    category: wood

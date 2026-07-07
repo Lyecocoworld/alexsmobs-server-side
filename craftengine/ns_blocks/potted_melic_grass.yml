@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Melic Grass
+blocks:
+  natures_spirit:potted_melic_grass:
+    display_name: "Potted Melic Grass"
+    category: decoration

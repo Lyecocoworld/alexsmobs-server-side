@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Redwood Sign
+blocks:
+  natures_spirit:redwood_sign:
+    display_name: "Redwood Sign"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/redwood_sign

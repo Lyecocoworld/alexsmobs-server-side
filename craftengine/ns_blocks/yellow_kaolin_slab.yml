@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Yellow Kaolin Slab
+blocks:
+  natures_spirit:yellow_kaolin_slab:
+    display_name: "Yellow Kaolin Slab"
+    category: building

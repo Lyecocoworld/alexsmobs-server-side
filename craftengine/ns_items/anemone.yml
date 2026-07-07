@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Anemone
+items:
+  natures_spirit:anemone:
+    display_name: "Anemone"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/anemone

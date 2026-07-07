@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Planks
+items:
+  natures_spirit:coconut_planks:
+    display_name: "Coconut Planks"
+    rarity: COMMON

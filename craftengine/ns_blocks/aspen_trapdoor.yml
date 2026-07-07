@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Aspen Trapdoor
+blocks:
+  natures_spirit:aspen_trapdoor:
+    display_name: "Aspen Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/aspen_trapdoor

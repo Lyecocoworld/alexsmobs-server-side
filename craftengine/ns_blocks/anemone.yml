@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Anemone
+blocks:
+  natures_spirit:anemone:
+    display_name: "Anemone"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/anemone

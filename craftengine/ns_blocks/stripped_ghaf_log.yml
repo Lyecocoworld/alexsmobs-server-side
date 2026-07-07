@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Stripped Ghaf Log
+blocks:
+  natures_spirit:stripped_ghaf_log:
+    display_name: "Stripped Ghaf Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/stripped_ghaf_log

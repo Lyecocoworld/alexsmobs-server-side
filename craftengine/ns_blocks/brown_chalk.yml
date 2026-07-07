@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Brown Chalk
+blocks:
+  natures_spirit:brown_chalk:
+    display_name: "Brown Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/brown_chalk

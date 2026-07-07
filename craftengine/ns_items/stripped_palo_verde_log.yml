@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Palo Verde Log
+items:
+  natures_spirit:stripped_palo_verde_log:
+    display_name: "Stripped Palo Verde Log"
+    rarity: COMMON

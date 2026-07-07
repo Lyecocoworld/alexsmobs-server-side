@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Sugi Log
+items:
+  natures_spirit:sugi_log:
+    display_name: "Sugi Log"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Fence Gate
+blocks:
+  natures_spirit:coconut_fence_gate:
+    display_name: "Coconut Fence Gate"
+    category: building

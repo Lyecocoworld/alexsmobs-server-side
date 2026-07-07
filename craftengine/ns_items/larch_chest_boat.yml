@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Larch Chest Boat
+items:
+  natures_spirit:larch_chest_boat:
+    display_name: "Larch Chest Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/larch_chest_boat

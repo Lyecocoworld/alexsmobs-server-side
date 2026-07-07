@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Orange Maple Sapling
+blocks:
+  natures_spirit:orange_maple_sapling:
+    display_name: "Orange Maple Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/orange_maple_sapling

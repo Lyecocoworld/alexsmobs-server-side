@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Pressure Plate
+items:
+  natures_spirit:mahogany_pressure_plate:
+    display_name: "Mahogany Pressure Plate"
+    rarity: COMMON

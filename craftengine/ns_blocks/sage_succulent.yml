@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Sage Succulent
+blocks:
+  natures_spirit:sage_succulent:
+    display_name: "Sage Succulent"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/sage_succulent

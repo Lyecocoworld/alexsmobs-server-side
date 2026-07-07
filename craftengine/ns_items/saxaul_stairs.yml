@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Stairs
+items:
+  natures_spirit:saxaul_stairs:
+    display_name: "Saxaul Stairs"
+    rarity: COMMON

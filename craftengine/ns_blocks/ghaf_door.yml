@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Door
+blocks:
+  natures_spirit:ghaf_door:
+    display_name: "Ghaf Door"
+    category: building

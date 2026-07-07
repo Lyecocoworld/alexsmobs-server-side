@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Joshua Pressure Plate
+items:
+  natures_spirit:joshua_pressure_plate:
+    display_name: "Joshua Pressure Plate"
+    rarity: COMMON

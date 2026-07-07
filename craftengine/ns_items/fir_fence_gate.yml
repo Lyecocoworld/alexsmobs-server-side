@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Fir Fence Gate
+items:
+  natures_spirit:fir_fence_gate:
+    display_name: "Fir Fence Gate"
+    rarity: COMMON

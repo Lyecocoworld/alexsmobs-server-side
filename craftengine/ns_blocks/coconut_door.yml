@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Door
+blocks:
+  natures_spirit:coconut_door:
+    display_name: "Coconut Door"
+    category: building

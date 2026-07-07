@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chiseled Chert
+items:
+  natures_spirit:chiseled_chert:
+    display_name: "Chiseled Chert"
+    rarity: COMMON

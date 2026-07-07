@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Frigid Grass
+blocks:
+  natures_spirit:frigid_grass:
+    display_name: "Frigid Grass"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/frigid_grass

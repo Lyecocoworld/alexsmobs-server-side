@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Dwarf Blossoms
+blocks:
+  natures_spirit:potted_dwarf_blossoms:
+    display_name: "Potted Dwarf Blossoms"
+    category: decoration

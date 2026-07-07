@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Willow Sign
+blocks:
+  natures_spirit:willow_sign:
+    display_name: "Willow Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/willow_sign

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): White Chalk
+blocks:
+  natures_spirit:white_chalk:
+    display_name: "White Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/white_chalk

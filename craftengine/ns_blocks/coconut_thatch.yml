@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Coconut Thatch
+blocks:
+  natures_spirit:coconut_thatch:
+    display_name: "Coconut Thatch"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/coconut_thatch

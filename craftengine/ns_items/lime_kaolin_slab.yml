@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Lime Kaolin Slab
+items:
+  natures_spirit:lime_kaolin_slab:
+    display_name: "Lime Kaolin Slab"
+    rarity: COMMON

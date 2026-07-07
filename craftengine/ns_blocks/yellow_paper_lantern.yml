@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Yellow Paper Lantern
+blocks:
+  natures_spirit:yellow_paper_lantern:
+    display_name: "Yellow Paper Lantern"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/yellow_paper_lantern

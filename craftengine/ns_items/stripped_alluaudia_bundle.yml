@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Alluaudia Bundle
+items:
+  natures_spirit:stripped_alluaudia_bundle:
+    display_name: "Stripped Alluaudia Bundle"
+    rarity: COMMON

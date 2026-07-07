@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Red Kaolin
+blocks:
+  natures_spirit:red_kaolin:
+    display_name: "Red Kaolin"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/red_kaolin

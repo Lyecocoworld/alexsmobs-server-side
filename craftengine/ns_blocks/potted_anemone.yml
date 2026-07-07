@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Anemone
+blocks:
+  natures_spirit:potted_anemone:
+    display_name: "Potted Anemone"
+    category: decoration

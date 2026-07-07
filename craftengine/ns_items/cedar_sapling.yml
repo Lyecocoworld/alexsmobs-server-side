@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cedar Sapling
+items:
+  natures_spirit:cedar_sapling:
+    display_name: "Cedar Sapling"
+    rarity: COMMON

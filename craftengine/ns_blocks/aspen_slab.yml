@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Aspen Slab
+blocks:
+  natures_spirit:aspen_slab:
+    display_name: "Aspen Slab"
+    category: building

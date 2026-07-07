@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Slab
+blocks:
+  natures_spirit:ghaf_slab:
+    display_name: "Ghaf Slab"
+    category: building

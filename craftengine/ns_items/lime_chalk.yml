@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Lime Chalk
+items:
+  natures_spirit:lime_chalk:
+    display_name: "Lime Chalk"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Aspen Door
+items:
+  natures_spirit:aspen_door:
+    display_name: "Aspen Door"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/aspen_door

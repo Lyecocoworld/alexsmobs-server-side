@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Pink Sand
+blocks:
+  natures_spirit:pink_sand:
+    display_name: "Pink Sand"
+    category: terrain
+    resource:
+      textures:
+        default: natures_spirit:block/pink_sand

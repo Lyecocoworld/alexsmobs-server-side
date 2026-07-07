@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Coconut Shell
+items:
+  natures_spirit:coconut_shell:
+    display_name: "Coconut Shell"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/coconut_shell

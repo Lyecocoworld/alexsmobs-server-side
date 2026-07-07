@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Begonia
+blocks:
+  natures_spirit:begonia:
+    display_name: "Begonia"
+    category: decoration

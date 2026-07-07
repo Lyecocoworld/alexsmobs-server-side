@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Joshua Planks
+blocks:
+  natures_spirit:joshua_planks:
+    display_name: "Joshua Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/joshua_planks

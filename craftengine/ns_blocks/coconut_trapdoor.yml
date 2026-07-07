@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Coconut Trapdoor
+blocks:
+  natures_spirit:coconut_trapdoor:
+    display_name: "Coconut Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/coconut_trapdoor

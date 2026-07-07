@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Purple Chalk
+items:
+  natures_spirit:purple_chalk:
+    display_name: "Purple Chalk"
+    rarity: COMMON

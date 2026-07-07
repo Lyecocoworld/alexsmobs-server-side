@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Thatch Slab
+blocks:
+  natures_spirit:coconut_thatch_slab:
+    display_name: "Coconut Thatch Slab"
+    category: building

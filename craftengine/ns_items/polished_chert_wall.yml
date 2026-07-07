@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Polished Chert Wall
+items:
+  natures_spirit:polished_chert_wall:
+    display_name: "Polished Chert Wall"
+    rarity: COMMON

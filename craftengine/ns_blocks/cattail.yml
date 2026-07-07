@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cattail
+blocks:
+  natures_spirit:cattail:
+    display_name: "Cattail"
+    category: decoration

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Polished Chert Wall
+blocks:
+  natures_spirit:polished_chert_wall:
+    display_name: "Polished Chert Wall"
+    category: building

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Willow Button
+items:
+  natures_spirit:willow_button:
+    display_name: "Willow Button"
+    rarity: COMMON

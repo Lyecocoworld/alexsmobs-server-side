@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Black Chalk Stairs
+items:
+  natures_spirit:black_chalk_stairs:
+    display_name: "Black Chalk Stairs"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Palo Verde Sapling
+blocks:
+  natures_spirit:potted_palo_verde_sapling:
+    display_name: "Potted Palo Verde Sapling"
+    category: foliage

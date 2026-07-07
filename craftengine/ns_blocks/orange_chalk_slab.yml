@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Orange Chalk Slab
+blocks:
+  natures_spirit:orange_chalk_slab:
+    display_name: "Orange Chalk Slab"
+    category: building

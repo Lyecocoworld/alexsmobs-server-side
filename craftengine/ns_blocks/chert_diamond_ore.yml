@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Chert Diamond Ore
+blocks:
+  natures_spirit:chert_diamond_ore:
+    display_name: "Chert Diamond Ore"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/chert_diamond_ore

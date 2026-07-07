@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Stripped Sugi Log
+blocks:
+  natures_spirit:stripped_sugi_log:
+    display_name: "Stripped Sugi Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/stripped_sugi_log

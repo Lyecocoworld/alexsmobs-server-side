@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Sugi Leaves
+items:
+  natures_spirit:sugi_leaves:
+    display_name: "Sugi Leaves"
+    rarity: COMMON

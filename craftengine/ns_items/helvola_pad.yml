@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Helvola Pad
+items:
+  natures_spirit:helvola_pad:
+    display_name: "Helvola Pad"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/helvola_pad

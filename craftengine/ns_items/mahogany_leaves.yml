@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Leaves
+items:
+  natures_spirit:mahogany_leaves:
+    display_name: "Mahogany Leaves"
+    rarity: COMMON

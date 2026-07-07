@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Willow Leaves
+items:
+  natures_spirit:willow_leaves:
+    display_name: "Willow Leaves"
+    rarity: COMMON

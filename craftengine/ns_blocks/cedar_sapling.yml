@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cedar Sapling
+blocks:
+  natures_spirit:cedar_sapling:
+    display_name: "Cedar Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/cedar_sapling

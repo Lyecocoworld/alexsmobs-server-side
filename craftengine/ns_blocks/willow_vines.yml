@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Willow Vines
+blocks:
+  natures_spirit:willow_vines:
+    display_name: "Willow Vines"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/willow_vines

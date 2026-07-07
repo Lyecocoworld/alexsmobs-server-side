@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Fir Sapling
+blocks:
+  natures_spirit:potted_fir_sapling:
+    display_name: "Potted Fir Sapling"
+    category: foliage

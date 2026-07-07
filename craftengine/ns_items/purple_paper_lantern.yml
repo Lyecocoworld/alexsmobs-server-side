@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Purple Paper Lantern
+items:
+  natures_spirit:purple_paper_lantern:
+    display_name: "Purple Paper Lantern"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/purple_paper_lantern

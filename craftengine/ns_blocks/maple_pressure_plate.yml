@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Maple Pressure Plate
+blocks:
+  natures_spirit:maple_pressure_plate:
+    display_name: "Maple Pressure Plate"
+    category: utility

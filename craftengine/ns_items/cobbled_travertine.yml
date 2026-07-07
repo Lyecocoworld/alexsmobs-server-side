@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cobbled Travertine
+items:
+  natures_spirit:cobbled_travertine:
+    display_name: "Cobbled Travertine"
+    rarity: COMMON

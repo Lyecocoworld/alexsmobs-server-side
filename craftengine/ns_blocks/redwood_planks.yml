@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Redwood Planks
+blocks:
+  natures_spirit:redwood_planks:
+    display_name: "Redwood Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/redwood_planks

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Palo Verde Stairs
+items:
+  natures_spirit:palo_verde_stairs:
+    display_name: "Palo Verde Stairs"
+    rarity: COMMON

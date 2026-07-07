@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Wood
+blocks:
+  natures_spirit:coconut_wood:
+    display_name: "Coconut Wood"
+    category: wood

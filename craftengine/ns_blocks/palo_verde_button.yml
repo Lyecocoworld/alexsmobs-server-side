@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Button
+blocks:
+  natures_spirit:palo_verde_button:
+    display_name: "Palo Verde Button"
+    category: utility

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Framed Sugi Door
+blocks:
+  natures_spirit:framed_sugi_door:
+    display_name: "Framed Sugi Door"
+    category: building

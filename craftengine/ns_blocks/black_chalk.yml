@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Black Chalk
+blocks:
+  natures_spirit:black_chalk:
+    display_name: "Black Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/black_chalk

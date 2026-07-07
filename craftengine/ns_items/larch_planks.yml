@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Larch Planks
+items:
+  natures_spirit:larch_planks:
+    display_name: "Larch Planks"
+    rarity: COMMON

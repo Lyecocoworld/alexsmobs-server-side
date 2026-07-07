@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Fir Leaves
+blocks:
+  natures_spirit:fir_leaves:
+    display_name: "Fir Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/fir_leaves

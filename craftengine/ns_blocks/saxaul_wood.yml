@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Wood
+blocks:
+  natures_spirit:saxaul_wood:
+    display_name: "Saxaul Wood"
+    category: wood

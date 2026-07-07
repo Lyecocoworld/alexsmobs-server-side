@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Purple Kaolin
+blocks:
+  natures_spirit:purple_kaolin:
+    display_name: "Purple Kaolin"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/purple_kaolin

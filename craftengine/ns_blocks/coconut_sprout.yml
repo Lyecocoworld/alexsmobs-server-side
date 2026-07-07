@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Coconut Sprout
+blocks:
+  natures_spirit:coconut_sprout:
+    display_name: "Coconut Sprout"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/coconut_sprout

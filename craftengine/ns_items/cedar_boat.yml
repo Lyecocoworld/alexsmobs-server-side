@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Cedar Boat
+items:
+  natures_spirit:cedar_boat:
+    display_name: "Cedar Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/cedar_boat

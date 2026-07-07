@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Black Kaolin Brick Stairs
+blocks:
+  natures_spirit:black_kaolin_brick_stairs:
+    display_name: "Black Kaolin Brick Stairs"
+    category: building

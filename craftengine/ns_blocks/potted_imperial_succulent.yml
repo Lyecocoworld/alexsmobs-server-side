@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Imperial Succulent
+blocks:
+  natures_spirit:potted_imperial_succulent:
+    display_name: "Potted Imperial Succulent"
+    category: decoration

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Thatch Carpet
+items:
+  natures_spirit:coconut_thatch_carpet:
+    display_name: "Coconut Thatch Carpet"
+    rarity: COMMON

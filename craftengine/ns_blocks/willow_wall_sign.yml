@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Willow Wall Sign
+blocks:
+  natures_spirit:willow_wall_sign:
+    display_name: "Willow Wall Sign"
+    category: building

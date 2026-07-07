@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Planks
+blocks:
+  natures_spirit:wisteria_planks:
+    display_name: "Wisteria Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/wisteria_planks

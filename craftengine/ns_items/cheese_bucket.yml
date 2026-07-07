@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Cheese Bucket
+items:
+  natures_spirit:cheese_bucket:
+    display_name: "Cheese Bucket"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/cheese_bucket

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Pink Sandstone Stairs
+blocks:
+  natures_spirit:pink_sandstone_stairs:
+    display_name: "Pink Sandstone Stairs"
+    category: building

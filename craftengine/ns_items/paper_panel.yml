@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Paper Panel
+items:
+  natures_spirit:paper_panel:
+    display_name: "Paper Panel"
+    rarity: COMMON

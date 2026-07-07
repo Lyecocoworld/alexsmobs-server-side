@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Larch Wall Sign
+blocks:
+  natures_spirit:larch_wall_sign:
+    display_name: "Larch Wall Sign"
+    category: building

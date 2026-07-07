@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Maple Log
+items:
+  natures_spirit:maple_log:
+    display_name: "Maple Log"
+    rarity: COMMON

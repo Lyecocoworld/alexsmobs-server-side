@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Red Maple Leaves
+blocks:
+  natures_spirit:red_maple_leaves:
+    display_name: "Red Maple Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/red_maple_leaves

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): White Kaolin Brick Slab
+blocks:
+  natures_spirit:white_kaolin_brick_slab:
+    display_name: "White Kaolin Brick Slab"
+    category: building

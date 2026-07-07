@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cedar Sign
+blocks:
+  natures_spirit:cedar_sign:
+    display_name: "Cedar Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/cedar_sign

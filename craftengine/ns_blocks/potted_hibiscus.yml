@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Hibiscus
+blocks:
+  natures_spirit:potted_hibiscus:
+    display_name: "Potted Hibiscus"
+    category: decoration

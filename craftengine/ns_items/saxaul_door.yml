@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Door
+items:
+  natures_spirit:saxaul_door:
+    display_name: "Saxaul Door"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/saxaul_door

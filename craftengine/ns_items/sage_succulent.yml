@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Sage Succulent
+items:
+  natures_spirit:sage_succulent:
+    display_name: "Sage Succulent"
+    rarity: COMMON

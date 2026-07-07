@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Aspen Pressure Plate
+blocks:
+  natures_spirit:aspen_pressure_plate:
+    display_name: "Aspen Pressure Plate"
+    category: utility

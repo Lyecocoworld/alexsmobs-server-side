@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Light Blue Kaolin Brick Stairs
+blocks:
+  natures_spirit:light_blue_kaolin_brick_stairs:
+    display_name: "Light Blue Kaolin Brick Stairs"
+    category: building

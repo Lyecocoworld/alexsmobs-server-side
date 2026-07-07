@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Chert Coal Ore
+blocks:
+  natures_spirit:chert_coal_ore:
+    display_name: "Chert Coal Ore"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/chert_coal_ore

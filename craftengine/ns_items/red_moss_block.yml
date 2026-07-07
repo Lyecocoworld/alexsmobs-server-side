@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Red Moss Block
+items:
+  natures_spirit:red_moss_block:
+    display_name: "Red Moss Block"
+    rarity: COMMON

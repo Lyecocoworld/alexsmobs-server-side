@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Olive Leaves
+items:
+  natures_spirit:olive_leaves:
+    display_name: "Olive Leaves"
+    rarity: COMMON

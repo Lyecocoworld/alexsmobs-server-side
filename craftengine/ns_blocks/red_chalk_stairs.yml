@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Red Chalk Stairs
+blocks:
+  natures_spirit:red_chalk_stairs:
+    display_name: "Red Chalk Stairs"
+    category: building

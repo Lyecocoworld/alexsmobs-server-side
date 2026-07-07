@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Leaves
+items:
+  natures_spirit:coconut_leaves:
+    display_name: "Coconut Leaves"
+    rarity: COMMON

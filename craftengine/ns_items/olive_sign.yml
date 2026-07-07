@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Olive Sign
+items:
+  natures_spirit:olive_sign:
+    display_name: "Olive Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/olive_sign

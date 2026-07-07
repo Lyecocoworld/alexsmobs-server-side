@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Paper Hanging Sign
+blocks:
+  natures_spirit:paper_hanging_sign:
+    display_name: "Paper Hanging Sign"
+    category: utility

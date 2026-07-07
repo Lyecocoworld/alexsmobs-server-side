@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Sugi Wood
+items:
+  natures_spirit:stripped_sugi_wood:
+    display_name: "Stripped Sugi Wood"
+    rarity: COMMON

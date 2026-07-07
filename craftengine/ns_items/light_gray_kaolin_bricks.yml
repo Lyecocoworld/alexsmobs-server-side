@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Light Gray Kaolin Bricks
+items:
+  natures_spirit:light_gray_kaolin_bricks:
+    display_name: "Light Gray Kaolin Bricks"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cedar Fence Gate
+items:
+  natures_spirit:cedar_fence_gate:
+    display_name: "Cedar Fence Gate"
+    rarity: COMMON

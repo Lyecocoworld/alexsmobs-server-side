@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Fir Stairs
+blocks:
+  natures_spirit:fir_stairs:
+    display_name: "Fir Stairs"
+    category: building

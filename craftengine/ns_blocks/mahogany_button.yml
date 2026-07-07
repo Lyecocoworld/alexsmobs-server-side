@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Button
+blocks:
+  natures_spirit:mahogany_button:
+    display_name: "Mahogany Button"
+    category: utility

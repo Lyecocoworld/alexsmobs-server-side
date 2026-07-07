@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Red Moss Block
+blocks:
+  natures_spirit:red_moss_block:
+    display_name: "Red Moss Block"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/red_moss_block

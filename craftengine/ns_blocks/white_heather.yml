@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): White Heather
+blocks:
+  natures_spirit:white_heather:
+    display_name: "White Heather"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/white_heather

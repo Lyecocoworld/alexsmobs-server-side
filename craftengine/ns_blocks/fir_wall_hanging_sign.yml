@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Fir Wall Hanging Sign
+blocks:
+  natures_spirit:fir_wall_hanging_sign:
+    display_name: "Fir Wall Hanging Sign"
+    category: building

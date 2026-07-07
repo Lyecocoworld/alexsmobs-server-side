@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Red Paper Lantern
+items:
+  natures_spirit:red_paper_lantern:
+    display_name: "Red Paper Lantern"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/red_paper_lantern

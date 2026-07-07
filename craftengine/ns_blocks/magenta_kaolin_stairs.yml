@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Magenta Kaolin Stairs
+blocks:
+  natures_spirit:magenta_kaolin_stairs:
+    display_name: "Magenta Kaolin Stairs"
+    category: building

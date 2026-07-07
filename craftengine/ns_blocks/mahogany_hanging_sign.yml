@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Hanging Sign
+blocks:
+  natures_spirit:mahogany_hanging_sign:
+    display_name: "Mahogany Hanging Sign"
+    category: utility

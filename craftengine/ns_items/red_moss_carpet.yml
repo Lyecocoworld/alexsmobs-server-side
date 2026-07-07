@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Red Moss Carpet
+items:
+  natures_spirit:red_moss_carpet:
+    display_name: "Red Moss Carpet"
+    rarity: COMMON

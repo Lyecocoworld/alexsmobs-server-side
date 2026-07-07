@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Aspen Pressure Plate
+items:
+  natures_spirit:aspen_pressure_plate:
+    display_name: "Aspen Pressure Plate"
+    rarity: COMMON

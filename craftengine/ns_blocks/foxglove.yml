@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Foxglove
+blocks:
+  natures_spirit:foxglove:
+    display_name: "Foxglove"
+    category: decoration

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Planks
+blocks:
+  natures_spirit:ghaf_planks:
+    display_name: "Ghaf Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/ghaf_planks

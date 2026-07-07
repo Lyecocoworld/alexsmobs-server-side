@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Yellow Aspen Leaves
+blocks:
+  natures_spirit:yellow_aspen_leaves:
+    display_name: "Yellow Aspen Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/yellow_aspen_leaves

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Sugi Stairs
+blocks:
+  natures_spirit:sugi_stairs:
+    display_name: "Sugi Stairs"
+    category: building

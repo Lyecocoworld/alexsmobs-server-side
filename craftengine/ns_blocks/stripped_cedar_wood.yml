@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Stripped Cedar Wood
+blocks:
+  natures_spirit:stripped_cedar_wood:
+    display_name: "Stripped Cedar Wood"
+    category: wood

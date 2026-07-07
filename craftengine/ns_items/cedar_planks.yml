@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cedar Planks
+items:
+  natures_spirit:cedar_planks:
+    display_name: "Cedar Planks"
+    rarity: COMMON

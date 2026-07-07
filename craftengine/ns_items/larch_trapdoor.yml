@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Larch Trapdoor
+items:
+  natures_spirit:larch_trapdoor:
+    display_name: "Larch Trapdoor"
+    rarity: COMMON

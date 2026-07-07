@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Redwood Fence Gate
+items:
+  natures_spirit:redwood_fence_gate:
+    display_name: "Redwood Fence Gate"
+    rarity: COMMON

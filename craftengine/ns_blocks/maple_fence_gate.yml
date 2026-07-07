@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Maple Fence Gate
+blocks:
+  natures_spirit:maple_fence_gate:
+    display_name: "Maple Fence Gate"
+    category: building

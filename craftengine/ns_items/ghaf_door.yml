@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Ghaf Door
+items:
+  natures_spirit:ghaf_door:
+    display_name: "Ghaf Door"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/ghaf_door

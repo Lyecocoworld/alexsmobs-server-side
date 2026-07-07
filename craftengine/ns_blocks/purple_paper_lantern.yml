@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Purple Paper Lantern
+blocks:
+  natures_spirit:purple_paper_lantern:
+    display_name: "Purple Paper Lantern"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/purple_paper_lantern

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Palo Verde Pressure Plate
+items:
+  natures_spirit:palo_verde_pressure_plate:
+    display_name: "Palo Verde Pressure Plate"
+    rarity: COMMON

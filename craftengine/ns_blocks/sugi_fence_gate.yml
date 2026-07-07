@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Sugi Fence Gate
+blocks:
+  natures_spirit:sugi_fence_gate:
+    display_name: "Sugi Fence Gate"
+    category: building

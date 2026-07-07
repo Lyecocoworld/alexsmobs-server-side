@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Light Gray Kaolin Stairs
+blocks:
+  natures_spirit:light_gray_kaolin_stairs:
+    display_name: "Light Gray Kaolin Stairs"
+    category: building

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Tall Scorched Grass
+blocks:
+  natures_spirit:tall_scorched_grass:
+    display_name: "Tall Scorched Grass"
+    category: decoration

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Palo Verde Wood
+items:
+  natures_spirit:stripped_palo_verde_wood:
+    display_name: "Stripped Palo Verde Wood"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chert Tile Slab
+items:
+  natures_spirit:chert_tile_slab:
+    display_name: "Chert Tile Slab"
+    rarity: COMMON

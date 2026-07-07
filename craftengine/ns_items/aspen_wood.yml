@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Aspen Wood
+items:
+  natures_spirit:aspen_wood:
+    display_name: "Aspen Wood"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Cyan Paper Lantern
+items:
+  natures_spirit:cyan_paper_lantern:
+    display_name: "Cyan Paper Lantern"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/cyan_paper_lantern

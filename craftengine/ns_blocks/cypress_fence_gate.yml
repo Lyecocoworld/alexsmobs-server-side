@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cypress Fence Gate
+blocks:
+  natures_spirit:cypress_fence_gate:
+    display_name: "Cypress Fence Gate"
+    category: building

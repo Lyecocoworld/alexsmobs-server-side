@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Boat
+items:
+  natures_spirit:mahogany_boat:
+    display_name: "Mahogany Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/mahogany_boat

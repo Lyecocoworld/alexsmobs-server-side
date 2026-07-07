@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Frigid Grass
+blocks:
+  natures_spirit:potted_frigid_grass:
+    display_name: "Potted Frigid Grass"
+    category: decoration

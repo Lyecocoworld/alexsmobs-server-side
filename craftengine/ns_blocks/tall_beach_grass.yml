@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Tall Beach Grass
+blocks:
+  natures_spirit:tall_beach_grass:
+    display_name: "Tall Beach Grass"
+    category: decoration

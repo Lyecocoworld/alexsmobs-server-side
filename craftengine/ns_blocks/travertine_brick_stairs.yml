@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Travertine Brick Stairs
+blocks:
+  natures_spirit:travertine_brick_stairs:
+    display_name: "Travertine Brick Stairs"
+    category: building

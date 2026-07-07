@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Helvola
+blocks:
+  natures_spirit:helvola:
+    display_name: "Helvola"
+    category: decoration

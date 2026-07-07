@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Magenta Paper Lantern
+items:
+  natures_spirit:magenta_paper_lantern:
+    display_name: "Magenta Paper Lantern"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/magenta_paper_lantern

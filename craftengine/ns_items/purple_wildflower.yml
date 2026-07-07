@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Purple Wildflower
+items:
+  natures_spirit:purple_wildflower:
+    display_name: "Purple Wildflower"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/purple_wildflower

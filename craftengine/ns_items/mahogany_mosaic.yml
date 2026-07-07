@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Mosaic
+items:
+  natures_spirit:mahogany_mosaic:
+    display_name: "Mahogany Mosaic"
+    rarity: COMMON

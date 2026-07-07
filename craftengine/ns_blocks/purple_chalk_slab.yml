@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Purple Chalk Slab
+blocks:
+  natures_spirit:purple_chalk_slab:
+    display_name: "Purple Chalk Slab"
+    category: building

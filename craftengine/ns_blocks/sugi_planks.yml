@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Sugi Planks
+blocks:
+  natures_spirit:sugi_planks:
+    display_name: "Sugi Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/sugi_planks

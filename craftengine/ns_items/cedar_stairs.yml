@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cedar Stairs
+items:
+  natures_spirit:cedar_stairs:
+    display_name: "Cedar Stairs"
+    rarity: COMMON

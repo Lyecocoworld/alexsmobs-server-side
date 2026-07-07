@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Fir Leaves
+items:
+  natures_spirit:fir_leaves:
+    display_name: "Fir Leaves"
+    rarity: COMMON

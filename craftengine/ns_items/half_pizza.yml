@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Half Pizza
+items:
+  natures_spirit:half_pizza:
+    display_name: "Half Pizza"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/half_pizza

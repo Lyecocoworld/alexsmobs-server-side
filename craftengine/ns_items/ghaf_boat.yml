@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Ghaf Boat
+items:
+  natures_spirit:ghaf_boat:
+    display_name: "Ghaf Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/ghaf_boat

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Calcite Cluster
+items:
+  natures_spirit:calcite_cluster:
+    display_name: "Calcite Cluster"
+    rarity: COMMON

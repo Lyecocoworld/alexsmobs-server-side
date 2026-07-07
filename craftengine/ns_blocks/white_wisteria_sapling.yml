@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): White Wisteria Sapling
+blocks:
+  natures_spirit:white_wisteria_sapling:
+    display_name: "White Wisteria Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/white_wisteria_sapling

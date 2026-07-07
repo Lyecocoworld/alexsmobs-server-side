@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Stripped Mahogany Wood
+blocks:
+  natures_spirit:stripped_mahogany_wood:
+    display_name: "Stripped Mahogany Wood"
+    category: wood

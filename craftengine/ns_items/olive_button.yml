@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Olive Button
+items:
+  natures_spirit:olive_button:
+    display_name: "Olive Button"
+    rarity: COMMON

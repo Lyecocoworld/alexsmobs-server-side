@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Xeric Thatch Slab
+blocks:
+  natures_spirit:xeric_thatch_slab:
+    display_name: "Xeric Thatch Slab"
+    category: building

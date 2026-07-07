@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Aspen Fence Gate
+blocks:
+  natures_spirit:aspen_fence_gate:
+    display_name: "Aspen Fence Gate"
+    category: building

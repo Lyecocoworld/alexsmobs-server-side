@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Stripped Palo Verde Log
+blocks:
+  natures_spirit:stripped_palo_verde_log:
+    display_name: "Stripped Palo Verde Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/stripped_palo_verde_log

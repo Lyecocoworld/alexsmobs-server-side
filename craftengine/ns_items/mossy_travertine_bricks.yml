@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Mossy Travertine Bricks
+items:
+  natures_spirit:mossy_travertine_bricks:
+    display_name: "Mossy Travertine Bricks"
+    rarity: COMMON

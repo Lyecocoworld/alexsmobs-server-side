@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Sign
+items:
+  natures_spirit:saxaul_sign:
+    display_name: "Saxaul Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/saxaul_sign

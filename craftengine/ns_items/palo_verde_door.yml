@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Palo Verde Door
+items:
+  natures_spirit:palo_verde_door:
+    display_name: "Palo Verde Door"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/palo_verde_door

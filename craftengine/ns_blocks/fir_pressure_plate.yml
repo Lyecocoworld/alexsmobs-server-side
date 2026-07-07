@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Fir Pressure Plate
+blocks:
+  natures_spirit:fir_pressure_plate:
+    display_name: "Fir Pressure Plate"
+    category: utility

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Pressure Plate
+items:
+  natures_spirit:saxaul_pressure_plate:
+    display_name: "Saxaul Pressure Plate"
+    rarity: COMMON

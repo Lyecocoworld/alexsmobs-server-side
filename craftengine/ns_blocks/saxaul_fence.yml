@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Fence
+blocks:
+  natures_spirit:saxaul_fence:
+    display_name: "Saxaul Fence"
+    category: building

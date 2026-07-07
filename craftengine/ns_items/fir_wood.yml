@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Fir Wood
+items:
+  natures_spirit:fir_wood:
+    display_name: "Fir Wood"
+    rarity: COMMON

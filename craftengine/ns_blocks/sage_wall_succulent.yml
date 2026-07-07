@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Sage Wall Succulent
+blocks:
+  natures_spirit:sage_wall_succulent:
+    display_name: "Sage Wall Succulent"
+    category: building

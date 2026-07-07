@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Redwood Trapdoor
+items:
+  natures_spirit:redwood_trapdoor:
+    display_name: "Redwood Trapdoor"
+    rarity: COMMON

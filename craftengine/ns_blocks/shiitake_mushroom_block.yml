@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Shiitake Mushroom Block
+blocks:
+  natures_spirit:shiitake_mushroom_block:
+    display_name: "Shiitake Mushroom Block"
+    category: plant
+    resource:
+      textures:
+        default: natures_spirit:block/shiitake_mushroom_block

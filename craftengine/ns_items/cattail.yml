@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Cattail
+items:
+  natures_spirit:cattail:
+    display_name: "Cattail"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/cattail

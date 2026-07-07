@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Magenta Chalk
+blocks:
+  natures_spirit:magenta_chalk:
+    display_name: "Magenta Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/magenta_chalk

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Slab
+blocks:
+  natures_spirit:wisteria_slab:
+    display_name: "Wisteria Slab"
+    category: building

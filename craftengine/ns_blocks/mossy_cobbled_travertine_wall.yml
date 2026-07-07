@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Mossy Cobbled Travertine Wall
+blocks:
+  natures_spirit:mossy_cobbled_travertine_wall:
+    display_name: "Mossy Cobbled Travertine Wall"
+    category: building

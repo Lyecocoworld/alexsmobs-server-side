@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Red Maple Sapling
+items:
+  natures_spirit:red_maple_sapling:
+    display_name: "Red Maple Sapling"
+    rarity: COMMON

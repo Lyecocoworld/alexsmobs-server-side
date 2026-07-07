@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Mosaic Stairs
+items:
+  natures_spirit:mahogany_mosaic_stairs:
+    display_name: "Mahogany Mosaic Stairs"
+    rarity: COMMON

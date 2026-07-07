@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Aspen Log
+items:
+  natures_spirit:aspen_log:
+    display_name: "Aspen Log"
+    rarity: COMMON

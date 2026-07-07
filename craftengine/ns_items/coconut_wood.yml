@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Wood
+items:
+  natures_spirit:coconut_wood:
+    display_name: "Coconut Wood"
+    rarity: COMMON

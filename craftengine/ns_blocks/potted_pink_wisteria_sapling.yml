@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Pink Wisteria Sapling
+blocks:
+  natures_spirit:potted_pink_wisteria_sapling:
+    display_name: "Potted Pink Wisteria Sapling"
+    category: foliage

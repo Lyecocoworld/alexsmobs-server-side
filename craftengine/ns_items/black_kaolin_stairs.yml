@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Black Kaolin Stairs
+items:
+  natures_spirit:black_kaolin_stairs:
+    display_name: "Black Kaolin Stairs"
+    rarity: COMMON

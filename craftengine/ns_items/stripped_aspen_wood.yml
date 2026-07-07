@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Aspen Wood
+items:
+  natures_spirit:stripped_aspen_wood:
+    display_name: "Stripped Aspen Wood"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Ghaf Hanging Sign
+items:
+  natures_spirit:ghaf_hanging_sign:
+    display_name: "Ghaf Hanging Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/ghaf_hanging_sign

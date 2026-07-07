@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Willow Boat
+items:
+  natures_spirit:willow_boat:
+    display_name: "Willow Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/willow_boat

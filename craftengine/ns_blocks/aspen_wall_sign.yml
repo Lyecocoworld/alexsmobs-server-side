@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Aspen Wall Sign
+blocks:
+  natures_spirit:aspen_wall_sign:
+    display_name: "Aspen Wall Sign"
+    category: building

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cedar Wood
+blocks:
+  natures_spirit:cedar_wood:
+    display_name: "Cedar Wood"
+    category: wood

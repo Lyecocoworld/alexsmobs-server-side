@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Maple Slab
+blocks:
+  natures_spirit:maple_slab:
+    display_name: "Maple Slab"
+    category: building

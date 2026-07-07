@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Trapdoor
+items:
+  natures_spirit:saxaul_trapdoor:
+    display_name: "Saxaul Trapdoor"
+    rarity: COMMON

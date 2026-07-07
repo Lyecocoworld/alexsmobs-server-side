@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Sign
+blocks:
+  natures_spirit:palo_verde_sign:
+    display_name: "Palo Verde Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/palo_verde_sign

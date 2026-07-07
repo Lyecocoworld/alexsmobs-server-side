@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Frosty Redwood Leaves
+blocks:
+  natures_spirit:frosty_redwood_leaves:
+    display_name: "Frosty Redwood Leaves"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/frosty_redwood_leaves

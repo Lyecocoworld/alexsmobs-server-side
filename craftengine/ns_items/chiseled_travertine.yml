@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chiseled Travertine
+items:
+  natures_spirit:chiseled_travertine:
+    display_name: "Chiseled Travertine"
+    rarity: COMMON

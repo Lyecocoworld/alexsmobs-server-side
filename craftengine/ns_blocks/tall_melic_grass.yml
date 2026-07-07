@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Tall Melic Grass
+blocks:
+  natures_spirit:tall_melic_grass:
+    display_name: "Tall Melic Grass"
+    category: decoration

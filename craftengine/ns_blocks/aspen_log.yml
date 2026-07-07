@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Aspen Log
+blocks:
+  natures_spirit:aspen_log:
+    display_name: "Aspen Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/aspen_log

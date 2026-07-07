@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Pressure Plate
+blocks:
+  natures_spirit:mahogany_pressure_plate:
+    display_name: "Mahogany Pressure Plate"
+    category: utility

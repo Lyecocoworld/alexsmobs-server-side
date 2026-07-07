@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Light Gray Kaolin Stairs
+items:
+  natures_spirit:light_gray_kaolin_stairs:
+    display_name: "Light Gray Kaolin Stairs"
+    rarity: COMMON

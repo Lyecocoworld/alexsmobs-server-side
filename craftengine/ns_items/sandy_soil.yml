@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Sandy Soil
+items:
+  natures_spirit:sandy_soil:
+    display_name: "Sandy Soil"
+    rarity: COMMON

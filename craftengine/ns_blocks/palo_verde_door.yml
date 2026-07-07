@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Door
+blocks:
+  natures_spirit:palo_verde_door:
+    display_name: "Palo Verde Door"
+    category: building

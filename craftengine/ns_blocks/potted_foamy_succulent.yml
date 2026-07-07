@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Foamy Succulent
+blocks:
+  natures_spirit:potted_foamy_succulent:
+    display_name: "Potted Foamy Succulent"
+    category: decoration

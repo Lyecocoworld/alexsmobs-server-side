@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Polished Travertine Wall
+items:
+  natures_spirit:polished_travertine_wall:
+    display_name: "Polished Travertine Wall"
+    rarity: COMMON

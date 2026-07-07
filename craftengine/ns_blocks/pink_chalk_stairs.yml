@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Pink Chalk Stairs
+blocks:
+  natures_spirit:pink_chalk_stairs:
+    display_name: "Pink Chalk Stairs"
+    category: building

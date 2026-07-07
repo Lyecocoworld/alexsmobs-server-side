@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cedar Stairs
+blocks:
+  natures_spirit:cedar_stairs:
+    display_name: "Cedar Stairs"
+    category: building

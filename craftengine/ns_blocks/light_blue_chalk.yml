@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Light Blue Chalk
+blocks:
+  natures_spirit:light_blue_chalk:
+    display_name: "Light Blue Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/light_blue_chalk

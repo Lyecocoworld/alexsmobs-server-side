@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Fir Sign
+blocks:
+  natures_spirit:fir_sign:
+    display_name: "Fir Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/fir_sign

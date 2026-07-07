@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Pink Wisteria Leaves
+items:
+  natures_spirit:pink_wisteria_leaves:
+    display_name: "Pink Wisteria Leaves"
+    rarity: COMMON

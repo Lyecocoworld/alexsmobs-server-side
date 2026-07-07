@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Olive Branch
+blocks:
+  natures_spirit:olive_branch:
+    display_name: "Olive Branch"
+    category: decoration

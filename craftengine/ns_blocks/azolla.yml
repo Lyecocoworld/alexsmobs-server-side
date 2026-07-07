@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Azolla
+blocks:
+  natures_spirit:azolla:
+    display_name: "Azolla"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/azolla

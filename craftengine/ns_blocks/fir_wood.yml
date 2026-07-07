@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Fir Wood
+blocks:
+  natures_spirit:fir_wood:
+    display_name: "Fir Wood"
+    category: wood

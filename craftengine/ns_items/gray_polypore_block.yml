@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Gray Polypore Block
+items:
+  natures_spirit:gray_polypore_block:
+    display_name: "Gray Polypore Block"
+    rarity: COMMON

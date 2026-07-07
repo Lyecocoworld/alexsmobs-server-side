@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Joshua Fence
+blocks:
+  natures_spirit:joshua_fence:
+    display_name: "Joshua Fence"
+    category: building

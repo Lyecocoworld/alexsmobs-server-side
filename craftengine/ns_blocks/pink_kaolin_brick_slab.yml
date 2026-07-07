@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Pink Kaolin Brick Slab
+blocks:
+  natures_spirit:pink_kaolin_brick_slab:
+    display_name: "Pink Kaolin Brick Slab"
+    category: building

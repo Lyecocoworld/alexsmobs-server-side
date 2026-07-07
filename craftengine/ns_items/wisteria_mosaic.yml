@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Wisteria Mosaic
+items:
+  natures_spirit:wisteria_mosaic:
+    display_name: "Wisteria Mosaic"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Trapdoor
+blocks:
+  natures_spirit:mahogany_trapdoor:
+    display_name: "Mahogany Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/mahogany_trapdoor

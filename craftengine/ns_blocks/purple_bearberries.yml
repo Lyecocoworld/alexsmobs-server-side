@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Purple Bearberries
+blocks:
+  natures_spirit:purple_bearberries:
+    display_name: "Purple Bearberries"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/purple_bearberries

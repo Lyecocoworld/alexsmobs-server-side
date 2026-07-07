@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cedar Slab
+blocks:
+  natures_spirit:cedar_slab:
+    display_name: "Cedar Slab"
+    category: building

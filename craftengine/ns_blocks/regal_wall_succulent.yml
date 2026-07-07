@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Regal Wall Succulent
+blocks:
+  natures_spirit:regal_wall_succulent:
+    display_name: "Regal Wall Succulent"
+    category: building

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Hanging Sign
+blocks:
+  natures_spirit:wisteria_hanging_sign:
+    display_name: "Wisteria Hanging Sign"
+    category: utility

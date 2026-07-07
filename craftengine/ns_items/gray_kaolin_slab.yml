@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Gray Kaolin Slab
+items:
+  natures_spirit:gray_kaolin_slab:
+    display_name: "Gray Kaolin Slab"
+    rarity: COMMON

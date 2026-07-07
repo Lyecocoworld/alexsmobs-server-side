@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Stairs
+items:
+  natures_spirit:coconut_stairs:
+    display_name: "Coconut Stairs"
+    rarity: COMMON

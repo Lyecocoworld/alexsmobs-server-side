@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Palo Verde Trapdoor
+items:
+  natures_spirit:palo_verde_trapdoor:
+    display_name: "Palo Verde Trapdoor"
+    rarity: COMMON

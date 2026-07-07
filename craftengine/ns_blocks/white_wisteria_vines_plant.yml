@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): White Wisteria Vines Plant
+blocks:
+  natures_spirit:white_wisteria_vines_plant:
+    display_name: "White Wisteria Vines Plant"
+    category: plant
+    resource:
+      textures:
+        default: natures_spirit:block/white_wisteria_vines_plant

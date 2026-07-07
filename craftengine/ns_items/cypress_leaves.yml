@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cypress Leaves
+items:
+  natures_spirit:cypress_leaves:
+    display_name: "Cypress Leaves"
+    rarity: COMMON

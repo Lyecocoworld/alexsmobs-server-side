@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Magenta Chalk Slab
+blocks:
+  natures_spirit:magenta_chalk_slab:
+    display_name: "Magenta Chalk Slab"
+    category: building

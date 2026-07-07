@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Pressure Plate
+blocks:
+  natures_spirit:coconut_pressure_plate:
+    display_name: "Coconut Pressure Plate"
+    category: utility

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Drowsy Succulent
+blocks:
+  natures_spirit:potted_drowsy_succulent:
+    display_name: "Potted Drowsy Succulent"
+    category: decoration

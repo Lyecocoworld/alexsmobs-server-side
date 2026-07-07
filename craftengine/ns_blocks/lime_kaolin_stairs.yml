@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Lime Kaolin Stairs
+blocks:
+  natures_spirit:lime_kaolin_stairs:
+    display_name: "Lime Kaolin Stairs"
+    category: building

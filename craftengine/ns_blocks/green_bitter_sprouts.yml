@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Green Bitter Sprouts
+blocks:
+  natures_spirit:green_bitter_sprouts:
+    display_name: "Green Bitter Sprouts"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/green_bitter_sprouts

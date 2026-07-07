@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Button
+items:
+  natures_spirit:mahogany_button:
+    display_name: "Mahogany Button"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Purple Bitter Sprouts
+items:
+  natures_spirit:purple_bitter_sprouts:
+    display_name: "Purple Bitter Sprouts"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/purple_bitter_sprouts

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Lime Kaolin Brick Slab
+blocks:
+  natures_spirit:lime_kaolin_brick_slab:
+    display_name: "Lime Kaolin Brick Slab"
+    category: building

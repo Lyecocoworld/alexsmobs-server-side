@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cedar Fence Gate
+blocks:
+  natures_spirit:cedar_fence_gate:
+    display_name: "Cedar Fence Gate"
+    category: building

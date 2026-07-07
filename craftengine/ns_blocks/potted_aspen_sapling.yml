@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Aspen Sapling
+blocks:
+  natures_spirit:potted_aspen_sapling:
+    display_name: "Potted Aspen Sapling"
+    category: foliage

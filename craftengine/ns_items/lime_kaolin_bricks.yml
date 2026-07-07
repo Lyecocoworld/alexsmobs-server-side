@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Lime Kaolin Bricks
+items:
+  natures_spirit:lime_kaolin_bricks:
+    display_name: "Lime Kaolin Bricks"
+    rarity: COMMON

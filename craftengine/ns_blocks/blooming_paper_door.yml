@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Blooming Paper Door
+blocks:
+  natures_spirit:blooming_paper_door:
+    display_name: "Blooming Paper Door"
+    category: building

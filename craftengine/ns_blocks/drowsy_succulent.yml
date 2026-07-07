@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Drowsy Succulent
+blocks:
+  natures_spirit:drowsy_succulent:
+    display_name: "Drowsy Succulent"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/drowsy_succulent

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Black Iris
+items:
+  natures_spirit:black_iris:
+    display_name: "Black Iris"
+    rarity: COMMON

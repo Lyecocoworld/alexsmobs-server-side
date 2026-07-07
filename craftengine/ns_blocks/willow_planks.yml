@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Willow Planks
+blocks:
+  natures_spirit:willow_planks:
+    display_name: "Willow Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/willow_planks

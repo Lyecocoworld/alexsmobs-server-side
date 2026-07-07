@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Hanging Sign
+blocks:
+  natures_spirit:saxaul_hanging_sign:
+    display_name: "Saxaul Hanging Sign"
+    category: utility

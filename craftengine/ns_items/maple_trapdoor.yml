@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Maple Trapdoor
+items:
+  natures_spirit:maple_trapdoor:
+    display_name: "Maple Trapdoor"
+    rarity: COMMON

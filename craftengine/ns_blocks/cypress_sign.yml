@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cypress Sign
+blocks:
+  natures_spirit:cypress_sign:
+    display_name: "Cypress Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/cypress_sign

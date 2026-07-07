@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Evergreen Thatch Carpet
+blocks:
+  natures_spirit:evergreen_thatch_carpet:
+    display_name: "Evergreen Thatch Carpet"
+    category: decoration

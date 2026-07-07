@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Travertine Tiles
+blocks:
+  natures_spirit:travertine_tiles:
+    display_name: "Travertine Tiles"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/travertine_tiles

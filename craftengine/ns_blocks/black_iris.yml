@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Black Iris
+blocks:
+  natures_spirit:black_iris:
+    display_name: "Black Iris"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/black_iris

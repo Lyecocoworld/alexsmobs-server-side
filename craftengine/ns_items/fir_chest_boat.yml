@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Fir Chest Boat
+items:
+  natures_spirit:fir_chest_boat:
+    display_name: "Fir Chest Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/fir_chest_boat

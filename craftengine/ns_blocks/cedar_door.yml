@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cedar Door
+blocks:
+  natures_spirit:cedar_door:
+    display_name: "Cedar Door"
+    category: building

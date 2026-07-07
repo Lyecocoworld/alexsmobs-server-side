@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Palo Verde Planks
+items:
+  natures_spirit:palo_verde_planks:
+    display_name: "Palo Verde Planks"
+    rarity: COMMON

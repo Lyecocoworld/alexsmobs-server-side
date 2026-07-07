@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Stairs
+blocks:
+  natures_spirit:mahogany_stairs:
+    display_name: "Mahogany Stairs"
+    category: building

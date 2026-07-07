@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Larch Slab
+items:
+  natures_spirit:larch_slab:
+    display_name: "Larch Slab"
+    rarity: COMMON

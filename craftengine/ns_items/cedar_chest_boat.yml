@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Cedar Chest Boat
+items:
+  natures_spirit:cedar_chest_boat:
+    display_name: "Cedar Chest Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/cedar_chest_boat

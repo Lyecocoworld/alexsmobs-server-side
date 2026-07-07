@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Sugi Wall Sign
+blocks:
+  natures_spirit:sugi_wall_sign:
+    display_name: "Sugi Wall Sign"
+    category: building

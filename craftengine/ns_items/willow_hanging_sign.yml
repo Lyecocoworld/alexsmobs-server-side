@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Willow Hanging Sign
+items:
+  natures_spirit:willow_hanging_sign:
+    display_name: "Willow Hanging Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/willow_hanging_sign

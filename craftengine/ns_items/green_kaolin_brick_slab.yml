@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Green Kaolin Brick Slab
+items:
+  natures_spirit:green_kaolin_brick_slab:
+    display_name: "Green Kaolin Brick Slab"
+    rarity: COMMON

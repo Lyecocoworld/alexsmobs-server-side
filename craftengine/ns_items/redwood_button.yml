@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Redwood Button
+items:
+  natures_spirit:redwood_button:
+    display_name: "Redwood Button"
+    rarity: COMMON

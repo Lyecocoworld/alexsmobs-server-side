@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cyan Kaolin Bricks
+items:
+  natures_spirit:cyan_kaolin_bricks:
+    display_name: "Cyan Kaolin Bricks"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Red Bearberries
+items:
+  natures_spirit:red_bearberries:
+    display_name: "Red Bearberries"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/red_bearberries

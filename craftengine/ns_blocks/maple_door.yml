@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Maple Door
+blocks:
+  natures_spirit:maple_door:
+    display_name: "Maple Door"
+    category: building

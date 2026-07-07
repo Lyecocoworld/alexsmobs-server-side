@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Olive Pressure Plate
+blocks:
+  natures_spirit:olive_pressure_plate:
+    display_name: "Olive Pressure Plate"
+    category: utility

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cyan Kaolin Brick Slab
+items:
+  natures_spirit:cyan_kaolin_brick_slab:
+    display_name: "Cyan Kaolin Brick Slab"
+    rarity: COMMON

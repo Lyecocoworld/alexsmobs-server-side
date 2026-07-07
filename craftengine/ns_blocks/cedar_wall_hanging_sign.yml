@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cedar Wall Hanging Sign
+blocks:
+  natures_spirit:cedar_wall_hanging_sign:
+    display_name: "Cedar Wall Hanging Sign"
+    category: building

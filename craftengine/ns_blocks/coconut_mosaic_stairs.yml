@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Mosaic Stairs
+blocks:
+  natures_spirit:coconut_mosaic_stairs:
+    display_name: "Coconut Mosaic Stairs"
+    category: building

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Blooming Paper Trapdoor
+items:
+  natures_spirit:blooming_paper_trapdoor:
+    display_name: "Blooming Paper Trapdoor"
+    rarity: COMMON

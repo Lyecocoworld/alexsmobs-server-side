@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Redwood Log
+items:
+  natures_spirit:stripped_redwood_log:
+    display_name: "Stripped Redwood Log"
+    rarity: COMMON

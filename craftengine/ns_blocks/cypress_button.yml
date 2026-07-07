@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cypress Button
+blocks:
+  natures_spirit:cypress_button:
+    display_name: "Cypress Button"
+    category: utility

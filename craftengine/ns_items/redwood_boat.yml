@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Redwood Boat
+items:
+  natures_spirit:redwood_boat:
+    display_name: "Redwood Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/redwood_boat

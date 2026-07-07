@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Blooming Paper Block
+blocks:
+  natures_spirit:blooming_paper_block:
+    display_name: "Blooming Paper Block"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/blooming_paper_block

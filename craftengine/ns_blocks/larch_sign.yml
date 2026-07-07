@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Larch Sign
+blocks:
+  natures_spirit:larch_sign:
+    display_name: "Larch Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/larch_sign

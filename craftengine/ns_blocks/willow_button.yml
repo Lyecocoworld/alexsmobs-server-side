@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Willow Button
+blocks:
+  natures_spirit:willow_button:
+    display_name: "Willow Button"
+    category: utility

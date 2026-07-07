@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Ghaf Pressure Plate
+items:
+  natures_spirit:ghaf_pressure_plate:
+    display_name: "Ghaf Pressure Plate"
+    rarity: COMMON

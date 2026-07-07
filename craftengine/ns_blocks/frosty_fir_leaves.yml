@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Frosty Fir Leaves
+blocks:
+  natures_spirit:frosty_fir_leaves:
+    display_name: "Frosty Fir Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/frosty_fir_leaves

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Aspen Button
+items:
+  natures_spirit:aspen_button:
+    display_name: "Aspen Button"
+    rarity: COMMON

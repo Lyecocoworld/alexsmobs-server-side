@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Frosty Fir Leaves
+items:
+  natures_spirit:frosty_fir_leaves:
+    display_name: "Frosty Fir Leaves"
+    rarity: COMMON

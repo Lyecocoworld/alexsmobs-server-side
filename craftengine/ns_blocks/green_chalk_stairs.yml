@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Green Chalk Stairs
+blocks:
+  natures_spirit:green_chalk_stairs:
+    display_name: "Green Chalk Stairs"
+    category: building

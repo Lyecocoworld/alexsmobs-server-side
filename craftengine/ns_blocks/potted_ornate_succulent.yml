@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Ornate Succulent
+blocks:
+  natures_spirit:potted_ornate_succulent:
+    display_name: "Potted Ornate Succulent"
+    category: decoration

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Yellow Kaolin
+blocks:
+  natures_spirit:yellow_kaolin:
+    display_name: "Yellow Kaolin"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/yellow_kaolin

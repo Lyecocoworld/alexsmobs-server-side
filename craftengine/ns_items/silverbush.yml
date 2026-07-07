@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Silverbush
+items:
+  natures_spirit:silverbush:
+    display_name: "Silverbush"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/silverbush

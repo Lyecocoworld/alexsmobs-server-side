@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Coconut Sprout
+items:
+  natures_spirit:coconut_sprout:
+    display_name: "Coconut Sprout"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/coconut_sprout

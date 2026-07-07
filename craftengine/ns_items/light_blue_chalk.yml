@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Light Blue Chalk
+items:
+  natures_spirit:light_blue_chalk:
+    display_name: "Light Blue Chalk"
+    rarity: COMMON

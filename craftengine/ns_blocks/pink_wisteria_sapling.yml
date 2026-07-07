@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Pink Wisteria Sapling
+blocks:
+  natures_spirit:pink_wisteria_sapling:
+    display_name: "Pink Wisteria Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/pink_wisteria_sapling

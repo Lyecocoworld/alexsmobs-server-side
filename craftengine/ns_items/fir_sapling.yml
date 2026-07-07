@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Fir Sapling
+items:
+  natures_spirit:fir_sapling:
+    display_name: "Fir Sapling"
+    rarity: COMMON

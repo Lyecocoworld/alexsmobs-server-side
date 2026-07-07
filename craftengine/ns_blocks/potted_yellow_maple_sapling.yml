@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Yellow Maple Sapling
+blocks:
+  natures_spirit:potted_yellow_maple_sapling:
+    display_name: "Potted Yellow Maple Sapling"
+    category: foliage

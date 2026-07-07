@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Stripped Ghaf Wood
+blocks:
+  natures_spirit:stripped_ghaf_wood:
+    display_name: "Stripped Ghaf Wood"
+    category: wood

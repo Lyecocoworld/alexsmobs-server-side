@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Leaves
+items:
+  natures_spirit:saxaul_leaves:
+    display_name: "Saxaul Leaves"
+    rarity: COMMON

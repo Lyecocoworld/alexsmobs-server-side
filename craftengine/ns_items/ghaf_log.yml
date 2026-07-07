@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Ghaf Log
+items:
+  natures_spirit:ghaf_log:
+    display_name: "Ghaf Log"
+    rarity: COMMON

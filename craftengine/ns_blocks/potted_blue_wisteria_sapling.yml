@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Blue Wisteria Sapling
+blocks:
+  natures_spirit:potted_blue_wisteria_sapling:
+    display_name: "Potted Blue Wisteria Sapling"
+    category: foliage

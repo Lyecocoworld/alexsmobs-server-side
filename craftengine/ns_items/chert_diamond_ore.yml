@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chert Diamond Ore
+items:
+  natures_spirit:chert_diamond_ore:
+    display_name: "Chert Diamond Ore"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Stairs
+blocks:
+  natures_spirit:saxaul_stairs:
+    display_name: "Saxaul Stairs"
+    category: building

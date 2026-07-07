@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): White Chalk Slab
+blocks:
+  natures_spirit:white_chalk_slab:
+    display_name: "White Chalk Slab"
+    category: building

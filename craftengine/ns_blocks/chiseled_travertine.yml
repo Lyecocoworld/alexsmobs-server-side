@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Chiseled Travertine
+blocks:
+  natures_spirit:chiseled_travertine:
+    display_name: "Chiseled Travertine"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/chiseled_travertine

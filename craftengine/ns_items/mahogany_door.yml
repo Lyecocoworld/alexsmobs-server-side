@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Door
+items:
+  natures_spirit:mahogany_door:
+    display_name: "Mahogany Door"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/mahogany_door

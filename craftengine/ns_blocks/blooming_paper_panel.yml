@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Blooming Paper Panel
+blocks:
+  natures_spirit:blooming_paper_panel:
+    display_name: "Blooming Paper Panel"
+    category: glass

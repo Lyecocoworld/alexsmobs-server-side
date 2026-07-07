@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Willow Wall Hanging Sign
+blocks:
+  natures_spirit:willow_wall_hanging_sign:
+    display_name: "Willow Wall Hanging Sign"
+    category: building

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Fir Sign
+items:
+  natures_spirit:fir_sign:
+    display_name: "Fir Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/fir_sign

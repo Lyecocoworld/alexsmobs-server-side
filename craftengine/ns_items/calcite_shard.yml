@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Calcite Shard
+items:
+  natures_spirit:calcite_shard:
+    display_name: "Calcite Shard"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/calcite_shard

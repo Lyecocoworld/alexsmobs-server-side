@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Yellow Wildflower
+blocks:
+  natures_spirit:potted_yellow_wildflower:
+    display_name: "Potted Yellow Wildflower"
+    category: plant

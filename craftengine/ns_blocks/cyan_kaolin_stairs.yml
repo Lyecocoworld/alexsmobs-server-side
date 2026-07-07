@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cyan Kaolin Stairs
+blocks:
+  natures_spirit:cyan_kaolin_stairs:
+    display_name: "Cyan Kaolin Stairs"
+    category: building

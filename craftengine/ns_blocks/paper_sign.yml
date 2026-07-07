@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Paper Sign
+blocks:
+  natures_spirit:paper_sign:
+    display_name: "Paper Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/paper_sign

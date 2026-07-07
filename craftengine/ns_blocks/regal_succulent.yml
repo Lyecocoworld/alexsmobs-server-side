@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Regal Succulent
+blocks:
+  natures_spirit:regal_succulent:
+    display_name: "Regal Succulent"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/regal_succulent

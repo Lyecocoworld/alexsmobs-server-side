@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Pink Chalk
+blocks:
+  natures_spirit:pink_chalk:
+    display_name: "Pink Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/pink_chalk

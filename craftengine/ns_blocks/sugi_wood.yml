@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Sugi Wood
+blocks:
+  natures_spirit:sugi_wood:
+    display_name: "Sugi Wood"
+    category: wood

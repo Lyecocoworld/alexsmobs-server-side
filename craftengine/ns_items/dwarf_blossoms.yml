@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Dwarf Blossoms
+items:
+  natures_spirit:dwarf_blossoms:
+    display_name: "Dwarf Blossoms"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/dwarf_blossoms

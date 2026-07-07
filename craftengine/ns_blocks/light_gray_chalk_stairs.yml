@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Light Gray Chalk Stairs
+blocks:
+  natures_spirit:light_gray_chalk_stairs:
+    display_name: "Light Gray Chalk Stairs"
+    category: building

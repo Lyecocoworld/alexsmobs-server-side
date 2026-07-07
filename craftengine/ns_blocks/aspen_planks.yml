@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Aspen Planks
+blocks:
+  natures_spirit:aspen_planks:
+    display_name: "Aspen Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/aspen_planks

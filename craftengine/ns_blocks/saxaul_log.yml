@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Log
+blocks:
+  natures_spirit:saxaul_log:
+    display_name: "Saxaul Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/saxaul_log

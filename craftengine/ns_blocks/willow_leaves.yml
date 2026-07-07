@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Willow Leaves
+blocks:
+  natures_spirit:willow_leaves:
+    display_name: "Willow Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/willow_leaves

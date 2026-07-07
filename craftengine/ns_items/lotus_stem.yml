@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Lotus Stem
+items:
+  natures_spirit:lotus_stem:
+    display_name: "Lotus Stem"
+    rarity: COMMON

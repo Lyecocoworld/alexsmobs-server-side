@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Sapling
+blocks:
+  natures_spirit:palo_verde_sapling:
+    display_name: "Palo Verde Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/palo_verde_sapling

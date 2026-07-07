@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Purple Kaolin Stairs
+blocks:
+  natures_spirit:purple_kaolin_stairs:
+    display_name: "Purple Kaolin Stairs"
+    category: building

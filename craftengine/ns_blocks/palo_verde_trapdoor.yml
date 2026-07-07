@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Trapdoor
+blocks:
+  natures_spirit:palo_verde_trapdoor:
+    display_name: "Palo Verde Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/palo_verde_trapdoor

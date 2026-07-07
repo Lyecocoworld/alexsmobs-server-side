@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Fir Log
+items:
+  natures_spirit:fir_log:
+    display_name: "Fir Log"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Snapdragon
+blocks:
+  natures_spirit:snapdragon:
+    display_name: "Snapdragon"
+    category: decoration

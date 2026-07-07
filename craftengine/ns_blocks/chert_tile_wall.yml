@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Chert Tile Wall
+blocks:
+  natures_spirit:chert_tile_wall:
+    display_name: "Chert Tile Wall"
+    category: building

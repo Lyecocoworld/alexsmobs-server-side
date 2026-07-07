@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Sugi Door
+items:
+  natures_spirit:sugi_door:
+    display_name: "Sugi Door"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/sugi_door

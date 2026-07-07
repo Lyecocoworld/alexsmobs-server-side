@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Coconut Wood
+items:
+  natures_spirit:stripped_coconut_wood:
+    display_name: "Stripped Coconut Wood"
+    rarity: COMMON

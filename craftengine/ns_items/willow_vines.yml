@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Willow Vines
+items:
+  natures_spirit:willow_vines:
+    display_name: "Willow Vines"
+    rarity: COMMON

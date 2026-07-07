@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Olive Stairs
+blocks:
+  natures_spirit:olive_stairs:
+    display_name: "Olive Stairs"
+    category: building

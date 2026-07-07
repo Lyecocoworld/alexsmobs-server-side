@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cypress Sapling
+items:
+  natures_spirit:cypress_sapling:
+    display_name: "Cypress Sapling"
+    rarity: COMMON

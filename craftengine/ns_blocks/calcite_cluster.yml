@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Calcite Cluster
+blocks:
+  natures_spirit:calcite_cluster:
+    display_name: "Calcite Cluster"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/calcite_cluster

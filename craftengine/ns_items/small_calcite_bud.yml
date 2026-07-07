@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Small Calcite Bud
+items:
+  natures_spirit:small_calcite_bud:
+    display_name: "Small Calcite Bud"
+    rarity: COMMON

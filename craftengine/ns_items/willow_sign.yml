@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Willow Sign
+items:
+  natures_spirit:willow_sign:
+    display_name: "Willow Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/willow_sign

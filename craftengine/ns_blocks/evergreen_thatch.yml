@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Evergreen Thatch
+blocks:
+  natures_spirit:evergreen_thatch:
+    display_name: "Evergreen Thatch"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/evergreen_thatch

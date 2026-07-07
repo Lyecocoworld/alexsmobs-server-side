@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Xeric Thatch Stairs
+blocks:
+  natures_spirit:xeric_thatch_stairs:
+    display_name: "Xeric Thatch Stairs"
+    category: building

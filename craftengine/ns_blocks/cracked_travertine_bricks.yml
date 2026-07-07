@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cracked Travertine Bricks
+blocks:
+  natures_spirit:cracked_travertine_bricks:
+    display_name: "Cracked Travertine Bricks"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/cracked_travertine_bricks

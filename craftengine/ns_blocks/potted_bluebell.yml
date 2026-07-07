@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Bluebell
+blocks:
+  natures_spirit:potted_bluebell:
+    display_name: "Potted Bluebell"
+    category: decoration

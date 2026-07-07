@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Mahogany Log
+items:
+  natures_spirit:stripped_mahogany_log:
+    display_name: "Stripped Mahogany Log"
+    rarity: COMMON

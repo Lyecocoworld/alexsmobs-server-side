@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Coconut Log
+items:
+  natures_spirit:stripped_coconut_log:
+    display_name: "Stripped Coconut Log"
+    rarity: COMMON

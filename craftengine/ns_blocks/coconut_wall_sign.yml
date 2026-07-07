@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Wall Sign
+blocks:
+  natures_spirit:coconut_wall_sign:
+    display_name: "Coconut Wall Sign"
+    category: building

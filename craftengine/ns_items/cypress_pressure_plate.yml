@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cypress Pressure Plate
+items:
+  natures_spirit:cypress_pressure_plate:
+    display_name: "Cypress Pressure Plate"
+    rarity: COMMON

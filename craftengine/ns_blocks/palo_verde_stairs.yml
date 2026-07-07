@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Stairs
+blocks:
+  natures_spirit:palo_verde_stairs:
+    display_name: "Palo Verde Stairs"
+    category: building

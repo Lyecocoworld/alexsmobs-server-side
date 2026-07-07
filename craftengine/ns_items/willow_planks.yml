@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Willow Planks
+items:
+  natures_spirit:willow_planks:
+    display_name: "Willow Planks"
+    rarity: COMMON

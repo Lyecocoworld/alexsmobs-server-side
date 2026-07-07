@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Olive Trapdoor
+items:
+  natures_spirit:olive_trapdoor:
+    display_name: "Olive Trapdoor"
+    rarity: COMMON

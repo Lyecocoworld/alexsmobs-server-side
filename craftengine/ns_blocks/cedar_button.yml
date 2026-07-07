@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cedar Button
+blocks:
+  natures_spirit:cedar_button:
+    display_name: "Cedar Button"
+    category: utility

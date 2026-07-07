@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Frigid Grass
+items:
+  natures_spirit:frigid_grass:
+    display_name: "Frigid Grass"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/frigid_grass

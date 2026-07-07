@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Travertine Tile Wall
+blocks:
+  natures_spirit:travertine_tile_wall:
+    display_name: "Travertine Tile Wall"
+    category: building

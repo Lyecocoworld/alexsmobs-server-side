@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Saxaul Log
+items:
+  natures_spirit:stripped_saxaul_log:
+    display_name: "Stripped Saxaul Log"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Aspen Sign
+blocks:
+  natures_spirit:aspen_sign:
+    display_name: "Aspen Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/aspen_sign

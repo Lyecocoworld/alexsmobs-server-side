@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Sign
+blocks:
+  natures_spirit:wisteria_sign:
+    display_name: "Wisteria Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/wisteria_sign

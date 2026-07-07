@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Fir Wall Sign
+blocks:
+  natures_spirit:fir_wall_sign:
+    display_name: "Fir Wall Sign"
+    category: building

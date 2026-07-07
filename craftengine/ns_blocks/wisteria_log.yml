@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Log
+blocks:
+  natures_spirit:wisteria_log:
+    display_name: "Wisteria Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/wisteria_log

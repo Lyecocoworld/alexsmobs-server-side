@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Tall Oat Grass
+blocks:
+  natures_spirit:tall_oat_grass:
+    display_name: "Tall Oat Grass"
+    category: decoration

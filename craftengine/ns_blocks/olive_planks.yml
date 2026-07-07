@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Olive Planks
+blocks:
+  natures_spirit:olive_planks:
+    display_name: "Olive Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/olive_planks

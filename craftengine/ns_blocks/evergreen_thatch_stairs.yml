@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Evergreen Thatch Stairs
+blocks:
+  natures_spirit:evergreen_thatch_stairs:
+    display_name: "Evergreen Thatch Stairs"
+    category: building

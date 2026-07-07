@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Red Kaolin Brick Stairs
+blocks:
+  natures_spirit:red_kaolin_brick_stairs:
+    display_name: "Red Kaolin Brick Stairs"
+    category: building

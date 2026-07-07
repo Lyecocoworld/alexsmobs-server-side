@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Purple Wildflower
+blocks:
+  natures_spirit:potted_purple_wildflower:
+    display_name: "Potted Purple Wildflower"
+    category: plant

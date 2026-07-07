@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Lush Fern
+blocks:
+  natures_spirit:lush_fern:
+    display_name: "Lush Fern"
+    category: plant
+    resource:
+      textures:
+        default: natures_spirit:block/lush_fern

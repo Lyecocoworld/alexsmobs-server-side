@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Wood
+items:
+  natures_spirit:saxaul_wood:
+    display_name: "Saxaul Wood"
+    rarity: COMMON

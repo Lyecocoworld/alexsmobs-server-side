@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cedar Planks
+blocks:
+  natures_spirit:cedar_planks:
+    display_name: "Cedar Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/cedar_planks

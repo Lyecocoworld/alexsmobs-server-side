@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Joshua Log
+blocks:
+  natures_spirit:joshua_log:
+    display_name: "Joshua Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/joshua_log

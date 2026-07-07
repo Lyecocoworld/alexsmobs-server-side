@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Aspen Fence
+items:
+  natures_spirit:aspen_fence:
+    display_name: "Aspen Fence"
+    rarity: COMMON

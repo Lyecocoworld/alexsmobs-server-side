@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cheese Cauldron
+blocks:
+  natures_spirit:cheese_cauldron:
+    display_name: "Cheese Cauldron"
+    category: decoration

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Chest Boat
+items:
+  natures_spirit:saxaul_chest_boat:
+    display_name: "Saxaul Chest Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/saxaul_chest_boat

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Mosaic
+blocks:
+  natures_spirit:wisteria_mosaic:
+    display_name: "Wisteria Mosaic"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/wisteria_mosaic

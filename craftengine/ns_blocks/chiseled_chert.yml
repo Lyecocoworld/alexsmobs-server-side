@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Chiseled Chert
+blocks:
+  natures_spirit:chiseled_chert:
+    display_name: "Chiseled Chert"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/chiseled_chert

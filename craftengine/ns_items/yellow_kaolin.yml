@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Yellow Kaolin
+items:
+  natures_spirit:yellow_kaolin:
+    display_name: "Yellow Kaolin"
+    rarity: COMMON

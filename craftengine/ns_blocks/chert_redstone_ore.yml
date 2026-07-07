@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Chert Redstone Ore
+blocks:
+  natures_spirit:chert_redstone_ore:
+    display_name: "Chert Redstone Ore"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/chert_redstone_ore

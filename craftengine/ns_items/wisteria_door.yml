@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Wisteria Door
+items:
+  natures_spirit:wisteria_door:
+    display_name: "Wisteria Door"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/wisteria_door

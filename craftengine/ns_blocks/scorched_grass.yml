@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Scorched Grass
+blocks:
+  natures_spirit:scorched_grass:
+    display_name: "Scorched Grass"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/scorched_grass

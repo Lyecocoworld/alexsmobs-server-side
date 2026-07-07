@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Stripped Coconut Wood
+blocks:
+  natures_spirit:stripped_coconut_wood:
+    display_name: "Stripped Coconut Wood"
+    category: wood

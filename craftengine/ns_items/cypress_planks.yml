@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cypress Planks
+items:
+  natures_spirit:cypress_planks:
+    display_name: "Cypress Planks"
+    rarity: COMMON

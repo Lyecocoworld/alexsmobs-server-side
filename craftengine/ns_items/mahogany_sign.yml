@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Sign
+items:
+  natures_spirit:mahogany_sign:
+    display_name: "Mahogany Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/mahogany_sign

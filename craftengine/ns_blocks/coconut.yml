@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Coconut
+blocks:
+  natures_spirit:coconut:
+    display_name: "Coconut"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/coconut

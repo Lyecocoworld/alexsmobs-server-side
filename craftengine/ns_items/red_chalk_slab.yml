@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Red Chalk Slab
+items:
+  natures_spirit:red_chalk_slab:
+    display_name: "Red Chalk Slab"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Wood
+blocks:
+  natures_spirit:mahogany_wood:
+    display_name: "Mahogany Wood"
+    category: wood

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Part Purple Wisteria Leaves
+blocks:
+  natures_spirit:part_purple_wisteria_leaves:
+    display_name: "Part Purple Wisteria Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/part_purple_wisteria_leaves

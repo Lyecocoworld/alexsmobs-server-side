@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Framed Paper Trapdoor
+blocks:
+  natures_spirit:framed_paper_trapdoor:
+    display_name: "Framed Paper Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/framed_paper_trapdoor

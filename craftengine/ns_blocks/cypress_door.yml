@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cypress Door
+blocks:
+  natures_spirit:cypress_door:
+    display_name: "Cypress Door"
+    category: building

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cypress Sapling
+blocks:
+  natures_spirit:cypress_sapling:
+    display_name: "Cypress Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/cypress_sapling

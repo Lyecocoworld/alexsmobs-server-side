@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Joshua Door
+blocks:
+  natures_spirit:joshua_door:
+    display_name: "Joshua Door"
+    category: building

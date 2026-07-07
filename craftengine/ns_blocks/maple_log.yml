@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Maple Log
+blocks:
+  natures_spirit:maple_log:
+    display_name: "Maple Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/maple_log

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Hanging Sign
+blocks:
+  natures_spirit:coconut_hanging_sign:
+    display_name: "Coconut Hanging Sign"
+    category: utility

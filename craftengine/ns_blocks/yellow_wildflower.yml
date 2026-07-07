@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Yellow Wildflower
+blocks:
+  natures_spirit:yellow_wildflower:
+    display_name: "Yellow Wildflower"
+    category: plant
+    resource:
+      textures:
+        default: natures_spirit:block/yellow_wildflower

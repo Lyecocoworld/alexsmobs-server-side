@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Chert Tile Slab
+blocks:
+  natures_spirit:chert_tile_slab:
+    display_name: "Chert Tile Slab"
+    category: building

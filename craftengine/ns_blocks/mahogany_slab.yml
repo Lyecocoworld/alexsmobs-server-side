@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Slab
+blocks:
+  natures_spirit:mahogany_slab:
+    display_name: "Mahogany Slab"
+    category: building

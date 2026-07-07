@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cypress Trapdoor
+blocks:
+  natures_spirit:cypress_trapdoor:
+    display_name: "Cypress Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/cypress_trapdoor

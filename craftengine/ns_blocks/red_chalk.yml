@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Red Chalk
+blocks:
+  natures_spirit:red_chalk:
+    display_name: "Red Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/red_chalk

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Willow Fence Gate
+items:
+  natures_spirit:willow_fence_gate:
+    display_name: "Willow Fence Gate"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Beach Grass
+blocks:
+  natures_spirit:potted_beach_grass:
+    display_name: "Potted Beach Grass"
+    category: decoration

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Aureate Wall Succulent
+blocks:
+  natures_spirit:aureate_wall_succulent:
+    display_name: "Aureate Wall Succulent"
+    category: building

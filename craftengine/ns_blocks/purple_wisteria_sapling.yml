@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Purple Wisteria Sapling
+blocks:
+  natures_spirit:purple_wisteria_sapling:
+    display_name: "Purple Wisteria Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/purple_wisteria_sapling

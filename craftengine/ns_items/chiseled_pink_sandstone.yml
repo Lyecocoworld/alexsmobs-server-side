@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chiseled Pink Sandstone
+items:
+  natures_spirit:chiseled_pink_sandstone:
+    display_name: "Chiseled Pink Sandstone"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Joshua Sign
+blocks:
+  natures_spirit:joshua_sign:
+    display_name: "Joshua Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/joshua_sign

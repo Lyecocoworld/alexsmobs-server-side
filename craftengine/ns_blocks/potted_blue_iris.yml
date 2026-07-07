@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Blue Iris
+blocks:
+  natures_spirit:potted_blue_iris:
+    display_name: "Potted Blue Iris"
+    category: decoration

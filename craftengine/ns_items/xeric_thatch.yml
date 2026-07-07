@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Xeric Thatch
+items:
+  natures_spirit:xeric_thatch:
+    display_name: "Xeric Thatch"
+    rarity: COMMON

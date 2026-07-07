@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Black Iris
+blocks:
+  natures_spirit:potted_black_iris:
+    display_name: "Potted Black Iris"
+    category: decoration

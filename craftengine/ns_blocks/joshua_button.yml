@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Joshua Button
+blocks:
+  natures_spirit:joshua_button:
+    display_name: "Joshua Button"
+    category: utility

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Maple Trapdoor
+blocks:
+  natures_spirit:maple_trapdoor:
+    display_name: "Maple Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/maple_trapdoor

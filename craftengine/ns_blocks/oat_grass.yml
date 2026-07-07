@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Oat Grass
+blocks:
+  natures_spirit:oat_grass:
+    display_name: "Oat Grass"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/oat_grass

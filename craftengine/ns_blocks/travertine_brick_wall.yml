@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Travertine Brick Wall
+blocks:
+  natures_spirit:travertine_brick_wall:
+    display_name: "Travertine Brick Wall"
+    category: building

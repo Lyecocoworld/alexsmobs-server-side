@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Polished Chert
+items:
+  natures_spirit:polished_chert:
+    display_name: "Polished Chert"
+    rarity: COMMON

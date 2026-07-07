@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Maple Wood
+blocks:
+  natures_spirit:maple_wood:
+    display_name: "Maple Wood"
+    category: wood

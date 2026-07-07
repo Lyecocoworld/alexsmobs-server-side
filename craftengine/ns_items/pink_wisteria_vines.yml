@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Pink Wisteria Vines
+items:
+  natures_spirit:pink_wisteria_vines:
+    display_name: "Pink Wisteria Vines"
+    rarity: COMMON

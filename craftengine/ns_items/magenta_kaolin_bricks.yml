@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Magenta Kaolin Bricks
+items:
+  natures_spirit:magenta_kaolin_bricks:
+    display_name: "Magenta Kaolin Bricks"
+    rarity: COMMON

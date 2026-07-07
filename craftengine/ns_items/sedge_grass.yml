@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Sedge Grass
+items:
+  natures_spirit:sedge_grass:
+    display_name: "Sedge Grass"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/sedge_grass

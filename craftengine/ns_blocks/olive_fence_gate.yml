@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Olive Fence Gate
+blocks:
+  natures_spirit:olive_fence_gate:
+    display_name: "Olive Fence Gate"
+    category: building

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Olives
+items:
+  natures_spirit:olives:
+    display_name: "Olives"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/olives

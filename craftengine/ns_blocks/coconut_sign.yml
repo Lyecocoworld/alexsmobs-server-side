@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Coconut Sign
+blocks:
+  natures_spirit:coconut_sign:
+    display_name: "Coconut Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/coconut_sign

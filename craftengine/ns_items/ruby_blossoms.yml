@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Ruby Blossoms
+items:
+  natures_spirit:ruby_blossoms:
+    display_name: "Ruby Blossoms"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/ruby_blossoms

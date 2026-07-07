@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Lotus Flower
+items:
+  natures_spirit:lotus_flower:
+    display_name: "Lotus Flower"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/lotus_flower

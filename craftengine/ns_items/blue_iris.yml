@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Blue Iris
+items:
+  natures_spirit:blue_iris:
+    display_name: "Blue Iris"
+    rarity: COMMON

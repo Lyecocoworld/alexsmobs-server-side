@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Pressure Plate
+blocks:
+  natures_spirit:palo_verde_pressure_plate:
+    display_name: "Palo Verde Pressure Plate"
+    category: utility

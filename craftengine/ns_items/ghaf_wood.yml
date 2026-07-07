@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Ghaf Wood
+items:
+  natures_spirit:ghaf_wood:
+    display_name: "Ghaf Wood"
+    rarity: COMMON

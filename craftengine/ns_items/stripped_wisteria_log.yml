@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Wisteria Log
+items:
+  natures_spirit:stripped_wisteria_log:
+    display_name: "Stripped Wisteria Log"
+    rarity: COMMON

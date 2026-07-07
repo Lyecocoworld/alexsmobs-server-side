@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Willow Stairs
+items:
+  natures_spirit:willow_stairs:
+    display_name: "Willow Stairs"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Aspen Door
+blocks:
+  natures_spirit:aspen_door:
+    display_name: "Aspen Door"
+    category: building

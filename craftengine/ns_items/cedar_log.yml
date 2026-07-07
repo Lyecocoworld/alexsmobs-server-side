@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cedar Log
+items:
+  natures_spirit:cedar_log:
+    display_name: "Cedar Log"
+    rarity: COMMON

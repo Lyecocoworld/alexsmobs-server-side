@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Larch Pressure Plate
+blocks:
+  natures_spirit:larch_pressure_plate:
+    display_name: "Larch Pressure Plate"
+    category: utility

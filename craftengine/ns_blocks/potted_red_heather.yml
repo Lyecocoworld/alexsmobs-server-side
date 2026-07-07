@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Red Heather
+blocks:
+  natures_spirit:potted_red_heather:
+    display_name: "Potted Red Heather"
+    category: decoration

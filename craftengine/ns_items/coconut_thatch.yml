@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Thatch
+items:
+  natures_spirit:coconut_thatch:
+    display_name: "Coconut Thatch"
+    rarity: COMMON

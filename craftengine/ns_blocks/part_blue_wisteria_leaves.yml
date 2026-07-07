@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Part Blue Wisteria Leaves
+blocks:
+  natures_spirit:part_blue_wisteria_leaves:
+    display_name: "Part Blue Wisteria Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/part_blue_wisteria_leaves

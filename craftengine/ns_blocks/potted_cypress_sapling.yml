@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Cypress Sapling
+blocks:
+  natures_spirit:potted_cypress_sapling:
+    display_name: "Potted Cypress Sapling"
+    category: foliage

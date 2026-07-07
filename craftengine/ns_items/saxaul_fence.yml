@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Fence
+items:
+  natures_spirit:saxaul_fence:
+    display_name: "Saxaul Fence"
+    rarity: COMMON

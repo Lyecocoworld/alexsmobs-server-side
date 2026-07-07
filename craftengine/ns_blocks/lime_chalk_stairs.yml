@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Lime Chalk Stairs
+blocks:
+  natures_spirit:lime_chalk_stairs:
+    display_name: "Lime Chalk Stairs"
+    category: building

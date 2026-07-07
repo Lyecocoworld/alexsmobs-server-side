@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Carnation
+items:
+  natures_spirit:carnation:
+    display_name: "Carnation"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/carnation

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Whole Pizza
+items:
+  natures_spirit:whole_pizza:
+    display_name: "Whole Pizza"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/whole_pizza

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Pressure Plate
+items:
+  natures_spirit:coconut_pressure_plate:
+    display_name: "Coconut Pressure Plate"
+    rarity: COMMON

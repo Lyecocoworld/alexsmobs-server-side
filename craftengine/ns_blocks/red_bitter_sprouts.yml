@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Red Bitter Sprouts
+blocks:
+  natures_spirit:red_bitter_sprouts:
+    display_name: "Red Bitter Sprouts"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/red_bitter_sprouts

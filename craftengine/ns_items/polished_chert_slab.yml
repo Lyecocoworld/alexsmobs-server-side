@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Polished Chert Slab
+items:
+  natures_spirit:polished_chert_slab:
+    display_name: "Polished Chert Slab"
+    rarity: COMMON

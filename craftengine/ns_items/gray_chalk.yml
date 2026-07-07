@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Gray Chalk
+items:
+  natures_spirit:gray_chalk:
+    display_name: "Gray Chalk"
+    rarity: COMMON

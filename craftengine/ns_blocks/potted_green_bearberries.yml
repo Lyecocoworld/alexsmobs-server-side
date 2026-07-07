@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Green Bearberries
+blocks:
+  natures_spirit:potted_green_bearberries:
+    display_name: "Potted Green Bearberries"
+    category: decoration

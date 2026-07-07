@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Aureate Succulent
+items:
+  natures_spirit:aureate_succulent:
+    display_name: "Aureate Succulent"
+    rarity: COMMON

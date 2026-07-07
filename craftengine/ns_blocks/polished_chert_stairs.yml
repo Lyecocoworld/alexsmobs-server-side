@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Polished Chert Stairs
+blocks:
+  natures_spirit:polished_chert_stairs:
+    display_name: "Polished Chert Stairs"
+    category: building

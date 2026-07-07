@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Protea
+blocks:
+  natures_spirit:protea:
+    display_name: "Protea"
+    category: decoration

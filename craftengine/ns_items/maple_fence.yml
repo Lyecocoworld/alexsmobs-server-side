@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Maple Fence
+items:
+  natures_spirit:maple_fence:
+    display_name: "Maple Fence"
+    rarity: COMMON

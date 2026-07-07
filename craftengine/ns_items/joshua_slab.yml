@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Joshua Slab
+items:
+  natures_spirit:joshua_slab:
+    display_name: "Joshua Slab"
+    rarity: COMMON

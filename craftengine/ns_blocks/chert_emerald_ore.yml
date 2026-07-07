@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Chert Emerald Ore
+blocks:
+  natures_spirit:chert_emerald_ore:
+    display_name: "Chert Emerald Ore"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/chert_emerald_ore

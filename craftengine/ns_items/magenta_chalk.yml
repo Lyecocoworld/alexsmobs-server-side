@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Magenta Chalk
+items:
+  natures_spirit:magenta_chalk:
+    display_name: "Magenta Chalk"
+    rarity: COMMON

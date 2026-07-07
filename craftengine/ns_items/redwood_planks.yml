@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Redwood Planks
+items:
+  natures_spirit:redwood_planks:
+    display_name: "Redwood Planks"
+    rarity: COMMON

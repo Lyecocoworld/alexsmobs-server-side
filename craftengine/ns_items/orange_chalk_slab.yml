@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Orange Chalk Slab
+items:
+  natures_spirit:orange_chalk_slab:
+    display_name: "Orange Chalk Slab"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Aspen Hanging Sign
+blocks:
+  natures_spirit:aspen_hanging_sign:
+    display_name: "Aspen Hanging Sign"
+    category: utility

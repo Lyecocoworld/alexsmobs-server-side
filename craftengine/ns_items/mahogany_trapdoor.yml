@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Trapdoor
+items:
+  natures_spirit:mahogany_trapdoor:
+    display_name: "Mahogany Trapdoor"
+    rarity: COMMON

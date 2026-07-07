@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Maple Button
+items:
+  natures_spirit:maple_button:
+    display_name: "Maple Button"
+    rarity: COMMON

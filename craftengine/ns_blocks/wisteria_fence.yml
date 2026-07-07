@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Fence
+blocks:
+  natures_spirit:wisteria_fence:
+    display_name: "Wisteria Fence"
+    category: building

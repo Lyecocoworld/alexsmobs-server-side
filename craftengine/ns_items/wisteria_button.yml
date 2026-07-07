@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Wisteria Button
+items:
+  natures_spirit:wisteria_button:
+    display_name: "Wisteria Button"
+    rarity: COMMON

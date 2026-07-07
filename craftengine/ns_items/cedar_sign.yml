@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Cedar Sign
+items:
+  natures_spirit:cedar_sign:
+    display_name: "Cedar Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/cedar_sign

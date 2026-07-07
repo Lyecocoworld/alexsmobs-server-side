@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Imperial Wall Succulent
+blocks:
+  natures_spirit:imperial_wall_succulent:
+    display_name: "Imperial Wall Succulent"
+    category: building

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Chiseled Pink Sandstone
+blocks:
+  natures_spirit:chiseled_pink_sandstone:
+    display_name: "Chiseled Pink Sandstone"
+    category: terrain
+    resource:
+      textures:
+        default: natures_spirit:block/chiseled_pink_sandstone

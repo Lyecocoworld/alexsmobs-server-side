@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Coconut Hanging Sign
+items:
+  natures_spirit:coconut_hanging_sign:
+    display_name: "Coconut Hanging Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/coconut_hanging_sign

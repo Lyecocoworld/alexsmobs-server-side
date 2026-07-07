@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Larch Hanging Sign
+items:
+  natures_spirit:larch_hanging_sign:
+    display_name: "Larch Hanging Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/larch_hanging_sign

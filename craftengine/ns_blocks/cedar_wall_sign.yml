@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cedar Wall Sign
+blocks:
+  natures_spirit:cedar_wall_sign:
+    display_name: "Cedar Wall Sign"
+    category: building

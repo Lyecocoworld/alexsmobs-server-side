@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chert
+items:
+  natures_spirit:chert:
+    display_name: "Chert"
+    rarity: COMMON

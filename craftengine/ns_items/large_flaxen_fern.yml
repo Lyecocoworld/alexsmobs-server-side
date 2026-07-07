@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Large Flaxen Fern
+items:
+  natures_spirit:large_flaxen_fern:
+    display_name: "Large Flaxen Fern"
+    rarity: COMMON

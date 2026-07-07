@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Red Bearberries
+blocks:
+  natures_spirit:potted_red_bearberries:
+    display_name: "Potted Red Bearberries"
+    category: decoration

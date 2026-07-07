@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Blue Bulbs
+blocks:
+  natures_spirit:blue_bulbs:
+    display_name: "Blue Bulbs"
+    category: decoration

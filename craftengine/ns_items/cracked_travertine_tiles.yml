@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cracked Travertine Tiles
+items:
+  natures_spirit:cracked_travertine_tiles:
+    display_name: "Cracked Travertine Tiles"
+    rarity: COMMON

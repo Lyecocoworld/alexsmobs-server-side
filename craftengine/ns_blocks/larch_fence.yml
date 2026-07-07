@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Larch Fence
+blocks:
+  natures_spirit:larch_fence:
+    display_name: "Larch Fence"
+    category: building

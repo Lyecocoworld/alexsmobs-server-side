@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Pink Wisteria Leaves
+blocks:
+  natures_spirit:pink_wisteria_leaves:
+    display_name: "Pink Wisteria Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/pink_wisteria_leaves

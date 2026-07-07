@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Xeric Thatch Carpet
+items:
+  natures_spirit:xeric_thatch_carpet:
+    display_name: "Xeric Thatch Carpet"
+    rarity: COMMON

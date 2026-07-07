@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Willow Log
+items:
+  natures_spirit:stripped_willow_log:
+    display_name: "Stripped Willow Log"
+    rarity: COMMON

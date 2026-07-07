@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Willow Stairs
+blocks:
+  natures_spirit:willow_stairs:
+    display_name: "Willow Stairs"
+    category: building

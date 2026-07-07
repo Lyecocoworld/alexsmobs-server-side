@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Olive Leaves
+blocks:
+  natures_spirit:olive_leaves:
+    display_name: "Olive Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/olive_leaves

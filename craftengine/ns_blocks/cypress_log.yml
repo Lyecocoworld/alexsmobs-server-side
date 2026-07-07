@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cypress Log
+blocks:
+  natures_spirit:cypress_log:
+    display_name: "Cypress Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/cypress_log

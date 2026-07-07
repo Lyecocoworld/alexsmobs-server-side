@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Aspen Leaves
+blocks:
+  natures_spirit:aspen_leaves:
+    display_name: "Aspen Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/aspen_leaves

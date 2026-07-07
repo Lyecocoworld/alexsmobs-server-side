@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Coconut Mosaic
+blocks:
+  natures_spirit:coconut_mosaic:
+    display_name: "Coconut Mosaic"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/coconut_mosaic

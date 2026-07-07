@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Desert Turnip Block
+blocks:
+  natures_spirit:desert_turnip_block:
+    display_name: "Desert Turnip Block"
+    category: decoration

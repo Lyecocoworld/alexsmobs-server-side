@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Fir Door
+blocks:
+  natures_spirit:fir_door:
+    display_name: "Fir Door"
+    category: building

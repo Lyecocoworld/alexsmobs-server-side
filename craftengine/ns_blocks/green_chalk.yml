@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Green Chalk
+blocks:
+  natures_spirit:green_chalk:
+    display_name: "Green Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/green_chalk

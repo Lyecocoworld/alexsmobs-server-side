@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cedar Log
+blocks:
+  natures_spirit:cedar_log:
+    display_name: "Cedar Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/cedar_log

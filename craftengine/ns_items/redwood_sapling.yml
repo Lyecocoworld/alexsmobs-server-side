@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Redwood Sapling
+items:
+  natures_spirit:redwood_sapling:
+    display_name: "Redwood Sapling"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/redwood_sapling

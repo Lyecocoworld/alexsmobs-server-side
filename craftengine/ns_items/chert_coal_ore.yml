@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chert Coal Ore
+items:
+  natures_spirit:chert_coal_ore:
+    display_name: "Chert Coal Ore"
+    rarity: COMMON

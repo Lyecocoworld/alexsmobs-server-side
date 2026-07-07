@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Purple Wisteria Sapling
+blocks:
+  natures_spirit:potted_purple_wisteria_sapling:
+    display_name: "Potted Purple Wisteria Sapling"
+    category: foliage

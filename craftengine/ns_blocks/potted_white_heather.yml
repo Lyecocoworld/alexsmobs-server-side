@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted White Heather
+blocks:
+  natures_spirit:potted_white_heather:
+    display_name: "Potted White Heather"
+    category: decoration

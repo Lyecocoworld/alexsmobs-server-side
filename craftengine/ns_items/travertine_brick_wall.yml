@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Travertine Brick Wall
+items:
+  natures_spirit:travertine_brick_wall:
+    display_name: "Travertine Brick Wall"
+    rarity: COMMON

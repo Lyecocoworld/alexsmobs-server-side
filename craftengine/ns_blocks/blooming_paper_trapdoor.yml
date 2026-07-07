@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Blooming Paper Trapdoor
+blocks:
+  natures_spirit:blooming_paper_trapdoor:
+    display_name: "Blooming Paper Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/blooming_paper_trapdoor

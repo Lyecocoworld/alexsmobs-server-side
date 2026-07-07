@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Wisteria Stairs
+items:
+  natures_spirit:wisteria_stairs:
+    display_name: "Wisteria Stairs"
+    rarity: COMMON

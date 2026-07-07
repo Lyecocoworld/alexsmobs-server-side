@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Melic Grass
+blocks:
+  natures_spirit:melic_grass:
+    display_name: "Melic Grass"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/melic_grass

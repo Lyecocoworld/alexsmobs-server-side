@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Protea
+items:
+  natures_spirit:protea:
+    display_name: "Protea"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/protea

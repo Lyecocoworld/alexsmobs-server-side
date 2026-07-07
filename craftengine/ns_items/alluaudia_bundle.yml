@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Alluaudia Bundle
+items:
+  natures_spirit:alluaudia_bundle:
+    display_name: "Alluaudia Bundle"
+    rarity: COMMON

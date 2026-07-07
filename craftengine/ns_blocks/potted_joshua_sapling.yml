@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Joshua Sapling
+blocks:
+  natures_spirit:potted_joshua_sapling:
+    display_name: "Potted Joshua Sapling"
+    category: foliage

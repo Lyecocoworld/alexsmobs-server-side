@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Olive Log
+items:
+  natures_spirit:olive_log:
+    display_name: "Olive Log"
+    rarity: COMMON

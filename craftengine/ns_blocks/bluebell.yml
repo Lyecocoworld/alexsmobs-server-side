@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Bluebell
+blocks:
+  natures_spirit:bluebell:
+    display_name: "Bluebell"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/bluebell

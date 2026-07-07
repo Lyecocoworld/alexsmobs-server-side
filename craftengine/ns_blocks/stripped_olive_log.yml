@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Stripped Olive Log
+blocks:
+  natures_spirit:stripped_olive_log:
+    display_name: "Stripped Olive Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/stripped_olive_log

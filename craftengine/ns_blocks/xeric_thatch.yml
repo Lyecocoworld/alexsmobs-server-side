@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Xeric Thatch
+blocks:
+  natures_spirit:xeric_thatch:
+    display_name: "Xeric Thatch"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/xeric_thatch

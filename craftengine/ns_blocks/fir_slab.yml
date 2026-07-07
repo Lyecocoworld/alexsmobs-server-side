@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Fir Slab
+blocks:
+  natures_spirit:fir_slab:
+    display_name: "Fir Slab"
+    category: building

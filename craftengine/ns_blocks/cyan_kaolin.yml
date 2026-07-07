@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cyan Kaolin
+blocks:
+  natures_spirit:cyan_kaolin:
+    display_name: "Cyan Kaolin"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/cyan_kaolin

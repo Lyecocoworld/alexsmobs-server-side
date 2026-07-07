@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Purple Wisteria Sapling
+items:
+  natures_spirit:purple_wisteria_sapling:
+    display_name: "Purple Wisteria Sapling"
+    rarity: COMMON

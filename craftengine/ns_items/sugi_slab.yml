@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Sugi Slab
+items:
+  natures_spirit:sugi_slab:
+    display_name: "Sugi Slab"
+    rarity: COMMON

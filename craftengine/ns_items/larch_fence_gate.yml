@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Larch Fence Gate
+items:
+  natures_spirit:larch_fence_gate:
+    display_name: "Larch Fence Gate"
+    rarity: COMMON

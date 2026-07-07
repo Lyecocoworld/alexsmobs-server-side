@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Beach Grass
+items:
+  natures_spirit:beach_grass:
+    display_name: "Beach Grass"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/beach_grass

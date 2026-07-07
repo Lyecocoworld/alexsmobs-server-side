@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Larch Trapdoor
+blocks:
+  natures_spirit:larch_trapdoor:
+    display_name: "Larch Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/larch_trapdoor

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Green Chalk Slab
+blocks:
+  natures_spirit:green_chalk_slab:
+    display_name: "Green Chalk Slab"
+    category: building

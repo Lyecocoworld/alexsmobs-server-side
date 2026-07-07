@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): White Wisteria Sapling
+items:
+  natures_spirit:white_wisteria_sapling:
+    display_name: "White Wisteria Sapling"
+    rarity: COMMON

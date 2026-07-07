@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Wall Hanging Sign
+blocks:
+  natures_spirit:saxaul_wall_hanging_sign:
+    display_name: "Saxaul Wall Hanging Sign"
+    category: building

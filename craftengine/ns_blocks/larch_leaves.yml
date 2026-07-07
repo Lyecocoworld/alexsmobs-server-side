@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Larch Leaves
+blocks:
+  natures_spirit:larch_leaves:
+    display_name: "Larch Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/larch_leaves

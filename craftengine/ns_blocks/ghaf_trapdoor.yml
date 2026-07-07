@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Trapdoor
+blocks:
+  natures_spirit:ghaf_trapdoor:
+    display_name: "Ghaf Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/ghaf_trapdoor

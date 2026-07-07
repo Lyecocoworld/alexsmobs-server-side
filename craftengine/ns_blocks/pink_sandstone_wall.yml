@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Pink Sandstone Wall
+blocks:
+  natures_spirit:pink_sandstone_wall:
+    display_name: "Pink Sandstone Wall"
+    category: building

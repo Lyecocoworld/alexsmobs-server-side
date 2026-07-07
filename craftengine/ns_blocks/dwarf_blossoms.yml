@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Dwarf Blossoms
+blocks:
+  natures_spirit:dwarf_blossoms:
+    display_name: "Dwarf Blossoms"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/dwarf_blossoms

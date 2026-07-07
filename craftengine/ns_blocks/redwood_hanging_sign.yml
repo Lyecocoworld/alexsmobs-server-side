@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Redwood Hanging Sign
+blocks:
+  natures_spirit:redwood_hanging_sign:
+    display_name: "Redwood Hanging Sign"
+    category: wood

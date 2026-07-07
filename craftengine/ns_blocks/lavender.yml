@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Lavender
+blocks:
+  natures_spirit:lavender:
+    display_name: "Lavender"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/lavender

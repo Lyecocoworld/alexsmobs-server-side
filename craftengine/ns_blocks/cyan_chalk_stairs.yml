@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cyan Chalk Stairs
+blocks:
+  natures_spirit:cyan_chalk_stairs:
+    display_name: "Cyan Chalk Stairs"
+    category: building

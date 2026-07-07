@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Purple Wisteria Vines
+blocks:
+  natures_spirit:purple_wisteria_vines:
+    display_name: "Purple Wisteria Vines"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/purple_wisteria_vines

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cedar Button
+items:
+  natures_spirit:cedar_button:
+    display_name: "Cedar Button"
+    rarity: COMMON

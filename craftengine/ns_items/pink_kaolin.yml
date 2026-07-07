@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Pink Kaolin
+items:
+  natures_spirit:pink_kaolin:
+    display_name: "Pink Kaolin"
+    rarity: COMMON

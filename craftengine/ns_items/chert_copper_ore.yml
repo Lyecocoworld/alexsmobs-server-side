@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chert Copper Ore
+items:
+  natures_spirit:chert_copper_ore:
+    display_name: "Chert Copper Ore"
+    rarity: COMMON

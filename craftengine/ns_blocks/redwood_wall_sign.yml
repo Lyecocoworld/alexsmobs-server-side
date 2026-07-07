@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Redwood Wall Sign
+blocks:
+  natures_spirit:redwood_wall_sign:
+    display_name: "Redwood Wall Sign"
+    category: wood

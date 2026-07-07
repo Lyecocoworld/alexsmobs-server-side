@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Sage Succulent
+blocks:
+  natures_spirit:potted_sage_succulent:
+    display_name: "Potted Sage Succulent"
+    category: decoration

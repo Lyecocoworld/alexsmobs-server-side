@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Joshua Door
+items:
+  natures_spirit:joshua_door:
+    display_name: "Joshua Door"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/joshua_door

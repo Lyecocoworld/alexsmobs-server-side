@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Redwood Stairs
+blocks:
+  natures_spirit:redwood_stairs:
+    display_name: "Redwood Stairs"
+    category: wood

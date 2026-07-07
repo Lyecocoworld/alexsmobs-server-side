@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Joshua Hanging Sign
+blocks:
+  natures_spirit:joshua_hanging_sign:
+    display_name: "Joshua Hanging Sign"
+    category: utility

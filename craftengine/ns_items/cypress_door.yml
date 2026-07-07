@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Cypress Door
+items:
+  natures_spirit:cypress_door:
+    display_name: "Cypress Door"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/cypress_door

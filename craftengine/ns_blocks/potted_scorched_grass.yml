@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Scorched Grass
+blocks:
+  natures_spirit:potted_scorched_grass:
+    display_name: "Potted Scorched Grass"
+    category: decoration

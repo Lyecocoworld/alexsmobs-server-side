@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Coconut Half
+items:
+  natures_spirit:coconut_half:
+    display_name: "Coconut Half"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/coconut_half

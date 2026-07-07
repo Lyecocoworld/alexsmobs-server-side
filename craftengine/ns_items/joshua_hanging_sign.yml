@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Joshua Hanging Sign
+items:
+  natures_spirit:joshua_hanging_sign:
+    display_name: "Joshua Hanging Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/joshua_hanging_sign

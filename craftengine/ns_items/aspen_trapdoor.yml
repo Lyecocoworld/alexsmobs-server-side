@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Aspen Trapdoor
+items:
+  natures_spirit:aspen_trapdoor:
+    display_name: "Aspen Trapdoor"
+    rarity: COMMON

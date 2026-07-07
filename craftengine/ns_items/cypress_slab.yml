@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cypress Slab
+items:
+  natures_spirit:cypress_slab:
+    display_name: "Cypress Slab"
+    rarity: COMMON

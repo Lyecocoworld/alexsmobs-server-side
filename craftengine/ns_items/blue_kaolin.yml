@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Blue Kaolin
+items:
+  natures_spirit:blue_kaolin:
+    display_name: "Blue Kaolin"
+    rarity: COMMON

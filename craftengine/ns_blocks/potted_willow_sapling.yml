@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Willow Sapling
+blocks:
+  natures_spirit:potted_willow_sapling:
+    display_name: "Potted Willow Sapling"
+    category: foliage

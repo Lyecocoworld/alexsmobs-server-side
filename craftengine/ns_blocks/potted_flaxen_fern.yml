@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Flaxen Fern
+blocks:
+  natures_spirit:potted_flaxen_fern:
+    display_name: "Potted Flaxen Fern"
+    category: plant

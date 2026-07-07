@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cedar Pressure Plate
+items:
+  natures_spirit:cedar_pressure_plate:
+    display_name: "Cedar Pressure Plate"
+    rarity: COMMON

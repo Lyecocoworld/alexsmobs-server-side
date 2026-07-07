@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Drowsy Succulent
+items:
+  natures_spirit:drowsy_succulent:
+    display_name: "Drowsy Succulent"
+    rarity: COMMON

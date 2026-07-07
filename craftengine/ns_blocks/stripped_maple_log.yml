@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Stripped Maple Log
+blocks:
+  natures_spirit:stripped_maple_log:
+    display_name: "Stripped Maple Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/stripped_maple_log

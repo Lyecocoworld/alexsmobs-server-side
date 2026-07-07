@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Carnation
+blocks:
+  natures_spirit:carnation:
+    display_name: "Carnation"
+    category: decoration

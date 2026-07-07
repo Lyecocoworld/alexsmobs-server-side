@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Cypress Sign
+items:
+  natures_spirit:cypress_sign:
+    display_name: "Cypress Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/cypress_sign

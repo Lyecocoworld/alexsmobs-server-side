@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Wisteria Sign
+items:
+  natures_spirit:wisteria_sign:
+    display_name: "Wisteria Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/wisteria_sign

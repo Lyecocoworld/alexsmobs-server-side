@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Red Bearberries
+blocks:
+  natures_spirit:red_bearberries:
+    display_name: "Red Bearberries"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/red_bearberries

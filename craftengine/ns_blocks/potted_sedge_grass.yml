@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Sedge Grass
+blocks:
+  natures_spirit:potted_sedge_grass:
+    display_name: "Potted Sedge Grass"
+    category: decoration

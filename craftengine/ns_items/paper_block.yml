@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Paper Block
+items:
+  natures_spirit:paper_block:
+    display_name: "Paper Block"
+    rarity: COMMON

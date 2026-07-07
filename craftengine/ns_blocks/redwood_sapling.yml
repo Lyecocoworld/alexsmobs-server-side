@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Redwood Sapling
+blocks:
+  natures_spirit:redwood_sapling:
+    display_name: "Redwood Sapling"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/redwood_sapling

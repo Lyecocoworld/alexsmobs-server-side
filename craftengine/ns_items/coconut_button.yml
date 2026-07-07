@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Button
+items:
+  natures_spirit:coconut_button:
+    display_name: "Coconut Button"
+    rarity: COMMON

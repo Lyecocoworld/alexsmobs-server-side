@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chert Redstone Ore
+items:
+  natures_spirit:chert_redstone_ore:
+    display_name: "Chert Redstone Ore"
+    rarity: COMMON

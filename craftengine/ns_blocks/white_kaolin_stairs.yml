@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): White Kaolin Stairs
+blocks:
+  natures_spirit:white_kaolin_stairs:
+    display_name: "White Kaolin Stairs"
+    category: building

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Stripped Joshua Bundle
+blocks:
+  natures_spirit:stripped_joshua_bundle:
+    display_name: "Stripped Joshua Bundle"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/stripped_joshua_bundle

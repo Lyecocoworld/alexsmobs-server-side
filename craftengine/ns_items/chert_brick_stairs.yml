@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Chert Brick Stairs
+items:
+  natures_spirit:chert_brick_stairs:
+    display_name: "Chert Brick Stairs"
+    rarity: COMMON

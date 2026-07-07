@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Large Calcite Bud
+blocks:
+  natures_spirit:large_calcite_bud:
+    display_name: "Large Calcite Bud"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/large_calcite_bud

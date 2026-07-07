@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Foamy Succulent
+blocks:
+  natures_spirit:foamy_succulent:
+    display_name: "Foamy Succulent"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/foamy_succulent

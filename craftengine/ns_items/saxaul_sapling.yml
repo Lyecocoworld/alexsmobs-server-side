@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Sapling
+items:
+  natures_spirit:saxaul_sapling:
+    display_name: "Saxaul Sapling"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/saxaul_sapling

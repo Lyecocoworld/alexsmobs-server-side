@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Wisteria Log
+items:
+  natures_spirit:wisteria_log:
+    display_name: "Wisteria Log"
+    rarity: COMMON

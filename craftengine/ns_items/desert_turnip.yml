@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Desert Turnip
+items:
+  natures_spirit:desert_turnip:
+    display_name: "Desert Turnip"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/desert_turnip

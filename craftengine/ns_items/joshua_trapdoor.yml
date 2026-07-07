@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Joshua Trapdoor
+items:
+  natures_spirit:joshua_trapdoor:
+    display_name: "Joshua Trapdoor"
+    rarity: COMMON

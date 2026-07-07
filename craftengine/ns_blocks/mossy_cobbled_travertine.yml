@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Mossy Cobbled Travertine
+blocks:
+  natures_spirit:mossy_cobbled_travertine:
+    display_name: "Mossy Cobbled Travertine"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/mossy_cobbled_travertine

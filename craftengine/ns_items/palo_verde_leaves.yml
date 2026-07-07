@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Palo Verde Leaves
+items:
+  natures_spirit:palo_verde_leaves:
+    display_name: "Palo Verde Leaves"
+    rarity: COMMON

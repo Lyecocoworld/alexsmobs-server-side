@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Bleeding Heart
+blocks:
+  natures_spirit:bleeding_heart:
+    display_name: "Bleeding Heart"
+    category: decoration

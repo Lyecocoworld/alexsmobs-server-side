@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Button
+blocks:
+  natures_spirit:coconut_button:
+    display_name: "Coconut Button"
+    category: utility

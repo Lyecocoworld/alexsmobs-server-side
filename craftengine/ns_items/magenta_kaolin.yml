@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Magenta Kaolin
+items:
+  natures_spirit:magenta_kaolin:
+    display_name: "Magenta Kaolin"
+    rarity: COMMON

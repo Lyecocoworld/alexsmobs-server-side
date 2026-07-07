@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Stripped Redwood Wood
+blocks:
+  natures_spirit:stripped_redwood_wood:
+    display_name: "Stripped Redwood Wood"
+    category: wood

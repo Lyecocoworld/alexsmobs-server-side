@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Olive Wall Sign
+blocks:
+  natures_spirit:olive_wall_sign:
+    display_name: "Olive Wall Sign"
+    category: building

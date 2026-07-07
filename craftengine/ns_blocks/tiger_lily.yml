@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Tiger Lily
+blocks:
+  natures_spirit:tiger_lily:
+    display_name: "Tiger Lily"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/tiger_lily

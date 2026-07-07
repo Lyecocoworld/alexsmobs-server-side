@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Foamy Succulent
+items:
+  natures_spirit:foamy_succulent:
+    display_name: "Foamy Succulent"
+    rarity: COMMON

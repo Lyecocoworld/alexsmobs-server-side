@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cypress Button
+items:
+  natures_spirit:cypress_button:
+    display_name: "Cypress Button"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Purple Chalk Stairs
+blocks:
+  natures_spirit:purple_chalk_stairs:
+    display_name: "Purple Chalk Stairs"
+    category: building

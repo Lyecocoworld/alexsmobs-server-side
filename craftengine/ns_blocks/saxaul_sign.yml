@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Sign
+blocks:
+  natures_spirit:saxaul_sign:
+    display_name: "Saxaul Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/saxaul_sign

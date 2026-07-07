@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Lush Fern
+items:
+  natures_spirit:lush_fern:
+    display_name: "Lush Fern"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/lush_fern

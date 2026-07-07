@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Fir Hanging Sign
+items:
+  natures_spirit:fir_hanging_sign:
+    display_name: "Fir Hanging Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/fir_hanging_sign

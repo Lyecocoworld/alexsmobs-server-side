@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Joshua Fence Gate
+items:
+  natures_spirit:joshua_fence_gate:
+    display_name: "Joshua Fence Gate"
+    rarity: COMMON

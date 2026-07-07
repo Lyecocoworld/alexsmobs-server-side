@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Door
+blocks:
+  natures_spirit:wisteria_door:
+    display_name: "Wisteria Door"
+    category: building

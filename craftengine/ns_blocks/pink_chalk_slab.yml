@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Pink Chalk Slab
+blocks:
+  natures_spirit:pink_chalk_slab:
+    display_name: "Pink Chalk Slab"
+    category: building

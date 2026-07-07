@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Mosaic
+items:
+  natures_spirit:coconut_mosaic:
+    display_name: "Coconut Mosaic"
+    rarity: COMMON

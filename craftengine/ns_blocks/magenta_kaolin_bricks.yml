@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Magenta Kaolin Bricks
+blocks:
+  natures_spirit:magenta_kaolin_bricks:
+    display_name: "Magenta Kaolin Bricks"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/magenta_kaolin_bricks

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Chalk Powder
+items:
+  natures_spirit:chalk_powder:
+    display_name: "Chalk Powder"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/chalk_powder

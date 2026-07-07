@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Maple Stairs
+blocks:
+  natures_spirit:maple_stairs:
+    display_name: "Maple Stairs"
+    category: building

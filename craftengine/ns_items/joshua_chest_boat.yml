@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Joshua Chest Boat
+items:
+  natures_spirit:joshua_chest_boat:
+    display_name: "Joshua Chest Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/joshua_chest_boat

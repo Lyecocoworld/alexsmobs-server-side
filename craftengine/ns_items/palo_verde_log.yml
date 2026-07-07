@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Palo Verde Log
+items:
+  natures_spirit:palo_verde_log:
+    display_name: "Palo Verde Log"
+    rarity: COMMON

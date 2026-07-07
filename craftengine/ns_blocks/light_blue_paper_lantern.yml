@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Light Blue Paper Lantern
+blocks:
+  natures_spirit:light_blue_paper_lantern:
+    display_name: "Light Blue Paper Lantern"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/light_blue_paper_lantern

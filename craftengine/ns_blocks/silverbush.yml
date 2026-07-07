@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Silverbush
+blocks:
+  natures_spirit:silverbush:
+    display_name: "Silverbush"
+    category: plant

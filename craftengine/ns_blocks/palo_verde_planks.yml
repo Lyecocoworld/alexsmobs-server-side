@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Palo Verde Planks
+blocks:
+  natures_spirit:palo_verde_planks:
+    display_name: "Palo Verde Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/palo_verde_planks

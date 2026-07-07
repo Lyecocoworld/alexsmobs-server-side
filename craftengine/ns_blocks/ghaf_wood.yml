@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Wood
+blocks:
+  natures_spirit:ghaf_wood:
+    display_name: "Ghaf Wood"
+    category: wood

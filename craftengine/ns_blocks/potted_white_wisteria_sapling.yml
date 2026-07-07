@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted White Wisteria Sapling
+blocks:
+  natures_spirit:potted_white_wisteria_sapling:
+    display_name: "Potted White Wisteria Sapling"
+    category: foliage

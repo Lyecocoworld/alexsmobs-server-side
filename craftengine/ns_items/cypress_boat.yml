@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Cypress Boat
+items:
+  natures_spirit:cypress_boat:
+    display_name: "Cypress Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/cypress_boat

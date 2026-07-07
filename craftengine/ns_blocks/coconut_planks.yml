@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Coconut Planks
+blocks:
+  natures_spirit:coconut_planks:
+    display_name: "Coconut Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/coconut_planks

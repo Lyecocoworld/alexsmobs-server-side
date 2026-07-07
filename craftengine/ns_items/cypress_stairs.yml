@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cypress Stairs
+items:
+  natures_spirit:cypress_stairs:
+    display_name: "Cypress Stairs"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Hibiscus
+blocks:
+  natures_spirit:hibiscus:
+    display_name: "Hibiscus"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/hibiscus

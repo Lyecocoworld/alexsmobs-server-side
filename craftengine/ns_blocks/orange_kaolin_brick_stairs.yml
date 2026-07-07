@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Orange Kaolin Brick Stairs
+blocks:
+  natures_spirit:orange_kaolin_brick_stairs:
+    display_name: "Orange Kaolin Brick Stairs"
+    category: building

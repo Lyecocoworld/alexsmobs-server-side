@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Blooming Paper Panel
+items:
+  natures_spirit:blooming_paper_panel:
+    display_name: "Blooming Paper Panel"
+    rarity: COMMON

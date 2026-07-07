@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Green Kaolin
+items:
+  natures_spirit:green_kaolin:
+    display_name: "Green Kaolin"
+    rarity: COMMON

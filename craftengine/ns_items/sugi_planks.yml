@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Sugi Planks
+items:
+  natures_spirit:sugi_planks:
+    display_name: "Sugi Planks"
+    rarity: COMMON

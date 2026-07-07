@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Coconut Trapdoor
+items:
+  natures_spirit:coconut_trapdoor:
+    display_name: "Coconut Trapdoor"
+    rarity: COMMON

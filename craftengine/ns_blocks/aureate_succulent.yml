@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Aureate Succulent
+blocks:
+  natures_spirit:aureate_succulent:
+    display_name: "Aureate Succulent"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/aureate_succulent

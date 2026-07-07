@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Olive Stairs
+items:
+  natures_spirit:olive_stairs:
+    display_name: "Olive Stairs"
+    rarity: COMMON

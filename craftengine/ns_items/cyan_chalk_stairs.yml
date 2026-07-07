@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Cyan Chalk Stairs
+items:
+  natures_spirit:cyan_chalk_stairs:
+    display_name: "Cyan Chalk Stairs"
+    rarity: COMMON

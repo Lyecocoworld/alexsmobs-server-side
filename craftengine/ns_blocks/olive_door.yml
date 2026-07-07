@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Olive Door
+blocks:
+  natures_spirit:olive_door:
+    display_name: "Olive Door"
+    category: building

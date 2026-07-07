@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Mosaic Stairs
+blocks:
+  natures_spirit:wisteria_mosaic_stairs:
+    display_name: "Wisteria Mosaic Stairs"
+    category: building

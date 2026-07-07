@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Stripped Fir Log
+blocks:
+  natures_spirit:stripped_fir_log:
+    display_name: "Stripped Fir Log"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/stripped_fir_log

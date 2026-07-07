@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Aspen Stairs
+items:
+  natures_spirit:aspen_stairs:
+    display_name: "Aspen Stairs"
+    rarity: COMMON

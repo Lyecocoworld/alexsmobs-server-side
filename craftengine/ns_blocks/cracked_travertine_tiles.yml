@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cracked Travertine Tiles
+blocks:
+  natures_spirit:cracked_travertine_tiles:
+    display_name: "Cracked Travertine Tiles"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/cracked_travertine_tiles

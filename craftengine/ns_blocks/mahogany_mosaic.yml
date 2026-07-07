@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Mosaic
+blocks:
+  natures_spirit:mahogany_mosaic:
+    display_name: "Mahogany Mosaic"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/mahogany_mosaic

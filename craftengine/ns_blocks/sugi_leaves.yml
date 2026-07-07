@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Sugi Leaves
+blocks:
+  natures_spirit:sugi_leaves:
+    display_name: "Sugi Leaves"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/sugi_leaves

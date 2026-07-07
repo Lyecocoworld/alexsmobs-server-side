@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Fir Planks
+items:
+  natures_spirit:fir_planks:
+    display_name: "Fir Planks"
+    rarity: COMMON

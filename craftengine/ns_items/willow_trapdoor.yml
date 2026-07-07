@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Willow Trapdoor
+items:
+  natures_spirit:willow_trapdoor:
+    display_name: "Willow Trapdoor"
+    rarity: COMMON

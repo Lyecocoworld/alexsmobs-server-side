@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Mosaic Slab
+blocks:
+  natures_spirit:coconut_mosaic_slab:
+    display_name: "Coconut Mosaic Slab"
+    category: building

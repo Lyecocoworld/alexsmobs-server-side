@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Log
+items:
+  natures_spirit:saxaul_log:
+    display_name: "Saxaul Log"
+    rarity: COMMON

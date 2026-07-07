@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Willow Pressure Plate
+items:
+  natures_spirit:willow_pressure_plate:
+    display_name: "Willow Pressure Plate"
+    rarity: COMMON

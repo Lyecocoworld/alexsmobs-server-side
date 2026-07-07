@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Chert Copper Ore
+blocks:
+  natures_spirit:chert_copper_ore:
+    display_name: "Chert Copper Ore"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/chert_copper_ore

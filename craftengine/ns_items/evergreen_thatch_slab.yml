@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Evergreen Thatch Slab
+items:
+  natures_spirit:evergreen_thatch_slab:
+    display_name: "Evergreen Thatch Slab"
+    rarity: COMMON

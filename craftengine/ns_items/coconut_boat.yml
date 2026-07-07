@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Coconut Boat
+items:
+  natures_spirit:coconut_boat:
+    display_name: "Coconut Boat"
+    rarity: UNCOMMON
+    resource:
+      textures:
+        default: natures_spirit:item/coconut_boat

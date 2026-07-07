@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Willow Pressure Plate
+blocks:
+  natures_spirit:willow_pressure_plate:
+    display_name: "Willow Pressure Plate"
+    category: utility

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Olive Sign
+blocks:
+  natures_spirit:olive_sign:
+    display_name: "Olive Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/olive_sign

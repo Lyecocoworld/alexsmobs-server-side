@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Orange Maple Sapling
+blocks:
+  natures_spirit:potted_orange_maple_sapling:
+    display_name: "Potted Orange Maple Sapling"
+    category: foliage

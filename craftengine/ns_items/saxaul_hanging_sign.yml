@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Saxaul Hanging Sign
+items:
+  natures_spirit:saxaul_hanging_sign:
+    display_name: "Saxaul Hanging Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/saxaul_hanging_sign

@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Marigold
+blocks:
+  natures_spirit:marigold:
+    display_name: "Marigold"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/marigold

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Joshua Sapling
+items:
+  natures_spirit:joshua_sapling:
+    display_name: "Joshua Sapling"
+    rarity: COMMON

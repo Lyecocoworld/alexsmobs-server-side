@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Redwood Door
+blocks:
+  natures_spirit:redwood_door:
+    display_name: "Redwood Door"
+    category: wood

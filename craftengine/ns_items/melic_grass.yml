@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Melic Grass
+items:
+  natures_spirit:melic_grass:
+    display_name: "Melic Grass"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/melic_grass

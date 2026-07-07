@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Tall Oat Grass
+items:
+  natures_spirit:tall_oat_grass:
+    display_name: "Tall Oat Grass"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/tall_oat_grass

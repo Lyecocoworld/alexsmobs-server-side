@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cracked Chert Bricks
+blocks:
+  natures_spirit:cracked_chert_bricks:
+    display_name: "Cracked Chert Bricks"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/cracked_chert_bricks

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Drowsy Wall Succulent
+blocks:
+  natures_spirit:drowsy_wall_succulent:
+    display_name: "Drowsy Wall Succulent"
+    category: building

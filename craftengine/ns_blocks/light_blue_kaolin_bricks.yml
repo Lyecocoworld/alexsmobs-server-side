@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Light Blue Kaolin Bricks
+blocks:
+  natures_spirit:light_blue_kaolin_bricks:
+    display_name: "Light Blue Kaolin Bricks"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/light_blue_kaolin_bricks

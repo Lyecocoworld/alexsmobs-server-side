@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Wisteria Trapdoor
+items:
+  natures_spirit:wisteria_trapdoor:
+    display_name: "Wisteria Trapdoor"
+    rarity: COMMON

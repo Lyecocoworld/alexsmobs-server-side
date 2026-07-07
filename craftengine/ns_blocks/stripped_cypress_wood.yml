@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Stripped Cypress Wood
+blocks:
+  natures_spirit:stripped_cypress_wood:
+    display_name: "Stripped Cypress Wood"
+    category: wood

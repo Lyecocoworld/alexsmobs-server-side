@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Ghaf Trapdoor
+items:
+  natures_spirit:ghaf_trapdoor:
+    display_name: "Ghaf Trapdoor"
+    rarity: COMMON

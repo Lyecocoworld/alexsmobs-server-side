@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Willow Fence Gate
+blocks:
+  natures_spirit:willow_fence_gate:
+    display_name: "Willow Fence Gate"
+    category: building

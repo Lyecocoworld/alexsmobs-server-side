@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Paper Panel
+blocks:
+  natures_spirit:paper_panel:
+    display_name: "Paper Panel"
+    category: glass

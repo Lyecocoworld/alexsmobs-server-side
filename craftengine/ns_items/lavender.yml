@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Lavender
+items:
+  natures_spirit:lavender:
+    display_name: "Lavender"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/lavender

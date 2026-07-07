@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Larch Sapling
+blocks:
+  natures_spirit:larch_sapling:
+    display_name: "Larch Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/larch_sapling

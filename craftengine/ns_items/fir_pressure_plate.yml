@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Fir Pressure Plate
+items:
+  natures_spirit:fir_pressure_plate:
+    display_name: "Fir Pressure Plate"
+    rarity: COMMON

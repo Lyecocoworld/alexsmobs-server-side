@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Paper Wall Sign
+blocks:
+  natures_spirit:paper_wall_sign:
+    display_name: "Paper Wall Sign"
+    category: building

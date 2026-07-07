@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Purple Bearberries
+blocks:
+  natures_spirit:potted_purple_bearberries:
+    display_name: "Potted Purple Bearberries"
+    category: decoration

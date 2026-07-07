@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Joshua Mosaic Stairs
+items:
+  natures_spirit:joshua_mosaic_stairs:
+    display_name: "Joshua Mosaic Stairs"
+    rarity: COMMON

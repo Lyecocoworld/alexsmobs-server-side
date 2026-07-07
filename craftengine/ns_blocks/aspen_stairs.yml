@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Aspen Stairs
+blocks:
+  natures_spirit:aspen_stairs:
+    display_name: "Aspen Stairs"
+    category: building

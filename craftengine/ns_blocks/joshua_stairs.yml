@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Joshua Stairs
+blocks:
+  natures_spirit:joshua_stairs:
+    display_name: "Joshua Stairs"
+    category: building

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Tiger Lily
+blocks:
+  natures_spirit:potted_tiger_lily:
+    display_name: "Potted Tiger Lily"
+    category: decoration

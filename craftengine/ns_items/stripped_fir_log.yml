@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Fir Log
+items:
+  natures_spirit:stripped_fir_log:
+    display_name: "Stripped Fir Log"
+    rarity: COMMON

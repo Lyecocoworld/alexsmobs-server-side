@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Sapling
+blocks:
+  natures_spirit:mahogany_sapling:
+    display_name: "Mahogany Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/mahogany_sapling

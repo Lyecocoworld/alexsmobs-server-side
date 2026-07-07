@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Large Lush Fern
+blocks:
+  natures_spirit:large_lush_fern:
+    display_name: "Large Lush Fern"
+    category: plant

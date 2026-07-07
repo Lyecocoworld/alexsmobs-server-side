@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Smooth Pink Sandstone Slab
+items:
+  natures_spirit:smooth_pink_sandstone_slab:
+    display_name: "Smooth Pink Sandstone Slab"
+    rarity: COMMON

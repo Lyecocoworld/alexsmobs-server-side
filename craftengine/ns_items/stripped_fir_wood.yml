@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Stripped Fir Wood
+items:
+  natures_spirit:stripped_fir_wood:
+    display_name: "Stripped Fir Wood"
+    rarity: COMMON

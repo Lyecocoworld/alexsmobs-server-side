@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Stripped Sugi Wood
+blocks:
+  natures_spirit:stripped_sugi_wood:
+    display_name: "Stripped Sugi Wood"
+    category: wood

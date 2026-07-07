@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Gray Polypore Block
+blocks:
+  natures_spirit:gray_polypore_block:
+    display_name: "Gray Polypore Block"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/gray_polypore_block

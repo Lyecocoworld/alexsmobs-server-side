@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Polished Travertine
+blocks:
+  natures_spirit:polished_travertine:
+    display_name: "Polished Travertine"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/polished_travertine

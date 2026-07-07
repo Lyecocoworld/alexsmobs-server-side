@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Wisteria Planks
+items:
+  natures_spirit:wisteria_planks:
+    display_name: "Wisteria Planks"
+    rarity: COMMON

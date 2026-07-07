@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Joshua Bundle
+blocks:
+  natures_spirit:joshua_bundle:
+    display_name: "Joshua Bundle"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/joshua_bundle

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Fence
+blocks:
+  natures_spirit:mahogany_fence:
+    display_name: "Mahogany Fence"
+    category: building

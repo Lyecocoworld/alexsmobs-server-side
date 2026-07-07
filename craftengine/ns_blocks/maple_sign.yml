@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Maple Sign
+blocks:
+  natures_spirit:maple_sign:
+    display_name: "Maple Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/maple_sign

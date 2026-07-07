@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Small Calcite Bud
+blocks:
+  natures_spirit:small_calcite_bud:
+    display_name: "Small Calcite Bud"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/small_calcite_bud

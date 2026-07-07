@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cheese Block
+blocks:
+  natures_spirit:cheese_block:
+    display_name: "Cheese Block"
+    category: decoration

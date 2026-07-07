@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Ghaf Wall Sign
+blocks:
+  natures_spirit:ghaf_wall_sign:
+    display_name: "Ghaf Wall Sign"
+    category: building

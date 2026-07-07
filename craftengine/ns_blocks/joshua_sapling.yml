@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Joshua Sapling
+blocks:
+  natures_spirit:joshua_sapling:
+    display_name: "Joshua Sapling"
+    category: foliage
+    resource:
+      textures:
+        default: natures_spirit:block/joshua_sapling

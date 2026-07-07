@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Olive Trapdoor
+blocks:
+  natures_spirit:olive_trapdoor:
+    display_name: "Olive Trapdoor"
+    category: building
+    resource:
+      textures:
+        default: natures_spirit:block/olive_trapdoor

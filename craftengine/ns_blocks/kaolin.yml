@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Kaolin
+blocks:
+  natures_spirit:kaolin:
+    display_name: "Kaolin"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/kaolin

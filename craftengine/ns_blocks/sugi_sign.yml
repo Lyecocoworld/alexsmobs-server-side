@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Sugi Sign
+blocks:
+  natures_spirit:sugi_sign:
+    display_name: "Sugi Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/sugi_sign

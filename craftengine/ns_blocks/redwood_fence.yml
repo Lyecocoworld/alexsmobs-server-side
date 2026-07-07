@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Redwood Fence
+blocks:
+  natures_spirit:redwood_fence:
+    display_name: "Redwood Fence"
+    category: wood

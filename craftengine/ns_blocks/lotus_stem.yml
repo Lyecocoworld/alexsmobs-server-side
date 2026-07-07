@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Lotus Stem
+blocks:
+  natures_spirit:lotus_stem:
+    display_name: "Lotus Stem"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/lotus_stem

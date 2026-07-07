@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Joshua Log
+items:
+  natures_spirit:joshua_log:
+    display_name: "Joshua Log"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/joshua_log

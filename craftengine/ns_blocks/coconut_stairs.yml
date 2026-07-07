@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Coconut Stairs
+blocks:
+  natures_spirit:coconut_stairs:
+    display_name: "Coconut Stairs"
+    category: building

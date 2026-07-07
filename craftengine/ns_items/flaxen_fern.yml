@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Flaxen Fern
+items:
+  natures_spirit:flaxen_fern:
+    display_name: "Flaxen Fern"
+    rarity: COMMON

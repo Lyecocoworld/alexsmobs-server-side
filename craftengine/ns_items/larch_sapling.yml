@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Larch Sapling
+items:
+  natures_spirit:larch_sapling:
+    display_name: "Larch Sapling"
+    rarity: COMMON

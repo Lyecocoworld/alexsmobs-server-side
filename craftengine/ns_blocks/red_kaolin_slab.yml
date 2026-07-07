@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Red Kaolin Slab
+blocks:
+  natures_spirit:red_kaolin_slab:
+    display_name: "Red Kaolin Slab"
+    category: building

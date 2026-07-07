@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Orange Kaolin
+blocks:
+  natures_spirit:orange_kaolin:
+    display_name: "Orange Kaolin"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/orange_kaolin

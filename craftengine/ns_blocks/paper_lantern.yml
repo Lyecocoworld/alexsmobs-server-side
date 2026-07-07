@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Paper Lantern
+blocks:
+  natures_spirit:paper_lantern:
+    display_name: "Paper Lantern"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/paper_lantern

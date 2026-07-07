@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Stripped Wisteria Wood
+blocks:
+  natures_spirit:stripped_wisteria_wood:
+    display_name: "Stripped Wisteria Wood"
+    category: wood

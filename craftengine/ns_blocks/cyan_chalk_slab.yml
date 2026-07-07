@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cyan Chalk Slab
+blocks:
+  natures_spirit:cyan_chalk_slab:
+    display_name: "Cyan Chalk Slab"
+    category: building

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Mahogany Sapling
+items:
+  natures_spirit:mahogany_sapling:
+    display_name: "Mahogany Sapling"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/mahogany_sapling

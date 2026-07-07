@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Cracked Chert Tiles
+blocks:
+  natures_spirit:cracked_chert_tiles:
+    display_name: "Cracked Chert Tiles"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/cracked_chert_tiles

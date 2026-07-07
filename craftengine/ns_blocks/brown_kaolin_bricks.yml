@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Brown Kaolin Bricks
+blocks:
+  natures_spirit:brown_kaolin_bricks:
+    display_name: "Brown Kaolin Bricks"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/brown_kaolin_bricks

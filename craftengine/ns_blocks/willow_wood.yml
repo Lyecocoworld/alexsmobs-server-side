@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Willow Wood
+blocks:
+  natures_spirit:willow_wood:
+    display_name: "Willow Wood"
+    category: wood

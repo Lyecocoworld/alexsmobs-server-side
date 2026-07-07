@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Joshua Bundle
+items:
+  natures_spirit:joshua_bundle:
+    display_name: "Joshua Bundle"
+    rarity: COMMON

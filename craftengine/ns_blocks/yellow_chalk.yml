@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Yellow Chalk
+blocks:
+  natures_spirit:yellow_chalk:
+    display_name: "Yellow Chalk"
+    category: stone
+    resource:
+      textures:
+        default: natures_spirit:block/yellow_chalk

@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Aspen Leaves
+items:
+  natures_spirit:aspen_leaves:
+    display_name: "Aspen Leaves"
+    rarity: COMMON

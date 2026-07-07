@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Mahogany Sapling
+blocks:
+  natures_spirit:potted_mahogany_sapling:
+    display_name: "Potted Mahogany Sapling"
+    category: foliage

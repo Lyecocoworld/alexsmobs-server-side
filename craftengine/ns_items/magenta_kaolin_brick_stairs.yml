@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Magenta Kaolin Brick Stairs
+items:
+  natures_spirit:magenta_kaolin_brick_stairs:
+    display_name: "Magenta Kaolin Brick Stairs"
+    rarity: COMMON

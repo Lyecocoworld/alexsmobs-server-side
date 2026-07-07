@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Aureate Succulent
+blocks:
+  natures_spirit:potted_aureate_succulent:
+    display_name: "Potted Aureate Succulent"
+    category: decoration

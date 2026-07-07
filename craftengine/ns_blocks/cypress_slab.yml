@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Cypress Slab
+blocks:
+  natures_spirit:cypress_slab:
+    display_name: "Cypress Slab"
+    category: building

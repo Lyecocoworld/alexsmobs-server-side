@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Potted Protea
+blocks:
+  natures_spirit:potted_protea:
+    display_name: "Potted Protea"
+    category: decoration

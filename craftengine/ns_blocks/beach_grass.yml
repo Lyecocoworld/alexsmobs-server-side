@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Beach Grass
+blocks:
+  natures_spirit:beach_grass:
+    display_name: "Beach Grass"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/beach_grass

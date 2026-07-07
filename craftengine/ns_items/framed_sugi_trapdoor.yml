@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Framed Sugi Trapdoor
+items:
+  natures_spirit:framed_sugi_trapdoor:
+    display_name: "Framed Sugi Trapdoor"
+    rarity: COMMON

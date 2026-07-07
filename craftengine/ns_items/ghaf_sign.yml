@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Ghaf Sign
+items:
+  natures_spirit:ghaf_sign:
+    display_name: "Ghaf Sign"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/ghaf_sign

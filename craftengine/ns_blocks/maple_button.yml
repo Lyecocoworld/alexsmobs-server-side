@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Maple Button
+blocks:
+  natures_spirit:maple_button:
+    display_name: "Maple Button"
+    category: utility

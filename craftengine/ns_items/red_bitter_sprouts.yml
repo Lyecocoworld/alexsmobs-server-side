@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Red Bitter Sprouts
+items:
+  natures_spirit:red_bitter_sprouts:
+    display_name: "Red Bitter Sprouts"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/red_bitter_sprouts

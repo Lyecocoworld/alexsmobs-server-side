@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Olive Button
+blocks:
+  natures_spirit:olive_button:
+    display_name: "Olive Button"
+    category: utility

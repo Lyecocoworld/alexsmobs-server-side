@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Willow Sapling
+items:
+  natures_spirit:willow_sapling:
+    display_name: "Willow Sapling"
+    rarity: COMMON

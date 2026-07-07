@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): White Chalk Stairs
+blocks:
+  natures_spirit:white_chalk_stairs:
+    display_name: "White Chalk Stairs"
+    category: building

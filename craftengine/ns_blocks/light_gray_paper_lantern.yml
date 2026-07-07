@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Light Gray Paper Lantern
+blocks:
+  natures_spirit:light_gray_paper_lantern:
+    display_name: "Light Gray Paper Lantern"
+    category: decoration
+    resource:
+      textures:
+        default: natures_spirit:block/light_gray_paper_lantern

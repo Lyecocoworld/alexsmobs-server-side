@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Part Blue Wisteria Leaves
+items:
+  natures_spirit:part_blue_wisteria_leaves:
+    display_name: "Part Blue Wisteria Leaves"
+    rarity: COMMON

@@ -1,0 +1,8 @@
+# CraftEngine Item (Nature's Spirit): Tall Frigid Grass
+items:
+  natures_spirit:tall_frigid_grass:
+    display_name: "Tall Frigid Grass"
+    rarity: COMMON
+    resource:
+      textures:
+        default: natures_spirit:item/tall_frigid_grass

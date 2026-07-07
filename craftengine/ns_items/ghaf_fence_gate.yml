@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Ghaf Fence Gate
+items:
+  natures_spirit:ghaf_fence_gate:
+    display_name: "Ghaf Fence Gate"
+    rarity: COMMON

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Polished Chert Slab
+blocks:
+  natures_spirit:polished_chert_slab:
+    display_name: "Polished Chert Slab"
+    category: building

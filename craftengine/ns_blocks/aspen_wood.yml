@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Aspen Wood
+blocks:
+  natures_spirit:aspen_wood:
+    display_name: "Aspen Wood"
+    category: wood

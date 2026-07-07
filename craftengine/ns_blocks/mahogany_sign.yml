@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Mahogany Sign
+blocks:
+  natures_spirit:mahogany_sign:
+    display_name: "Mahogany Sign"
+    category: utility
+    resource:
+      textures:
+        default: natures_spirit:block/mahogany_sign

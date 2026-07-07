@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Pink Kaolin Stairs
+blocks:
+  natures_spirit:pink_kaolin_stairs:
+    display_name: "Pink Kaolin Stairs"
+    category: building

@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Maple Hanging Sign
+blocks:
+  natures_spirit:maple_hanging_sign:
+    display_name: "Maple Hanging Sign"
+    category: utility

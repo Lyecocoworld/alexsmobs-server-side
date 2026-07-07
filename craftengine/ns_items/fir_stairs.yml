@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Fir Stairs
+items:
+  natures_spirit:fir_stairs:
+    display_name: "Fir Stairs"
+    rarity: COMMON

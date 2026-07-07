@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Chert Brick Wall
+blocks:
+  natures_spirit:chert_brick_wall:
+    display_name: "Chert Brick Wall"
+    category: building

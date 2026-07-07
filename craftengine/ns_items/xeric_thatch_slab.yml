@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Xeric Thatch Slab
+items:
+  natures_spirit:xeric_thatch_slab:
+    display_name: "Xeric Thatch Slab"
+    rarity: COMMON

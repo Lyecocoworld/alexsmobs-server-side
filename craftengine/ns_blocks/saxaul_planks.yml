@@ -1,0 +1,8 @@
+# CraftEngine Block (Nature's Spirit): Saxaul Planks
+blocks:
+  natures_spirit:saxaul_planks:
+    display_name: "Saxaul Planks"
+    category: wood
+    resource:
+      textures:
+        default: natures_spirit:block/saxaul_planks

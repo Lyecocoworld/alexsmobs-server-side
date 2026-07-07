@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Travertine Slab
+items:
+  natures_spirit:travertine_slab:
+    display_name: "Travertine Slab"
+    rarity: COMMON

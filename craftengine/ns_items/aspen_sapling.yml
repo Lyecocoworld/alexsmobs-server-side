@@ -1,0 +1,5 @@
+# CraftEngine Item (Nature's Spirit): Aspen Sapling
+items:
+  natures_spirit:aspen_sapling:
+    display_name: "Aspen Sapling"
+    rarity: COMMON

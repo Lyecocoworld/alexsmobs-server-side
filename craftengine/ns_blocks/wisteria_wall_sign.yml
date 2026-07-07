@@ -1,0 +1,5 @@
+# CraftEngine Block (Nature's Spirit): Wisteria Wall Sign
+blocks:
+  natures_spirit:wisteria_wall_sign:
+    display_name: "Wisteria Wall Sign"
+    category: building
