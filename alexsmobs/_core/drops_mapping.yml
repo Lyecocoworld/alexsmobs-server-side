@@ -1,0 +1,31 @@
+# Drop mapping from Alex's Mobs loot tables
+# Auto-generated from data/loot_tables/entities/
+# Total: 8 entities with drops
+
+  blobfish:
+    - blobfish 1 1.0
+    - bone_meal 1 1.0
+
+  cosmic_cod:
+    - cosmic_cod 1 1.0
+    - bone_meal 1 1.0
+
+  enderiophage:
+    - capsid 1 1.0
+
+  flying_fish:
+    - flying_fish 1 1.0
+    - bone_meal 1 1.0
+
+  froststalker:
+    - froststalker_horn 1 1.0
+
+  froststalker_spikes:
+    - froststalker_horn 1 1.0
+
+  mudskipper:
+    - tropical_fish 1 1.0
+
+  void_worm:
+    - void_worm_eye 1 1.0
+    - void_worm_mandible 2 1.0

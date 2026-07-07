@@ -1,0 +1,461 @@
+# Item tags from Alex's Mobs
+# Auto-generated from data/tags/items/
+# These tags define food groups, taming items, breedable items, etc.
+
+  alligator_snapping_turtle_breedables:
+    - cod
+
+  anaconda_foodstuffs:
+    - chicken
+    - cooked_chicken
+
+  animal_dictionary_ingredient:
+    - crocodile_scute
+    - bear_fur
+    - roadrunner_feather
+    - gazelle_horn
+    - rattlesnake_rattle
+    - komodo_spit
+    - centipede_leg
+    - moose_antler
+    - raccoon_tail
+    - cockroach_wing
+    - spiked_scute
+    - straddlite
+    - emu_feather
+    - dropbear_claw
+    - cachalot_whale_tooth
+    - capsid
+    - rocky_shell
+
+  anteater_breedables:
+    - leafcutter_ant_pupa
+
+  anteater_foodstuffs:
+    - #insect_items
+
+  bald_eagle_breedables:
+    - rotten_flesh
+
+  bald_eagle_foodstuffs:
+    - #fishes
+
+  bald_eagle_tameables:
+    - fish_oil
+
+  banana_slug_breedables:
+    - brown_mushroom
+
+  bananas:
+    - #forge:crops/banana
+    - #forge:fruits/banana
+
+  bison_breedables:
+    - wheat
+
+  blue_jay_alert_foods:
+    - #forge:seeds
+
+  blue_jay_breedables:
+    - #insect_items
+
+  blue_jay_foodstuffs:
+    - #blue_jay_alert_foods
+    - #blue_jay_breedables
+    - #blue_jay_teaming_foods
+
+  blue_jay_teaming_foods:
+    - glow_berries
+
+  bunfungus_foodstuffs:
+    - carrot
+    - golden_carrot
+
+  caiman_breedables:
+    - raw_catfish
+    - cooked_catfish
+
+  caiman_foodstuffs:
+    - #fishes
+
+  capuchin_monkey_breedables:
+    - #insect_items
+
+  capuchin_monkey_foodstuffs:
+    - #forge:eggs
+
+  capuchin_monkey_tameables:
+    - #bananas
+
+  catfish_item_fascinations:
+    - sea_lantern
+
+  cockroach_breedables:
+    - sugar
+
+  cockroach_foodstuffs:
+    - #cockroach_breedables
+    - bread
+
+  cosmaw_breedables:
+    - cosmic_cod
+
+  cosmaw_foodstuffs:
+    - #cosmaw_breedables
+    - #cosmaw_tameables
+
+  cosmaw_tameables:
+    - cosmic_cod
+
+  crocodile_breedables:
+    - rotten_flesh
+
+  crow_breedables:
+    - pumpkin_seeds
+
+  crow_foodstuffs:
+    - #forge:eggs
+    - sugar
+    - #forge:seeds
+    - #crow_breedables
+    - #crow_breedables
+
+  crow_tameables:
+    - pumpkin_seeds
+
+  elephant_breedables:
+    - acacia_blossom
+
+  elephant_foodstuffs:
+    - #leaves
+    - #saplings
+    - sugar_cane
+    - apple
+    - beetroot
+    - potato
+    - carrot
+    - golden_carrot
+    - baked_potato
+    - hay_block
+    - bamboo
+    - #bananas
+    - acacia_blossom
+    - melon_slice
+    - sweet_berries
+    - #elephant_breedables
+    - #elephant_tameables
+
+  elephant_tameables:
+    - acacia_blossom
+
+  emu_breedables:
+    - wheat
+
+  endergrade_breedables:
+    - chorus_fruit
+
+  endergrade_follows:
+    - chorus_on_a_stick
+
+  endergrade_foodstuffs:
+    - chorus_fruit
+    - chorus_flower
+
+  flutter_breedables:
+    - bone_meal
+
+  fly_breedables:
+    - rotten_flesh
+
+  fly_foodstuffs:
+    - sugar
+
+  froststalker_breedables:
+    - porkchop
+    - cooked_porkchop
+
+  gazelle_breedables:
+    - wheat
+    - acacia_blossom
+
+  gelada_monkey_breedables:
+    - dead_bush
+
+  gelada_monkey_land_clearing_foods:
+    - wheat
+
+  gorilla_breedables:
+    - #bananas
+
+  gorilla_foodstuffs:
+    - #gorilla_tameables
+    - #gorilla_breedables
+    - #leaves
+    - sugar_cane
+    - apple
+    - bamboo
+
+  gorilla_tameables:
+    - #bananas
+
+  grizzly_breedables:
+    - salmon
+
+  grizzly_foodstuffs:
+    - #grizzly_honey
+    - #grizzly_breedables
+    - #grizzly_tameables
+    - bee_nest
+    - beetroot
+
+  grizzly_honey:
+    - honeycomb
+    - honey_block
+    - honeycomb_block
+    - honey_bottle
+
+  grizzly_tameables:
+    - salmon
+
+  hummingbird_breedables:
+    - #flowers
+
+  hummingbird_feeder_sweeteners:
+    - sugar
+
+  insect_items:
+    - maggot
+    - mosquito_larva
+    - leafcutter_ant_pupa
+
+  jerboa_begs_for:
+    - #forge:seeds
+
+  jerboa_breedables:
+    - #insect_items
+
+  kangaroo_breedables:
+    - dead_bush
+    - grass
+
+  kangaroo_tameables:
+    - carrot
+
+  komodo_dragon_breedables:
+    - rotten_flesh
+
+  laviathan_breedables:
+    - mosquito_larva
+
+  laviathan_foodstuffs:
+    - magma_cream
+
+  leafcutter_ant_foodstuffs:
+    - gongylidia
+
+  maned_wolf_breedables:
+    - rabbit
+    - cooked_rabbit
+    - chicken
+    - cooked_chicken
+
+  maned_wolf_stench_foods:
+    - apple
+
+  mantis_shrimp_breedables:
+    - lobster_tail
+    - cooked_lobster_tail
+
+  mantis_shrimp_tameables:
+    - tropical_fish
+
+  mimic_octopus_attack_foods:
+    - mimicream
+
+  mimic_octopus_breedables:
+    - tropical_fish
+
+  mimic_octopus_creeper_items:
+    - gunpowder
+    - creeper_head
+
+  mimic_octopus_guardian_items:
+    - prismarine_shard
+    - prismarine_crystals
+
+  mimic_octopus_moisturizes:
+    - slime_ball
+
+  mimic_octopus_pufferfish_items:
+    - pufferfish
+    - pufferfish_bucket
+
+  mimic_octopus_tameables:
+    - lobster_tail
+    - cooked_lobster_tail
+
+  mimic_octopus_toggles_mimic:
+    - ink_sac
+
+  moose_breedables:
+    - dandelion
+
+  mudskipper_breedables:
+    - #insect_items
+    - lobster_tail
+    - cooked_lobster_tail
+
+  mudskipper_foodstuffs:
+    - #insect_items
+
+  mudskipper_tameables:
+    - lobster_tail
+    - cooked_lobster_tail
+
+  mungus_breedables:
+    - mungal_spores
+
+  platypus_breedables:
+    - lobster_tail
+    - lobster_tail
+
+  platypus_chargeables:
+    - redstone
+    - redstone_block
+
+  platypus_foodstuffs:
+    - #platypus_breedables
+    - #platypus_chargeables
+    - #platypus_super_chargeables
+    - #insect_items
+    - #fishes
+
+  platypus_super_chargeables:
+    - redstone_block
+
+  potoo_breedables:
+    - #insect_items
+
+  raccoon_breedables:
+    - bread
+
+  raccoon_dissolves:
+    - sugar
+
+  raccoon_foodstuffs:
+    - #forge:eggs
+    - sugar
+
+  raccoon_tameables:
+    - #forge:eggs
+
+  raccoon_teaming_foods:
+    - glow_berries
+
+  rain_frog_breedables:
+    - #insect_items
+
+  rhinoceros_breedables:
+    - dead_bush
+    - grass
+
+  rhinoceros_foodstuffs:
+    - wheat
+
+  roadrunner_breedables:
+    - #insect_items
+
+  seagull_breedables:
+    - cod
+
+  seagull_offerings:
+    - lobster_tail
+    - cooked_lobster_tail
+
+  seal_breedables:
+    - lobster_tail
+    - cooked_lobster_tail
+
+  seal_offerings:
+    - #fishes
+
+  shoebill_foodstuffs:
+    - #fishes
+
+  shoebill_luck_foods:
+    - terrapin_egg
+
+  shoebill_lure_foods:
+    - crocodile_egg
+
+  shrimp_rice_fryables:
+    - #forge:crops/rice
+
+  skunk_breedables:
+    - sweet_berries
+
+  snow_leopard_breedables:
+    - moose_ribs
+    - cooked_moose_ribs
+
+  stradpole_growables:
+    - mosquito_larva
+
+  sugar_glider_breedables:
+    - honeycomb
+
+  sugar_glider_tameables:
+    - sweet_berries
+
+  tarantula_hawk_breedables:
+    - fermented_spider_eye
+
+  tarantula_hawk_foodstuffs:
+    - #flowers
+
+  tarantula_hawk_tameables:
+    - spider_eye
+
+  tasmanian_devil_howling_foods:
+    - rotten_flesh
+
+  terrapin_breedables:
+    - seagrass
+
+  tiger_breedables:
+    - acacia_blossom
+
+  toucan_breedables:
+    - #forge:eggs
+
+  toucan_enchanted_golden_foods:
+    - enchanted_golden_apple
+
+  toucan_golden_foods:
+    - golden_apple
+
+  triops_breedables:
+    - carrot
+    - #forge:crops/carrot
+
+  tusklin_breedables:
+    - red_mushroom
+
+  tusklin_foodstuffs:
+    - brown_mushroom
+
+  underminer_ores:
+    - #forge:ores
+
+  void_worm_drops:
+    - void_worm_mandible
+    - void_worm_eye
+
+  warped_toad_breedables:
+    - mosquito_larva
+
+  warped_toad_foodstuffs:
+    - #insect_items
+
+  warped_toad_tameables:
+    - mosquito_larva
