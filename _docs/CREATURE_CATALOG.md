@@ -1,146 +1,100 @@
-# Catalogue des creatures Alex's Mobs
+# Alex's Mobs Server-Side — Creature Implementation Status
 
-> Genere automatiquement par analyse du code source (branch 1.20).
+**Total implemented: 87 / 89 creatures**
 
-## Legende
+| # | Creature | Files | Status |
+|---|----------|-------|--------|
+| 1 | Alligator Snapping Turtle | 8/8 | ✅ Complete |
+| 2 | Anaconda | 8/8 | ✅ Complete |
+| 3 | Anteater | 8/8 | ✅ Complete |
+| 4 | Bald Eagle | 8/8 | ✅ Complete |
+| 5 | Banana Slug | 8/8 | ✅ Complete |
+| 6 | Bison | 8/8 | ✅ Complete |
+| 7 | Blobfish | 8/8 | ✅ Complete |
+| 8 | Blue Jay | 8/8 | ✅ Complete |
+| 9 | Bone Serpent | 8/8 | ✅ Complete |
+| 10 | Bunfungus | 8/8 | ✅ Complete |
+| 11 | Cachalot Whale | 8/8 | ✅ Complete |
+| 12 | Caiman | 8/8 | ✅ Complete |
+| 13 | Capuchin Monkey | 8/8 | ✅ Complete |
+| 14 | Catfish | 8/8 | ✅ Complete |
+| 15 | Centipede Head | 8/8 | ✅ Complete |
+| 16 | Cockroach | 8/8 | ✅ Complete |
+| 17 | Comb Jelly | 8/8 | ✅ Complete |
+| 18 | Cosmaw | 8/8 | ✅ Complete |
+| 19 | Cosmic Cod | 8/8 | ✅ Complete |
+| 20 | Crimson Mosquito | 8/8 | ✅ Complete |
+| 21 | Crocodile | 8/8 | ✅ Complete |
+| 22 | Crow | 8/8 | ✅ Complete |
+| 23 | Devil Hole Pupfish | 8/8 | ✅ Complete |
+| 24 | Drop Bear | 8/8 | ✅ Complete |
+| 25 | Elephant | 8/8 | ✅ Complete |
+| 26 | Emu | 8/8 | ✅ Complete |
+| 27 | Enderiophage | 8/8 | ✅ Complete |
+| 28 | Farseer | 8/8 | ✅ Complete |
+| 29 | Flutter | 8/8 | ✅ Complete |
+| 30 | Fly | 8/8 | ✅ Complete |
+| 31 | Flying Fish | 8/8 | ✅ Complete |
+| 32 | Frilled Shark | 8/8 | ✅ Complete |
+| 33 | Gazelle | 8/8 | ✅ Complete |
+| 34 | Gelada Monkey | 8/8 | ✅ Complete |
+| 35 | Giant Squid | 8/8 | ✅ Complete |
+| 36 | Gorilla | 8/8 | ✅ Complete |
+| 37 | Grizzly Bear | 8/8 | ✅ Complete |
+| 38 | Guster | 8/8 | ✅ Complete |
+| 39 | Hammerhead Shark | 8/8 | ✅ Complete |
+| 40 | Hummingbird | 8/8 | ✅ Complete |
+| 41 | Jerboa | 8/8 | ✅ Complete |
+| 42 | Kangaroo | 8/8 | ✅ Complete |
+| 43 | Komodo Dragon | 8/8 | ✅ Complete |
+| 44 | Laviathan | 8/8 | ✅ Complete |
+| 45 | Leafcutter Ant | 8/8 | ✅ Complete |
+| 46 | Lobster | 8/8 | ✅ Complete |
+| 47 | Maned Wolf | 8/8 | ✅ Complete |
+| 48 | Mantis Shrimp | 8/8 | ✅ Complete |
+| 49 | Mimic Octopus | 8/8 | ✅ Complete |
+| 50 | Mimicube | 8/8 | ✅ Complete |
+| 51 | Moose | 8/8 | ✅ Complete |
+| 52 | Mudskipper | 8/8 | ✅ Complete |
+| 53 | Mungus | 8/8 | ✅ Complete |
+| 54 | Murmur | 8/8 | ✅ Complete |
+| 55 | Orca | 8/8 | ✅ Complete |
+| 56 | Platypus | 8/8 | ✅ Complete |
+| 57 | Potoo | 8/8 | ✅ Complete |
+| 58 | Raccoon | 8/8 | ✅ Complete |
+| 59 | Rain Frog | 8/8 | ✅ Complete |
+| 60 | Rattlesnake | 8/8 | ✅ Complete |
+| 61 | Rhinoceros | 8/8 | ✅ Complete |
+| 62 | Roadrunner | 8/8 | ✅ Complete |
+| 63 | Rocky Roller | 8/8 | ✅ Complete |
+| 64 | Sea Bear | 8/8 | ✅ Complete |
+| 65 | Seagull | 8/8 | ✅ Complete |
+| 66 | Seal | 8/8 | ✅ Complete |
+| 67 | Shoebill | 8/8 | ✅ Complete |
+| 68 | Skelewag | 8/8 | ✅ Complete |
+| 69 | Skreecher | 8/8 | ✅ Complete |
+| 70 | Skunk | 8/8 | ✅ Complete |
+| 71 | Snow Leopard | 8/8 | ✅ Complete |
+| 72 | Soul Vulture | 8/8 | ✅ Complete |
+| 73 | Spectre | 8/8 | ✅ Complete |
+| 74 | Straddler | 8/8 | ✅ Complete |
+| 75 | Stradpole | 8/8 | ✅ Complete |
+| 76 | Sugar Glider | 8/8 | ✅ Complete |
+| 77 | Tarantula Hawk | 8/8 | ✅ Complete |
+| 78 | Tasmanian Devil | 8/8 | ✅ Complete |
+| 79 | Terrapin | 8/8 | ✅ Complete |
+| 80 | Tiger | 8/8 | ✅ Complete |
+| 81 | Toucan | 8/8 | ✅ Complete |
+| 82 | Triops | 8/8 | ✅ Complete |
+| 83 | Tusklin | 8/8 | ✅ Complete |
+| 84 | Underminer | 8/8 | ✅ Complete |
+| 85 | Void Worm | 8/8 | ✅ Complete |
+| 86 | Warped Mosco | 8/8 | ✅ Complete |
+| 87 | Warped Toad | 8/8 | ✅ Complete |
 
-| Niveau | Signification |
-|--------|--------------|
-| **P0** | Critique (signature mobs, boss) |
-| **P1** | Standard |
-| **P2** | Simple (decoratif) |
-
-| Complexite | Description |
-|------------|-------------|
-| **C1** | Simple AI (wander + melee/flee) |
-| **C2** | AI moderee (states, breeding, tame) |
-| **C3** | AI complexe (multipart) |
-| **C4** | Boss-tier (VoidWorm, Murmur, etc.) |
-
-## Catalogue complet
-
-| # | Mob | Categorie | Priorite | Complexite | Statut |
-|---|-----|-----------|----------|------------|--------|
-| 1 | BaldEagle | FLYING | P0 | C1 | TODO |
-| 2 | Caiman | AQUATIC | P0 | C1 | TODO |
-| 3 | Enderiophage | END | P0 | C1 | TODO |
-| 4 | Farseer | END | P0 | C1 | TODO |
-| 5 | MantisShrimp | AQUATIC | P0 | C1 | TODO |
-| 6 | Rattlesnake | TERRESTRIAL | P0 | C1 | TODO |
-| 7 | WarpedMosco | NETHER | P0 | C1 | TODO |
-| 8 | WarpedToad | NETHER | P0 | C1 | TODO |
-| 9 | Crocodile | AQUATIC | P0 | C2 | TODO |
-| 10 | Elephant | TERRESTRIAL | P0 | C2 | TODO |
-| 11 | Gorilla | TERRESTRIAL | P0 | C2 | TODO |
-| 12 | GrizzlyBear | TERRESTRIAL | P0 | C2 | TODO |
-| 13 | KomodoDragon | TERRESTRIAL | P0 | C2 | TODO |
-| 14 | GiantSquid | AQUATIC | P0 | C3 | TODO |
-| 15 | CachalotWhale | AQUATIC | P0 | C4 | TODO |
-| 16 | CrimsonMosquito | NETHER | P0 | C4 | TODO |
-| 17 | Murmur | TERRESTRIAL | P0 | C4 | TODO |
-| 18 | VoidWorm | END | P0 | C4 | TODO |
-| 19 | AlligatorSnappingTurtle | AQUATIC | P1 | C1 | TODO |
-| 20 | Anteater | TERRESTRIAL | P1 | C1 | TODO |
-| 21 | BananaSlug | TERRESTRIAL | P1 | C1 | TODO |
-| 22 | Bison | TERRESTRIAL | P1 | C1 | TODO |
-| 23 | Blobfish | AQUATIC | P1 | C1 | TODO |
-| 24 | BlueJay | FLYING | P1 | C1 | TODO |
-| 25 | Bunfungus | TERRESTRIAL | P1 | C1 | TODO |
-| 26 | Catfish | AQUATIC | P1 | C1 | TODO |
-| 27 | Cockroach | CAVE | P1 | C1 | TODO |
-| 28 | CombJelly | AQUATIC | P1 | C1 | TODO |
-| 29 | Cosmaw | AQUATIC | P1 | C1 | TODO |
-| 30 | CosmicCod | AQUATIC | P1 | C1 | TODO |
-| 31 | DevilsHolePupfish | AQUATIC | P1 | C1 | TODO |
-| 32 | DropBear | NETHER | P1 | C1 | TODO |
-| 33 | Endergrade | END | P1 | C1 | TODO |
-| 34 | Flutter | FLYING | P1 | C1 | TODO |
-| 35 | FlyingFish | AQUATIC | P1 | C1 | TODO |
-| 36 | FrilledShark | AQUATIC | P1 | C1 | TODO |
-| 37 | Froststalker | TERRESTRIAL | P1 | C1 | TODO |
-| 38 | Gazelle | TERRESTRIAL | P1 | C1 | TODO |
-| 39 | GeladaMonkey | TERRESTRIAL | P1 | C1 | TODO |
-| 40 | GiantSquidPart | TERRESTRIAL | P1 | C1 | TODO |
-| 41 | Guster | NETHER | P1 | C1 | TODO |
-| 42 | HammerheadShark | AQUATIC | P1 | C1 | TODO |
-| 43 | Hummingbird | FLYING | P1 | C1 | TODO |
-| 44 | Jerboa | TERRESTRIAL | P1 | C1 | TODO |
-| 45 | LaviathanPart | TERRESTRIAL | P1 | C1 | TODO |
-| 46 | LeafcutterAnt | TERRESTRIAL | P1 | C1 | TODO |
-| 47 | Lobster | AQUATIC | P1 | C1 | TODO |
-| 48 | MimicOctopus | AQUATIC | P1 | C1 | TODO |
-| 49 | Mimicube | CAVE | P1 | C1 | TODO |
-| 50 | Moose | TERRESTRIAL | P1 | C1 | TODO |
-| 51 | Mudskipper | AQUATIC | P1 | C1 | TODO |
-| 52 | Mungus | NETHER | P1 | C1 | TODO |
-| 53 | MurmurHead | TERRESTRIAL | P1 | C1 | TODO |
-| 54 | Orca | AQUATIC | P1 | C1 | TODO |
-| 55 | Platypus | AQUATIC | P1 | C1 | TODO |
-| 56 | Potoo | TERRESTRIAL | P1 | C1 | TODO |
-| 57 | RainFrog | TERRESTRIAL | P1 | C1 | TODO |
-| 58 | Rhinoceros | TERRESTRIAL | P1 | C1 | TODO |
-| 59 | Roadrunner | TERRESTRIAL | P1 | C1 | TODO |
-| 60 | RockyRoller | TERRESTRIAL | P1 | C1 | TODO |
-| 61 | SeaBear | AQUATIC | P1 | C1 | TODO |
-| 62 | Seagull | FLYING | P1 | C1 | TODO |
-| 63 | Shoebill | AQUATIC | P1 | C1 | TODO |
-| 64 | Skelewag | AQUATIC | P1 | C1 | TODO |
-| 65 | Skreecher | CAVE | P1 | C1 | TODO |
-| 66 | SnowLeopard | TERRESTRIAL | P1 | C1 | TODO |
-| 67 | SoulVulture | NETHER | P1 | C1 | TODO |
-| 68 | Straddler | NETHER | P1 | C1 | TODO |
-| 69 | SugarGlider | FLYING | P1 | C1 | TODO |
-| 70 | Sunbird | FLYING | P1 | C1 | TODO |
-| 71 | TarantulaHawk | TERRESTRIAL | P1 | C1 | TODO |
-| 72 | TasmanianDevil | TERRESTRIAL | P1 | C1 | TODO |
-| 73 | Terrapin | AQUATIC | P1 | C1 | TODO |
-| 74 | Toucan | FLYING | P1 | C1 | TODO |
-| 75 | Triops | AQUATIC | P1 | C1 | TODO |
-| 76 | Tusklin | NETHER | P1 | C1 | TODO |
-| 77 | CapuchinMonkey | TERRESTRIAL | P1 | C2 | TODO |
-| 78 | Crow | FLYING | P1 | C2 | TODO |
-| 79 | Emu | TERRESTRIAL | P1 | C2 | TODO |
-| 80 | Kangaroo | TERRESTRIAL | P1 | C2 | TODO |
-| 81 | ManedWolf | TERRESTRIAL | P1 | C2 | TODO |
-| 82 | Raccoon | TERRESTRIAL | P1 | C2 | TODO |
-| 83 | Seal | AQUATIC | P1 | C2 | TODO |
-| 84 | Skunk | TERRESTRIAL | P1 | C2 | TODO |
-| 85 | Tiger | TERRESTRIAL | P1 | C2 | TODO |
-| 86 | Anaconda | AQUATIC | P1 | C3 | TODO |
-| 87 | BoneSerpent | NETHER | P1 | C3 | TODO |
-| 88 | CentipedeHead | TERRESTRIAL | P1 | C3 | TODO |
-| 89 | Laviathan | NETHER | P1 | C4 | TODO |
-
-**Total : 89 creatures a implementer**
-
-## Statistiques
-
-### Par categorie
-- **TERRESTRIAL** : 35
-- **AQUATIC** : 27
-- **FLYING** : 9
-- **CAVE** : 3
-- **NETHER** : 11
-- **END** : 4
-
-### Par priorite
-- **P0** : 18
-- **P1** : 71
-
-### Par complexite
-- **C1** : 66
-- **C2** : 14
-- **C3** : 4
-- **C4** : 5
-
-## Multipart entities (C3/C4)
-
-- **GiantSquid**
-- **CachalotWhale**
-- **CrimsonMosquito**
-- **Murmur**
-- **VoidWorm**
-- **Anaconda**
-- **BoneSerpent**
-- **CentipedeHead**
-- **Laviathan**
+## Summary
+- **Implemented**: 87 creatures
+- **Complete (8/8 files)**: 87
+- **Total YAML files**: 704
+- **Assets imported**: 739 textures, 575 sounds, 438 models
+- **Data imported**: 139 loot tables, 223 tags, 84 recipes
