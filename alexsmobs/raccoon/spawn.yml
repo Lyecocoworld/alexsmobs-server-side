@@ -1,0 +1,34 @@
+# ════════════════════════════════════════════════════════════════
+# RACCOON — Spawn Configuration
+# ─────────────────────────────────────────────────────────────────
+# Source: AMEntityRegistry + AMConfig (biome tags, spawn rolls)
+# Biomes: villages, plaines, forêts
+# Spawn rolls: configurable (default 1)
+# ════════════════════════════════════════════════════════════════
+
+raccoon_spawner:
+  Type: raccoon
+  SpawnRate: 4                       # ticks entre checks (Folia-safe, region-local)
+  MaxMobs: 4                         # max par spawner
+  CheckTime: true                    # vérifier le temps de jeu
+  CheckDistance: 64                  # distance de check des joueurs
+  Conditions:
+    # ── Biome ──
+    # Villages, plaines, forêts (mod: AMTagRegistry spawn biomes)
+    - biome{b=PLAINS,SUNFLOWER_PLAINS,FOREST,FLOWER_FOREST,BIRCH_FOREST,
+        OLD_GROWTH_BIRCH_FOREST,DARK_FOREST,TAIGA,OLD_GROWTH_TAIGA,
+        MEADOW,CHERRY_GROVE,SWAMP,MANGROVE_SWAMP,
+        BEACH,SNOWY_BEACH,RIVER,FROZEN_RIVER}
+    # ── Hauteur ──
+    - height{h=60to150}
+    # ── Luminosité ──
+    - lightlevel{l=0to7}
+    # ── Monde ──
+    - worldtype{wt=OVERWORLD}
+    # ── Block sous le spawner ──
+    - blocktype{m=GRASS_BLOCK,DIRT,PODZOL,COARSE_DIRT,STONE,SAND,
+        MOSS_BLOCK,MYCELIUM,SNOW_BLOCK} @origin
+    # ── Pas trop près d'un joueur ──
+    - playerdistance{d=>24}
+    # ── Surface ──
+    - onblock{m=GRASS_BLOCK,DIRT,PODZOL,COARSE_DIRT,STONE,SAND,MOSS_BLOCK} @origin

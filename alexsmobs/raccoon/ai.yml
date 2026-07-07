@@ -1,0 +1,128 @@
+# ════════════════════════════════════════════════════════════════
+# RACCOON — AI Goals & Target Selectors
+# ─────────────────────────────────────────────────────────────────
+# Source: registerGoals() (EntityRaccoon.java lignes 123-145)
+# ════════════════════════════════════════════════════════════════
+#
+# AI GOALS du mod original (goalSelector):
+#   0: SitWhenOrderedToGoal           → assis quand commandé
+#   1: BreedGoal                      → reproduction
+#   2: RaccoonAIWash                  → cherche eau pour laver nourriture
+#   3: TameableAIFollowOwner          → suit le propriétaire (1.3, 10.0F, 2.0F)
+#   4: FloatGoal                      → flotte dans l'eau
+#   5: LeapAtTargetGoal (0.4F)        → saute sur la cible
+#   6: MeleeAttackGoal (1.1D, true)   → attaque melee
+#   7: AnimalAILootChests (16)        → loot les coffres proches
+#   8: FollowParentGoal (1.1D)        → suit le parent (baby)
+#   9: RaccoonAIBeg (0.65D)           → mendie auprès du joueur
+#   10: AnimalAIPanicBaby (1.25D)     → panique si baby
+#   11: AIStealFromVillagers          → vole items des villagers
+#   12: MoveThroughVillageGoal        → strolle dans les villages
+#   13: TameableAIDestroyTurtleEggs   → détruit les œufs de tortue
+#   14: AnimalAIWanderRanged          → marche aléatoire (longue portée)
+#   15: LookAtPlayerGoal (15.0F)      → regarde le joueur
+#   15: RandomLookAroundGoal          → regard aléatoire
+#
+# TARGET SELECTORS du mod original (targetSelector):
+#   1: AnimalAIHurtByTargetNotBaby    → attaque celui qui le blesse (non-baby)
+#   1: CreatureAITargetItems          → ramasse les items au sol
+#   3: OwnerHurtByTargetGoal          → attaque celui qui blesse le propriétaire
+#   4: OwnerHurtTargetGoal            → attaque la cible du propriétaire
+# ════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════
+# AI GOALS (comportement)
+# ════════════════════════════════════════════════════════════════
+
+raccoon_ai:
+  Goals:
+    # 0 — Assis quand commandé (forcedSit / command=2)
+    - sitwhenordered{p=0}
+      ?variable{var=raccoon.command;value=2}
+
+    # 1 — Reproduction
+    - breed{p=1;speed=1.0}
+
+    # 2 — RaccoonAIWash: cherche eau pour laver (géré via skill onTimer)
+    # Voir raccoon_wash_check dans skills.yml
+
+    # 3 — Suivre le propriétaire (tamed, command=1)
+    # Mod: TameableAIFollowOwner(1.3, 10.0F, 2.0F)
+    - followowner{p=3;speed=1.3;stop_distance=10;start_distance=2}
+      ?variable{var=raccoon.tamed;value=true}
+      ?variable{var=raccoon.command;value=1}
+
+    # 4 — Survie: flotter dans l'eau
+    - float{p=4}
+
+    # 5 — Sauter sur la cible (LeapAtTargetGoal 0.4F)
+    - leap{p=5;velocity=0.4}
+      ?hastarget{}
+      ?variable{var=raccoon.sitting;value=false}
+
+    # 6 — Attaque melee (MeleeAttackGoal 1.1D, true)
+    - melee{p=6;speed=1.1;memory=true}
+      ?variable{var=raccoon.sitting;value=false}
+
+    # 7 — Loot les coffres (AnimalAILootChests 16 blocs)
+    # Géré via skill onTimer — voir raccoon_loot_chests dans skills.yml
+
+    # 8 — Suivre le parent (baby)
+    - followparent{p=8;speed=1.1}
+      ?baby{}
+
+    # 9 — Mendier auprès du joueur (RaccoonAIBeg 0.65D)
+    # Géré via skill onTimer — voir raccoon_beg_check dans skills.yml
+
+    # 10 — Panique si baby (AnimalAIPanicBaby 1.25D)
+    - panic{p=10;speed=1.25}
+      ?baby{}
+    - panic{p=10;speed=1.25}
+      ?isonfire{}
+
+    # 11 — Voler les villagers (AIStealFromVillagers)
+    # Géré via skill onTimer — voir raccoon_steal_from_villagers dans skills.yml
+
+    # 12 — Strolle dans les villages (MoveThroughVillageGoal)
+    - movethroughvillage{p=12;speed=0.65}
+      ?variable{var=raccoon.sitting;value=false}
+
+    # 13 — Détruire les œufs de tortue (TameableAIDestroyTurtleEggs)
+    # Géré via skill onTimer — voir raccoon_destroy_turtle_eggs dans skills.yml
+
+    # 14 — Marche aléatoire (AnimalAIWanderRanged)
+    - randomstroll{p=14;speed=0.65}
+      ?variable{var=raccoon.sitting;value=false}
+
+    # 15 — Regarder le joueur / regard aléatoire
+    - lookatplayer{p=15;range=15}
+    - randomlookaround{p=15}
+
+
+# ════════════════════════════════════════════════════════════════
+# TARGET SELECTORS (cibles)
+# ════════════════════════════════════════════════════════════════
+
+raccoon_targets:
+  TargetSelectors:
+    # Vider les selectors vanilla de fox
+    - clear
+
+    # 1 — Attaque celui qui le blesse (AnimalAIHurtByTargetNotBaby)
+    # Seulement les adults non-baby
+    - hurtbytarget{}
+      ?!baby{}
+
+    # 1 — Ramasser les items comestibles au sol (CreatureAITargetItems)
+    # MythicMobs: pas de selector natif, géré via onPickupItem trigger
+
+    # 3 — Attaque celui qui blesse le propriétaire (tamed)
+    - ownerhurtbytarget{}
+      ?variable{var=raccoon.tamed;value=true}
+
+    # 4 — Attaque la cible du propriétaire (tamed)
+    - ownerhurttarget{}
+      ?variable{var=raccoon.tamed;value=true}
+
+    # 5 — Threat Table: ceux qui l'ont attaqué
+    - attackers

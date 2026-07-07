@@ -1,0 +1,22 @@
+# ════════════════════════════════════════════════════════════════
+# RACCOON — Drops
+# ─────────────────────────────────────────────────────────────────
+# Source: pas de loot table explicite dans EntityRaccoon.java
+# Le mod utilise les loot tables JSON dans data/alexsmobs/loot_tables/
+# Drops principaux: RACCOON_PELT (item custom), exp
+# Au mort: drop le tapis équipé (carpet) + item en main
+# ════════════════════════════════════════════════════════════════
+
+raccoon_drops:
+  Conditions:
+    - playerkill{}                    # Seulement si tué par un joueur
+  Drops:
+    # RACCOON_PELT — item custom Alex's Mobs (CraftEngine)
+    # Drop régulier à ~30%
+    - alexsmobs:raccoon_pelt 1-2 0.3
+
+    # ŒUF — parfois porté dans la main
+    - EGG 0-1 0.1
+
+    # Expérience (mod: 1-3 par kill)
+    - exp{amount=1-3} 1.0

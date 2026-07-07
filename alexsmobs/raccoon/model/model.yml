@@ -1,0 +1,104 @@
+# ════════════════════════════════════════════════════════════════
+# RACCOON — BetterModel Configuration
+# ─────────────────────────────────────────────────────────────────
+# Source: raccoon.bbmodel (Blockbench) + Citadel animation system
+# Le mod utilise 1 animation Citadel:
+#   ANIMATION_ATTACK  (12 ticks)
+#
+# States lerpés manuellement (pas des animations Citadel):
+#   standProgress (0→5): transition quadrupède→debout
+#   begProgress   (0→5): transition idle→mendier
+#   washProgress  (0→5): transition idle→lavage
+#   sitProgress   (0→5): transition debout→assis
+#
+# Texture du mod original:
+#   normal: raccoon.png
+#   rigby:  rigby.png (easter egg si nommé "Rigby")
+# ════════════════════════════════════════════════════════════════
+
+model:
+  bettermodel_id: "alexsmobs:raccoon"
+  type: "fox"                       # Vanilla entity base (hitbox/behavior)
+  hitbox:
+    width: 0.8                      # Raccoon: ~0.8 wide
+    height: 0.8                     # Raccoon: ~0.8 tall
+
+  # ── Modèle Blockbench ──
+  # Le fichier .bbmodel original d'Alex's Mobs est utilisé directement.
+  # Il est converti au format BetterModel via le plugin.
+  blockbench_model: "assets/alexsmobs/blockbench/raccoon.bbmodel"
+
+  # ── Textures ──
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/raccoon/raccoon.png"
+    rigby:
+      path: "assets/alexsmobs/textures/entity/raccoon/rigby.png"
+
+  # ── Animations ──
+  # Mapping nom interne → animation Blockbench
+  animations:
+    # Animations locomotion (continues)
+    idle:   "animation.raccoon.idle"
+    walk:   "animation.raccoon.walk"
+    run:    "animation.raccoon.run"
+    swim:   "animation.raccoon.swim"
+
+    # Animations states (déclenchées par MythicMobs stance)
+    stand:  "animation.raccoon.standing"    # standProgress lerp
+    beg:    "animation.raccoon.begging"     # begProgress lerp
+    wash:   "animation.raccoon.washing"     # washProgress lerp
+    sit:    "animation.raccoon.sitting"     # sitProgress lerp
+
+    # Animation d'attaque (déclenchée par setmodelstate)
+    attack: "animation.raccoon.attack"      # 12 ticks
+
+    # Animation de mort
+    death: "animation.raccoon.death"
+
+  # ── Mapping MythicMobs stance → BetterModel state ──
+  # Quand MythicMobs appelle setmodelstate{state=X}, BetterModel joue
+  # l'animation correspondante et change la texture si applicable.
+  animation_state_mapping:
+    # States principaux
+    idle:   { "animation": "idle",   "texture": "normal", "loop": true }
+    walk:   { "animation": "walk",   "texture": "normal", "loop": true }
+    run:    { "animation": "run",    "texture": "normal", "loop": true }
+    swim:   { "animation": "swim",   "texture": "normal", "loop": true }
+
+    # States posturaux (lerp via progress variables)
+    standing:  { "animation": "stand", "texture": "normal", "loop": true }
+    begging:   { "animation": "beg",   "texture": "normal", "loop": true }
+    washing:   { "animation": "wash",  "texture": "normal", "loop": true }
+    sitting:   { "animation": "sit",   "texture": "normal", "loop": true }
+
+    # State d'attaque (one-shot, durée fixe — ANIMATION_ATTACK 12 ticks)
+    attacking: { "animation": "attack", "texture": "normal", "loop": false, "duration": 12 }
+
+    # State mort
+    death: { "animation": "death", "texture": "normal", "loop": false, "duration": 20 }
+
+  # ── Variantes dynamiques ──
+  # La texture change selon les variables MythicMobs, sans changer l'animation.
+  variants:
+    # Variant Rigby (easter egg, mod isRigby())
+    rigby:
+      texture: rigby
+      condition:
+        # Joue la texture rigby seulement si l'entité est nommée "Rigby"
+        mythicmobs_variable: "raccoon.isRigby"
+        value: true
+
+  # ── Échelle ──
+  scale:
+    adult: 1.0                       # Échelle normale pour adulte
+    baby: 0.5                        # Mod: baby = 0.5x
+
+  # ── Sounds ──
+  # Les sons sont gérés par MythicMobs (skills.yml), pas BetterModel.
+  # Ce mapping est documentaire uniquement.
+  sounds:
+    ambient: "alexsmobs:entity.raccoon.idle"
+    hurt:    "alexsmobs:entity.raccoon.hurt"
+    death:   "alexsmobs:entity.raccoon.death"
+    attack:  "alexsmobs:entity.raccoon.attack"

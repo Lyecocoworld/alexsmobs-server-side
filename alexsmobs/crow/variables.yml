@@ -1,0 +1,91 @@
+# ════════════════════════════════════════════════════════════════
+# CROW — Variables persistantes
+# Source: SynchedEntityData + champs privés (EntityCrow.java)
+# ════════════════════════════════════════════════════════════════
+
+variables:
+  # ── SynchedEntityData ──
+  crow.flying:
+    type: BOOLEAN
+    default: false
+    persistent: false
+    desc: "La corneille vole actuellement"
+
+  crow.sitting:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "La corneille est assise"
+
+  crow.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: "Commande: 0=wander, 1=follow, 2=sit, 3=shoulder_perch"
+
+  crow.attackTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Timer animation d'attaque (12 ticks = durée attaque)"
+
+  # ── Variables runtime ──
+  crow.tamed:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "La corneille est apprivoisée"
+
+  crow.forcedSit:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Assise forcée par commande du propriétaire"
+
+  crow.flyProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation vol (0-5)"
+
+  crow.attackProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation attaque (0-5)"
+
+  crow.sitProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation assis (0-5)"
+
+  crow.timeFlying:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Temps passé à voler (ticks)"
+
+  crow.heldItemTime:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Temps avec un item en main (pour mangeage auto)"
+
+  crow.fleePumpkinFlag:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Flag de fuite des citrouilles (0=normal, >0=fuit)"
+
+  crow.seedThrowerID:
+    type: STRING
+    default: "NONE"
+    persistent: false
+    desc: "UUID du joueur qui a lancé les graines (pour taming)"
+
+  crow.owner:
+    type: STRING
+    default: "NONE"
+    persistent: true
+    desc: "UUID du propriétaire (tamed)"

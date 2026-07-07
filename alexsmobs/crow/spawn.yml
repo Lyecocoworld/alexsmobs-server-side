@@ -1,0 +1,27 @@
+# ════════════════════════════════════════════════════════════════
+# CROW — Spawn Configuration
+# Source: canCrowSpawn() + AMConfig
+# ════════════════════════════════════════════════════════════════
+
+crow_spawner:
+  Type: crow
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    # Biome: plaines, forêts, villages
+    - biome{b=PLAINS,SUNFLOWER_PLAINS,FOREST,FLOWER_FOREST,
+        BIRCH_FOREST,DARK_FOREST,OLD_GROWTH_BIRCH_FOREST,
+        MEADOW,TAG_HAS_VILLAGE}
+    # Hauteur: en l'air ou au sol
+    - height{h=60to150}
+    # Luminosité: jour (crow spawn de jour)
+    - lightlevel{l=7to15}
+    # Monde
+    - worldtype{wt=OVERWORLD}
+    # Block below
+    - blocktype{m=GRASS_BLOCK,DIRT,PODZOL,STONE,COARSE_DIRT,
+        FARMLAND,HAY_BLOCK,COMPOSTER} @origin
+    # Distance joueur
+    - playerdistance{d=>24}

@@ -1,0 +1,173 @@
+# ════════════════════════════════════════════════════════════════
+# RACCOON — Variables persistantes
+# ─────────────────────────────────────────────────────────────────
+# Source: SynchedEntityData + champs privés (EntityRaccoon.java)
+# Toutes les variables sont stockées sur l'entité MythicMobs.
+# Persistent: true dans mob.yml assure la sauvegarde NBT au restart.
+# ════════════════════════════════════════════════════════════════
+# Mapping SynchedEntityData → MythicMobs variable:
+#   STANDING (boolean)      → raccoon.standing
+#   SITTING (boolean)       → raccoon.sitting
+#   BEGGING (boolean)       → raccoon.begging
+#   WASHING (boolean)       → raccoon.washing
+#   CARPET_COLOR (int)      → raccoon.carpet_color
+#   COMMAND (int)           → raccoon.command
+#
+# Champs privés non-synched → variables:
+#   WASH_POS BlockPos       → raccoon.washPosX/Y/Z
+#   standProgress (float)   → raccoon.standProgress
+#   begProgress (float)     → raccoon.begProgress
+#   washProgress (float)    → raccoon.washProgress
+#   sitProgress (float)     → raccoon.sitProgress
+#   lookForWaterBeforeEatingTimer (int) → raccoon.lookForWaterTimer
+#   stealCooldown (int)     → raccoon.stealCooldown
+#   animTick (int)          → raccoon.animTick
+#   tamed (boolean)         → raccoon.tamed
+#   owner (UUID)            → raccoon.owner
+#   bondedBlueJay (boolean) → raccoon.bondedBlueJay
+# ════════════════════════════════════════════════════════════════
+
+variables:
+  # ── SynchedEntityData (booléens synchronisés client) ──
+  raccoon.standing:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Le raton est debout sur ses pattes arrière"
+
+  raccoon.sitting:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Le raton est assis"
+
+  raccoon.begging:
+    type: BOOLEAN
+    default: false
+    persistent: false
+    desc: "Le raton mendie de la nourriture auprès du joueur"
+
+  raccoon.washing:
+    type: BOOLEAN
+    default: false
+    persistent: false
+    desc: "Le raton lave sa nourriture dans l'eau"
+
+  raccoon.tamed:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Le raton est apprivoisé"
+
+  raccoon.bondedBlueJay:
+    type: BOOLEAN
+    default: false
+    persistent: false
+    desc: "Le raton est lié à un BlueJay (bondWithBlueJays)"
+
+  # ── SynchedEntityData (entiers synchronisés) ──
+  raccoon.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: "Commande actuelle: 0=wander, 1=follow, 2=sit"
+
+  raccoon.carpet_color:
+    type: INTEGER
+    default: -1
+    persistent: true
+    desc: "Couleur du tapis équipé (-1 = pas de tapis, comme llama)"
+
+  # ── WASH_POS (BlockPos de lavage) ──
+  raccoon.washPosX:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Position X du point d'eau où le raton lave sa nourriture"
+
+  raccoon.washPosZ:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Position Z du point d'eau où le raton lave sa nourriture"
+
+  raccoon.hasWashPos:
+    type: BOOLEAN
+    default: false
+    persistent: false
+    desc: "True si un WASH_POS valide a été trouvé"
+
+  # ── Champs runtime (float, progressions d'animation) ──
+  raccoon.standProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation debout (0-5, lerp pour BetterModel)"
+
+  raccoon.begProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation mendier (0-5, lerp pour BetterModel)"
+
+  raccoon.washProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation lavage (0-5, lerp pour BetterModel)"
+
+  raccoon.sitProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation assis (0-5, lerp pour BetterModel)"
+
+  # ── Timers (ticks) ──
+  raccoon.lookForWaterTimer:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Ticks restants pour chercher eau avant de manger (100 après pickup)"
+
+  raccoon.washTime:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Ticks écoulés depuis le début du lavage de l'item"
+
+  raccoon.stealCooldown:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: "Cooldown avant le prochain vol de villager (24k-72k ticks)"
+
+  raccoon.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick actuel de l'animation BetterModel en cours"
+
+  raccoon.standTime:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Combien de temps le raton est debout (auto-stand timeout)"
+
+  raccoon.begTime:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Combien de temps le raton mendie (auto-beg timeout)"
+
+  # ── Données de taming ──
+  raccoon.owner:
+    type: STRING
+    default: "NONE"
+    persistent: true
+    desc: "UUID du propriétaire (tamed)"
+
+  raccoon.eggThrowerID:
+    type: STRING
+    default: "NONE"
+    persistent: false
+    desc: "UUID du joueur qui a lancé l'œuf (pour taming)"

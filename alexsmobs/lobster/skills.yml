@@ -1,0 +1,156 @@
+# ════════════════════════════════════════════════════════════════
+# LOBSTER — Skills (MythicMobs 5.x)
+# ─────────────────────────────────────────────────────────────────
+# Syntaxe: conditions inline avec ? (true) / ! (false)
+#   - mechanic{params} @target ?condition{params} !condition{params}
+# ─────────────────────────────────────────────────────────────────
+# Source mapping (EntityLobster.java):
+#   tick()           → lobster_tick (orchestrator)
+#   mobInteract()    → lobster_on_interact (breeding)
+#   hurt()           → lobster_on_hurt
+#   doHurtTarget()   → lobster_on_attack (snip)
+#   MeleeAttackGoal  → lobster_melee_trigger
+#   defineSynchedData → lobster_init (CLAW_TYPE random)
+# ════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════
+# ORCHESTRATORS
+# ════════════════════════════════════════════════════════════════
+
+# Tick principal — toutes les 10 ticks via onTimer:10 dans mob.yml
+# Reproduit tick() du mod original (lignes ~200-250)
+lobster_tick:
+  Skills:
+    # ── Idle ambient sound (toutes les ~200-400 ticks) ──
+    - skill{s=lobster_idle_sound} @self
+      ?stance{s=idle}
+      ?random{chance=0.005}
+    # ── Animation tick counter (snip duration management) ──
+    - skill{s=lobster_anim_tick_advance} @self
+
+
+# ════════════════════════════════════════════════════════════════
+# INITIALIZATION
+# ════════════════════════════════════════════════════════════════
+
+# Au spawn — initialise CLAW_TYPE aléatoirement (0-3)
+# Reproduit defineSynchedData() + auSpawn (mod lignes 60-75)
+lobster_init:
+  Skills:
+    - setstance{stance=idle}
+    # CLAW_TYPE: 4 variantes de pinces (0-3), défini au spawn, persistant
+    - randomskill{
+        s=lobster_claw_0,lobster_claw_1,lobster_claw_2,lobster_claw_3
+      } @self
+
+
+# ── CLAW_TYPE variants (mod: CLAW_TYPE 0-3) ──
+lobster_claw_0:
+  Skills:
+    - setvariable{var=lobster.clawType;value=0;type=INTEGER}
+    - setmodelstate{state=claw_0}
+
+lobster_claw_1:
+  Skills:
+    - setvariable{var=lobster.clawType;value=1;type=INTEGER}
+    - setmodelstate{state=claw_1}
+
+lobster_claw_2:
+  Skills:
+    - setvariable{var=lobster.clawType;value=2;type=INTEGER}
+    - setmodelstate{state=claw_2}
+
+lobster_claw_3:
+  Skills:
+    - setvariable{var=lobster.clawType;value=3;type=INTEGER}
+    - setmodelstate{state=claw_3}
+
+
+# ════════════════════════════════════════════════════════════════
+# ATTACK: SNIP ANIMATION (mod lignes 150-180)
+# ════════════════════════════════════════════════════════════════
+
+# MeleeAttackGoal: déclenche l'animation SNIP (~12 ticks)
+lobster_melee_trigger:
+  Skills:
+    - skill{s=lobster_set_snip} @self
+
+# Définit l'animation snip
+lobster_set_snip:
+  Skills:
+    - setstance{stance=snipping}
+    - setmodelstate{state=snip}
+    - setvariable{var=lobster.animTick;value=0;type=INTEGER}
+
+# Animation tick counter — gère la durée de l'animation snip (12 ticks)
+lobster_anim_tick_advance:
+  Skills:
+    - setvariable{var=lobster.animTick;value=<math.(lobster.animTick + 1)>;type=INTEGER}
+      ?!stance{s=idle}
+    # Retour à idle quand l'animation snip est terminée (12 ticks)
+    - skill{s=lobster_anim_end} @self
+      ?variable{var=lobster.animTick;value=>12}
+      ?stance{s=snipping}
+
+lobster_anim_end:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+    - setvariable{var=lobster.animTick;value=0;type=INTEGER}
+
+
+# ════════════════════════════════════════════════════════════════
+# HURT / ATTACK CALLBACKS (mod lignes 100-130)
+# ════════════════════════════════════════════════════════════════
+
+lobster_on_hurt:
+  Skills:
+    - sound{s=alexsmobs:entity.lobster.hurt;v=1.0;p=0.8-1.2} @self
+
+lobster_on_attack:
+  Skills:
+    # Le damage (1) est appliqué par MeleeAttackGoal, ici on joue juste
+    # le son du snip et les particules
+    - sound{s=alexsmobs:entity.lobster.snip;v=1.0;p=0.9-1.1} @self
+    - effect:particle{p=CRIT;a=2;hs=0.3;vs=0.3;speed=0.05} @origin
+
+
+# ════════════════════════════════════════════════════════════════
+# IDLE SOUND (ambient)
+# ════════════════════════════════════════════════════════════════
+
+lobster_idle_sound:
+  Skills:
+    - sound{s=alexsmobs:entity.lobster.idle;v=0.8;p=0.8-1.2} @self
+
+
+# ════════════════════════════════════════════════════════════════
+# INTERACTION: BREEDING (mod mobInteract lignes 250-280)
+# ════════════════════════════════════════════════════════════════
+
+# Le lobster se reproduit avec tropical_fish (item) ou seaweed (Alex's Mobs)
+# MythicMobs BreedGoal gère la reproduction — on intercepte le clic pour
+# déclencher le "in love" si l'item tenu est un item de reproduction.
+lobster_on_interact:
+  Skills:
+    # Tropical fish item → breed
+    - skill{s=lobster_breed_item} @self
+      ?hasitem{m=TROPICAL_FISH;q=1;slot=HAND}
+    # Seaweed (Alex's Mobs custom item) → breed
+    - skill{s=lobster_breed_item} @self
+      ?hasitem{m=alexsmobs:seaweed;q=1;slot=HAND}
+
+lobster_breed_item:
+  Skills:
+    - takeitem{m=*;slot=HAND;qty=1} @self
+    - effect:particle{p=HEART;a=3;hs=0.3;vs=0.3} @origin
+    - sound{s=entity.generic.eat;v=1.0;p=0.8-1.2} @self
+
+
+# ════════════════════════════════════════════════════════════════
+# DEATH
+# ════════════════════════════════════════════════════════════════
+
+lobster_death:
+  Skills:
+    - sound{s=alexsmobs:entity.lobster.death;v=1.0;p=0.8-1.2} @self

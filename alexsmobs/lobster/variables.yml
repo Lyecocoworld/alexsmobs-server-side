@@ -1,0 +1,28 @@
+# ════════════════════════════════════════════════════════════════
+# LOBSTER — Variables persistantes
+# ─────────────────────────────────────────────────────────────────
+# Source: SynchedEntityData + champs privés (EntityLobster.java)
+# Toutes les variables sont stockées sur l'entité MythicMobs.
+# Persistent: true dans mob.yml assure la sauvegarde NBT au restart.
+# ════════════════════════════════════════════════════════════════
+# Mapping SynchedEntityData → MythicMobs variable:
+#   CLAW_TYPE (int 0-3)   → lobster.clawType
+#
+# Champs runtime (animation):
+#   animTick (int)         → lobster.animTick
+# ════════════════════════════════════════════════════════════════
+
+variables:
+  # ── SynchedEntityData (entier synchronisé client) ──
+  lobster.clawType:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: "Type de pinces (0-3), 4 variantes visuelles, défini au spawn"
+
+  # ── Champs runtime (animation) ──
+  lobster.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick actuel de l'animation SNIP en cours (max 12 ticks)"

@@ -1,0 +1,30 @@
+# ════════════════════════════════════════════════════════════════
+# CROW — Sons
+# Source: AMSoundRegistry (CROW_IDLE, CROW_HURT)
+# ════════════════════════════════════════════════════════════════
+
+sounds:
+  alexsmobs:entity.crow.idle:
+    sound: "alexsmobs:crow/idle1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.crow.hurt:
+    sound: "alexsmobs:crow/hurt1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.crow.death:
+    sound: "alexsmobs:crow/hurt1"
+    volume: 1.0
+    pitch_min: 0.7
+    pitch_max: 1.0
+
+  alexsmobs:entity.crow.attack:
+    sound: "alexsmobs:crow/attack1"
+    volume: 0.8
+    pitch_min: 0.9
+    pitch_max: 1.1

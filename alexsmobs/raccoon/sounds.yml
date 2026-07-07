@@ -1,0 +1,47 @@
+# ════════════════════════════════════════════════════════════════
+# RACCOON — Sons
+# ─────────────────────────────────────────────────────────────────
+# Source: AMSoundRegistry (RACCOON_IDLE, RACCOON_HURT)
+# Death = hurt sound (pas de son de mort séparé dans le mod)
+# Fichiers son: assets/alexsmobs/sounds/raccoon/
+# ─────────────────────────────────────────────────────────────────
+# Les sons sont référencés dans le resource pack généré par
+# BetterModel + CraftEngine. MythicMobs les joue via sound{}
+# ════════════════════════════════════════════════════════════════
+
+# Registry des sons (chemin resource pack)
+sounds:
+  # Sons principaux (2 variantes: idle, hurt — death = hurt)
+  alexsmobs:entity.raccoon.idle:
+    sound: "alexsmobs:raccoon/idle1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    # Le mod joue l'ambient toutes les ~150-300 ticks
+    interval_ticks: 150-300
+
+  alexsmobs:entity.raccoon.hurt:
+    sound: "alexsmobs:raccoon/hurt1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  # Death utilise le même son que hurt (mod: death = hurt)
+  alexsmobs:entity.raccoon.death:
+    sound: "alexsmobs:raccoon/hurt1"
+    volume: 1.0
+    pitch_min: 0.7
+    pitch_max: 1.0
+
+  # Son d'attaque (ANIMATION_ATTACK)
+  alexsmobs:entity.raccoon.attack:
+    sound: "alexsmobs:raccoon/attack1"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+# Mapping pour MythicMobs (références dans skills.yml)
+# Format: sound{s=<sound_id>;v=<volume>;p=<pitch>} @self
+#
+# Exemple d'utilisation dans skills.yml:
+#   - sound{s=alexsmobs:entity.raccoon.idle;v=1.0;p=0.8-1.2} @self

@@ -1,0 +1,37 @@
+# ════════════════════════════════════════════════════════════════
+# LOBSTER — Spawn Configuration
+# ─────────────────────────────────────────────────────────────────
+# Source: AMEntityRegistry + AMConfig (biome tags, spawn rolls)
+# Biomes: BEACH, OCEAN (shallow), RIVER
+# Height: 40-70 (eaux peu profondes)
+# Light: 0-15 (toutes luminosités)
+# ════════════════════════════════════════════════════════════════
+
+lobster_spawner:
+  Type: lobster
+  SpawnRate: 4                       # ticks entre checks (Folia-safe, region-local)
+  MaxMobs: 4                         # max par spawner
+  CheckTime: true                    # vérifier le temps de jeu
+  CheckDistance: 64                  # distance de check des joueurs
+  Conditions:
+    # ── Biome ──
+    # Plages, océans peu profonds, rivières (mod: AMTagRegistry spawn biomes)
+    - biome{b=BEACH,SNOWY_BEACH,STONY_SHORE,
+        OCEAN,LUKEWARM_OCEAN,WARM_OCEAN,COLD_OCEAN,FROZEN_OCEAN,
+        RIVER,FROZEN_RIVER}
+    # ── Hauteur ──
+    # Eaux peu profondes: Y 40-70
+    - height{h=40to70}
+    # ── Luminosité ──
+    # Toutes luminosités (creatures aquatiques pas sensibles)
+    - lightlevel{l=0to15}
+    # ── Monde ──
+    - worldtype{wt=OVERWORLD}
+    # ── Block sous le spawner ──
+    # Sable, gravier, terre (fonds marins) ou surface de plage
+    - blocktype{m=SAND,RED_SAND,GRAVEL,DIRT,CLAY,MUD,GRASS_BLOCK,
+        STONE,COBBLESTONE} @origin
+    # ── Pas trop près d'un joueur ──
+    - playerdistance{d=>24}
+    # ── Surface: sur sable/eau (plages et fonds marins) ──
+    - onblock{m=SAND,GRAVEL,DIRT,WATER,SEAGRASS,KELP} @origin

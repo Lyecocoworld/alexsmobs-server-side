@@ -1,0 +1,84 @@
+# ════════════════════════════════════════════════════════════════
+# LOBSTER — AI Goals & Target Selectors
+# ─────────────────────────────────────────────────────────────────
+# Source: registerGoals() (EntityLobster.java lignes 80-100)
+# ════════════════════════════════════════════════════════════════
+#
+# AI GOALS du mod original (goalSelector):
+#   0: FloatGoal                    → flotte dans l'eau
+#   1: PanicGoal (2.0D)             → panique si baby ou on fire
+#   2: MeleeAttackGoal (1.0D)       → attaque melee (déclenche snip)
+#   3: BottomFeederAIWander         → nage au fond de l'eau
+#   4: AnimalAILeaveWater           → sort de l'eau si asphyxie (impossible normalement)
+#   5: BreedGoal                    → reproduction (tropical_fish / seaweed)
+#   6: FollowParentGoal             → suit le parent (baby)
+#   7: RandomSwimGoal               → nage aléatoire
+#   8: LookAtPlayerGoal             → regarde le joueur
+#   9: RandomLookAroundGoal         → regard aléatoire
+#
+# TARGET SELECTORS du mod original (targetSelector):
+#   1: HurtByTargetGoal             → attaque celui qui le blesse (self-defense)
+#   2: ResetUniversalAngerTargetGoal→ reset anger
+# ════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════
+# AI GOALS (comportement)
+# ════════════════════════════════════════════════════════════════
+
+lobster_ai:
+  Goals:
+    # 0 — Survie: flotter dans l'eau
+    - float{p=0}
+
+    # 1 — Panique (baby ou on fire) — speed 2.0D
+    - panic{p=1;speed=2.0}
+      ?baby{}
+    - panic{p=1;speed=2.0}
+      ?isonfire{}
+
+    # 2 — Attaque melee (déclenche l'animation snip via skill)
+    - melee{p=2;speed=1.0;memory=true}
+
+    # 3 — BottomFeederAIWander: nage au fond de l'eau
+    # Reproduit via randomswim avec condition in-water
+    - randomswim{p=3;speed=0.8}
+      ?inwater{}
+
+    # 4 — AnimalAILeaveWater: sort de l'eau si asphyxie
+    # Le lobster est waterbreather donc ne s'asphyxie jamais normalement.
+    # Ce goal est un safety net — reproduit via randomstroll hors eau.
+    - randomstroll{p=4;speed=0.8}
+      ?!inwater{}
+
+    # 5 — Reproduction (tropical_fish ou seaweed)
+    - breed{p=5;speed=1.0}
+
+    # 6 — Suivre le parent (baby)
+    - followparent{p=6;speed=1.1}
+      ?baby{}
+
+    # 7 — Nage aléatoire (locomotion générale aquatique)
+    - randomswim{p=7;speed=0.6}
+
+    # 8 — Regarder le joueur / regard aléatoire
+    - lookatplayer{p=8;range=6}
+    - randomlookaround{p=9}
+
+
+# ════════════════════════════════════════════════════════════════
+# TARGET SELECTORS (cibles)
+# ════════════════════════════════════════════════════════════════
+
+lobster_targets:
+  TargetSelectors:
+    # Vider les selectors vanilla de tropical_fish
+    - clear
+
+    # 1 — Attaque celui qui le blesse (HurtByTarget, self-defense)
+    - hurtbytarget{}
+
+    # 2 — Threat Table: ceux qui l'ont attaqué
+    - attackers
+
+    # 3 — Reset universal anger (mod ligne 100)
+    - resetanger{}

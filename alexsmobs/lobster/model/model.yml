@@ -1,0 +1,117 @@
+# ════════════════════════════════════════════════════════════════
+# LOBSTER — BetterModel Configuration
+# ─────────────────────────────────────────────────────────────────
+# Source: lobster.bbmodel (Blockbench) + Citadel animation system
+# Le mod utilise 1 animation Citadel:
+#   ANIMATION_SNIP  (12 ticks) — attaque avec les pinces
+#
+# Variantes de pinces (mod EntityLobster.java: CLAW_TYPE 0-3):
+#   claw_0: texture pinces standard
+#   claw_1: texture pinces variante 1
+#   claw_2: texture pinces variante 2
+#   claw_3: texture pinces variante 3
+# ════════════════════════════════════════════════════════════════
+
+model:
+  bettermodel_id: "alexsmobs:lobster"
+  type: "tropical_fish"             # Vanilla entity base (hitbox/behavior)
+  hitbox:
+    width: 0.6                      # Lobster petit (mod: ~0.6)
+    height: 0.4
+
+  # ── Modèle Blockbench ──
+  # Le fichier .bbmodel original d'Alex's Mobs est utilisé directement.
+  # Il est converti au format BetterModel via le plugin.
+  blockbench_model: "assets/alexsmobs/blockbench/lobster.bbmodel"
+
+  # ── Textures ──
+  # 4 variantes de pinces (CLAW_TYPE 0-3)
+  textures:
+    claw_0:
+      path: "assets/alexsmobs/textures/entity/lobster/lobster0.png"
+    claw_1:
+      path: "assets/alexsmobs/textures/entity/lobster/lobster1.png"
+    claw_2:
+      path: "assets/alexsmobs/textures/entity/lobster/lobster2.png"
+    claw_3:
+      path: "assets/alexsmobs/textures/entity/lobster/lobster3.png"
+
+  # ── Animations ──
+  # Mapping nom interne → animation Blockbench
+  animations:
+    # Animations locomotion (continues)
+    idle:   "animation.lobster.idle"
+    walk:   "animation.lobster.walk"
+    swim:   "animation.lobster.swim"
+
+    # Animation d'attaque (déclenchée par setmodelstate)
+    snip:   "animation.lobster.snip"     # 12 ticks
+
+    # Animation de mort
+    death:  "animation.lobster.death"
+
+  # ── Mapping MythicMobs stance → BetterModel state ──
+  # Quand MythicMobs appelle setmodelstate{state=X}, BetterModel joue
+  # l'animation correspondante et change la texture si applicable.
+  animation_state_mapping:
+    # States principaux (locomotion)
+    idle:   { "animation": "idle", "texture": "claw_0", "loop": true }
+    walk:   { "animation": "walk", "texture": "claw_0", "loop": true }
+    swim:   { "animation": "swim", "texture": "claw_0", "loop": true }
+
+    # States CLAW_TYPE (4 variantes visuelles de pinces)
+    claw_0: { "animation": "idle", "texture": "claw_0", "loop": true }
+    claw_1: { "animation": "idle", "texture": "claw_1", "loop": true }
+    claw_2: { "animation": "idle", "texture": "claw_2", "loop": true }
+    claw_3: { "animation": "idle", "texture": "claw_3", "loop": true }
+
+    # State d'attaque (one-shot, durée fixe)
+    snipping: { "animation": "snip", "texture": "claw_0", "loop": false, "duration": 12 }
+
+    # State mort
+    death: { "animation": "death", "texture": "claw_0", "loop": false, "duration": 15 }
+
+  # ── Variantes dynamiques ──
+  # La texture change selon la variable lobster.clawType, sans changer l'animation.
+  variants:
+    # CLAW_TYPE 0
+    claw_0:
+      texture: claw_0
+      condition:
+        mythicmobs_variable: "lobster.clawType"
+        value: 0
+
+    # CLAW_TYPE 1
+    claw_1:
+      texture: claw_1
+      condition:
+        mythicmobs_variable: "lobster.clawType"
+        value: 1
+
+    # CLAW_TYPE 2
+    claw_2:
+      texture: claw_2
+      condition:
+        mythicmobs_variable: "lobster.clawType"
+        value: 2
+
+    # CLAW_TYPE 3
+    claw_3:
+      texture: claw_3
+      condition:
+        mythicmobs_variable: "lobster.clawType"
+        value: 3
+
+  # ── Échelle ──
+  scale:
+    adult: 1.0                       # Échelle normale pour adulte
+    baby: 0.5                        # Mod: baby = 0.5
+
+  # ── Sounds ──
+  # Les sons sont gérés par MythicMobs (skills.yml), pas BetterModel.
+  # Ce mapping est documentaire uniquement.
+  sounds:
+    ambient: "alexsmobs:entity.lobster.idle"
+    hurt:    "alexsmobs:entity.lobster.hurt"
+    death:   "alexsmobs:entity.lobster.death"
+    snip:    "alexsmobs:entity.lobster.snip"
