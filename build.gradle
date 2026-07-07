@@ -45,8 +45,12 @@ jar {
     from('data') {
         into('data')
     }
+    // Worldgen datapacks: Larion (terrain) + Nature's Spirit (biomes)
     from('worldgen_datapack') {
-        into('worldgen_datapack')
+        into('worldgen_datapack/natures_spirit')
+    }
+    from('larion_worldgen_datapack') {
+        into('worldgen_datapack/larion')
     }
 }
 
