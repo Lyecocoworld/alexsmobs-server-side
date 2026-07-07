@@ -1,0 +1,8 @@
+# SUNBIRD — Variables
+
+variables:
+  sunbird.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

@@ -1,0 +1,42 @@
+# ===============================================================
+# FROSTSTALKER (Alex's Mobs)
+# HP=20 DMG=4 SPD=0.3
+#===============================================================
+froststalker:
+  Type: stray
+  Display: '&fFroststalker'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 20
+  Damage: 4
+  MovementSpeed: 0.3
+  Faction: creature_froststalker
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - froststalker_ai
+  AITargetSelectors:
+    - clear
+    - froststalker_targets
+  Drops:
+    - froststalker_drops
+  Skills:
+    - onTimer:10
+    - skill:froststalker_tick @self
+    - onSpawn:
+      - skill:froststalker_init @self
+    - onDeath:
+      - skill:froststalker_death @self
+    - onDamaged:
+      - skill:froststalker_on_hurt @self

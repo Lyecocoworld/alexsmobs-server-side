@@ -1,0 +1,42 @@
+# ===============================================================
+# SUNBIRD (Alex's Mobs)
+# HP=30 DMG=0 SPD=0.3
+#===============================================================
+sunbird:
+  Type: parrot
+  Display: '&fSunbird'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 30
+  Damage: 0
+  MovementSpeed: 0.3
+  Faction: creature_sunbird
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - sunbird_ai
+  AITargetSelectors:
+    - clear
+    - sunbird_targets
+  Drops:
+    - sunbird_drops
+  Skills:
+    - onTimer:10
+    - skill:sunbird_tick @self
+    - onSpawn:
+      - skill:sunbird_init @self
+    - onDeath:
+      - skill:sunbird_death @self
+    - onDamaged:
+      - skill:sunbird_on_hurt @self

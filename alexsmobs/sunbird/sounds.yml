@@ -1,0 +1,22 @@
+# SUNBIRD — Sons
+
+sounds:
+  alexsmobs:entity.sunbird.idle:
+    sound: "alexsmobs:sunbird/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.sunbird.hurt:
+    sound: "alexsmobs:sunbird/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.sunbird.die:
+    sound: "alexsmobs:sunbird/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

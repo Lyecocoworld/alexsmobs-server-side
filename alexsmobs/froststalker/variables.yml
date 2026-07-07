@@ -1,0 +1,8 @@
+# FROSTSTALKER — Variables
+
+variables:
+  froststalker.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"
