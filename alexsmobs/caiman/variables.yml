@@ -1,0 +1,51 @@
+# CAIMAN — Variables
+
+variables:
+  caiman.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: ""
+
+  caiman.sitting:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  caiman.bellowing:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  caiman.heldMobId:
+    type: INTEGER
+    default: -1
+    persistent: false
+    desc: ""
+
+  caiman.hasEgg:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  caiman.tamed:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  caiman.forcedSit:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  caiman.owner:
+    type: STRING
+    default: NONE
+    persistent: true
+    desc: ""
+

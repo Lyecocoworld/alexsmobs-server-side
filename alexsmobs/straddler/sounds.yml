@@ -1,0 +1,22 @@
+# STRADDLER — Sons
+
+sounds:
+  alexsmobs:entity.straddler.idle:
+    sound: "alexsmobs:straddler/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.straddler.hurt:
+    sound: "alexsmobs:straddler/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.straddler.die:
+    sound: "alexsmobs:straddler/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

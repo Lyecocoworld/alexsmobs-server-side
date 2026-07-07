@@ -1,0 +1,8 @@
+# FARSEER — Variables
+
+variables:
+  farseer.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

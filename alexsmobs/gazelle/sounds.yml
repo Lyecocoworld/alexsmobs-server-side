@@ -1,0 +1,22 @@
+# GAZELLE — Sons
+
+sounds:
+  alexsmobs:entity.gazelle.idle:
+    sound: "alexsmobs:gazelle/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.gazelle.hurt:
+    sound: "alexsmobs:gazelle/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.gazelle.die:
+    sound: "alexsmobs:gazelle/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

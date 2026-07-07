@@ -1,0 +1,19 @@
+# TERRAPIN — Skills
+
+terrapin_tick:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+terrapin_init:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+
+terrapin_on_hurt:
+  Skills: []
+
+terrapin_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.terrapin.die;v=1.0;p=0.8-1.2} @self

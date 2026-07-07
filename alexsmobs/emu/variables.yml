@@ -1,0 +1,21 @@
+# EMU — Variables
+
+variables:
+  emu.variant:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  emu.dodgeCooldown:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  emu.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+

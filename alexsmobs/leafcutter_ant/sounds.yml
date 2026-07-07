@@ -1,0 +1,22 @@
+# LEAFCUTTER ANT — Sons
+
+sounds:
+  alexsmobs:entity.leafcutter_ant.idle:
+    sound: "alexsmobs:leafcutter_ant/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.leafcutter_ant.hurt:
+    sound: "alexsmobs:leafcutter_ant/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.leafcutter_ant.die:
+    sound: "alexsmobs:leafcutter_ant/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

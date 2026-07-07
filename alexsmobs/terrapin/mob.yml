@@ -1,0 +1,42 @@
+#===============================================================
+# TERRAPIN (Alex's Mobs)
+# HP=8 DMG=1 SPD=0.15
+#===============================================================
+terrapin:
+  Type: turtle
+  Display: '&fTerrapin'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 8
+  Damage: 1
+  MovementSpeed: 0.15
+  Faction: creature_terrapin
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - terrapin_ai
+  AITargetSelectors:
+    - clear
+    - terrapin_targets
+  Drops:
+    - terrapin_drops
+  Skills:
+    - onTimer:10
+    - skill:terrapin_tick @self
+    - onSpawn:
+      - skill:terrapin_init @self
+    - onDeath:
+      - skill:terrapin_death @self
+    - onDamaged:
+      - skill:terrapin_on_hurt @self

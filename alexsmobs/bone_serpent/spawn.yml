@@ -1,0 +1,15 @@
+# BONE SERPENT — Spawn
+
+bone_serpent_spawner:
+  Type: bone_serpent
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SOUL_SAND_VALLEY,NETHER_WASTES,BASALT_DELTAS}
+    - height{h=0to127}
+    - lightlevel{l=0to15}
+    - worldtype{wt=NETHER}
+    - blocktype{m=LAVA,NETHERRACK,SOUL_SAND,SOUL_SOIL,BASALT} @origin
+    - playerdistance{d=>24}

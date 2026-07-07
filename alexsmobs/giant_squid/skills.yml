@@ -1,0 +1,34 @@
+# ===============================================================
+# GIANT SQUID — Skills
+# ===============================================================
+
+giant_squid_tick:
+  Skills:
+    - skill{s=giant_squid_idle_check} @self
+
+giant_squid_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=giant_squid.squidPitch;value=0.0;type=FLOAT}
+    - setvariable{var=giant_squid.depressurization;value=0.0;type=FLOAT}
+    - setvariable{var=giant_squid.overridingBodyRot;value=False;type=BOOLEAN}
+    - setvariable{var=giant_squid.grabbing;value=False;type=BOOLEAN}
+    - setvariable{var=giant_squid.captured;value=False;type=BOOLEAN}
+    - setvariable{var=giant_squid.blue;value=False;type=BOOLEAN}
+    - setvariable{var=giant_squid.grabEntity;value=-1;type=INTEGER}
+    - setmodelstate{state=idle}
+
+giant_squid_idle_check:
+  Skills:
+    - setvariable{var=giant_squid.blue;value=<random.0to3>;type=INTEGER}
+      ?variable{var=giant_squid.blue;value=-1}
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+giant_squid_on_hurt:
+  Skills:
+
+giant_squid_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.giant_squid.die;v=1.0;p=0.8-1.2} @self

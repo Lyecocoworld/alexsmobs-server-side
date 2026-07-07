@@ -1,0 +1,15 @@
+# TASMANIAN DEVIL — Spawn
+
+tasmanian_devil_spawner:
+  Type: tasmanian_devil
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=FOREST,FLOWER_FOREST,DARK_FOREST,BIRCH_FOREST,TAIGA}
+    - height{h=60to150}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=GRASS_BLOCK,DIRT,PODZOL,COARSE_DIRT} @origin
+    - playerdistance{d=>24}

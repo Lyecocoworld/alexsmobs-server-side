@@ -1,0 +1,22 @@
+# MURMUR — Sons
+
+sounds:
+  alexsmobs:entity.murmur.idle:
+    sound: "alexsmobs:murmur/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.murmur.hurt:
+    sound: "alexsmobs:murmur/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.murmur.die:
+    sound: "alexsmobs:murmur/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

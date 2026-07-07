@@ -1,0 +1,42 @@
+#===============================================================
+# CATFISH (Alex's Mobs)
+# HP=14 DMG=2 SPD=0.15
+#===============================================================
+catfish:
+  Type: cod
+  Display: '&fCatfish'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 14
+  Damage: 2
+  MovementSpeed: 0.15
+  Faction: creature_catfish
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - catfish_ai
+  AITargetSelectors:
+    - clear
+    - catfish_targets
+  Drops:
+    - catfish_drops
+  Skills:
+    - onTimer:10
+    - skill:catfish_tick @self
+    - onSpawn:
+      - skill:catfish_init @self
+    - onDeath:
+      - skill:catfish_death @self
+    - onDamaged:
+      - skill:catfish_on_hurt @self

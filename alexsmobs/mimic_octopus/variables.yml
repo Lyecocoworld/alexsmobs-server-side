@@ -1,0 +1,8 @@
+# MIMIC OCTOPUS — Variables
+
+variables:
+  mimic_octopus.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

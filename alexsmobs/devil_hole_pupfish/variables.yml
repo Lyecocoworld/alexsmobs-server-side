@@ -1,0 +1,8 @@
+# DEVILS HOLE PUPFISH — Variables
+
+variables:
+  devil_hole_pupfish.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

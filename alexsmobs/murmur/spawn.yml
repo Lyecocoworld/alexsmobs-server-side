@@ -1,0 +1,15 @@
+# MURMUR — Spawn
+
+murmur_spawner:
+  Type: murmur
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=DEEP_DARK}
+    - height{h=-64to0}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=SCULK,DEEPSLATE} @origin
+    - playerdistance{d=>24}

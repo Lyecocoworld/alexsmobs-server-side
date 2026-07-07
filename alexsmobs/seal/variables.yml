@@ -1,0 +1,8 @@
+# SEAL — Variables
+
+variables:
+  seal.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

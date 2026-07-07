@@ -1,0 +1,19 @@
+# TOUCAN — Skills
+
+toucan_tick:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+toucan_init:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+
+toucan_on_hurt:
+  Skills: []
+
+toucan_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.toucan.die;v=1.0;p=0.8-1.2} @self

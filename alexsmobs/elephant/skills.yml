@@ -1,0 +1,30 @@
+# ELEPHANT — Skills
+
+elephant_tick:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+elephant_init:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+
+elephant_on_hurt:
+  Skills:
+    - setvariable{var=elephant.forcedSit;value=false;type=BOOLEAN}
+
+elephant_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.elephant.die;v=1.0;p=0.8-1.2} @self
+
+elephant_on_interact:
+  Skills:
+    - skill{s=elephant_command_cycle} @self
+      ?playersneaking{}
+
+elephant_command_cycle:
+  Skills:
+    - setvariable{var=elephant.command;value=0;type=INTEGER}
+    - setmodelstate{state=idle}

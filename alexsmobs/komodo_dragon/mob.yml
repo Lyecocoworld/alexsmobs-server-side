@@ -1,0 +1,46 @@
+# ===============================================================
+# KOMODO DRAGON (Alex's Mobs)
+# Classification: C2 (tamable)
+# HP=30 DMG=4 SPD=0.23
+# ===============================================================
+komodo_dragon:
+  Type: salamander
+  Display: '&fKomodo Dragon'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 30
+  Damage: 4
+  MovementSpeed: 0.23
+  KnockbackResistance: 0.2
+  Faction: creature_komodo_dragon
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - komodo_dragon_ai
+  AITargetSelectors:
+    - clear
+    - komodo_dragon_targets
+  Drops:
+    - komodo_dragon_drops
+  Skills:
+    - onTimer:10
+    - skill:komodo_dragon_tick @self
+    - onSpawn:
+      - skill:komodo_dragon_init @self
+    - onDeath:
+      - skill:komodo_dragon_death @self
+    - onDamaged:
+      - skill:komodo_dragon_on_hurt @self
+    - onInteract:
+      - skill:komodo_dragon_on_interact @self

@@ -1,0 +1,75 @@
+# MANTIS SHRIMP — Variables
+
+variables:
+  mantis_shrimp.rightEyePitch:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: ""
+
+  mantis_shrimp.rightEyeYaw:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: ""
+
+  mantis_shrimp.leftEyePitch:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: ""
+
+  mantis_shrimp.leftEyeYaw:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: ""
+
+  mantis_shrimp.punchTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  mantis_shrimp.sitting:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  mantis_shrimp.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: ""
+
+  mantis_shrimp.variant:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  mantis_shrimp.moistness:
+    type: INTEGER
+    default: 100
+    persistent: false
+    desc: ""
+
+  mantis_shrimp.tamed:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  mantis_shrimp.forcedSit:
+    type: BOOLEAN
+    default: False
+    persistent: true
+    desc: ""
+
+  mantis_shrimp.owner:
+    type: STRING
+    default: NONE
+    persistent: true
+    desc: ""
+

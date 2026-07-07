@@ -1,0 +1,8 @@
+# BANANA SLUG — Variables
+
+variables:
+  banana_slug.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

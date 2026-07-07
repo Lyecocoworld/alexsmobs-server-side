@@ -1,0 +1,17 @@
+# COSMAW — AI
+
+cosmaw_ai:
+  Goals:
+    - float{p=0}
+    - panic{p=1;speed=2.0}
+    - breed{p=3;speed=1.0}
+    - followparent{p=4;speed=1.0}
+    - randomstroll{p=5;speed=0.5}
+    - lookatplayer{p=6;range=6}
+    - randomlookaround{p=6}
+
+cosmaw_targets:
+  TargetSelectors:
+    - clear
+    - hurtbytarget{}
+    - attackers

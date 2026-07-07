@@ -1,0 +1,22 @@
+# COCKROACH — Sons
+
+sounds:
+  alexsmobs:entity.cockroach.idle:
+    sound: "alexsmobs:cockroach/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.cockroach.hurt:
+    sound: "alexsmobs:cockroach/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.cockroach.die:
+    sound: "alexsmobs:cockroach/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

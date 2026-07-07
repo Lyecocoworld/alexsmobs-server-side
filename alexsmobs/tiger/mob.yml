@@ -1,0 +1,43 @@
+# ===============================================================
+# TIGER (Alex's Mobs)
+# Classification: C1
+# HP=50 DMG=12 SPD=0.25
+# ===============================================================
+tiger:
+  Type: ocelot
+  Display: '&fTiger'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 50
+  Damage: 12
+  MovementSpeed: 0.25
+  Faction: creature_tiger
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - tiger_ai
+  AITargetSelectors:
+    - clear
+    - tiger_targets
+  Drops:
+    - tiger_drops
+  Skills:
+    - onTimer:10
+    - skill:tiger_tick @self
+    - onSpawn:
+      - skill:tiger_init @self
+    - onDeath:
+      - skill:tiger_death @self
+    - onDamaged:
+      - skill:tiger_on_hurt @self

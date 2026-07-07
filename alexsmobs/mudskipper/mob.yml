@@ -1,0 +1,42 @@
+#===============================================================
+# MUDSKIPPER (Alex's Mobs)
+# HP=6 DMG=1 SPD=0.1
+#===============================================================
+mudskipper:
+  Type: cod
+  Display: '&fMudskipper'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 6
+  Damage: 1
+  MovementSpeed: 0.1
+  Faction: creature_mudskipper
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - mudskipper_ai
+  AITargetSelectors:
+    - clear
+    - mudskipper_targets
+  Drops:
+    - mudskipper_drops
+  Skills:
+    - onTimer:10
+    - skill:mudskipper_tick @self
+    - onSpawn:
+      - skill:mudskipper_init @self
+    - onDeath:
+      - skill:mudskipper_death @self
+    - onDamaged:
+      - skill:mudskipper_on_hurt @self

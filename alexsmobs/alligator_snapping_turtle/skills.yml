@@ -1,0 +1,19 @@
+# ALLIGATOR SNAPPING TURTLE — Skills
+
+alligator_snapping_turtle_tick:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+alligator_snapping_turtle_init:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+
+alligator_snapping_turtle_on_hurt:
+  Skills: []
+
+alligator_snapping_turtle_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.alligator_snapping_turtle.die;v=1.0;p=0.8-1.2} @self

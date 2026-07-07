@@ -1,0 +1,42 @@
+#===============================================================
+# BUNFUNGUS (Alex's Mobs)
+# HP=14 DMG=2 SPD=0.2
+#===============================================================
+bunfungus:
+  Type: rabbit
+  Display: '&fBunfungus'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 14
+  Damage: 2
+  MovementSpeed: 0.2
+  Faction: creature_bunfungus
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - bunfungus_ai
+  AITargetSelectors:
+    - clear
+    - bunfungus_targets
+  Drops:
+    - bunfungus_drops
+  Skills:
+    - onTimer:10
+    - skill:bunfungus_tick @self
+    - onSpawn:
+      - skill:bunfungus_init @self
+    - onDeath:
+      - skill:bunfungus_death @self
+    - onDamaged:
+      - skill:bunfungus_on_hurt @self

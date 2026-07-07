@@ -1,0 +1,19 @@
+# ════════════════════════════════════════════════════════════════
+# RATTLESNAKE — Drops
+# ─────────────────────────────────────────────────────────────────
+# Source: loot table Alex's Mobs (data/alexsmobs/loot_tables/entities/rattlesnake.json)
+# Drops principaux: reptile hide, serpent flesh
+# ════════════════════════════════════════════════════════════════
+
+rattlesnake_drops:
+  Conditions:
+    - playerkill{}                    # Seulement si tué par un joueur
+  Drops:
+    # RATTLESNAKE_SKIN — drop custom (proxy: rabbit_hide)
+    - RABBIT_HIDE 0-1 0.4
+
+    # ROTTEN_FLESH — drop secondaire (serpent flesh)
+    - ROTTEN_FLESH 0-1 0.3
+
+    # Expérience
+    - exp{amount=1-3} 1.0

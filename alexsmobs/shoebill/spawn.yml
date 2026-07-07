@@ -1,0 +1,15 @@
+# SHOEBILL — Spawn
+
+shoebill_spawner:
+  Type: shoebill
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SWAMP,MANGROVE_SWAMP,RIVER}
+    - height{h=50to100}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=GRASS_BLOCK,WATER,MUD,CLAY} @origin
+    - playerdistance{d=>24}

@@ -1,0 +1,21 @@
+# STRADDLER — Variables
+
+variables:
+  straddler.stradpoleCount:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  straddler.launchCooldown:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  straddler.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+

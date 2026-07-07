@@ -1,0 +1,15 @@
+# COSMIC COD — Spawn
+
+cosmic_cod_spawner:
+  Type: cosmic_cod
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=THE_END,END_BARRENS,END_HIGHLANDS,END_MIDLANDS,SMALL_END_ISLANDS}
+    - height{h=0to100}
+    - lightlevel{l=0to15}
+    - worldtype{wt=END}
+    - blocktype{m=END_STONE,WATER} @origin
+    - playerdistance{d=>24}

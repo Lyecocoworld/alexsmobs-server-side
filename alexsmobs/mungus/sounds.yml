@@ -1,0 +1,22 @@
+# MUNGUS — Sons
+
+sounds:
+  alexsmobs:entity.mungus.idle:
+    sound: "alexsmobs:mungus/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.mungus.hurt:
+    sound: "alexsmobs:mungus/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.mungus.die:
+    sound: "alexsmobs:mungus/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

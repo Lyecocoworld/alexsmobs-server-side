@@ -1,0 +1,15 @@
+# KOMODO DRAGON — Spawn
+
+komodo_dragon_spawner:
+  Type: komodo_dragon
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SAVANNA,SAVANNA_PLATEAU,BADLANDS,DESERT}
+    - height{h=60to150}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=GRASS_BLOCK,DIRT,COARSE_DIRT,SAND,RED_SAND} @origin
+    - playerdistance{d=>24}

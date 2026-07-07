@@ -1,0 +1,42 @@
+#===============================================================
+# SUGAR GLIDER (Alex's Mobs)
+# HP=4 DMG=0 SPD=0.25
+#===============================================================
+sugar_glider:
+  Type: parrot
+  Display: '&fSugar Glider'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 4
+  Damage: 0
+  MovementSpeed: 0.25
+  Faction: creature_sugar_glider
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - sugar_glider_ai
+  AITargetSelectors:
+    - clear
+    - sugar_glider_targets
+  Drops:
+    - sugar_glider_drops
+  Skills:
+    - onTimer:10
+    - skill:sugar_glider_tick @self
+    - onSpawn:
+      - skill:sugar_glider_init @self
+    - onDeath:
+      - skill:sugar_glider_death @self
+    - onDamaged:
+      - skill:sugar_glider_on_hurt @self

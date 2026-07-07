@@ -1,0 +1,8 @@
+# WARPED TOAD — Drops
+
+warped_toad_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:warped_muscle 1 0.2
+    - exp{amount=1-3} 1.0

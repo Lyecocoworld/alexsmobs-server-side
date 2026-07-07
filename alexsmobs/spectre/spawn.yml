@@ -1,0 +1,15 @@
+# SPECTRE — Spawn
+
+spectre_spawner:
+  Type: spectre
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=THE_END,END_BARRENS,END_HIGHLANDS}
+    - height{h=0to150}
+    - lightlevel{l=0to15}
+    - worldtype{wt=END}
+    - blocktype{m=END_STONE,AIR} @origin
+    - playerdistance{d=>24}

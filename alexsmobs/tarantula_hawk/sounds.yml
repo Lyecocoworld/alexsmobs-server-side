@@ -1,0 +1,22 @@
+# TARANTULA HAWK — Sons
+
+sounds:
+  alexsmobs:entity.tarantula_hawk.idle:
+    sound: "alexsmobs:tarantula_hawk/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.tarantula_hawk.hurt:
+    sound: "alexsmobs:tarantula_hawk/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.tarantula_hawk.die:
+    sound: "alexsmobs:tarantula_hawk/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

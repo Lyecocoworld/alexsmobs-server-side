@@ -1,0 +1,22 @@
+# MIMICUBE — Sons
+
+sounds:
+  alexsmobs:entity.mimicube.idle:
+    sound: "alexsmobs:mimicube/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.mimicube.hurt:
+    sound: "alexsmobs:mimicube/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.mimicube.die:
+    sound: "alexsmobs:mimicube/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

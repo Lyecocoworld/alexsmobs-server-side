@@ -1,0 +1,32 @@
+# ELEPHANT — Variables
+
+variables:
+  elephant.tamed:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Apprivoise"
+
+  elephant.forcedSit:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Assis force"
+
+  elephant.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: "Commande"
+
+  elephant.owner:
+    type: STRING
+    default: "NONE"
+    persistent: true
+    desc: "UUID proprietaire"
+
+  elephant.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

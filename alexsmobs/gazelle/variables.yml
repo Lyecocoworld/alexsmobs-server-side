@@ -1,0 +1,8 @@
+# GAZELLE — Variables
+
+variables:
+  gazelle.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

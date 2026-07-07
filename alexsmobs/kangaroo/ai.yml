@@ -1,0 +1,35 @@
+# ════════════════════════════════════════════════════════════════
+# KANGAROO — AI
+# Source: registerGoals() lignes (EntityKangaroo.java)
+# ════════════════════════════════════════════════════════════════
+
+kangaroo_ai:
+  Goals:
+    - float{p=0}
+    # Follow owner (tamed, command=1)
+    - followowner{p=1;speed=1.0;stop_distance=5;start_distance=2}
+      ?variable{var=kangaroo.tamed;value=true}
+      ?variable{var=kangaroo.command;value=1}
+    # Melee (boxing)
+    - melee{p=2;speed=1.0;memory=true}
+      ?variable{var=kangaroo.sitting;value=false}
+    # Breed
+    - breed{p=3;speed=1.0}
+    # Follow parent (baby)
+    - followparent{p=4;speed=1.1}
+      ?baby{}
+    # Idle
+    - randomstroll{p=5;speed=0.6}
+      ?variable{var=kangaroo.sitting;value=false}
+    - lookatplayer{p=6;range=6}
+    - randomlookaround{p=6}
+
+kangaroo_targets:
+  TargetSelectors:
+    - clear
+    - ownerhurtbytarget{}
+      ?variable{var=kangaroo.tamed;value=true}
+    - ownerhurttarget{}
+      ?variable{var=kangaroo.tamed;value=true}
+    - hurtbytarget{}
+    - attackers

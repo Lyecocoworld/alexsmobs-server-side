@@ -1,0 +1,8 @@
+# ROCKY ROLLER — Variables
+
+variables:
+  rocky_roller.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

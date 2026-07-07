@@ -1,0 +1,15 @@
+# COMB JELLY — Spawn
+
+comb_jelly_spawner:
+  Type: comb_jelly
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=DEEP_OCEAN,DEEP_COLD_OCEAN,OCEAN}
+    - height{h=0to40}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=WATER,GRAVEL,SAND} @origin
+    - playerdistance{d=>24}

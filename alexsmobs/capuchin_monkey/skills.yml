@@ -1,0 +1,93 @@
+# ===============================================================
+# CAPUCHIN MONKEY — Skills
+# ===============================================================
+
+capuchin_monkey_tick:
+  Skills:
+    - skill{s=capuchin_monkey_idle_check} @self
+
+capuchin_monkey_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=capuchin_monkey.dart;value=False;type=BOOLEAN}
+    - setvariable{var=capuchin_monkey.sitting;value=False;type=BOOLEAN}
+    - setvariable{var=capuchin_monkey.command;value=0;type=INTEGER}
+    - setvariable{var=capuchin_monkey.variant;value=0;type=INTEGER}
+    - setvariable{var=capuchin_monkey.dartTarget;value=-1;type=INTEGER}
+    - setvariable{var=capuchin_monkey.tamed;value=False;type=BOOLEAN}
+    - setvariable{var=capuchin_monkey.forcedSit;value=False;type=BOOLEAN}
+    - setvariable{var=capuchin_monkey.owner;value=NONE;type=STRING}
+    - setvariable{var=capuchin_monkey.animTick;value=0;type=INTEGER}
+    - setmodelstate{state=idle}
+
+capuchin_monkey_throw:
+  Skills:
+    - setstance{stance=throw}
+    - setmodelstate{state=throw}
+    - setvariable{var=capuchin_monkey.animTick;value=0;type=INTEGER}
+    - damage{amount=2} @target
+    - sound{s=alexsmobs:entity.capuchin_monkey.throw;v=1.0;p=0.9-1.1} @self
+
+capuchin_monkey_headtilt:
+  Skills:
+    - setstance{stance=headtilt}
+    - setmodelstate{state=headtilt}
+    - setvariable{var=capuchin_monkey.animTick;value=0;type=INTEGER}
+    - damage{amount=2} @target
+    - sound{s=alexsmobs:entity.capuchin_monkey.headtilt;v=1.0;p=0.9-1.1} @self
+
+capuchin_monkey_scratch:
+  Skills:
+    - setstance{stance=scratch}
+    - setmodelstate{state=scratch}
+    - setvariable{var=capuchin_monkey.animTick;value=0;type=INTEGER}
+    - damage{amount=2} @target
+    - sound{s=alexsmobs:entity.capuchin_monkey.scratch;v=1.0;p=0.9-1.1} @self
+
+capuchin_monkey_idle_check:
+  Skills:
+    - setvariable{var=capuchin_monkey.variant;value=<random.0to3>;type=INTEGER}
+      ?variable{var=capuchin_monkey.variant;value=-1}
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+capuchin_monkey_on_hurt:
+  Skills:
+    - setvariable{var=capuchin_monkey.forcedSit;value=false;type=BOOLEAN}
+
+capuchin_monkey_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.capuchin_monkey.die;v=1.0;p=0.8-1.2} @self
+
+capuchin_monkey_on_interact:
+  Skills:
+    - skill{s=capuchin_monkey_command_cycle} @self
+      ?variable{var=capuchin_monkey.tamed;value=true}
+      ?playersneaking{}
+
+capuchin_monkey_command_cycle:
+  Skills:
+    - skill{s=capuchin_monkey_command_sit} @self
+      ?variable{var=capuchin_monkey.command;value=1}
+    - skill{s=capuchin_monkey_command_follow} @self
+      ?variable{var=capuchin_monkey.command;value=0}
+    - skill{s=capuchin_monkey_command_wander} @self
+      ?variable{var=capuchin_monkey.command;value=2}
+
+capuchin_monkey_command_wander:
+  Skills:
+    - setvariable{var=capuchin_monkey.command;value=0;type=INTEGER}
+    - setvariable{var=capuchin_monkey.forcedSit;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+capuchin_monkey_command_follow:
+  Skills:
+    - setvariable{var=capuchin_monkey.command;value=1;type=INTEGER}
+    - setvariable{var=capuchin_monkey.forcedSit;value=false;type=BOOLEAN}
+
+capuchin_monkey_command_sit:
+  Skills:
+    - setvariable{var=capuchin_monkey.command;value=2;type=INTEGER}
+    - setvariable{var=capuchin_monkey.forcedSit;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}

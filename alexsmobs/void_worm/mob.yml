@@ -1,0 +1,42 @@
+# ===============================================================
+# VOID WORM (Alex's Mobs)
+# HP=250 DMG=5 SPD=0.3
+# ===============================================================
+void_worm:
+  Type: ender_dragon
+  Display: '&fVoid Worm'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 250
+  Damage: 5
+  MovementSpeed: 0.3
+  Faction: creature_void_worm
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - void_worm_ai
+  AITargetSelectors:
+    - clear
+    - void_worm_targets
+  Drops:
+    - void_worm_drops
+  Skills:
+    - onTimer:10
+    - skill:void_worm_tick @self
+    - onSpawn:
+      - skill:void_worm_init @self
+    - onDeath:
+      - skill:void_worm_death @self
+    - onDamaged:
+      - skill:void_worm_on_hurt @self

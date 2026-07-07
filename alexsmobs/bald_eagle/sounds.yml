@@ -1,0 +1,28 @@
+# BALD EAGLE — Sons
+
+sounds:
+  alexsmobs:entity.bald_eagle.idle:
+    sound: "alexsmobs:bald_eagle/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.bald_eagle.hurt:
+    sound: "alexsmobs:bald_eagle/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.bald_eagle.die:
+    sound: "alexsmobs:bald_eagle/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.bald_eagle.attack:
+    sound: "alexsmobs:bald_eagle/attack"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

@@ -1,0 +1,29 @@
+# MUNGUS — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:mungus"
+  type: "cow"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/mungus.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/mungus.png"
+  animations:
+    idle: "animation.mungus.idle"
+    walk: "animation.mungus.walk"
+    run: "animation.mungus.run"
+    sit: "animation.mungus.sit"
+    death: "animation.mungus.death"
+
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": true}
+
+  scale:
+    adult: 1.0
+    baby: 0.5

@@ -1,0 +1,33 @@
+# MUNGUS — Variables
+
+variables:
+  mungus.altOrderMushrooms:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  mungus.reverting:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+
+  mungus.mushroomCount:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  mungus.sackSwell:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: ""
+
+  mungus.explosionDisabled:
+    type: BOOLEAN
+    default: False
+    persistent: false
+    desc: ""
+

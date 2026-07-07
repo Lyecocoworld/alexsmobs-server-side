@@ -1,0 +1,38 @@
+# ════════════════════════════════════════════════════════════════
+# RATTLESNAKE — Spawn Configuration
+# ─────────────────────────────────────────────────────────────────
+# Source: AMEntityRegistry + AMConfig (biome tags, spawn rolls)
+# Biomes: DESERT (chaud), badlands, savane sèche
+# Height: 60-120 (surface désertique)
+# Light: 7-15 (évite le noir total, spawn de jour)
+# ════════════════════════════════════════════════════════════════
+
+rattlesnake_spawner:
+  Type: rattlesnake
+  SpawnRate: 4                       # ticks entre checks (Folia-safe, region-local)
+  MaxMobs: 3                         # max par spawner
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    # ── Biome ──
+    # Déserts chauds, badlands (mod: AMTagRegistry spawn biomes)
+    - biome{b=DESERT,BADLANDS,ERODED_BADLANDS,
+        WOODED_BADLANDS,SAVANNA,SAVANNA_PLATEAU,
+        WINDSWEPT_SAVANNA}
+    # ── Hauteur ──
+    # Surface désertique: Y 60-120
+    - height{h=60to120}
+    # ── Luminosité ──
+    # Pas dans le noir total (serpent diurne/vespéral)
+    - lightlevel{l=7to15}
+    # ── Monde ──
+    - worldtype{wt=OVERWORLD}
+    # ── Block sous le spawner ──
+    # Sable, red sand, terre durcie (désert)
+    - blocktype{m=SAND,RED_SAND,TERRACOTTA,DIRT,
+        STONE,SANDSTONE,RED_SANDSTONE} @origin
+    # ── Pas trop près d'un joueur ──
+    - playerdistance{d=>24}
+    # ── Surface: sur sable/terre (désert) ──
+    - onblock{m=SAND,RED_SAND,SANDSTONE,RED_SANDSTONE,
+        TERRACOTTA,STONE,AIR} @origin

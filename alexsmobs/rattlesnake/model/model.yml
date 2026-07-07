@@ -1,0 +1,76 @@
+# ════════════════════════════════════════════════════════════════
+# RATTLESNAKE — BetterModel Configuration
+# ─────────────────────────────────────────────────────────────────
+# Source: rattlesnake.bbmodel (Blockbench) + Citadel animation system
+# Le mod utilise 1 animation Citadel:
+#   ANIMATION_BITE  (20 ticks) — morsure venimeuse
+#
+# States visuels (mod EntityRattlesnake.java):
+#   RATTLING (bool): secoue la queue
+#   CURLED (bool): enroulé au sol
+# ════════════════════════════════════════════════════════════════
+
+model:
+  bettermodel_id: "alexsmobs:rattlesnake"
+  type: "silverfish"                # Vanilla entity base (hitbox/behavior)
+  hitbox:
+    width: 0.7                      # Serpent long et fin
+    height: 0.3
+
+  # ── Modèle Blockbench ──
+  blockbench_model: "assets/alexsmobs/blockbench/rattlesnake.bbmodel"
+
+  # ── Textures ──
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/rattlesnake/rattlesnake.png"
+
+  # ── Animations ──
+  animations:
+    # Animations locomotion (continues)
+    idle:   "animation.rattlesnake.idle"
+    walk:   "animation.rattlesnake.slither"
+    swim:   "animation.rattlesnake.swim"
+
+    # Animation d'attaque (déclenchée par setmodelstate)
+    bite:   "animation.rattlesnake.bite"     # 20 ticks
+
+    # State curled (enroulé au repos)
+    curled: "animation.rattlesnake.curled"
+
+    # State rattling (secoue la queue)
+    rattling: "animation.rattlesnake.rattle"
+
+    # Animation de mort
+    death:  "animation.rattlesnake.death"
+
+  # ── Mapping MythicMobs stance → BetterModel state (quoted flow mappings) ──
+  animation_state_mapping:
+    idle:     { "animation": "idle", "texture": "normal", "loop": true }
+    walk:     { "animation": "walk", "texture": "normal", "loop": true }
+    swim:     { "animation": "swim", "texture": "normal", "loop": true }
+    curled:   { "animation": "curled", "texture": "normal", "loop": true }
+    rattling: { "animation": "rattling", "texture": "normal", "loop": true }
+    biting:   { "animation": "bite", "texture": "normal", "loop": false, "duration": 20 }
+    death:    { "animation": "death", "texture": "normal", "loop": false, "duration": 15 }
+
+  # ── Variantes ──
+  variants:
+    normal:
+      texture: normal
+      condition:
+        mythicmobs_variable: "rattlesnake.curled"
+        value: true
+
+  # ── Échelle ──
+  scale:
+    adult: 1.0
+    baby: 0.5
+
+  # ── Sounds (documentaire — gérés par MythicMobs) ──
+  sounds:
+    ambient: "alexsmobs:entity.rattlesnake.idle"
+    hurt:    "alexsmobs:entity.rattlesnake.hurt"
+    death:   "alexsmobs:entity.rattlesnake.death"
+    rattle:  "alexsmobs:entity.rattlesnake.rattle"
+    bite:    "alexsmobs:entity.rattlesnake.bite"

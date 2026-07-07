@@ -1,0 +1,101 @@
+# ===============================================================
+# GORILLA — Skills
+# ===============================================================
+
+gorilla_tick:
+  Skills:
+    - skill{s=gorilla_idle_check} @self
+
+gorilla_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=gorilla.silverback;value=False;type=BOOLEAN}
+    - setvariable{var=gorilla.standing;value=False;type=BOOLEAN}
+    - setvariable{var=gorilla.sitting;value=False;type=BOOLEAN}
+    - setvariable{var=gorilla.eating;value=False;type=BOOLEAN}
+    - setvariable{var=gorilla.tamed;value=False;type=BOOLEAN}
+    - setvariable{var=gorilla.forcedSit;value=False;type=BOOLEAN}
+    - setvariable{var=gorilla.command;value=0;type=INTEGER}
+    - setvariable{var=gorilla.animTick;value=0;type=INTEGER}
+    - setvariable{var=gorilla.owner;value=NONE;type=STRING}
+    - setmodelstate{state=idle}
+
+gorilla_breakblock_r:
+  Skills:
+    - setstance{stance=breakblock_r}
+    - setmodelstate{state=breakblock_r}
+    - setvariable{var=gorilla.animTick;value=0;type=INTEGER}
+    - damage{amount=7} @target
+    - sound{s=alexsmobs:entity.gorilla.breakblock_r;v=1.0;p=0.9-1.1} @self
+
+gorilla_breakblock_l:
+  Skills:
+    - setstance{stance=breakblock_l}
+    - setmodelstate{state=breakblock_l}
+    - setvariable{var=gorilla.animTick;value=0;type=INTEGER}
+    - damage{amount=7} @target
+    - sound{s=alexsmobs:entity.gorilla.breakblock_l;v=1.0;p=0.9-1.1} @self
+
+gorilla_poundchest:
+  Skills:
+    - setstance{stance=poundchest}
+    - setmodelstate{state=poundchest}
+    - setvariable{var=gorilla.animTick;value=0;type=INTEGER}
+    - damage{amount=7} @target
+    - sound{s=alexsmobs:entity.gorilla.poundchest;v=1.0;p=0.9-1.1} @self
+
+gorilla_attack:
+  Skills:
+    - setstance{stance=attack}
+    - setmodelstate{state=attack}
+    - setvariable{var=gorilla.animTick;value=0;type=INTEGER}
+    - damage{amount=7} @target
+    - sound{s=alexsmobs:entity.gorilla.attack;v=1.0;p=0.9-1.1} @self
+
+gorilla_idle_check:
+  Skills:
+    - setvariable{var=gorilla.silverback;value=<random.0to3>;type=INTEGER}
+      ?variable{var=gorilla.silverback;value=-1}
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+gorilla_on_hurt:
+  Skills:
+    - setvariable{var=gorilla.forcedSit;value=false;type=BOOLEAN}
+
+gorilla_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.gorilla.die;v=1.0;p=0.8-1.2} @self
+
+gorilla_on_interact:
+  Skills:
+    - skill{s=gorilla_command_cycle} @self
+      ?variable{var=gorilla.tamed;value=true}
+      ?playersneaking{}
+
+gorilla_command_cycle:
+  Skills:
+    - skill{s=gorilla_command_sit} @self
+      ?variable{var=gorilla.command;value=1}
+    - skill{s=gorilla_command_follow} @self
+      ?variable{var=gorilla.command;value=0}
+    - skill{s=gorilla_command_wander} @self
+      ?variable{var=gorilla.command;value=2}
+
+gorilla_command_wander:
+  Skills:
+    - setvariable{var=gorilla.command;value=0;type=INTEGER}
+    - setvariable{var=gorilla.forcedSit;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+gorilla_command_follow:
+  Skills:
+    - setvariable{var=gorilla.command;value=1;type=INTEGER}
+    - setvariable{var=gorilla.forcedSit;value=false;type=BOOLEAN}
+
+gorilla_command_sit:
+  Skills:
+    - setvariable{var=gorilla.command;value=2;type=INTEGER}
+    - setvariable{var=gorilla.forcedSit;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}

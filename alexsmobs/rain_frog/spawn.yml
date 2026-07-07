@@ -1,0 +1,15 @@
+# RAIN FROG — Spawn
+
+rain_frog_spawner:
+  Type: rain_frog
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SWAMP,MANGROVE_SWAMP,JUNGLE,SPARSE_JUNGLE}
+    - height{h=60to100}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=GRASS_BLOCK,DIRT,MUD,MOSS_BLOCK} @origin
+    - playerdistance{d=>24}

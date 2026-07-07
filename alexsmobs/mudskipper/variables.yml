@@ -1,0 +1,8 @@
+# MUDSKIPPER — Variables
+
+variables:
+  mudskipper.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

@@ -1,0 +1,15 @@
+# BANANA SLUG — Spawn
+
+banana_slug_spawner:
+  Type: banana_slug
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=JUNGLE,SPARSE_JUNGLE,BAMBOO_JUNGLE,SWAMP,MANGROVE_SWAMP}
+    - height{h=60to100}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=GRASS_BLOCK,DIRT,PODZOL,MOSS_BLOCK,MUD} @origin
+    - playerdistance{d=>24}

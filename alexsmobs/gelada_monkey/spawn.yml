@@ -1,0 +1,15 @@
+# GELADA MONKEY — Spawn
+
+gelada_monkey_spawner:
+  Type: gelada_monkey
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SAVANNA,SAVANNA_PLATEAU,WINDSWEPT_SAVANNA,MEADOW}
+    - height{h=60to150}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=GRASS_BLOCK,DIRT,COARSE_DIRT,STONE} @origin
+    - playerdistance{d=>24}

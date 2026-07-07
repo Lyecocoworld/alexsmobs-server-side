@@ -1,0 +1,42 @@
+#===============================================================
+# ROCKY ROLLER (Alex's Mobs)
+# HP=10 DMG=1 SPD=0.25
+#===============================================================
+rocky_roller:
+  Type: armadillo
+  Display: '&fRocky Roller'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 10
+  Damage: 1
+  MovementSpeed: 0.25
+  Faction: creature_rocky_roller
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - rocky_roller_ai
+  AITargetSelectors:
+    - clear
+    - rocky_roller_targets
+  Drops:
+    - rocky_roller_drops
+  Skills:
+    - onTimer:10
+    - skill:rocky_roller_tick @self
+    - onSpawn:
+      - skill:rocky_roller_init @self
+    - onDeath:
+      - skill:rocky_roller_death @self
+    - onDamaged:
+      - skill:rocky_roller_on_hurt @self

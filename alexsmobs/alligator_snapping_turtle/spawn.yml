@@ -1,0 +1,15 @@
+# ALLIGATOR SNAPPING TURTLE — Spawn
+
+alligator_snapping_turtle_spawner:
+  Type: alligator_snapping_turtle
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SWAMP,MANGROVE_SWAMP,RIVER}
+    - height{h=50to80}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=WATER,MUD,SAND,CLAY,GRASS_BLOCK} @origin
+    - playerdistance{d=>24}

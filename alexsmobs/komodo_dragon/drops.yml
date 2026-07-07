@@ -1,0 +1,8 @@
+# KOMODO DRAGON — Drops
+
+komodo_dragon_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:komodo_dragon_pelt 1 0.2
+    - exp{amount=1-3} 1.0

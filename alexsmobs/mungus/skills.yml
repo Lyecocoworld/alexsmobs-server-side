@@ -1,0 +1,30 @@
+# ===============================================================
+# MUNGUS — Skills
+# ===============================================================
+
+mungus_tick:
+  Skills:
+    - skill{s=mungus_idle_check} @self
+
+mungus_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=mungus.altOrderMushrooms;value=False;type=BOOLEAN}
+    - setvariable{var=mungus.reverting;value=False;type=BOOLEAN}
+    - setvariable{var=mungus.mushroomCount;value=0;type=INTEGER}
+    - setvariable{var=mungus.sackSwell;value=0;type=INTEGER}
+    - setvariable{var=mungus.explosionDisabled;value=False;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+mungus_idle_check:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+mungus_on_hurt:
+  Skills:
+
+mungus_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.mungus.die;v=1.0;p=0.8-1.2} @self

@@ -1,0 +1,8 @@
+# FRILLED SHARK — Variables
+
+variables:
+  frilled_shark.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

@@ -1,0 +1,8 @@
+# ALLIGATOR SNAPPING TURTLE — Variables
+
+variables:
+  alligator_snapping_turtle.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

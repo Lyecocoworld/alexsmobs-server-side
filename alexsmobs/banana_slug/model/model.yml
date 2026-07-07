@@ -1,0 +1,27 @@
+# BANANA SLUG — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:banana_slug"
+  type: "silverfish"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/banana_slug.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/banana_slug.png"
+  animations:
+    idle: "animation.banana_slug.idle"
+    walk: "animation.banana_slug.walk"
+    run: "animation.banana_slug.run"
+    sit: "animation.banana_slug.sit"
+    death: "animation.banana_slug.death"
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": false, "duration": 20}
+  scale:
+    adult: 1.0
+    baby: 0.5

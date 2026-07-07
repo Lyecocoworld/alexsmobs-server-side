@@ -1,0 +1,42 @@
+#===============================================================
+# SKELEWAG (Alex's Mobs)
+# HP=18 DMG=3 SPD=0.3
+#===============================================================
+skelewag:
+  Type: skeleton
+  Display: '&fSkelewag'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 18
+  Damage: 3
+  MovementSpeed: 0.3
+  Faction: creature_skelewag
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - skelewag_ai
+  AITargetSelectors:
+    - clear
+    - skelewag_targets
+  Drops:
+    - skelewag_drops
+  Skills:
+    - onTimer:10
+    - skill:skelewag_tick @self
+    - onSpawn:
+      - skill:skelewag_init @self
+    - onDeath:
+      - skill:skelewag_death @self
+    - onDamaged:
+      - skill:skelewag_on_hurt @self

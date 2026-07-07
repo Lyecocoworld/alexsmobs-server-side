@@ -1,0 +1,8 @@
+# RAIN FROG — Variables
+
+variables:
+  rain_frog.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

@@ -1,0 +1,9 @@
+# CACHALOT WHALE — Drops
+
+cachalot_whale_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:cachalot_wax 1-3 0.4
+    - alexsmobs:ambergris 1 0.2
+    - exp{amount=1-3} 1.0

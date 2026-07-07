@@ -1,0 +1,15 @@
+# TRIOPS — Spawn
+
+triops_spawner:
+  Type: triops
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SAVANNA,SAVANNA_PLATEAU,DESERT,BADLANDS}
+    - height{h=60to100}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=WATER,GRASS_BLOCK,DIRT,SAND} @origin
+    - playerdistance{d=>24}

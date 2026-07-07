@@ -1,0 +1,15 @@
+# SOUL VULTURE — Spawn
+
+soul_vulture_spawner:
+  Type: soul_vulture
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SOUL_SAND_VALLEY,NETHER_WASTES}
+    - height{h=0to127}
+    - lightlevel{l=0to15}
+    - worldtype{wt=NETHER}
+    - blocktype{m=SOUL_SAND,SOUL_SOIL,NETHERRACK} @origin
+    - playerdistance{d=>24}

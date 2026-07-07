@@ -1,0 +1,8 @@
+# SOUL VULTURE — Variables
+
+variables:
+  soul_vulture.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

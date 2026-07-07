@@ -1,0 +1,22 @@
+# SEAL — Sons
+
+sounds:
+  alexsmobs:entity.seal.idle:
+    sound: "alexsmobs:seal/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.seal.hurt:
+    sound: "alexsmobs:seal/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.seal.die:
+    sound: "alexsmobs:seal/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

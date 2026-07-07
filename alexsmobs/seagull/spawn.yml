@@ -1,0 +1,15 @@
+# SEAGULL — Spawn
+
+seagull_spawner:
+  Type: seagull
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=BEACH,STONY_SHORE,RIVER,OCEAN}
+    - height{h=60to150}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=SAND,GRAVEL,WATER,GRASS_BLOCK} @origin
+    - playerdistance{d=>24}

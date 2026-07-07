@@ -1,0 +1,27 @@
+# DROP BEAR — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:drop_bear"
+  type: "zombie"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/drop_bear.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/drop_bear.png"
+  animations:
+    idle: "animation.drop_bear.idle"
+    walk: "animation.drop_bear.walk"
+    run: "animation.drop_bear.run"
+    sit: "animation.drop_bear.sit"
+    death: "animation.drop_bear.death"
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": false, "duration": 20}
+  scale:
+    adult: 1.0
+    baby: 0.5

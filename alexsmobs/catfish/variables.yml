@@ -1,0 +1,8 @@
+# CATFISH — Variables
+
+variables:
+  catfish.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

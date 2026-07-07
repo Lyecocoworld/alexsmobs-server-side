@@ -1,0 +1,82 @@
+# ════════════════════════════════════════════════════════════════
+# KANGAROO — Variables
+# ════════════════════════════════════════════════════════════════
+
+variables:
+  kangaroo.standing:
+    type: BOOLEAN
+    default: false
+    persistent: false
+    desc: "Le kangourou est debout sur ses pattes arrière"
+
+  kangaroo.sitting:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Le kangourou est assis"
+
+  kangaroo.forcedSit:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Assis forcé par commande"
+
+  kangaroo.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: "Commande: 0=wander, 1=follow, 2=sit"
+
+  kangaroo.visualFlag:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Flag visuel interne"
+
+  kangaroo.pouchTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Timer pouch (inventaire)"
+
+  kangaroo.tamed:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Le kangourou est apprivoisé"
+
+  kangaroo.saddled:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Le kangourou est sellé"
+
+  kangaroo.standProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation debout (0-5)"
+
+  kangaroo.sitProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation assis (0-5)"
+
+  kangaroo.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick d'animation courant"
+
+  kangaroo.animDuration:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Durée de l'animation en cours"
+
+  kangaroo.owner:
+    type: STRING
+    default: "NONE"
+    persistent: true
+    desc: "UUID du propriétaire"

@@ -1,0 +1,37 @@
+# TIGER — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:tiger"
+  type: "ocelot"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/tiger.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/tiger.png"
+  animations:
+    idle: "animation.tiger.idle"
+    walk: "animation.tiger.walk"
+    run: "animation.tiger.run"
+    sit: "animation.tiger.sit"
+    death: "animation.tiger.death"
+    paw_r: "animation.tiger.paw_r"
+    paw_l: "animation.tiger.paw_l"
+    tail_flick: "animation.tiger.tail_flick"
+    leap: "animation.tiger.leap"
+
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": true}
+    paw_r: {"animation": "paw_r", "texture": "normal", "loop": false, "duration": 15}
+    paw_l: {"animation": "paw_l", "texture": "normal", "loop": false, "duration": 15}
+    tail_flick: {"animation": "tail_flick", "texture": "normal", "loop": false, "duration": 45}
+    leap: {"animation": "leap", "texture": "normal", "loop": false, "duration": 20}
+
+  scale:
+    adult: 1.0
+    baby: 0.5

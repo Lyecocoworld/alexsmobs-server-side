@@ -1,0 +1,66 @@
+# ===============================================================
+# KOMODO DRAGON — Skills
+# ===============================================================
+
+komodo_dragon_tick:
+  Skills:
+    - skill{s=komodo_dragon_idle_check} @self
+
+komodo_dragon_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=komodo_dragon.command;value=0;type=INTEGER}
+    - setvariable{var=komodo_dragon.jostling;value=False;type=BOOLEAN}
+    - setvariable{var=komodo_dragon.jostleAngle;value=0.0;type=FLOAT}
+    - setvariable{var=komodo_dragon.saddled;value=False;type=BOOLEAN}
+    - setvariable{var=komodo_dragon.tamed;value=False;type=BOOLEAN}
+    - setvariable{var=komodo_dragon.forcedSit;value=False;type=BOOLEAN}
+    - setvariable{var=komodo_dragon.poisonCooldown;value=0;type=INTEGER}
+    - setvariable{var=komodo_dragon.owner;value=NONE;type=STRING}
+    - setmodelstate{state=idle}
+
+komodo_dragon_idle_check:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+komodo_dragon_on_hurt:
+  Skills:
+    - setvariable{var=komodo_dragon.forcedSit;value=false;type=BOOLEAN}
+
+komodo_dragon_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.komodo_dragon.die;v=1.0;p=0.8-1.2} @self
+
+komodo_dragon_on_interact:
+  Skills:
+    - skill{s=komodo_dragon_command_cycle} @self
+      ?variable{var=komodo_dragon.tamed;value=true}
+      ?playersneaking{}
+
+komodo_dragon_command_cycle:
+  Skills:
+    - skill{s=komodo_dragon_command_sit} @self
+      ?variable{var=komodo_dragon.command;value=1}
+    - skill{s=komodo_dragon_command_follow} @self
+      ?variable{var=komodo_dragon.command;value=0}
+    - skill{s=komodo_dragon_command_wander} @self
+      ?variable{var=komodo_dragon.command;value=2}
+
+komodo_dragon_command_wander:
+  Skills:
+    - setvariable{var=komodo_dragon.command;value=0;type=INTEGER}
+    - setvariable{var=komodo_dragon.forcedSit;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+komodo_dragon_command_follow:
+  Skills:
+    - setvariable{var=komodo_dragon.command;value=1;type=INTEGER}
+    - setvariable{var=komodo_dragon.forcedSit;value=false;type=BOOLEAN}
+
+komodo_dragon_command_sit:
+  Skills:
+    - setvariable{var=komodo_dragon.command;value=2;type=INTEGER}
+    - setvariable{var=komodo_dragon.forcedSit;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}

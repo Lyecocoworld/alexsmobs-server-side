@@ -1,0 +1,15 @@
+# FLY — Spawn
+
+fly_spawner:
+  Type: fly
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=CRIMSON_FOREST,NETHER_WASTES,WARPED_FOREST}
+    - height{h=0to127}
+    - lightlevel{l=0to15}
+    - worldtype{wt=NETHER}
+    - blocktype{m=CRIMSON_NYLIUM,NETHERRACK,WARPED_NYLIUM} @origin
+    - playerdistance{d=>24}

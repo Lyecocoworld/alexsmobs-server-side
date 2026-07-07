@@ -1,0 +1,7 @@
+# MURMUR — Drops
+
+murmur_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - exp{amount=1-3} 1.0

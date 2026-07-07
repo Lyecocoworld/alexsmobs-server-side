@@ -1,0 +1,8 @@
+# VOID WORM — Variables
+
+variables:
+  void_worm.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

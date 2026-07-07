@@ -1,0 +1,183 @@
+# ════════════════════════════════════════════════════════════════
+# CRIMSON MOSQUITO — Skills
+# Source: EntityCrimsonMosquito.java (874 lignes)
+# ════════════════════════════════════════════════════════════════
+
+crimson_mosquito_tick:
+  Skills:
+    # ── Scale lerp (MOSQUITO_SCALE) ──
+    - skill{s=crimson_mosquito_scale_lerp} @self
+    # ── Blood drain logic ──
+    - skill{s=crimson_mosquito_blood_check} @self
+    # ── Fly/walk state management ──
+    - skill{s=crimson_mosquito_flight_check} @self
+    # ── Shooting state ──
+    - skill{s=crimson_mosquito_shoot_check} @self
+      ?hastarget{}
+    # ── Luring laviathan ──
+    - skill{s=crimson_mosquito_lure_check} @self
+    # ── Fleeing entity ──
+    - skill{s=crimson_mosquito_flee_check} @self
+    # ── Sick state decay ──
+    - skill{s=crimson_mosquito_sick_check} @self
+      ?variable{var=crimson_mosquito.sick;value=true}
+
+crimson_mosquito_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=crimson_mosquito.flying;value=false;type=BOOLEAN}
+    - setvariable{var=crimson_mosquito.shooting;value=false;type=BOOLEAN}
+    - setvariable{var=crimson_mosquito.bloodLevel;value=0;type=INTEGER}
+    - setvariable{var=crimson_mosquito.shrinking;value=false;type=BOOLEAN}
+    - setvariable{var=crimson_mosquito.fromFly;value=false;type=BOOLEAN}
+    - setvariable{var=crimson_mosquito.scale;value=1.0;type=FLOAT}
+    - setvariable{var=crimson_mosquito.sick;value=false;type=BOOLEAN}
+    - setvariable{var=crimson_mosquito.luringLaviathan;value=0;type=INTEGER}
+    - setvariable{var=crimson_mosquito.fleeingEntity;value=0;type=INTEGER}
+    - setvariable{var=crimson_mosquito.shootCooldown;value=0;type=INTEGER}
+    - setmodelstate{state=idle}
+
+# ════════════════════════════════════════════════════════════════
+# SCALE LERP — shrink/grow animation
+# ════════════════════════════════════════════════════════════════
+
+crimson_mosquito_scale_lerp:
+  Skills:
+    # Si shrinking → scale vers 0
+    - setvariable{var=crimson_mosquito.scale;value=<math.(crimson_mosquito.scale - 0.05)>;type=FLOAT}
+      ?variable{var=crimson_mosquito.shrinking;value=true}
+      ?variable{var=crimson_mosquito.scale;value=>0.1}
+    # Si pas shrinking → scale vers 1.0
+    - setvariable{var=crimson_mosquito.scale;value=<math.(crimson_mosquito.scale + 0.05)>;type=FLOAT}
+      ?variable{var=crimson_mosquito.shrinking;value=false}
+      ?variable{var=crimson_mosquito.scale;value=<1.0}
+
+# ════════════════════════════════════════════════════════════════
+# BLOOD MECHANIC
+# ════════════════════════════════════════════════════════════════
+
+# Attaque suce le sang (mod: bloodLevel augmente à chaque attaque)
+crimson_mosquito_on_attack:
+  Skills:
+    - setvariable{var=crimson_mosquito.bloodLevel;value=<math.(crimson_mosquito.bloodLevel + 15)>;type=INTEGER}
+      ?variable{var=crimson_mosquito.bloodLevel;value=<100}
+    - heal{amount=2} @self
+      ?variable{var=crimson_mosquito.bloodLevel;value=>50}
+    - sound{s=alexsmobs:entity.crimson_mosquito.bite;v=1.0;p=0.8-1.2} @self
+
+# Quand le blood level atteint 100 → shooting mode
+crimson_mosquito_blood_check:
+  Skills:
+    # Si blood plein → mode shoot
+    - skill{s=crimson_mosquito_enter_shoot_mode} @self
+      ?variable{var=crimson_mosquito.bloodLevel;value=>99}
+      ?variable{var=crimson_mosquito.shooting;value=false}
+    # Decay blood level lentement
+    - setvariable{var=crimson_mosquito.bloodLevel;value=<math.(crimson_mosquito.bloodLevel - 1)>;type=INTEGER}
+      ?variable{var=crimson_mosquito.bloodLevel;value=>0}
+      ?random{chance=0.1}
+
+crimson_mosquito_enter_shoot_mode:
+  Skills:
+    - setvariable{var=crimson_mosquito.shooting;value=true;type=BOOLEAN}
+    - setmodelstate{state=shooting}
+    - sound{s=alexsmobs:entity.crimson_mosquito.charge;v=1.0;p=0.8-1.2} @self
+
+# ════════════════════════════════════════════════════════════════
+# SHOOTING — spit blood projectile
+# ═══段═══════════════════════════════════════════════════════════
+
+crimson_mosquito_shoot_check:
+  Skills:
+    - setvariable{var=crimson_mosquito.shootCooldown;value=<math.(crimson_mosquito.shootCooldown - 1)>;type=INTEGER}
+      ?variable{var=crimson_mosquito.shootCooldown;value=>0}
+    - skill{s=crimson_mosquito_spit_blood} @target
+      ?variable{var=crimson_mosquito.shooting;value=true}
+      ?variable{var=crimson_mosquito.shootCooldown;value=0}
+      ?variable{var=crimson_mosquito.bloodLevel;value=>20}
+
+crimson_mosquito_spit_blood:
+  Skills:
+    - projectile{projectile=DRAGON_FIREBALL;type=METEOR;v=2;h=false;mr=32;
+        onHitSkill=crimson_mosquito_spit_hit; ontickSkill=crimson_mosquito_spit_trail}
+    - setvariable{var=crimson_mosquito.shootCooldown;value=40;type=INTEGER}
+    - setvariable{var=crimson_mosquito.bloodLevel;value=<math.(crimson_mosquito.bloodLevel - 20)>;type=INTEGER}
+    - sound{s=alexsmobs:entity.crimson_mosquito.spit;v=1.0;p=0.9-1.1} @self
+    - effect:particle{p=CRIMSON_SPORE;a=5;hs=0.3;vs=0.3} @origin
+
+crimson_mosquito_spit_hit:
+  Skills:
+    - damage{amount=3}
+    - potion{t=POISON;d=100;l=1}
+    - effect:particle{p=CRIMSON_SPORE;a=10;hs=0.5;vs=0.5;speed=0.1} @origin
+
+crimson_mosquito_spit_trail:
+  Skills:
+    - effect:particle{p=CRIMSON_SPORE;a=2;hs=0.1;vs=0.1;speed=0.02} @origin
+
+# ════════════════════════════════════════════════════════════════
+# FLIGHT MANAGEMENT
+# ════════════════════════════════════════════════════════════════
+
+crimson_mosquito_flight_check:
+  Skills:
+    # Si a une cible → voler
+    - skill{s=crimson_mosquito_start_flying} @self
+      ?hastarget{}
+      ?variable{var=crimson_mosquito.flying;value=false}
+    # Si plus de cible → atterir après un délai
+    - skill{s=crimson_mosquito_stop_flying} @self
+      ?!hastarget{}
+      ?variable{var=crimson_mosquito.flying;value=true}
+      ?random{chance=0.01}
+
+crimson_mosquito_start_flying:
+  Skills:
+    - setvariable{var=crimson_mosquito.flying;value=true;type=BOOLEAN}
+    - setmodelstate{state=fly}
+
+crimson_mosquito_stop_flying:
+  Skills:
+    - setvariable{var=crimson_mosquito.flying;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+# ════════════════════════════════════════════════════════════════
+# LURE & FLEE
+# ════════════════════════════════════════════════════════════════
+
+crimson_mosquito_lure_check:
+  Skills:
+    # Attiré par les laviathans (region-local via EIR)
+    - setvariable{var=crimson_mosquito.luringLaviathan;value=60;type=INTEGER}
+      ?mobsinradius{m=laviathan;radius=32;amount=>0}
+
+crimson_mosquito_flee_check:
+  Skills:
+    - setvariable{var=crimson_mosquito.fleeingEntity;value=<math.(crimson_mosquito.fleeingEntity - 1)>;type=INTEGER}
+      ?variable{var=crimson_mosquito.fleeingEntity;value=>0}
+
+# ════════════════════════════════════════════════════════════════
+# SICK STATE — transformation from laviathan
+# ════════════════════════════════════════════════════════════════
+
+crimson_mosquito_sick_check:
+  Skills:
+    # Le mosquito sick est plus faible et vert
+    - effect:particle{p=SNEEZE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.05}
+
+# ════════════════════════════════════════════════════════════════
+# HURT / DEATH
+# ════════════════════════════════════════════════════════════════
+
+crimson_mosquito_on_hurt:
+  Skills:
+    - setvariable{var=crimson_mosquito.shrinking;value=true;type=BOOLEAN}
+      ?random{chance=0.3}
+
+crimson_mosquito_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.crimson_mosquito.die;v=1.0;p=0.8-1.2} @self
+    # Spawn 3 flies à la mort (mod behavior)
+    - summon{type=parrot;amount=3;r=2} @self

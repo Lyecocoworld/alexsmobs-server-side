@@ -1,0 +1,42 @@
+# ===============================================================
+# WARPED MOSCO (Alex's Mobs)
+# HP=100 DMG=10 SPD=0.3
+# ===============================================================
+warped_mosco:
+  Type: phantom
+  Display: '&fWarped Mosco'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 100
+  Damage: 10
+  MovementSpeed: 0.3
+  Faction: creature_warped_mosco
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - warped_mosco_ai
+  AITargetSelectors:
+    - clear
+    - warped_mosco_targets
+  Drops:
+    - warped_mosco_drops
+  Skills:
+    - onTimer:10
+    - skill:warped_mosco_tick @self
+    - onSpawn:
+      - skill:warped_mosco_init @self
+    - onDeath:
+      - skill:warped_mosco_death @self
+    - onDamaged:
+      - skill:warped_mosco_on_hurt @self

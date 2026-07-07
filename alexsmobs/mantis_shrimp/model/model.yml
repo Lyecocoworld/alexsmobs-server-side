@@ -1,0 +1,31 @@
+# MANTIS SHRIMP — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:mantis_shrimp"
+  type: "axolotl"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/mantis_shrimp.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/mantis_shrimp.png"
+  animations:
+    idle: "animation.mantis_shrimp.idle"
+    walk: "animation.mantis_shrimp.walk"
+    run: "animation.mantis_shrimp.run"
+    sit: "animation.mantis_shrimp.sit"
+    death: "animation.mantis_shrimp.death"
+    punch: "animation.mantis_shrimp.punch"
+
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": true}
+    punch: {"animation": "punch", "texture": "normal", "loop": false, "duration": 10}
+
+  scale:
+    adult: 1.0
+    baby: 0.5

@@ -1,0 +1,22 @@
+# TASMANIAN DEVIL — Sons
+
+sounds:
+  alexsmobs:entity.tasmanian_devil.idle:
+    sound: "alexsmobs:tasmanian_devil/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.tasmanian_devil.hurt:
+    sound: "alexsmobs:tasmanian_devil/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.tasmanian_devil.die:
+    sound: "alexsmobs:tasmanian_devil/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

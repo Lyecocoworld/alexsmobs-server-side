@@ -1,0 +1,43 @@
+# ===============================================================
+# CROCODILE (Alex's Mobs)
+# HP=28 DMG=8 SPD=0.2
+# ===============================================================
+crocodile:
+  Type: axolotl
+  Display: '&fCrocodile'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 28
+  Damage: 8
+  MovementSpeed: 0.2
+  KnockbackResistance: 0.3
+  Faction: creature_crocodile
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - crocodile_ai
+  AITargetSelectors:
+    - clear
+    - crocodile_targets
+  Drops:
+    - crocodile_drops
+  Skills:
+    - onTimer:10
+    - skill:crocodile_tick @self
+    - onSpawn:
+      - skill:crocodile_init @self
+    - onDeath:
+      - skill:crocodile_death @self
+    - onDamaged:
+      - skill:crocodile_on_hurt @self

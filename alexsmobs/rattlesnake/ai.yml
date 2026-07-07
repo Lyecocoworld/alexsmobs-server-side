@@ -1,0 +1,74 @@
+# ════════════════════════════════════════════════════════════════
+# RATTLESNAKE — AI Goals & Target Selectors
+# ─────────────────────────────────────────────────────────────────
+# Source: registerGoals() (EntityRattlesnake.java)
+# ════════════════════════════════════════════════════════════════
+#
+# AI GOALS du mod original (goalSelector):
+#   0: FloatGoal                    → flotte dans l'eau
+#   1: MeleeAttackGoal              → attaque melee (déclenche bite)
+#   2: RandomStrollGoal             → marche aléatoire (lente)
+#   3: RandomLookAroundGoal         → regard aléatoire
+#   4: LookAtPlayerGoal             → regarde le joueur
+#   5: AvoidEntityGoal (sometimes)  → évite certains mobs
+#   6: TemptGoal (sometimes)        → tenté par certains items
+#   7: WaterAvoidingRandomStroll    → évite l'eau
+#
+# TARGET SELECTORS du mod original (targetSelector):
+#   1: HurtByTargetGoal             → attaque celui qui le blesse
+#   2: NearestAttackableTarget      → cible le joueur proche (hostile)
+#   3: ResetAngerGoal               → reset anger
+# ════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════
+# AI GOALS (comportement)
+# ════════════════════════════════════════════════════════════════
+
+rattlesnake_ai:
+  Goals:
+    # 0 — Survie: flotter dans l'eau
+    - float{p=0}
+
+    # 1 — Attaque melee (déclenche l'animation bite via skill)
+    - melee{p=1;speed=1.0;memory=true}
+
+    # 2 — Marche aléatoire lente (serpent paresseux)
+    - randomstroll{p=2;speed=0.6}
+
+    # 3 — Évite l'eau (desert creature)
+    - avoidwater{p=3}
+
+    # 4 — Regarder le joueur
+    - lookatplayer{p=4;range=8}
+
+    # 5 — Regard aléatoire
+    - randomlookaround{p=5}
+
+    # 6 — Évite les cactus (desert hazards)
+    - avoidblock{p=6;m=CACTUS}
+
+    # 7 — Fuite rapide si en feu (panic)
+    - flee{p=7;speed=1.5}
+      ?isonfire{}
+
+    # 8 — RandomSwim (safety, très rare)
+    - randomswim{p=8;speed=0.4}
+
+
+# ════════════════════════════════════════════════════════════════
+# TARGET SELECTORS (cibles)
+# ════════════════════════════════════════════════════════════════
+
+rattlesnake_targets:
+  TargetSelectors:
+    # Vider les selectors vanilla de silverfish
+    - clear
+
+    # 1 — Attaque celui qui le blesse (self-defense / hostility)
+    - hurtbytarget{}
+
+    # 2 — Threat Table: ceux qui l'ont attaqué
+    - attackers
+
+    # 3 — Reset anger (revient à l'état de repos)
+    - resetanger{}

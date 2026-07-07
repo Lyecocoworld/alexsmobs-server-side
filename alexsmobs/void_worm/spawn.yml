@@ -1,0 +1,15 @@
+# VOID WORM — Spawn
+
+void_worm_spawner:
+  Type: void_worm
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=END_BARRENS,END_HIGHLANDS,THE_END}
+    - height{h=0to200}
+    - lightlevel{l=0to15}
+    - worldtype{wt=END}
+    - blocktype{m=END_STONE,AIR} @origin
+    - playerdistance{d=>24}

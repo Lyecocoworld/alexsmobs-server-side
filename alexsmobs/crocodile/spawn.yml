@@ -1,0 +1,15 @@
+# CROCODILE — Spawn
+
+crocodile_spawner:
+  Type: crocodile
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SWAMP,MANGROVE_SWAMP,RIVER,JUNGLE,DESERT}
+    - height{h=50to100}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=GRASS_BLOCK,SAND,CLAY,MUD,WATER,RED_SAND} @origin
+    - playerdistance{d=>24}

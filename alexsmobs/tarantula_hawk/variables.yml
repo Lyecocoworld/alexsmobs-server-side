@@ -1,0 +1,8 @@
+# TARANTULA HAWK — Variables
+
+variables:
+  tarantula_hawk.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

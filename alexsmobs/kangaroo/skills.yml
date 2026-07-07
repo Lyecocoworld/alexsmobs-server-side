@@ -1,0 +1,195 @@
+# ════════════════════════════════════════════════════════════════
+# KANGAROO — Skills
+# ════════════════════════════════════════════════════════════════
+
+kangaroo_tick:
+  Skills:
+    - skill{s=kangaroo_standing_lerp} @self
+    - skill{s=kangaroo_sitting_lerp} @self
+    - skill{s=kangaroo_pouch_check} @self
+    - skill{s=kangaroo_eat_check} @self
+      ?!hastarget{}
+
+kangaroo_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=kangaroo.standing;value=false;type=BOOLEAN}
+    - setvariable{var=kangaroo.sitting;value=false;type=BOOLEAN}
+    - setvariable{var=kangaroo.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=kangaroo.command;value=0;type=INTEGER}
+    - setvariable{var=kangaroo.visualFlag;value=0;type=INTEGER}
+    - setvariable{var=kangaroo.pouchTick;value=0;type=INTEGER}
+    - setvariable{var=kangaroo.tamed;value=false;type=BOOLEAN}
+    - setvariable{var=kangaroo.saddled;value=false;type=BOOLEAN}
+    - setvariable{var=kangaroo.standProgress;value=0;type=FLOAT}
+    - setvariable{var=kangaroo.sitProgress;value=0;type=FLOAT}
+    - setvariable{var=kangaroo.animTick;value=0;type=INTEGER}
+    - setmodelstate{state=idle}
+
+# ════════════════════════════════════════════════════════════════
+# LERP
+# ════════════════════════════════════════════════════════════════
+
+kangaroo_standing_lerp:
+  Skills:
+    - setvariable{var=kangaroo.standProgress;value=<math.(kangaroo.standProgress + 1)>;type=FLOAT}
+      ?variable{var=kangaroo.standing;value=true}
+      ?variable{var=kangaroo.standProgress;value=<5}
+    - setvariable{var=kangaroo.standProgress;value=<math.(kangaroo.standProgress - 1)>;type=FLOAT}
+      ?variable{var=kangaroo.standing;value=false}
+      ?variable{var=kangaroo.standProgress;value=>0}
+
+kangaroo_sitting_lerp:
+  Skills:
+    - setvariable{var=kangaroo.sitProgress;value=<math.(kangaroo.sitProgress + 1)>;type=FLOAT}
+      ?variable{var=kangaroo.sitting;value=true}
+      ?variable{var=kangaroo.sitProgress;value=<5}
+    - setvariable{var=kangaroo.sitProgress;value=<math.(kangaroo.sitProgress - 1)>;type=FLOAT}
+      ?variable{var=kangaroo.sitting;value=false}
+      ?variable{var=kangaroo.sitProgress;value=>0}
+
+# ════════════════════════════════════════════════════════════════
+# POUCH — item storage
+# ════════════════════════════════════════════════════════════════
+
+kangaroo_pouch_check:
+  Skills:
+    - setvariable{var=kangaroo.pouchTick;value=<math.(kangaroo.pouchTick + 1)>;type=INTEGER}
+      ?variable{var=kangaroo.pouchTick;value=<100}
+
+# ════════════════════════════════════════════════════════════════
+# EAT GRASS
+# ════════════════════════════════════════════════════════════════
+
+kangaroo_eat_check:
+  Skills:
+    - skill{s=kangaroo_eat_grass} @self
+      ?random{chance=0.002}
+
+kangaroo_eat_grass:
+  Skills:
+    - setstance{stance=eating}
+    - setmodelstate{state=eat_grass}
+    - setvariable{var=kangaroo.animTick;value=0;type=INTEGER}
+    - setvariable{var=kangaroo.animDuration;value=30;type=INTEGER}
+
+# ════════════════════════════════════════════════════════════════
+# ATTACK — boxing (punch L/R + kick)
+# ════════════════════════════════════════════════════════════════
+
+kangaroo_on_attack:
+  Skills:
+    # Random attack: punch L, punch R, ou kick
+    - skill{s=kangaroo_punch_right} @self
+      ?random{chance=0.33}
+    - skill{s=kangaroo_punch_left} @self
+      ?!random{chance=0.33}
+      ?random{chance=0.5}
+    - skill{s=kangaroo_kick} @self
+      ?!random{chance=0.33}
+      ?!random{chance=0.5}
+
+kangaroo_punch_right:
+  Skills:
+    - setstance{stance=punching_r}
+    - setmodelstate{state=punch_r}
+    - setvariable{var=kangaroo.animTick;value=0;type=INTEGER}
+    - setvariable{var=kangaroo.animDuration;value=13;type=INTEGER}
+    - damage{amount=4} @target
+    - throw{velocity=0.3} @target
+    - sound{s=alexsmobs:entity.kangaroo.punch;v=1.0;p=0.9-1.1} @self
+
+kangaroo_punch_left:
+  Skills:
+    - setstance{stance=punching_l}
+    - setmodelstate{state=punch_l}
+    - setvariable{var=kangaroo.animTick;value=0;type=INTEGER}
+    - setvariable{var=kangaroo.animDuration;value=13;type=INTEGER}
+    - damage{amount=4} @target
+    - throw{velocity=0.3} @target
+    - sound{s=alexsmobs:entity.kangaroo.punch;v=1.0;p=0.9-1.1} @self
+
+kangaroo_kick:
+  Skills:
+    - setstance{stance=kicking}
+    - setmodelstate{state=kick}
+    - setvariable{var=kangaroo.animTick;value=0;type=INTEGER}
+    - setvariable{var=kangaroo.animDuration;value=15;type=INTEGER}
+    - damage{amount=6} @target
+    - throw{velocity=0.8;velocityY=0.3} @target
+    - sound{s=alexsmobs:entity.kangaroo.kick;v=1.0;p=0.8-1.0} @self
+
+# ════════════════════════════════════════════════════════════════
+# INTERACTION
+# ════════════════════════════════════════════════════════════════
+
+kangaroo_on_interact:
+  Skills:
+    # Saddle
+    - skill{s=kangaroo_saddle} @self
+      ?hasitem{m=SADDLE;slot=HAND}
+      ?variable{var=kangaroo.saddled;value=false}
+    # Mount (saddled + !sneak)
+    - skill{s=kangaroo_mount} @self
+      ?variable{var=kangaroo.saddled;value=true}
+      ?!playersneaking{}
+    # Command cycle
+    - skill{s=kangaroo_command_cycle} @self
+      ?variable{var=kangaroo.tamed;value=true}
+      ?playersneaking{}
+
+kangaroo_saddle:
+  Skills:
+    - setvariable{var=kangaroo.saddled;value=true;type=BOOLEAN}
+    - takeitem{m=SADDLE;slot=HAND;qty=1} @trigger
+    - sound{s=entity.horse.leather;v=1.0;p=0.8-1.2} @self
+
+kangaroo_mount:
+  Skills:
+    - mount{}
+
+kangaroo_command_cycle:
+  Skills:
+    - skill{s=kangaroo_command_wander} @self
+      ?variable{var=kangaroo.command;value=2}
+    - skill{s=kangaroo_command_follow} @self
+      ?variable{var=kangaroo.command;value=0}
+    - skill{s=kangaroo_command_sit} @self
+      ?variable{var=kangaroo.command;value=1}
+
+kangaroo_command_wander:
+  Skills:
+    - setvariable{var=kangaroo.command;value=0;type=INTEGER}
+    - setvariable{var=kangaroo.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=kangaroo.sitting;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+kangaroo_command_follow:
+  Skills:
+    - setvariable{var=kangaroo.command;value=1;type=INTEGER}
+    - setvariable{var=kangaroo.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=kangaroo.sitting;value=false;type=BOOLEAN}
+
+kangaroo_command_sit:
+  Skills:
+    - setvariable{var=kangaroo.command;value=2;type=INTEGER}
+    - setvariable{var=kangaroo.forcedSit;value=true;type=BOOLEAN}
+    - setvariable{var=kangaroo.sitting;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}
+
+# ════════════════════════════════════════════════════════════════
+# HURT / DEATH
+# ════════════════════════════════════════════════════════════════
+
+kangaroo_on_hurt:
+  Skills:
+    - setvariable{var=kangaroo.forcedSit;value=false;type=BOOLEAN}
+    - setvariable{var=kangaroo.sitting;value=false;type=BOOLEAN}
+
+kangaroo_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.kangaroo.die;v=1.0;p=0.8-1.2} @self
+    # Drop saddle si équipé
+    - dropitem{item=SADDLE;amount=1} @origin
+      ?variable{var=kangaroo.saddled;value=true}

@@ -1,0 +1,82 @@
+# ===============================================================
+# WARPED TOAD — Skills
+# ===============================================================
+
+warped_toad_tick:
+  Skills:
+    - skill{s=warped_toad_idle_check} @self
+
+warped_toad_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=warped_toad.tongueLength;value=0.0;type=FLOAT}
+    - setvariable{var=warped_toad.tongueOut;value=False;type=BOOLEAN}
+    - setvariable{var=warped_toad.sitting;value=False;type=BOOLEAN}
+    - setvariable{var=warped_toad.command;value=0;type=INTEGER}
+    - setvariable{var=warped_toad.jumpActive;value=False;type=BOOLEAN}
+    - setvariable{var=warped_toad.tamed;value=False;type=BOOLEAN}
+    - setvariable{var=warped_toad.forcedSit;value=False;type=BOOLEAN}
+    - setvariable{var=warped_toad.owner;value=NONE;type=STRING}
+    - setmodelstate{state=idle}
+
+warped_toad_tongue:
+  Skills:
+    - setstance{stance=tongue}
+    - setmodelstate{state=tongue}
+    - setvariable{var=warped_toad.animTick;value=0;type=INTEGER}
+    - damage{amount=2} @target
+    - sound{s=alexsmobs:entity.warped_toad.tongue;v=1.0;p=0.9-1.1} @self
+
+warped_toad_jump:
+  Skills:
+    - setstance{stance=jump}
+    - setmodelstate{state=jump}
+    - setvariable{var=warped_toad.animTick;value=0;type=INTEGER}
+    - damage{amount=2} @target
+    - sound{s=alexsmobs:entity.warped_toad.jump;v=1.0;p=0.9-1.1} @self
+
+warped_toad_idle_check:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+warped_toad_on_hurt:
+  Skills:
+    - setvariable{var=warped_toad.forcedSit;value=false;type=BOOLEAN}
+
+warped_toad_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.warped_toad.die;v=1.0;p=0.8-1.2} @self
+
+warped_toad_on_interact:
+  Skills:
+    - skill{s=warped_toad_command_cycle} @self
+      ?variable{var=warped_toad.tamed;value=true}
+      ?playersneaking{}
+
+warped_toad_command_cycle:
+  Skills:
+    - skill{s=warped_toad_command_sit} @self
+      ?variable{var=warped_toad.command;value=1}
+    - skill{s=warped_toad_command_follow} @self
+      ?variable{var=warped_toad.command;value=0}
+    - skill{s=warped_toad_command_wander} @self
+      ?variable{var=warped_toad.command;value=2}
+
+warped_toad_command_wander:
+  Skills:
+    - setvariable{var=warped_toad.command;value=0;type=INTEGER}
+    - setvariable{var=warped_toad.forcedSit;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+warped_toad_command_follow:
+  Skills:
+    - setvariable{var=warped_toad.command;value=1;type=INTEGER}
+    - setvariable{var=warped_toad.forcedSit;value=false;type=BOOLEAN}
+
+warped_toad_command_sit:
+  Skills:
+    - setvariable{var=warped_toad.command;value=2;type=INTEGER}
+    - setvariable{var=warped_toad.forcedSit;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}

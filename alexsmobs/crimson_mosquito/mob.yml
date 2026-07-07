@@ -1,0 +1,61 @@
+# ════════════════════════════════════════════════════════════════
+# CRIMSON MOSQUITO (Alex's Mobs)
+# Source: EntityCrimsonMosquito.java (874 lignes, branch 1.20)
+# Classification: C3 (AI complexe — boss-tier), P0 (signature mob)
+# ─────────────────────────────────────────────────────────────────
+# Comportements reproduits:
+#   - [x] Flying + walking states (FLYING bool)
+#   - [x] Blood sucking mechanic (BLOOD_LEVEL int, 0-100)
+#   - [x] Shoot blood spit projectile (SHOOTING bool)
+#   - [x] Shrink/grow animation (SHRINKING bool, MOSQUITO_SCALE float)
+#   - [x] Sick state (transformation depuis laviathan, SICK bool)
+#   - [x] Lure laviathan (LURING_LAVIATHAN int — attiré par laviathans proches)
+#   - [x] Flee from entity (FLEEING_ENTITY int — fuit certaines entités)
+#   - [x] Fly transformation (FROM_FLY bool — spawn depuis fly)
+#   - [x] 9 SynchedEntityData → MythicMobs variables
+#   - [x] Boss-tier HP=10 mais mécanique de combat complexe
+# ─────────────────────────────────────────────────────────────────
+# Spawn: Nether (Crimson Forests, Nether Wastes)
+# Se transforme depuis les mouches (EntityFly) dans le Nether
+# ─────────────────═══════════════════════════════════════════════
+crimson_mosquito:
+  Type: phantom
+  Display: '&cCrimson Mosquito'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 10
+  Damage: 5
+  MovementSpeed: 0.25
+  Faction: creature_crimson_mosquito
+  Options:
+    PreventOtherDrops: false
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+  AIGoalSelectors:
+    - clear
+    - crimson_mosquito_ai
+  AITargetSelectors:
+    - clear
+    - crimson_mosquito_targets
+  DamageModifiers:
+    - FALL 0.0                     # Immunisé fall (volant)
+    - DROWN 0.0                    # Immunisé noyade
+  Drops:
+    - crimson_mosquito_drops
+  Skills:
+    - onTimer:10
+    - skill:crimson_mosquito_tick @self
+    - onSpawn:
+      - skill:crimson_mosquito_init @self
+    - onDeath:
+      - skill:crimson_mosquito_death @self
+    - onDamaged:
+      - skill:crimson_mosquito_on_hurt @self
+    - onAttack:
+      - skill:crimson_mosquito_on_attack @target

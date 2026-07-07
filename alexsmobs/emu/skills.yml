@@ -1,0 +1,70 @@
+# ===============================================================
+# EMU — Skills
+# ===============================================================
+
+emu_tick:
+  Skills:
+    - skill{s=emu_idle_check} @self
+
+emu_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=emu.variant;value=0;type=INTEGER}
+    - setvariable{var=emu.dodgeCooldown;value=0;type=INTEGER}
+    - setvariable{var=emu.animTick;value=0;type=INTEGER}
+    - setmodelstate{state=idle}
+
+emu_dodge_left:
+  Skills:
+    - setstance{stance=dodge_left}
+    - setmodelstate{state=dodge_left}
+    - setvariable{var=emu.animTick;value=0;type=INTEGER}
+    - damage{amount=3} @target
+    - sound{s=alexsmobs:entity.emu.dodge_left;v=1.0;p=0.9-1.1} @self
+
+emu_dodge_right:
+  Skills:
+    - setstance{stance=dodge_right}
+    - setmodelstate{state=dodge_right}
+    - setvariable{var=emu.animTick;value=0;type=INTEGER}
+    - damage{amount=3} @target
+    - sound{s=alexsmobs:entity.emu.dodge_right;v=1.0;p=0.9-1.1} @self
+
+emu_peck_ground:
+  Skills:
+    - setstance{stance=peck_ground}
+    - setmodelstate{state=peck_ground}
+    - setvariable{var=emu.animTick;value=0;type=INTEGER}
+    - damage{amount=3} @target
+    - sound{s=alexsmobs:entity.emu.peck_ground;v=1.0;p=0.9-1.1} @self
+
+emu_scratch:
+  Skills:
+    - setstance{stance=scratch}
+    - setmodelstate{state=scratch}
+    - setvariable{var=emu.animTick;value=0;type=INTEGER}
+    - damage{amount=3} @target
+    - sound{s=alexsmobs:entity.emu.scratch;v=1.0;p=0.9-1.1} @self
+
+emu_puzzled:
+  Skills:
+    - setstance{stance=puzzled}
+    - setmodelstate{state=puzzled}
+    - setvariable{var=emu.animTick;value=0;type=INTEGER}
+    - damage{amount=3} @target
+    - sound{s=alexsmobs:entity.emu.puzzled;v=1.0;p=0.9-1.1} @self
+
+emu_idle_check:
+  Skills:
+    - setvariable{var=emu.variant;value=<random.0to3>;type=INTEGER}
+      ?variable{var=emu.variant;value=-1}
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+emu_on_hurt:
+  Skills:
+
+emu_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.emu.die;v=1.0;p=0.8-1.2} @self

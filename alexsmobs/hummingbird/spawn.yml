@@ -1,0 +1,15 @@
+# HUMMINGBIRD — Spawn
+
+hummingbird_spawner:
+  Type: hummingbird
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=JUNGLE,SPARSE_JUNGLE,BAMBOO_JUNGLE,FLOWER_FOREST,PLAINS}
+    - height{h=60to150}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=GRASS_BLOCK,DIRT,PODZOL,MOSS_BLOCK} @origin
+    - playerdistance{d=>24}

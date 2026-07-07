@@ -1,0 +1,15 @@
+# BLUE JAY — Spawn
+
+blue_jay_spawner:
+  Type: blue_jay
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=FOREST,FLOWER_FOREST,BIRCH_FOREST,DARK_FOREST}
+    - height{h=60to150}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=GRASS_BLOCK,DIRT,PODZOL} @origin
+    - playerdistance{d=>24}

@@ -1,0 +1,22 @@
+# ALLIGATOR SNAPPING TURTLE — Sons
+
+sounds:
+  alexsmobs:entity.alligator_snapping_turtle.idle:
+    sound: "alexsmobs:alligator_snapping_turtle/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.alligator_snapping_turtle.hurt:
+    sound: "alexsmobs:alligator_snapping_turtle/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.alligator_snapping_turtle.die:
+    sound: "alexsmobs:alligator_snapping_turtle/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

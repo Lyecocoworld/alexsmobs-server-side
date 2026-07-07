@@ -1,0 +1,15 @@
+# MUNGUS — Spawn
+
+mungus_spawner:
+  Type: mungus
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=MUSHROOM_FIELDS}
+    - height{h=60to100}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=MYCELIUM,GRASS_BLOCK,DIRT} @origin
+    - playerdistance{d=>24}

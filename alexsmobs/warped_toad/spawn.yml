@@ -1,0 +1,15 @@
+# WARPED TOAD — Spawn
+
+warped_toad_spawner:
+  Type: warped_toad
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=WARPED_FOREST,CRIMSON_FOREST}
+    - height{h=0to127}
+    - lightlevel{l=0to15}
+    - worldtype{wt=NETHER}
+    - blocktype{m=WARPED_NYLIUM,WARPED_WART_BLOCK,NETHERRACK} @origin
+    - playerdistance{d=>24}

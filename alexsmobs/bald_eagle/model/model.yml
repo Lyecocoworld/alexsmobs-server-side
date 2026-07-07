@@ -1,0 +1,33 @@
+# BALD EAGLE — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:bald_eagle"
+  type: "parrot"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/bald_eagle.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/bald_eagle.png"
+  animations:
+    idle: "animation.bald_eagle.idle"
+    walk: "animation.bald_eagle.walk"
+    run: "animation.bald_eagle.run"
+    sit: "animation.bald_eagle.sit"
+    death: "animation.bald_eagle.death"
+    attack: "animation.bald_eagle.attack"
+    tackle: "animation.bald_eagle.tackle"
+
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": true}
+    attack: {"animation": "attack", "texture": "normal", "loop": false, "duration": 15}
+    tackle: {"animation": "tackle", "texture": "normal", "loop": false, "duration": 10}
+
+  scale:
+    adult: 1.0
+    baby: 0.5

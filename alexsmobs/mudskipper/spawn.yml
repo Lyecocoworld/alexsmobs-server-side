@@ -1,0 +1,15 @@
+# MUDSKIPPER — Spawn
+
+mudskipper_spawner:
+  Type: mudskipper
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SWAMP,MANGROVE_SWAMP,RIVER,BEACH}
+    - height{h=40to70}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=WATER,MUD,SAND,CLAY} @origin
+    - playerdistance{d=>24}

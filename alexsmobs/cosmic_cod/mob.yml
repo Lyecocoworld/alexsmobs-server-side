@@ -1,0 +1,42 @@
+# ===============================================================
+# COSMIC COD (Alex's Mobs)
+# HP=8 DMG=2 SPD=0.2
+# ===============================================================
+cosmic_cod:
+  Type: cod
+  Display: '&fCosmic Cod'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 8
+  Damage: 2
+  MovementSpeed: 0.2
+  Faction: creature_cosmic_cod
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - cosmic_cod_ai
+  AITargetSelectors:
+    - clear
+    - cosmic_cod_targets
+  Drops:
+    - cosmic_cod_drops
+  Skills:
+    - onTimer:10
+    - skill:cosmic_cod_tick @self
+    - onSpawn:
+      - skill:cosmic_cod_init @self
+    - onDeath:
+      - skill:cosmic_cod_death @self
+    - onDamaged:
+      - skill:cosmic_cod_on_hurt @self

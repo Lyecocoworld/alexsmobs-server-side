@@ -1,0 +1,86 @@
+# ===============================================================
+# BALD EAGLE — Skills
+# ===============================================================
+
+bald_eagle_tick:
+  Skills:
+    - skill{s=bald_eagle_idle_check} @self
+
+bald_eagle_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=bald_eagle.flying;value=False;type=BOOLEAN}
+    - setvariable{var=bald_eagle.tackling;value=False;type=BOOLEAN}
+    - setvariable{var=bald_eagle.hasCap;value=False;type=BOOLEAN}
+    - setvariable{var=bald_eagle.attackTick;value=0;type=INTEGER}
+    - setvariable{var=bald_eagle.command;value=0;type=INTEGER}
+    - setvariable{var=bald_eagle.sitting;value=False;type=BOOLEAN}
+    - setvariable{var=bald_eagle.launched;value=False;type=BOOLEAN}
+    - setvariable{var=bald_eagle.tamed;value=False;type=BOOLEAN}
+    - setvariable{var=bald_eagle.forcedSit;value=False;type=BOOLEAN}
+    - setvariable{var=bald_eagle.owner;value=NONE;type=STRING}
+    - setvariable{var=bald_eagle.animTick;value=0;type=INTEGER}
+    - setvariable{var=bald_eagle.flyProgress;value=0.0;type=FLOAT}
+    - setmodelstate{state=idle}
+
+bald_eagle_attack:
+  Skills:
+    - setstance{stance=attack}
+    - setmodelstate{state=attack}
+    - setvariable{var=bald_eagle.animTick;value=0;type=INTEGER}
+    - damage{amount=5} @target
+    - sound{s=alexsmobs:entity.bald_eagle.attack;v=1.0;p=0.9-1.1} @self
+
+bald_eagle_tackle:
+  Skills:
+    - setstance{stance=tackle}
+    - setmodelstate{state=tackle}
+    - setvariable{var=bald_eagle.animTick;value=0;type=INTEGER}
+    - damage{amount=5} @target
+    - sound{s=alexsmobs:entity.bald_eagle.tackle;v=1.0;p=0.9-1.1} @self
+
+bald_eagle_idle_check:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+bald_eagle_on_hurt:
+  Skills:
+    - setvariable{var=bald_eagle.forcedSit;value=false;type=BOOLEAN}
+
+bald_eagle_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.bald_eagle.die;v=1.0;p=0.8-1.2} @self
+
+bald_eagle_on_interact:
+  Skills:
+    - skill{s=bald_eagle_command_cycle} @self
+      ?variable{var=bald_eagle.tamed;value=true}
+      ?playersneaking{}
+
+bald_eagle_command_cycle:
+  Skills:
+    - skill{s=bald_eagle_command_sit} @self
+      ?variable{var=bald_eagle.command;value=1}
+    - skill{s=bald_eagle_command_follow} @self
+      ?variable{var=bald_eagle.command;value=0}
+    - skill{s=bald_eagle_command_wander} @self
+      ?variable{var=bald_eagle.command;value=2}
+
+bald_eagle_command_wander:
+  Skills:
+    - setvariable{var=bald_eagle.command;value=0;type=INTEGER}
+    - setvariable{var=bald_eagle.forcedSit;value=false;type=BOOLEAN}
+    - setmodelstate{state=idle}
+
+bald_eagle_command_follow:
+  Skills:
+    - setvariable{var=bald_eagle.command;value=1;type=INTEGER}
+    - setvariable{var=bald_eagle.forcedSit;value=false;type=BOOLEAN}
+
+bald_eagle_command_sit:
+  Skills:
+    - setvariable{var=bald_eagle.command;value=2;type=INTEGER}
+    - setvariable{var=bald_eagle.forcedSit;value=true;type=BOOLEAN}
+    - setmodelstate{state=sit}

@@ -1,0 +1,59 @@
+# ════════════════════════════════════════════════════════════════
+# KANGAROO (Alex's Mobs)
+# Source: EntityKangaroo.java (1057 lignes, branch 1.20)
+# Classification: C2 (tamable, pouch inventory, multiple animations), P1
+# ─────────────────────────────────────────────────────────────────
+# Comportements reproduits:
+#   - [x] Tamable, HP=22, DMG=4, SPD=0.5 (rapide)
+#   - [x] 4 animations: EAT_GRASS(30t), KICK(15t), PUNCH_R(13t), PUNCH_L(13t)
+#   - [x] 9 SynchedEntityData: STANDING, SITTING, COMMAND, VISUAL_FLAG,
+#         POUCH_TICK, HELMET_INDEX, SWORD_INDEX, CHEST_INDEX, FORCED_SIT
+#   - [x] ContainerListener — inventory pouch (pocket)
+#   - [x] Mountable (saddled)
+#   - [x] Boxing attacks (punch L/R + kick)
+#   - [x] Eat grass animation
+#   - [x] Jump locomotion (saut caractéristique)
+# ─────────────────═══════════════════════════════════════════════
+kangaroo:
+  Type: cow
+  Display: '&6Kangaroo'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 22
+  Damage: 4
+  MovementSpeed: 0.5
+  KnockbackResistance: 0.3
+  Faction: creature_kangaroo
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - kangaroo_ai
+  AITargetSelectors:
+    - clear
+    - kangaroo_targets
+  Drops:
+    - kangaroo_drops
+  Skills:
+    - onTimer:10
+    - skill:kangaroo_tick @self
+    - onSpawn:
+      - skill:kangaroo_init @self
+    - onDeath:
+      - skill:kangaroo_death @self
+    - onDamaged:
+      - skill:kangaroo_on_hurt @self
+    - onInteract:
+      - skill:kangaroo_on_interact @self
+    - onAttack:
+      - skill:kangaroo_on_attack @target

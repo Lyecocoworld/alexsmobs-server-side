@@ -1,0 +1,27 @@
+# ===============================================================
+# MIMICUBE — Skills
+# ===============================================================
+
+mimicube_tick:
+  Skills:
+    - skill{s=mimicube_idle_check} @self
+
+mimicube_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=mimicube.attackTick;value=0;type=INTEGER}
+    - setvariable{var=mimicube.throwCooldown;value=0;type=INTEGER}
+    - setmodelstate{state=idle}
+
+mimicube_idle_check:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+mimicube_on_hurt:
+  Skills:
+
+mimicube_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.mimicube.die;v=1.0;p=0.8-1.2} @self

@@ -1,0 +1,27 @@
+# BLUE JAY — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:blue_jay"
+  type: "parrot"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/blue_jay.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/blue_jay.png"
+  animations:
+    idle: "animation.blue_jay.idle"
+    walk: "animation.blue_jay.walk"
+    run: "animation.blue_jay.run"
+    sit: "animation.blue_jay.sit"
+    death: "animation.blue_jay.death"
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": false, "duration": 20}
+  scale:
+    adult: 1.0
+    baby: 0.5

@@ -1,0 +1,15 @@
+# CENTIPEDE — Spawn
+
+centipede_head_spawner:
+  Type: centipede_head
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=DRIPSTONE_CAVES,DEEP_DARK}
+    - height{h=-64to40}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=STONE,DEEPSLATE,DRIPSTONE_BLOCK,POINTED_DRIPSTONE,MOSS_BLOCK} @origin
+    - playerdistance{d=>24}

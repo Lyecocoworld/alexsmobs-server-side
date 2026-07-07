@@ -1,0 +1,28 @@
+# TIGER — Sons
+
+sounds:
+  alexsmobs:entity.tiger.idle:
+    sound: "alexsmobs:tiger/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.tiger.hurt:
+    sound: "alexsmobs:tiger/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.tiger.die:
+    sound: "alexsmobs:tiger/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.tiger.attack:
+    sound: "alexsmobs:tiger/attack"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

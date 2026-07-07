@@ -1,0 +1,22 @@
+# UNDERMINER — Sons
+
+sounds:
+  alexsmobs:entity.underminer.idle:
+    sound: "alexsmobs:underminer/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.underminer.hurt:
+    sound: "alexsmobs:underminer/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.underminer.die:
+    sound: "alexsmobs:underminer/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

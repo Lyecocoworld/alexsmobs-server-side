@@ -1,0 +1,8 @@
+# SUGAR GLIDER — Variables
+
+variables:
+  sugar_glider.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Anim"

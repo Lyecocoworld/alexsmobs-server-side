@@ -1,0 +1,7 @@
+# FLYING FISH — Drops
+
+flying_fish_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - exp{amount=1-3} 1.0

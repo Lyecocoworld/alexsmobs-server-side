@@ -1,0 +1,161 @@
+# ════════════════════════════════════════════════════════════════
+# RATTLESNAKE — Skills (MythicMobs 5.x)
+# ─────────────────────────────────────────────────────────────────
+# Syntaxe: conditions inline avec ? (true) / ! (false)
+#   - mechanic{params} @target ?condition{params} !condition{params}
+# ─────────────────────────────────────────────────────────────────
+# Source mapping (EntityRattlesnake.java):
+#   tick()           → rattlesnake_tick (orchestrator)
+#   defineSynchedData → rattlesnake_init
+#   doHurtTarget()   → rattlesnake_on_attack (bite + poison)
+#   rattling logic   → rattlesnake_rattle_check (warning)
+#   curled logic     → rattlesnake_curled_check (idle)
+#   MeleeAttackGoal  → rattlesnake_bite_trigger
+# ════════════════════════════════════════════════════════════════
+
+# ════════════════════════════════════════════════════════════════
+# ORCHESTRATORS
+# ════════════════════════════════════════════════════════════════
+
+# Tick principal — toutes les 10 ticks via onTimer:10 dans mob.yml
+# Reproduit tick() du mod original
+rattlesnake_tick:
+  Skills:
+    # ── Rattle warning check (joueur proche) ──
+    - skill{s=rattlesnake_rattle_check} @self
+    # ── Curled idle check (pas en combat) ──
+    - skill{s=rattlesnake_curled_check} @self
+    # ── Idle ambient sound ──
+    - skill{s=rattlesnake_idle_sound} @self
+      ?stance{s=idle}
+      ?random{chance=0.005}
+    # ── Animation tick counter ──
+    - skill{s=rattlesnake_anim_tick_advance} @self
+
+
+# ════════════════════════════════════════════════════════════════
+# INITIALIZATION
+# ════════════════════════════════════════════════════════════════
+
+# Au spawn — initialise l'état curled (repos)
+rattlesnake_init:
+  Skills:
+    - setstance{stance=idle}
+    - setvariable{var=rattlesnake.curled;value=true;type=BOOLEAN}
+    - setvariable{var=rattlesnake.rattling;value=false;type=BOOLEAN}
+    - setmodelstate{state=curled}
+
+
+# ════════════════════════════════════════════════════════════════
+# RATTLE WARNING (mod: RATTLING bool)
+# ════════════════════════════════════════════════════════════════
+
+# Vérifie si un joueur est proche → déclenche le rattle (avertissement)
+rattlesnake_rattle_check:
+  Skills:
+    # Joueur proche (3 blocs) → commence à rattler
+    - skill{s=rattlesnake_start_rattle} @self
+      ?playersinradius{r=3;targetable=true}
+      !stance{s=biting}
+    # Pas de joueur proche ou en combat → arrête le rattle
+    - skill{s=rattlesnake_stop_rattle} @self
+      !playersinradius{r=5;targetable=true}
+      !stance{s=biting}
+
+rattlesnake_start_rattle:
+  Skills:
+    - setvariable{var=rattlesnake.rattling;value=true;type=BOOLEAN}
+    - setvariable{var=rattlesnake.curled;value=false;type=BOOLEAN}
+    - setmodelstate{state=rattling}
+    - sound{s=alexsmobs:entity.rattlesnake.rattle;v=0.8;p=0.9-1.1} @self
+      ?random{chance=0.1}
+
+rattlesnake_stop_rattle:
+  Skills:
+    - setvariable{var=rattlesnake.rattling;value=false;type=BOOLEAN}
+
+
+# ════════════════════════════════════════════════════════════════
+# CURLED IDLE (mod: CURLED bool)
+# ════════════════════════════════════════════════════════════════
+
+rattlesnake_curled_check:
+  Skills:
+    # Si idle et pas rattling → se met enroulé (repos)
+    - skill{s=rattlesnake_set_curled} @self
+      ?stance{s=idle}
+      !variable{var=rattlesnake.rattling;value=true}
+      !playersinradius{r=5;targetable=true}
+
+rattlesnake_set_curled:
+  Skills:
+    - setvariable{var=rattlesnake.curled;value=true;type=BOOLEAN}
+    - setmodelstate{state=curled}
+
+
+# ════════════════════════════════════════════════════════════════
+# ATTACK: BITE + POISON (mod: doHurtTarget, ANIMATION_BITE 20t)
+# ════════════════════════════════════════════════════════════════
+
+rattlesnake_bite_trigger:
+  Skills:
+    - skill{s=rattlesnake_set_bite} @self
+
+rattlesnake_set_bite:
+  Skills:
+    - setstance{stance=biting}
+    - setmodelstate{state=bite}
+    - setvariable{var=rattlesnake.curled;value=false;type=BOOLEAN}
+    - setvariable{var=rattlesnake.rattling;value=false;type=BOOLEAN}
+    - setvariable{var=rattlesnake.animTick;value=0;type=INTEGER}
+
+# Animation tick counter — gère la durée de l'animation bite (20 ticks)
+rattlesnake_anim_tick_advance:
+  Skills:
+    - setvariable{var=rattlesnake.animTick;value=<math.(rattlesnake.animTick + 1)>;type=INTEGER}
+      ?stance{s=biting}
+    - skill{s=rattlesnake_anim_end} @self
+      ?variable{var=rattlesnake.animTick;value=>20}
+      ?stance{s=biting}
+
+rattlesnake_anim_end:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+    - setvariable{var=rattlesnake.animTick;value=0;type=INTEGER}
+
+
+# ════════════════════════════════════════════════════════════════
+# HURT / ATTACK CALLBACKS
+# ════════════════════════════════════════════════════════════════
+
+rattlesnake_on_hurt:
+  Skills:
+    - sound{s=alexsmobs:entity.rattlesnake.hurt;v=1.0;p=0.8-1.2} @self
+    - setvariable{var=rattlesnake.curled;value=false;type=BOOLEAN}
+
+rattlesnake_on_attack:
+  Skills:
+    # Bite sound + particules
+    - sound{s=alexsmobs:entity.rattlesnake.bite;v=1.0;p=0.9-1.1} @self
+    - effect:particle{p=CRIT;a=2;hs=0.3;vs=0.3;speed=0.05} @origin
+    # Poison effect sur la cible (mod: doHurtTarget applique POISON)
+    - potion{type=POISON;duration=60;level=1} @target
+
+
+# ════════════════════════════════════════════════════════════════
+# IDLE SOUND (ambient)
+# ════════════════════════════════════════════════════════════════
+
+rattlesnake_idle_sound:
+  Skills:
+    - sound{s=alexsmobs:entity.rattlesnake.idle;v=0.6;p=0.8-1.2} @self
+
+
+# ════════════════════════════════════════════════════════════════
+# DEATH
+# ════════════════════════════════════════════════════════════════
+
+rattlesnake_death:
+  Skills:
+    - sound{s=alexsmobs:entity.rattlesnake.death;v=1.0;p=0.8-1.2} @self

@@ -1,0 +1,15 @@
+# JERBOA — Spawn
+
+jerboa_spawner:
+  Type: jerboa
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=DESERT,SAVANNA,SAVANNA_PLATEAU,WINDSWEPT_SAVANNA}
+    - height{h=60to150}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=SAND,RED_SAND,SANDSTONE,GRASS_BLOCK,DIRT} @origin
+    - playerdistance{d=>24}

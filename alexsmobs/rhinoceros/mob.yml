@@ -1,0 +1,43 @@
+# ===============================================================
+# RHINOCEROS (Alex's Mobs)
+# HP=45 DMG=8 SPD=0.25
+# ===============================================================
+rhinoceros:
+  Type: cow
+  Display: '&fRhinoceros'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 45
+  Damage: 8
+  MovementSpeed: 0.25
+  KnockbackResistance: 0.3
+  Faction: creature_rhinoceros
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - rhinoceros_ai
+  AITargetSelectors:
+    - clear
+    - rhinoceros_targets
+  Drops:
+    - rhinoceros_drops
+  Skills:
+    - onTimer:10
+    - skill:rhinoceros_tick @self
+    - onSpawn:
+      - skill:rhinoceros_init @self
+    - onDeath:
+      - skill:rhinoceros_death @self
+    - onDamaged:
+      - skill:rhinoceros_on_hurt @self

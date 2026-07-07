@@ -1,0 +1,19 @@
+# RAIN FROG — Skills
+
+rain_frog_tick:
+  Skills:
+    - effect:particle{p=SMOKE;a=1;hs=0.3;vs=0.3;speed=0.02} @origin
+      ?random{chance=0.001}
+
+rain_frog_init:
+  Skills:
+    - setstance{stance=idle}
+    - setmodelstate{state=idle}
+
+rain_frog_on_hurt:
+  Skills: []
+
+rain_frog_death:
+  Skills:
+    - setmodelstate{state=death}
+    - sound{s=alexsmobs:entity.rain_frog.die;v=1.0;p=0.8-1.2} @self

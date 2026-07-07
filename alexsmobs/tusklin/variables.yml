@@ -1,0 +1,8 @@
+# TUSKLIN — Variables
+
+variables:
+  tusklin.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick animation"

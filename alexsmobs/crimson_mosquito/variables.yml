@@ -1,0 +1,64 @@
+# ════════════════════════════════════════════════════════════════
+# CRIMSON MOSQUITO — Variables
+# ════════════════════════════════════════════════════════════════
+
+variables:
+  crimson_mosquito.flying:
+    type: BOOLEAN
+    default: false
+    persistent: false
+    desc: "Le moustique vole actuellement"
+
+  crimson_mosquito.shooting:
+    type: BOOLEAN
+    default: false
+    persistent: false
+    desc: "Le moustique est en mode tir (blood plein)"
+
+  crimson_mosquito.bloodLevel:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Niveau de sang (0-100), déclenche shooting à 100"
+
+  crimson_mosquito.shrinking:
+    type: BOOLEAN
+    default: false
+    persistent: false
+    desc: "Le moustique est en train de rétrécir"
+
+  crimson_mosquito.fromFly:
+    type: BOOLEAN
+    default: false
+    persistent: false
+    desc: "Le moustique a spawn depuis une mouche"
+
+  crimson_mosquito.scale:
+    type: FLOAT
+    default: 1.0
+    persistent: false
+    desc: "Échelle visuelle du moustique (shrink animation)"
+
+  crimson_mosquito.sick:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "Le moustique est malade (transformation laviathan)"
+
+  crimson_mosquito.luringLaviathan:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Timer attiré par laviathan"
+
+  crimson_mosquito.fleeingEntity:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Timer fuite d'entité"
+
+  crimson_mosquito.shootCooldown:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Cooldown entre les tirs de sang"

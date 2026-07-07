@@ -1,0 +1,15 @@
+# CATFISH — Spawn
+
+catfish_spawner:
+  Type: catfish
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=SWAMP,MANGROVE_SWAMP,RIVER,JUNGLE}
+    - height{h=40to70}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=WATER,MUD,SAND,CLAY,GRASS_BLOCK} @origin
+    - playerdistance{d=>24}

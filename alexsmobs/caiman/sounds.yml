@@ -1,0 +1,28 @@
+# CAIMAN — Sons
+
+sounds:
+  alexsmobs:entity.caiman.idle:
+    sound: "alexsmobs:caiman/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.caiman.hurt:
+    sound: "alexsmobs:caiman/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.caiman.die:
+    sound: "alexsmobs:caiman/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.caiman.bellow:
+    sound: "alexsmobs:caiman/bellow"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

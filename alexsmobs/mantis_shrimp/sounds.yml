@@ -1,0 +1,28 @@
+# MANTIS SHRIMP — Sons
+
+sounds:
+  alexsmobs:entity.mantis_shrimp.idle:
+    sound: "alexsmobs:mantis_shrimp/idle"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+    interval_ticks: 200-400
+
+  alexsmobs:entity.mantis_shrimp.hurt:
+    sound: "alexsmobs:mantis_shrimp/hurt"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.mantis_shrimp.die:
+    sound: "alexsmobs:mantis_shrimp/die"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+
+  alexsmobs:entity.mantis_shrimp.punch:
+    sound: "alexsmobs:mantis_shrimp/punch"
+    volume: 1.0
+    pitch_min: 0.8
+    pitch_max: 1.2
+

@@ -1,0 +1,8 @@
+# STRADDLER — Drops
+
+straddler_drops:
+  Conditions:
+    - playerkill{}
+  Drops:
+    - alexsmobs:straddleboard 1 0.1
+    - exp{amount=1-3} 1.0

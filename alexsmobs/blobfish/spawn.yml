@@ -1,0 +1,15 @@
+# BLOBFISH — Spawn
+
+blobfish_spawner:
+  Type: blobfish
+  SpawnRate: 4
+  MaxMobs: 4
+  CheckTime: true
+  CheckDistance: 64
+  Conditions:
+    - biome{b=DEEP_OCEAN,DEEP_COLD_OCEAN,DEEP_FROZEN_OCEAN}
+    - height{h=0to30}
+    - lightlevel{l=0to15}
+    - worldtype{wt=OVERWORLD}
+    - blocktype{m=WATER,GRAVEL,SAND,CLAY} @origin
+    - playerdistance{d=>24}

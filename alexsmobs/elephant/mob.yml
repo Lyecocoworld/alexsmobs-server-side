@@ -1,0 +1,45 @@
+# ===============================================================
+# ELEPHANT (Alex's Mobs)
+# HP=85 DMG=10 SPD=0.35
+# ===============================================================
+elephant:
+  Type: horse
+  Display: '&fElephant'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 85
+  Damage: 10
+  MovementSpeed: 0.35
+  KnockbackResistance: 0.5
+  Faction: creature_elephant
+  Options:
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 20000
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - elephant_ai
+  AITargetSelectors:
+    - clear
+    - elephant_targets
+  Drops:
+    - elephant_drops
+  Skills:
+    - onTimer:10
+    - skill:elephant_tick @self
+    - onSpawn:
+      - skill:elephant_init @self
+    - onDeath:
+      - skill:elephant_death @self
+    - onDamaged:
+      - skill:elephant_on_hurt @self
+    - onInteract:
+      - skill:elephant_on_interact @self

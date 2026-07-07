@@ -1,0 +1,35 @@
+# CAPUCHIN MONKEY — BetterModel
+
+model:
+  bettermodel_id: "alexsmobs:capuchin_monkey"
+  type: "fox"
+  hitbox:
+    width: 1.0
+    height: 1.0
+  blockbench_model: "assets/alexsmobs/blockbench/capuchin_monkey.bbmodel"
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/capuchin_monkey.png"
+  animations:
+    idle: "animation.capuchin_monkey.idle"
+    walk: "animation.capuchin_monkey.walk"
+    run: "animation.capuchin_monkey.run"
+    sit: "animation.capuchin_monkey.sit"
+    death: "animation.capuchin_monkey.death"
+    throw: "animation.capuchin_monkey.throw"
+    headtilt: "animation.capuchin_monkey.headtilt"
+    scratch: "animation.capuchin_monkey.scratch"
+
+  animation_state_mapping:
+    idle: {"animation": "idle", "texture": "normal", "loop": true}
+    walk: {"animation": "walk", "texture": "normal", "loop": true}
+    run: {"animation": "run", "texture": "normal", "loop": true}
+    sit: {"animation": "sit", "texture": "normal", "loop": true}
+    death: {"animation": "death", "texture": "normal", "loop": true}
+    throw: {"animation": "throw", "texture": "normal", "loop": false, "duration": 12}
+    headtilt: {"animation": "headtilt", "texture": "normal", "loop": false, "duration": 15}
+    scratch: {"animation": "scratch", "texture": "normal", "loop": false, "duration": 20}
+
+  scale:
+    adult: 1.0
+    baby: 0.5
