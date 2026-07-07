@@ -1,11 +1,11 @@
-# Fichiers JAR de plugins (MythicMobs, BetterModel)
-*.jar
-
-# Build artifacts
-target/
+# Gradle
+.gradle/
 build/
 out/
 *.class
+
+# JARs de référence
+*.jar
 
 # IDE
 .idea/
