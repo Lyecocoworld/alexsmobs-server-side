@@ -28,6 +28,24 @@ public class AlexMobsServerSide extends JavaPlugin {
     private ConfigExtractor extractor;
 
     @Override
+    public void onLoad() {
+        // Register Larion density functions BEFORE any world loads.
+        // Uses reflection to temporarily unfreeze the registry.
+        // Window: after Bootstrap.bootStrap() freezes, before world load reads.
+        try {
+            int count = com.lyecocoworld.alexsmobsserverside.larion.LarionRegistryHack.tryRegisterLarionTypes();
+            if (count > 0) {
+                getLogger().info("[Larion] Registered " + count + " custom density function types via reflection");
+            } else {
+                getLogger().warning("[Larion] Could not register custom types — datapack may not load correctly");
+                getLogger().warning("[Larion] Fallback: use Terralith (100% vanilla) or Horizon (Mixin loader)");
+            }
+        } catch (Throwable e) {
+            getLogger().warning("[Larion] Registration failed: " + e.getMessage());
+        }
+    }
+
+    @Override
     public void onEnable() {
         log = getLogger();
         extractor = new ConfigExtractor(this);
