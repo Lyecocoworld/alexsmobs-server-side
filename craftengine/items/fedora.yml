@@ -1,0 +1,9 @@
+# CraftEngine Item: Fedora
+items:
+  alexsmobs:fedora:
+    display_name: "Fedora"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/fedora
+      textures:
+        default: alexsmobs:item/fedora

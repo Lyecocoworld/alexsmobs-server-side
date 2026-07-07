@@ -1,0 +1,7 @@
+# CraftEngine Item: Terrapin Bucket
+items:
+  alexsmobs:terrapin_bucket:
+    display_name: "Terrapin Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/terrapin_bucket

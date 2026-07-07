@@ -1,0 +1,9 @@
+# CraftEngine Item: Mosquito Larva
+items:
+  alexsmobs:mosquito_larva:
+    display_name: "Mosquito Larva"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/mosquito_larva
+      textures:
+        default: alexsmobs:item/mosquito_larva

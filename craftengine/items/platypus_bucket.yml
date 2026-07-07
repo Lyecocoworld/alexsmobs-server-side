@@ -1,0 +1,7 @@
+# CraftEngine Item: Platypus Bucket
+items:
+  alexsmobs:platypus_bucket:
+    display_name: "Platypus Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/platypus_bucket

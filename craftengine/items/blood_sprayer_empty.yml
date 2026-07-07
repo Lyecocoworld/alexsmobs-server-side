@@ -1,0 +1,9 @@
+# CraftEngine Item: Blood Sprayer Empty
+items:
+  alexsmobs:blood_sprayer_empty:
+    display_name: "Blood Sprayer Empty"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/blood_sprayer_empty
+      textures:
+        default: alexsmobs:item/blood_sprayer_empty

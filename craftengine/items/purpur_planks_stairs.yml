@@ -1,0 +1,7 @@
+# CraftEngine Item: Purpur Planks Stairs
+items:
+  alexsmobs:purpur_planks_stairs:
+    display_name: "Purpur Planks Stairs"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/purpur_planks_stairs

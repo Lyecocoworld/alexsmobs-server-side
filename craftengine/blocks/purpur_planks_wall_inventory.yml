@@ -1,0 +1,7 @@
+# CraftEngine Block: Purpur Planks Wall Inventory
+blocks:
+  alexsmobs:purpur_planks_wall_inventory:
+    display_name: "Purpur Planks Wall Inventory"
+    category: BUILDING
+    resource:
+      model: alexsmobs:block/purpur_planks_wall_inventory

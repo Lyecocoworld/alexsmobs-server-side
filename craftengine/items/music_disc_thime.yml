@@ -1,0 +1,9 @@
+# CraftEngine Item: Music Disc Thime
+items:
+  alexsmobs:music_disc_thime:
+    display_name: "Music Disc Thime"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/music_disc_thime
+      textures:
+        default: alexsmobs:item/music_disc_thime

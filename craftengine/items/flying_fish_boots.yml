@@ -1,0 +1,9 @@
+# CraftEngine Item: Flying Fish Boots
+items:
+  alexsmobs:flying_fish_boots:
+    display_name: "Flying Fish Boots"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/flying_fish_boots
+      textures:
+        default: alexsmobs:item/flying_fish_boots

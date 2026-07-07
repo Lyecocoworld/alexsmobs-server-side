@@ -1,0 +1,9 @@
+# CraftEngine Item: Boiled Emu Egg
+items:
+  alexsmobs:boiled_emu_egg:
+    display_name: "Boiled Emu Egg"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/boiled_emu_egg
+      textures:
+        default: alexsmobs:item/boiled_emu_egg

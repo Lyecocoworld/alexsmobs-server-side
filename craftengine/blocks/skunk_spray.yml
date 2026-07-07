@@ -1,0 +1,7 @@
+# CraftEngine Block: Skunk Spray
+blocks:
+  alexsmobs:skunk_spray:
+    display_name: "Skunk Spray"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/skunk_spray

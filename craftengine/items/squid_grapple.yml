@@ -1,0 +1,9 @@
+# CraftEngine Item: Squid Grapple
+items:
+  alexsmobs:squid_grapple:
+    display_name: "Squid Grapple"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/squid_grapple
+      textures:
+        default: alexsmobs:item/squid_grapple

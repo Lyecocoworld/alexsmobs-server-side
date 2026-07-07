@@ -1,0 +1,7 @@
+# CraftEngine Item: Medium Catfish Bucket
+items:
+  alexsmobs:medium_catfish_bucket:
+    display_name: "Medium Catfish Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/medium_catfish_bucket

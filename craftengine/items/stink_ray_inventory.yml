@@ -1,0 +1,7 @@
+# CraftEngine Item: Stink Ray Inventory
+items:
+  alexsmobs:stink_ray_inventory:
+    display_name: "Stink Ray Inventory"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/stink_ray_inventory

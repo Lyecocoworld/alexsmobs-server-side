@@ -1,0 +1,7 @@
+# CraftEngine Block: Platypus Egg
+blocks:
+  alexsmobs:platypus_egg:
+    display_name: "Platypus Egg"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/platypus_egg

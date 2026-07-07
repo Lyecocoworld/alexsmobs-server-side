@@ -1,0 +1,7 @@
+# CraftEngine Item: Skelewag Sword Blocking
+items:
+  alexsmobs:skelewag_sword_blocking:
+    display_name: "Skelewag Sword Blocking"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/skelewag_sword_blocking

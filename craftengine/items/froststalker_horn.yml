@@ -1,0 +1,9 @@
+# CraftEngine Item: Froststalker Horn
+items:
+  alexsmobs:froststalker_horn:
+    display_name: "Froststalker Horn"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/froststalker_horn
+      textures:
+        default: alexsmobs:item/froststalker_horn

@@ -1,0 +1,9 @@
+# CraftEngine Item: Frilled Shark Bucket
+items:
+  alexsmobs:frilled_shark_bucket:
+    display_name: "Frilled Shark Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/frilled_shark_bucket
+      textures:
+        default: alexsmobs:item/frilled_shark_bucket

@@ -1,0 +1,9 @@
+# CraftEngine Item: Stink Ray
+items:
+  alexsmobs:stink_ray:
+    display_name: "Stink Ray"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/stink_ray
+      textures:
+        default: alexsmobs:item/stink_ray

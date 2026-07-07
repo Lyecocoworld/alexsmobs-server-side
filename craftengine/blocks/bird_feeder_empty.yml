@@ -1,0 +1,7 @@
+# CraftEngine Block: Bird Feeder Empty
+blocks:
+  alexsmobs:bird_feeder_empty:
+    display_name: "Bird Feeder Empty"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/bird_feeder_empty

@@ -1,0 +1,9 @@
+# CraftEngine Item: Rocky Chestplate
+items:
+  alexsmobs:rocky_chestplate:
+    display_name: "Rocky Chestplate"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/rocky_chestplate
+      textures:
+        default: alexsmobs:item/rocky_chestplate

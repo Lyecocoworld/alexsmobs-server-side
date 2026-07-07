@@ -1,0 +1,9 @@
+# CraftEngine Item: Shrimp Fried Rice
+items:
+  alexsmobs:shrimp_fried_rice:
+    display_name: "Shrimp Fried Rice"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/shrimp_fried_rice
+      textures:
+        default: alexsmobs:item/shrimp_fried_rice

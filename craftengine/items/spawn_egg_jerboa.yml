@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Jerboa
+items:
+  alexsmobs:spawn_egg_jerboa:
+    display_name: "Spawn Egg Jerboa"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_jerboa

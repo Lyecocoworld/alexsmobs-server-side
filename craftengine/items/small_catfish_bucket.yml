@@ -1,0 +1,7 @@
+# CraftEngine Item: Small Catfish Bucket
+items:
+  alexsmobs:small_catfish_bucket:
+    display_name: "Small Catfish Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/small_catfish_bucket

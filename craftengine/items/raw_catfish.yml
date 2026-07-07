@@ -1,0 +1,9 @@
+# CraftEngine Item: Raw Catfish
+items:
+  alexsmobs:raw_catfish:
+    display_name: "Raw Catfish"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/raw_catfish
+      textures:
+        default: alexsmobs:item/raw_catfish

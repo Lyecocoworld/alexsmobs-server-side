@@ -1,0 +1,9 @@
+# CraftEngine Item: Lost Tentacle
+items:
+  alexsmobs:lost_tentacle:
+    display_name: "Lost Tentacle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/lost_tentacle
+      textures:
+        default: alexsmobs:item/lost_tentacle

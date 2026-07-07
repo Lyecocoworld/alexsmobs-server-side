@@ -1,0 +1,9 @@
+# CraftEngine Item: Pupfish Locator In Chunk
+items:
+  alexsmobs:pupfish_locator_in_chunk:
+    display_name: "Pupfish Locator In Chunk"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/pupfish_locator_in_chunk
+      textures:
+        default: alexsmobs:item/pupfish_locator_in_chunk

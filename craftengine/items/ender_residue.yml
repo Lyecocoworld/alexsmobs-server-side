@@ -1,0 +1,7 @@
+# CraftEngine Item: Ender Residue
+items:
+  alexsmobs:ender_residue:
+    display_name: "Ender Residue"
+    rarity: EPIC
+    resource:
+      model: alexsmobs:item/ender_residue

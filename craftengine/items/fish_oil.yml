@@ -1,0 +1,12 @@
+# CraftEngine Item: Fish Oil
+items:
+  alexsmobs:fish_oil:
+    display_name: "Fish Oil"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/fish_oil
+      textures:
+        default: alexsmobs:item/fish_oil
+    food:
+      nutrition: 0
+      saturation: 0.0

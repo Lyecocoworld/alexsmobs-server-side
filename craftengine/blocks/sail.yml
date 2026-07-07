@@ -1,0 +1,7 @@
+# CraftEngine Block: Sail
+blocks:
+  alexsmobs:sail:
+    display_name: "Sail"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/sail

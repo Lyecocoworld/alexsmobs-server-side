@@ -1,0 +1,7 @@
+# CraftEngine Block: Bird Feeder Water
+blocks:
+  alexsmobs:bird_feeder_water:
+    display_name: "Bird Feeder Water"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/bird_feeder_water

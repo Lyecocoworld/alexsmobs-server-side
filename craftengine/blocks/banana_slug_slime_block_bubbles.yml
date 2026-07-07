@@ -1,0 +1,7 @@
+# CraftEngine Block: Banana Slug Slime Block Bubbles
+blocks:
+  alexsmobs:banana_slug_slime_block_bubbles:
+    display_name: "Banana Slug Slime Block Bubbles"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/banana_slug_slime_block_bubbles

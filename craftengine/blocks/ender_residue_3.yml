@@ -1,0 +1,7 @@
+# CraftEngine Block: Ender Residue 3
+blocks:
+  alexsmobs:ender_residue_3:
+    display_name: "Ender Residue 3"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/ender_residue_3

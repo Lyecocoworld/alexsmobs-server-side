@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Mungus
+items:
+  alexsmobs:spawn_egg_mungus:
+    display_name: "Spawn Egg Mungus"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_mungus

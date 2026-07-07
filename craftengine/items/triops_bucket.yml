@@ -1,0 +1,7 @@
+# CraftEngine Item: Triops Bucket
+items:
+  alexsmobs:triops_bucket:
+    display_name: "Triops Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/triops_bucket

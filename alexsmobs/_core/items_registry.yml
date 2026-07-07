@@ -1,15 +1,67 @@
 # ════════════════════════════════════════════════════════════════
-# GLOBAL ITEMS REGISTRY — Items CraftEngine
+# GLOBAL ITEMS REGISTRY — CraftEngine / Alex's Mobs
 # ════════════════════════════════════════════════════════════════
 # Registry central des items custom d'Alex's Mobs.
 # Ces items sont créés via CraftEngine (ou Nexo en dernier recours).
 #
-# Source: AMItemRegistry.java — 43 items
+# Source: assets/models/item/ — 280 items
+# Généré automatiquement depuis les fichiers de modèles.
 # ════════════════════════════════════════════════════════════════
 
 items:
 
-  # ── Drops de créatures ──
+  # ── Matériaux & Drops de créatures ──
+  alexsmobs:ambergris:
+    craftengine_id: "alexsmobs:ambergris"
+    display: "Ambergris"
+    type: MATERIAL
+    source_mob: cachalot_whale
+    rarity: UNCOMMON
+
+  alexsmobs:banana_slug_slime_block:
+    craftengine_id: "alexsmobs:banana_slug_slime_block"
+    display: "Banana Slug Slime Block"
+    type: MATERIAL
+    source_mob: banana_slug
+    rarity: COMMON
+
+  alexsmobs:banner_pattern_australia_0:
+    craftengine_id: "alexsmobs:banner_pattern_australia_0"
+    display: "Banner Pattern (Australia)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:banner_pattern_australia_1:
+    craftengine_id: "alexsmobs:banner_pattern_australia_1"
+    display: "Banner Pattern (Australia Alt)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:banner_pattern_bear:
+    craftengine_id: "alexsmobs:banner_pattern_bear"
+    display: "Banner Pattern (Bear)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:banner_pattern_brazil:
+    craftengine_id: "alexsmobs:banner_pattern_brazil"
+    display: "Banner Pattern (Brazil)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:banner_pattern_new_mexico:
+    craftengine_id: "alexsmobs:banner_pattern_new_mexico"
+    display: "Banner Pattern (New Mexico)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:bear_dust:
+    craftengine_id: "alexsmobs:bear_dust"
+    display: "Bear Dust"
+    type: MATERIAL
+    source_mob: grizzly_bear
+    rarity: COMMON
+
   alexsmobs:bear_fur:
     craftengine_id: "alexsmobs:bear_fur"
     display: "Bear Fur"
@@ -17,24 +69,1775 @@ items:
     source_mob: grizzly_bear
     rarity: COMMON
 
-  # ── Nourriture ──
-  alexsmobs:salmon_tame:
-    craftengine_id: "alexsmobs:salmon_tame"
-    display: "Salmon (Taming)"
-    type: FOOD
-    food: 2
-    saturation: 0.2
-
-  # ── Outils / Armes ──
-  alexsmobs:bear_dust:
-    craftengine_id: "alexsmobs:bear_dust"
-    display: "Bear Dust"
+  alexsmobs:bison_carpet:
+    craftengine_id: "alexsmobs:bison_carpet"
+    display: "Bison Carpet"
     type: MATERIAL
+    source_mob: bison
+    rarity: COMMON
+
+  alexsmobs:bison_fur:
+    craftengine_id: "alexsmobs:bison_fur"
+    display: "Bison Fur"
+    type: MATERIAL
+    source_mob: bison
+    rarity: COMMON
+
+  alexsmobs:bison_fur_block:
+    craftengine_id: "alexsmobs:bison_fur_block"
+    display: "Bison Fur Block"
+    type: MATERIAL
+    source_mob: bison
+    rarity: COMMON
+
+  alexsmobs:blood_sac:
+    craftengine_id: "alexsmobs:blood_sac"
+    display: "Blood Sac"
+    type: MATERIAL
+    source_mob: mosquito
     rarity: UNCOMMON
 
-  # ── Trading ──
+  alexsmobs:bone_serpent_tooth:
+    craftengine_id: "alexsmobs:bone_serpent_tooth"
+    display: "Bone Serpent Tooth"
+    type: MATERIAL
+    source_mob: bone_serpent
+    rarity: UNCOMMON
+
+  alexsmobs:cachalot_whale_tooth:
+    craftengine_id: "alexsmobs:cachalot_whale_tooth"
+    display: "Cachalot Whale Tooth"
+    type: MATERIAL
+    source_mob: cachalot_whale
+    rarity: UNCOMMON
+
+  alexsmobs:caiman_egg:
+    craftengine_id: "alexsmobs:caiman_egg"
+    display: "Caiman Egg"
+    type: MATERIAL
+    source_mob: caiman
+    rarity: COMMON
+
+  alexsmobs:capsid:
+    craftengine_id: "alexsmobs:capsid"
+    display: "Capsid"
+    type: MATERIAL
+    source_mob: enderiophage
+    rarity: RARE
+
+  alexsmobs:centipede_leg:
+    craftengine_id: "alexsmobs:centipede_leg"
+    display: "Centipede Leg"
+    type: MATERIAL
+    source_mob: centipede
+    rarity: UNCOMMON
+
+  alexsmobs:cockroach_wing:
+    craftengine_id: "alexsmobs:cockroach_wing"
+    display: "Cockroach Wing"
+    type: MATERIAL
+    source_mob: cockroach
+    rarity: UNCOMMON
+
+  alexsmobs:cockroach_wing_fragment:
+    craftengine_id: "alexsmobs:cockroach_wing_fragment"
+    display: "Cockroach Wing Fragment"
+    type: MATERIAL
+    source_mob: cockroach
+    rarity: COMMON
+
+  alexsmobs:crocodile_egg:
+    craftengine_id: "alexsmobs:crocodile_egg"
+    display: "Crocodile Egg"
+    type: MATERIAL
+    source_mob: crocodile
+    rarity: COMMON
+
+  alexsmobs:crocodile_scute:
+    craftengine_id: "alexsmobs:crocodile_scute"
+    display: "Crocodile Scute"
+    type: MATERIAL
+    source_mob: crocodile
+    rarity: UNCOMMON
+
+  alexsmobs:crystalized_banana_slug_mucus:
+    craftengine_id: "alexsmobs:crystalized_banana_slug_mucus"
+    display: "Crystalized Banana Slug Mucus"
+    type: MATERIAL
+    source_mob: banana_slug
+    rarity: UNCOMMON
+
+  alexsmobs:dimensional_carver_shard_0:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_0"
+    display: "Dimensional Carver Shard (0)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dimensional_carver_shard_1:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_1"
+    display: "Dimensional Carver Shard (1)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dimensional_carver_shard_10:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_10"
+    display: "Dimensional Carver Shard (10)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dimensional_carver_shard_2:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_2"
+    display: "Dimensional Carver Shard (2)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dimensional_carver_shard_3:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_3"
+    display: "Dimensional Carver Shard (3)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dimensional_carver_shard_4:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_4"
+    display: "Dimensional Carver Shard (4)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dimensional_carver_shard_5:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_5"
+    display: "Dimensional Carver Shard (5)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dimensional_carver_shard_6:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_6"
+    display: "Dimensional Carver Shard (6)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dimensional_carver_shard_7:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_7"
+    display: "Dimensional Carver Shard (7)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dimensional_carver_shard_8:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_8"
+    display: "Dimensional Carver Shard (8)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dimensional_carver_shard_9:
+    craftengine_id: "alexsmobs:dimensional_carver_shard_9"
+    display: "Dimensional Carver Shard (9)"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:dropbear_claw:
+    craftengine_id: "alexsmobs:dropbear_claw"
+    display: "Dropbear Claw"
+    type: MATERIAL
+    source_mob: dropbear
+    rarity: UNCOMMON
+
+  alexsmobs:elastic_tendon:
+    craftengine_id: "alexsmobs:elastic_tendon"
+    display: "Elastic Tendon"
+    type: MATERIAL
+    source_mob: cachalot_whale
+    rarity: UNCOMMON
+
+  alexsmobs:emu_feather:
+    craftengine_id: "alexsmobs:emu_feather"
+    display: "Emu Feather"
+    type: MATERIAL
+    source_mob: emu
+    rarity: UNCOMMON
+
+  alexsmobs:end_pirate_anchor:
+    craftengine_id: "alexsmobs:end_pirate_anchor"
+    display: "End Pirate Anchor"
+    type: MATERIAL
+    rarity: RARE
+
+  alexsmobs:end_pirate_anchor_winch:
+    craftengine_id: "alexsmobs:end_pirate_anchor_winch"
+    display: "End Pirate Anchor Winch"
+    type: MATERIAL
+    rarity: RARE
+
+  alexsmobs:end_pirate_door:
+    craftengine_id: "alexsmobs:end_pirate_door"
+    display: "End Pirate Door"
+    type: MATERIAL
+    rarity: RARE
+
+  alexsmobs:end_pirate_flag:
+    craftengine_id: "alexsmobs:end_pirate_flag"
+    display: "End Pirate Flag"
+    type: MATERIAL
+    rarity: RARE
+
+  alexsmobs:end_pirate_ship_wheel:
+    craftengine_id: "alexsmobs:end_pirate_ship_wheel"
+    display: "End Pirate Ship Wheel"
+    type: MATERIAL
+    rarity: RARE
+
+  alexsmobs:end_pirate_trapdoor:
+    craftengine_id: "alexsmobs:end_pirate_trapdoor"
+    display: "End Pirate Trapdoor"
+    type: MATERIAL
+    rarity: RARE
+
+  alexsmobs:ender_residue:
+    craftengine_id: "alexsmobs:ender_residue"
+    display: "Ender Residue"
+    type: MATERIAL
+    source_mob: enderiophage
+    rarity: UNCOMMON
+
+  alexsmobs:farseer_arm:
+    craftengine_id: "alexsmobs:farseer_arm"
+    display: "Farseer Arm"
+    type: MATERIAL
+    source_mob: farseer
+    rarity: RARE
+
+  alexsmobs:fish_bones:
+    craftengine_id: "alexsmobs:fish_bones"
+    display: "Fish Bones"
+    type: MATERIAL
+    source_mob: skelewag
+    rarity: UNCOMMON
+
+  alexsmobs:froststalker_horn:
+    craftengine_id: "alexsmobs:froststalker_horn"
+    display: "Froststalker Horn"
+    type: MATERIAL
+    source_mob: froststalker
+    rarity: UNCOMMON
+
+  alexsmobs:gazelle_horn:
+    craftengine_id: "alexsmobs:gazelle_horn"
+    display: "Gazelle Horn"
+    type: MATERIAL
+    source_mob: gazelle
+    rarity: UNCOMMON
+
+  alexsmobs:guster_eye:
+    craftengine_id: "alexsmobs:guster_eye"
+    display: "Guster Eye"
+    type: MATERIAL
+    source_mob: guster
+    rarity: UNCOMMON
+
+  alexsmobs:hemolymph_sac:
+    craftengine_id: "alexsmobs:hemolymph_sac"
+    display: "Hemolymph Sac"
+    type: MATERIAL
+    source_mob: warped_mosco
+    rarity: UNCOMMON
+
+  alexsmobs:kangaroo_hide:
+    craftengine_id: "alexsmobs:kangaroo_hide"
+    display: "Kangaroo Hide"
+    type: MATERIAL
+    source_mob: kangaroo
+    rarity: COMMON
+
+  alexsmobs:leafcutter_ant_chamber:
+    craftengine_id: "alexsmobs:leafcutter_ant_chamber"
+    display: "Leafcutter Ant Chamber"
+    type: MATERIAL
+    source_mob: leafcutter_ant
+    rarity: COMMON
+
+  alexsmobs:leafcutter_anthill:
+    craftengine_id: "alexsmobs:leafcutter_anthill"
+    display: "Leafcutter Anthill"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:lost_tentacle:
+    craftengine_id: "alexsmobs:lost_tentacle"
+    display: "Lost Tentacle"
+    type: MATERIAL
+    source_mob: mimic_octopus
+    rarity: UNCOMMON
+
+  alexsmobs:moose_antler:
+    craftengine_id: "alexsmobs:moose_antler"
+    display: "Moose Antler"
+    type: MATERIAL
+    source_mob: moose
+    rarity: UNCOMMON
+
+  alexsmobs:mosquito_proboscis:
+    craftengine_id: "alexsmobs:mosquito_proboscis"
+    display: "Mosquito Proboscis"
+    type: MATERIAL
+    source_mob: crimson_mosquito
+    rarity: UNCOMMON
+
+  alexsmobs:mungal_spores:
+    craftengine_id: "alexsmobs:mungal_spores"
+    display: "Mungal Spores"
+    type: MATERIAL
+    source_mob: mungus
+    rarity: UNCOMMON
+
+  alexsmobs:music_disc_daze:
+    craftengine_id: "alexsmobs:music_disc_daze"
+    display: "Music Disc - Daze"
+    type: MATERIAL
+    rarity: RARE
+
+  alexsmobs:music_disc_thime:
+    craftengine_id: "alexsmobs:music_disc_thime"
+    display: "Music Disc - Thime"
+    type: MATERIAL
+    rarity: RARE
+
+  alexsmobs:phantom_sail:
+    craftengine_id: "alexsmobs:phantom_sail"
+    display: "Phantom Sail"
+    type: MATERIAL
+    source_mob: soul_vulture
+    rarity: RARE
+
+  alexsmobs:pigshoes:
+    craftengine_id: "alexsmobs:pigshoes"
+    display: "Pigshoes"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:platypus_egg:
+    craftengine_id: "alexsmobs:platypus_egg"
+    display: "Platypus Egg"
+    type: MATERIAL
+    source_mob: platypus
+    rarity: COMMON
+
+  alexsmobs:purpur_planks:
+    craftengine_id: "alexsmobs:purpur_planks"
+    display: "Purpur Planks"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:purpur_planks_slab:
+    craftengine_id: "alexsmobs:purpur_planks_slab"
+    display: "Purpur Planks Slab"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:purpur_planks_stairs:
+    craftengine_id: "alexsmobs:purpur_planks_stairs"
+    display: "Purpur Planks Stairs"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:purpur_planks_wall:
+    craftengine_id: "alexsmobs:purpur_planks_wall"
+    display: "Purpur Planks Wall"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:raccoon_tail:
+    craftengine_id: "alexsmobs:raccoon_tail"
+    display: "Raccoon Tail"
+    type: MATERIAL
+    source_mob: raccoon
+    rarity: UNCOMMON
+
+  alexsmobs:rattlesnake_rattle:
+    craftengine_id: "alexsmobs:rattlesnake_rattle"
+    display: "Rattlesnake Rattle"
+    type: MATERIAL
+    source_mob: rattlesnake
+    rarity: UNCOMMON
+
+  alexsmobs:red_sand_circle:
+    craftengine_id: "alexsmobs:red_sand_circle"
+    display: "Red Sand Circle"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:roadrunner_feather:
+    craftengine_id: "alexsmobs:roadrunner_feather"
+    display: "Roadrunner Feather"
+    type: MATERIAL
+    source_mob: roadrunner
+    rarity: UNCOMMON
+
+  alexsmobs:rocky_shell:
+    craftengine_id: "alexsmobs:rocky_shell"
+    display: "Rocky Shell"
+    type: MATERIAL
+    source_mob: rocky_roller
+    rarity: UNCOMMON
+
+  alexsmobs:sand_circle:
+    craftengine_id: "alexsmobs:sand_circle"
+    display: "Sand Circle"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:serrated_shark_tooth:
+    craftengine_id: "alexsmobs:serrated_shark_tooth"
+    display: "Serrated Shark Tooth"
+    type: MATERIAL
+    source_mob: frilled_shark
+    rarity: COMMON
+
+  alexsmobs:shark_tooth:
+    craftengine_id: "alexsmobs:shark_tooth"
+    display: "Shark Tooth"
+    type: MATERIAL
+    source_mob: hammerhead_shark
+    rarity: UNCOMMON
+
+  alexsmobs:shed_snake_skin:
+    craftengine_id: "alexsmobs:shed_snake_skin"
+    display: "Shed Snake Skin"
+    type: MATERIAL
+    source_mob: rattlesnake
+    rarity: UNCOMMON
+
+  alexsmobs:shield_of_the_deep_blocking:
+    craftengine_id: "alexsmobs:shield_of_the_deep_blocking"
+    display: "Shield Of The Deep Blocking"
+    type: MATERIAL
+    rarity: COMMON
+
+  alexsmobs:skreecher_soul:
+    craftengine_id: "alexsmobs:skreecher_soul"
+    display: "Skreecher Soul"
+    type: MATERIAL
+    source_mob: skreecher
+    rarity: RARE
+
+  alexsmobs:soul_heart:
+    craftengine_id: "alexsmobs:soul_heart"
+    display: "Soul Heart"
+    type: MATERIAL
+    source_mob: soul_vulture
+    rarity: RARE
+
+  alexsmobs:spectre_sail:
+    craftengine_id: "alexsmobs:spectre_sail"
+    display: "Spectre Sail"
+    type: MATERIAL
+    source_mob: spectre
+    rarity: RARE
+
+  alexsmobs:spiked_scute:
+    craftengine_id: "alexsmobs:spiked_scute"
+    display: "Spiked Scute"
+    type: MATERIAL
+    source_mob: alligator_snapping_turtle
+    rarity: UNCOMMON
+
+  alexsmobs:straddlite:
+    craftengine_id: "alexsmobs:straddlite"
+    display: "Straddlite"
+    type: MATERIAL
+    source_mob: straddler
+    rarity: UNCOMMON
+
+  alexsmobs:straddlite_block:
+    craftengine_id: "alexsmobs:straddlite_block"
+    display: "Straddlite Block"
+    type: MATERIAL
+    source_mob: straddler
+    rarity: COMMON
+
+  alexsmobs:tarantula_hawk_wing:
+    craftengine_id: "alexsmobs:tarantula_hawk_wing"
+    display: "Tarantula Hawk Wing"
+    type: MATERIAL
+    source_mob: tarantula_hawk
+    rarity: UNCOMMON
+
+  alexsmobs:tarantula_hawk_wing_fragment:
+    craftengine_id: "alexsmobs:tarantula_hawk_wing_fragment"
+    display: "Tarantula Hawk Wing Fragment"
+    type: MATERIAL
+    source_mob: tarantula_hawk
+    rarity: UNCOMMON
+
+  alexsmobs:terrapin_egg:
+    craftengine_id: "alexsmobs:terrapin_egg"
+    display: "Terrapin Egg"
+    type: MATERIAL
+    source_mob: terrapin
+    rarity: COMMON
+
+  alexsmobs:triops_eggs:
+    craftengine_id: "alexsmobs:triops_eggs"
+    display: "Triops Eggs"
+    type: MATERIAL
+    source_mob: triops
+    rarity: COMMON
+
+  alexsmobs:void_worm_beak:
+    craftengine_id: "alexsmobs:void_worm_beak"
+    display: "Void Worm Beak"
+    type: MATERIAL
+    source_mob: void_worm
+    rarity: RARE
+
+  alexsmobs:void_worm_effigy:
+    craftengine_id: "alexsmobs:void_worm_effigy"
+    display: "Void Worm Effigy"
+    type: MATERIAL
+    source_mob: void_worm
+    rarity: EPIC
+
+  alexsmobs:void_worm_eye:
+    craftengine_id: "alexsmobs:void_worm_eye"
+    display: "Void Worm Eye"
+    type: MATERIAL
+    source_mob: void_worm
+    rarity: EPIC
+
+  alexsmobs:void_worm_mandible:
+    craftengine_id: "alexsmobs:void_worm_mandible"
+    display: "Void Worm Mandible"
+    type: MATERIAL
+    source_mob: void_worm
+    rarity: RARE
+
+  alexsmobs:warped_mixture:
+    craftengine_id: "alexsmobs:warped_mixture"
+    display: "Warped Mixture"
+    type: MATERIAL
+    source_mob: warped_toad
+    rarity: RARE
+
+  alexsmobs:warped_muscle:
+    craftengine_id: "alexsmobs:warped_muscle"
+    display: "Warped Muscle"
+    type: MATERIAL
+    source_mob: warped_toad
+    rarity: RARE
+
+
+  # ── Nourriture ──
+  alexsmobs:acacia_blossom:
+    craftengine_id: "alexsmobs:acacia_blossom"
+    display: "Acacia Blossom"
+    type: FOOD
+    source_mob: elephant
+    rarity: COMMON
+
+  alexsmobs:banana:
+    craftengine_id: "alexsmobs:banana"
+    display: "Banana"
+    type: FOOD
+    rarity: COMMON
+
+  alexsmobs:banana_peel:
+    craftengine_id: "alexsmobs:banana_peel"
+    display: "Banana Peel"
+    type: FOOD
+    source_mob: banana_slug
+    rarity: COMMON
+
+  alexsmobs:banana_slug_slime:
+    craftengine_id: "alexsmobs:banana_slug_slime"
+    display: "Banana Slug Slime"
+    type: FOOD
+    source_mob: banana_slug
+    rarity: COMMON
+
+  alexsmobs:blobfish:
+    craftengine_id: "alexsmobs:blobfish"
+    display: "Blobfish"
+    type: FOOD
+    source_mob: blobfish
+    rarity: COMMON
+
+  alexsmobs:boiled_emu_egg:
+    craftengine_id: "alexsmobs:boiled_emu_egg"
+    display: "Boiled Emu Egg"
+    type: FOOD
+    source_mob: emu
+    rarity: COMMON
+
+  alexsmobs:cockroach_ootheca:
+    craftengine_id: "alexsmobs:cockroach_ootheca"
+    display: "Cockroach Ootheca"
+    type: FOOD
+    source_mob: cockroach
+    rarity: COMMON
+
+  alexsmobs:cooked_catfish:
+    craftengine_id: "alexsmobs:cooked_catfish"
+    display: "Cooked Catfish"
+    type: FOOD
+    source_mob: catfish
+    rarity: COMMON
+
+  alexsmobs:cooked_kangaroo_meat:
+    craftengine_id: "alexsmobs:cooked_kangaroo_meat"
+    display: "Cooked Kangaroo Meat"
+    type: FOOD
+    source_mob: kangaroo
+    rarity: COMMON
+
+  alexsmobs:cooked_lobster_tail:
+    craftengine_id: "alexsmobs:cooked_lobster_tail"
+    display: "Cooked Lobster Tail"
+    type: FOOD
+    source_mob: lobster
+    rarity: COMMON
+
+  alexsmobs:cooked_moose_ribs:
+    craftengine_id: "alexsmobs:cooked_moose_ribs"
+    display: "Cooked Moose Ribs"
+    type: FOOD
+    source_mob: moose
+    rarity: COMMON
+
+  alexsmobs:cosmic_cod:
+    craftengine_id: "alexsmobs:cosmic_cod"
+    display: "Cosmic Cod"
+    type: FOOD
+    source_mob: cosmic_cod
+    rarity: COMMON
+
+  alexsmobs:emu_egg:
+    craftengine_id: "alexsmobs:emu_egg"
+    display: "Emu Egg"
+    type: FOOD
+    source_mob: emu
+    rarity: COMMON
+
+  alexsmobs:fish_oil:
+    craftengine_id: "alexsmobs:fish_oil"
+    display: "Fish Oil"
+    type: FOOD
+    source_mob: skelewag
+    rarity: COMMON
+
+  alexsmobs:flying_fish:
+    craftengine_id: "alexsmobs:flying_fish"
+    display: "Flying Fish"
+    type: FOOD
+    source_mob: flying_fish
+    rarity: COMMON
+
+  alexsmobs:gongylidia:
+    craftengine_id: "alexsmobs:gongylidia"
+    display: "Gongylidia"
+    type: FOOD
+    source_mob: leafcutter_ant
+    rarity: COMMON
+
+  alexsmobs:kangaroo_burger:
+    craftengine_id: "alexsmobs:kangaroo_burger"
+    display: "Kangaroo Burger"
+    type: FOOD
+    source_mob: kangaroo
+    rarity: COMMON
+
+  alexsmobs:kangaroo_meat:
+    craftengine_id: "alexsmobs:kangaroo_meat"
+    display: "Kangaroo Meat"
+    type: FOOD
+    source_mob: kangaroo
+    rarity: COMMON
+
+  alexsmobs:leafcutter_ant_pupa:
+    craftengine_id: "alexsmobs:leafcutter_ant_pupa"
+    display: "Leafcutter Ant Pupa"
+    type: FOOD
+    source_mob: leafcutter_ant
+    rarity: COMMON
+
+  alexsmobs:lobster_tail:
+    craftengine_id: "alexsmobs:lobster_tail"
+    display: "Lobster Tail"
+    type: FOOD
+    source_mob: lobster
+    rarity: COMMON
+
+  alexsmobs:maggot:
+    craftengine_id: "alexsmobs:maggot"
+    display: "Maggot"
+    type: FOOD
+    source_mob: crow
+    rarity: COMMON
+
+  alexsmobs:moose_ribs:
+    craftengine_id: "alexsmobs:moose_ribs"
+    display: "Moose Ribs"
+    type: FOOD
+    source_mob: moose
+    rarity: COMMON
+
+  alexsmobs:mosquito_larva:
+    craftengine_id: "alexsmobs:mosquito_larva"
+    display: "Mosquito Larva"
+    type: FOOD
+    source_mob: crimson_mosquito
+    rarity: COMMON
+
+  alexsmobs:mosquito_repellent_stew:
+    craftengine_id: "alexsmobs:mosquito_repellent_stew"
+    display: "Mosquito Repellent Stew"
+    type: FOOD
+    source_mob: mosquito
+    rarity: COMMON
+
+  alexsmobs:rainbow_jelly:
+    craftengine_id: "alexsmobs:rainbow_jelly"
+    display: "Rainbow Jelly"
+    type: FOOD
+    rarity: COMMON
+
+  alexsmobs:raw_catfish:
+    craftengine_id: "alexsmobs:raw_catfish"
+    display: "Raw Catfish"
+    type: FOOD
+    source_mob: catfish
+    rarity: COMMON
+
+  alexsmobs:shrimp_fried_rice:
+    craftengine_id: "alexsmobs:shrimp_fried_rice"
+    display: "Shrimp Fried Rice"
+    type: FOOD
+    source_mob: mantis_shrimp
+    rarity: COMMON
+
+  alexsmobs:sopa_de_macaco:
+    craftengine_id: "alexsmobs:sopa_de_macaco"
+    display: "Sopa de Macaco"
+    type: FOOD
+    source_mob: capuchin_monkey
+    rarity: COMMON
+
+
+  # ── Outils & Utilitaires ──
   alexsmobs:animal_dictionary:
     craftengine_id: "alexsmobs:animal_dictionary"
     display: "Animal Dictionary"
-    type: ITEM
+    type: TOOL
+    rarity: COMMON
+
+  alexsmobs:blobfish_bucket:
+    craftengine_id: "alexsmobs:blobfish_bucket"
+    display: "Blobfish Bucket"
+    type: TOOL
+    source_mob: blobfish
     rarity: UNCOMMON
+
+  alexsmobs:chorus_on_a_stick:
+    craftengine_id: "alexsmobs:chorus_on_a_stick"
+    display: "Chorus on a Stick"
+    type: TOOL
+    rarity: COMMON
+
+  alexsmobs:comb_jelly_bucket:
+    craftengine_id: "alexsmobs:comb_jelly_bucket"
+    display: "Comb Jelly Bucket"
+    type: TOOL
+    source_mob: comb_jelly
+    rarity: UNCOMMON
+
+  alexsmobs:cosmic_cod_bucket:
+    craftengine_id: "alexsmobs:cosmic_cod_bucket"
+    display: "Cosmic Cod Bucket"
+    type: TOOL
+    source_mob: cosmic_cod
+    rarity: UNCOMMON
+
+  alexsmobs:devils_hole_pupfish_bucket:
+    craftengine_id: "alexsmobs:devils_hole_pupfish_bucket"
+    display: "Devil's Hole Pupfish Bucket"
+    type: TOOL
+    source_mob: devils_hole_pupfish
+    rarity: UNCOMMON
+
+  alexsmobs:dimensional_carver:
+    craftengine_id: "alexsmobs:dimensional_carver"
+    display: "Dimensional Carver"
+    type: TOOL
+    rarity: EPIC
+
+  alexsmobs:echolocator:
+    craftengine_id: "alexsmobs:echolocator"
+    display: "Echolocator"
+    type: TOOL
+    source_mob: enderiophage
+    rarity: RARE
+
+  alexsmobs:enderiophage_rocket:
+    craftengine_id: "alexsmobs:enderiophage_rocket"
+    display: "Enderiophage Rocket"
+    type: TOOL
+    source_mob: enderiophage
+    rarity: RARE
+
+  alexsmobs:endolocator:
+    craftengine_id: "alexsmobs:endolocator"
+    display: "Endolocator"
+    type: TOOL
+    source_mob: enderiophage
+    rarity: RARE
+
+  alexsmobs:flying_fish_bucket:
+    craftengine_id: "alexsmobs:flying_fish_bucket"
+    display: "Flying Fish Bucket"
+    type: TOOL
+    source_mob: flying_fish
+    rarity: UNCOMMON
+
+  alexsmobs:frilled_shark_bucket:
+    craftengine_id: "alexsmobs:frilled_shark_bucket"
+    display: "Frilled Shark Bucket"
+    type: TOOL
+    source_mob: frilled_shark
+    rarity: UNCOMMON
+
+  alexsmobs:ghostly_pickaxe:
+    craftengine_id: "alexsmobs:ghostly_pickaxe"
+    display: "Ghostly Pickaxe"
+    type: TOOL
+    rarity: COMMON
+
+  alexsmobs:gustmaker:
+    craftengine_id: "alexsmobs:gustmaker"
+    display: "Gustmaker"
+    type: TOOL
+    source_mob: guster
+    rarity: COMMON
+
+  alexsmobs:hummingbird_feeder:
+    craftengine_id: "alexsmobs:hummingbird_feeder"
+    display: "Hummingbird Feeder"
+    type: TOOL
+    source_mob: hummingbird
+    rarity: COMMON
+
+  alexsmobs:komodo_spit:
+    craftengine_id: "alexsmobs:komodo_spit"
+    display: "Komodo Spit"
+    type: TOOL
+    source_mob: komodo_dragon
+    rarity: COMMON
+
+  alexsmobs:komodo_spit_bottle:
+    craftengine_id: "alexsmobs:komodo_spit_bottle"
+    display: "Komodo Spit Bottle"
+    type: TOOL
+    source_mob: komodo_dragon
+    rarity: COMMON
+
+  alexsmobs:large_catfish_bucket:
+    craftengine_id: "alexsmobs:large_catfish_bucket"
+    display: "Large Catfish Bucket"
+    type: TOOL
+    source_mob: catfish
+    rarity: UNCOMMON
+
+  alexsmobs:lava_bottle:
+    craftengine_id: "alexsmobs:lava_bottle"
+    display: "Lava Bottle"
+    type: TOOL
+    source_mob: lava
+    rarity: COMMON
+
+  alexsmobs:lobster_bucket:
+    craftengine_id: "alexsmobs:lobster_bucket"
+    display: "Lobster Bucket"
+    type: TOOL
+    source_mob: lobster
+    rarity: UNCOMMON
+
+  alexsmobs:medium_catfish_bucket:
+    craftengine_id: "alexsmobs:medium_catfish_bucket"
+    display: "Medium Catfish Bucket"
+    type: TOOL
+    source_mob: catfish
+    rarity: UNCOMMON
+
+  alexsmobs:mimic_octopus_bucket:
+    craftengine_id: "alexsmobs:mimic_octopus_bucket"
+    display: "Mimic Octopus Bucket"
+    type: TOOL
+    source_mob: mimic_octopus
+    rarity: UNCOMMON
+
+  alexsmobs:mimicream:
+    craftengine_id: "alexsmobs:mimicream"
+    display: "Mimicream"
+    type: TOOL
+    source_mob: mimicube
+    rarity: RARE
+
+  alexsmobs:mudskipper_bucket:
+    craftengine_id: "alexsmobs:mudskipper_bucket"
+    display: "Mudskipper Bucket"
+    type: TOOL
+    source_mob: mudskipper
+    rarity: UNCOMMON
+
+  alexsmobs:mysterious_worm:
+    craftengine_id: "alexsmobs:mysterious_worm"
+    display: "Mysterious Worm"
+    type: TOOL
+    source_mob: void_worm
+    rarity: RARE
+
+  alexsmobs:platypus_bucket:
+    craftengine_id: "alexsmobs:platypus_bucket"
+    display: "Platypus Bucket"
+    type: TOOL
+    source_mob: platypus
+    rarity: UNCOMMON
+
+  alexsmobs:pocket_sand:
+    craftengine_id: "alexsmobs:pocket_sand"
+    display: "Pocket Sand"
+    type: TOOL
+    source_mob: guster
+    rarity: COMMON
+
+  alexsmobs:poison_bottle:
+    craftengine_id: "alexsmobs:poison_bottle"
+    display: "Poison Bottle"
+    type: TOOL
+    rarity: COMMON
+
+  alexsmobs:pupfish_locator:
+    craftengine_id: "alexsmobs:pupfish_locator"
+    display: "Pupfish Locator"
+    type: TOOL
+    source_mob: devils_hole_pupfish
+    rarity: COMMON
+
+  alexsmobs:rainbow_glass:
+    craftengine_id: "alexsmobs:rainbow_glass"
+    display: "Rainbow Glass"
+    type: TOOL
+    rarity: COMMON
+
+  alexsmobs:shattered_dimensional_carver:
+    craftengine_id: "alexsmobs:shattered_dimensional_carver"
+    display: "Shattered Dimensional Carver"
+    type: TOOL
+    rarity: EPIC
+
+  alexsmobs:skunk_spray:
+    craftengine_id: "alexsmobs:skunk_spray"
+    display: "Skunk Spray"
+    type: TOOL
+    source_mob: skunk
+    rarity: COMMON
+
+  alexsmobs:small_catfish_bucket:
+    craftengine_id: "alexsmobs:small_catfish_bucket"
+    display: "Small Catfish Bucket"
+    type: TOOL
+    source_mob: catfish
+    rarity: UNCOMMON
+
+  alexsmobs:squid_grapple:
+    craftengine_id: "alexsmobs:squid_grapple"
+    display: "Squid Grapple"
+    type: TOOL
+    rarity: COMMON
+
+  alexsmobs:stink_bottle:
+    craftengine_id: "alexsmobs:stink_bottle"
+    display: "Stink Bottle"
+    type: TOOL
+    source_mob: skunk
+    rarity: COMMON
+
+  alexsmobs:straddle_saddle:
+    craftengine_id: "alexsmobs:straddle_saddle"
+    display: "Straddle Saddle"
+    type: TOOL
+    source_mob: straddler
+    rarity: COMMON
+
+  alexsmobs:straddleboard:
+    craftengine_id: "alexsmobs:straddleboard"
+    display: "Straddleboard"
+    type: TOOL
+    source_mob: straddler
+    rarity: COMMON
+
+  alexsmobs:stradpole_bucket:
+    craftengine_id: "alexsmobs:stradpole_bucket"
+    display: "Stradpole Bucket"
+    type: TOOL
+    source_mob: stradpole
+    rarity: UNCOMMON
+
+  alexsmobs:terrapin_bucket:
+    craftengine_id: "alexsmobs:terrapin_bucket"
+    display: "Terrapin Bucket"
+    type: TOOL
+    source_mob: terrapin
+    rarity: UNCOMMON
+
+  alexsmobs:transmutation_table:
+    craftengine_id: "alexsmobs:transmutation_table"
+    display: "Transmutation Table"
+    type: TOOL
+    rarity: EPIC
+
+  alexsmobs:triops_bucket:
+    craftengine_id: "alexsmobs:triops_bucket"
+    display: "Triops Bucket"
+    type: TOOL
+    source_mob: triops
+    rarity: UNCOMMON
+
+  alexsmobs:vine_lasso:
+    craftengine_id: "alexsmobs:vine_lasso"
+    display: "Vine Lasso"
+    type: TOOL
+    rarity: COMMON
+
+
+  # ── Armes ──
+  alexsmobs:ancient_dart:
+    craftengine_id: "alexsmobs:ancient_dart"
+    display: "Ancient Dart"
+    type: WEAPON
+    rarity: UNCOMMON
+
+  alexsmobs:blood_sprayer:
+    craftengine_id: "alexsmobs:blood_sprayer"
+    display: "Blood Sprayer"
+    type: WEAPON
+    source_mob: crimson_mosquito
+    rarity: RARE
+
+  alexsmobs:falconry_glove:
+    craftengine_id: "alexsmobs:falconry_glove"
+    display: "Falconry Glove"
+    type: WEAPON
+    source_mob: falconry
+    rarity: UNCOMMON
+
+  alexsmobs:hemolymph_blaster:
+    craftengine_id: "alexsmobs:hemolymph_blaster"
+    display: "Hemolymph Blaster"
+    type: WEAPON
+    source_mob: warped_mosco
+    rarity: EPIC
+
+  alexsmobs:maraca:
+    craftengine_id: "alexsmobs:maraca"
+    display: "Maraca"
+    type: WEAPON
+    rarity: UNCOMMON
+
+  alexsmobs:sculk_boomer:
+    craftengine_id: "alexsmobs:sculk_boomer"
+    display: "Sculk Boomer"
+    type: WEAPON
+    rarity: RARE
+
+  alexsmobs:shark_tooth_arrow:
+    craftengine_id: "alexsmobs:shark_tooth_arrow"
+    display: "Shark Tooth Arrow"
+    type: WEAPON
+    source_mob: hammerhead_shark
+    rarity: UNCOMMON
+
+  alexsmobs:shield_of_the_deep:
+    craftengine_id: "alexsmobs:shield_of_the_deep"
+    display: "Shield of the Deep"
+    type: WEAPON
+    rarity: EPIC
+
+  alexsmobs:skelewag_sword:
+    craftengine_id: "alexsmobs:skelewag_sword"
+    display: "Skelewag Sword"
+    type: WEAPON
+    source_mob: skelewag
+    rarity: UNCOMMON
+
+  alexsmobs:stink_ray:
+    craftengine_id: "alexsmobs:stink_ray"
+    display: "Stink Ray"
+    type: WEAPON
+    source_mob: skunk
+    rarity: UNCOMMON
+
+  alexsmobs:tendon_whip:
+    craftengine_id: "alexsmobs:tendon_whip"
+    display: "Tendon Whip"
+    type: WEAPON
+    source_mob: cachalot_whale
+    rarity: UNCOMMON
+
+
+  # ── Armures ──
+  alexsmobs:centipede_leggings:
+    craftengine_id: "alexsmobs:centipede_leggings"
+    display: "Centipede Leggings"
+    type: ARMOR
+    source_mob: centipede
+    rarity: UNCOMMON
+
+  alexsmobs:crocodile_chestplate:
+    craftengine_id: "alexsmobs:crocodile_chestplate"
+    display: "Crocodile Chestplate"
+    type: ARMOR
+    source_mob: crocodile
+    rarity: UNCOMMON
+
+  alexsmobs:emu_leggings:
+    craftengine_id: "alexsmobs:emu_leggings"
+    display: "Emu Leggings"
+    type: ARMOR
+    source_mob: emu
+    rarity: UNCOMMON
+
+  alexsmobs:falconry_hood:
+    craftengine_id: "alexsmobs:falconry_hood"
+    display: "Falconry Hood"
+    type: ARMOR
+    rarity: UNCOMMON
+
+  alexsmobs:fedora:
+    craftengine_id: "alexsmobs:fedora"
+    display: "Fedora"
+    type: ARMOR
+    source_mob: raccoon
+    rarity: UNCOMMON
+
+  alexsmobs:flying_fish_boots:
+    craftengine_id: "alexsmobs:flying_fish_boots"
+    display: "Flying Fish Boots"
+    type: ARMOR
+    source_mob: flying_fish
+    rarity: UNCOMMON
+
+  alexsmobs:frontier_cap:
+    craftengine_id: "alexsmobs:frontier_cap"
+    display: "Frontier Cap"
+    type: ARMOR
+    source_mob: grizzly_bear
+    rarity: UNCOMMON
+
+  alexsmobs:froststalker_helmet:
+    craftengine_id: "alexsmobs:froststalker_helmet"
+    display: "Froststalker Helmet"
+    type: ARMOR
+    source_mob: froststalker
+    rarity: UNCOMMON
+
+  alexsmobs:halo:
+    craftengine_id: "alexsmobs:halo"
+    display: "Halo"
+    type: ARMOR
+    rarity: RARE
+
+  alexsmobs:moose_headgear:
+    craftengine_id: "alexsmobs:moose_headgear"
+    display: "Moose Headgear"
+    type: ARMOR
+    source_mob: moose
+    rarity: UNCOMMON
+
+  alexsmobs:novelty_hat:
+    craftengine_id: "alexsmobs:novelty_hat"
+    display: "Novelty Hat"
+    type: ARMOR
+    source_mob: seagull
+    rarity: UNCOMMON
+
+  alexsmobs:roadrunner_boots:
+    craftengine_id: "alexsmobs:roadrunner_boots"
+    display: "Roadrunner Boots"
+    type: ARMOR
+    source_mob: roadrunner
+    rarity: UNCOMMON
+
+  alexsmobs:rocky_chestplate:
+    craftengine_id: "alexsmobs:rocky_chestplate"
+    display: "Rocky Chestplate"
+    type: ARMOR
+    source_mob: rocky_roller
+    rarity: UNCOMMON
+
+  alexsmobs:sombrero:
+    craftengine_id: "alexsmobs:sombrero"
+    display: "Sombrero"
+    type: ARMOR
+    source_mob: maned_wolf
+    rarity: UNCOMMON
+
+  alexsmobs:spiked_turtle_shell:
+    craftengine_id: "alexsmobs:spiked_turtle_shell"
+    display: "Spiked Turtle Shell"
+    type: ARMOR
+    source_mob: alligator_snapping_turtle
+    rarity: UNCOMMON
+
+  alexsmobs:straddle_helmet:
+    craftengine_id: "alexsmobs:straddle_helmet"
+    display: "Straddle Helmet"
+    type: ARMOR
+    source_mob: straddler
+    rarity: UNCOMMON
+
+  alexsmobs:tarantula_hawk_elytra:
+    craftengine_id: "alexsmobs:tarantula_hawk_elytra"
+    display: "Tarantula Hawk Elytra"
+    type: ARMOR
+    source_mob: tarantula_hawk
+    rarity: RARE
+
+  alexsmobs:unsettling_kimono:
+    craftengine_id: "alexsmobs:unsettling_kimono"
+    display: "Unsettling Kimono"
+    type: ARMOR
+    rarity: UNCOMMON
+
+
+  # ── Œufs d'apparition ──
+  alexsmobs:spawn_egg_alligator_snapping_turtle:
+    craftengine_id: "alexsmobs:spawn_egg_alligator_snapping_turtle"
+    display: "Alligator Snapping Turtle Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_anaconda:
+    craftengine_id: "alexsmobs:spawn_egg_anaconda"
+    display: "Anaconda Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_anteater:
+    craftengine_id: "alexsmobs:spawn_egg_anteater"
+    display: "Anteater Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_bald_eagle:
+    craftengine_id: "alexsmobs:spawn_egg_bald_eagle"
+    display: "Bald Eagle Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_banana_slug:
+    craftengine_id: "alexsmobs:spawn_egg_banana_slug"
+    display: "Banana Slug Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_bison:
+    craftengine_id: "alexsmobs:spawn_egg_bison"
+    display: "Bison Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_blobfish:
+    craftengine_id: "alexsmobs:spawn_egg_blobfish"
+    display: "Blobfish Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_blue_jay:
+    craftengine_id: "alexsmobs:spawn_egg_blue_jay"
+    display: "Blue Jay Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_bone_serpent:
+    craftengine_id: "alexsmobs:spawn_egg_bone_serpent"
+    display: "Bone Serpent Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_bunfungus:
+    craftengine_id: "alexsmobs:spawn_egg_bunfungus"
+    display: "Bunfungus Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_cachalot_whale:
+    craftengine_id: "alexsmobs:spawn_egg_cachalot_whale"
+    display: "Cachalot Whale Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_caiman:
+    craftengine_id: "alexsmobs:spawn_egg_caiman"
+    display: "Caiman Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_capuchin_monkey:
+    craftengine_id: "alexsmobs:spawn_egg_capuchin_monkey"
+    display: "Capuchin Monkey Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_catfish:
+    craftengine_id: "alexsmobs:spawn_egg_catfish"
+    display: "Catfish Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_centipede:
+    craftengine_id: "alexsmobs:spawn_egg_centipede"
+    display: "Centipede Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_cockroach:
+    craftengine_id: "alexsmobs:spawn_egg_cockroach"
+    display: "Cockroach Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_comb_jelly:
+    craftengine_id: "alexsmobs:spawn_egg_comb_jelly"
+    display: "Comb Jelly Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_cosmaw:
+    craftengine_id: "alexsmobs:spawn_egg_cosmaw"
+    display: "Cosmaw Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_cosmic_cod:
+    craftengine_id: "alexsmobs:spawn_egg_cosmic_cod"
+    display: "Cosmic Cod Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_crimson_mosquito:
+    craftengine_id: "alexsmobs:spawn_egg_crimson_mosquito"
+    display: "Crimson Mosquito Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_crocodile:
+    craftengine_id: "alexsmobs:spawn_egg_crocodile"
+    display: "Crocodile Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_crow:
+    craftengine_id: "alexsmobs:spawn_egg_crow"
+    display: "Crow Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_devils_hole_pupfish:
+    craftengine_id: "alexsmobs:spawn_egg_devils_hole_pupfish"
+    display: "Devils Hole Pupfish Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_dropbear:
+    craftengine_id: "alexsmobs:spawn_egg_dropbear"
+    display: "Dropbear Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_elephant:
+    craftengine_id: "alexsmobs:spawn_egg_elephant"
+    display: "Elephant Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_emu:
+    craftengine_id: "alexsmobs:spawn_egg_emu"
+    display: "Emu Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_endergrade:
+    craftengine_id: "alexsmobs:spawn_egg_endergrade"
+    display: "Endergrade Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_enderiophage:
+    craftengine_id: "alexsmobs:spawn_egg_enderiophage"
+    display: "Enderiophage Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_farseer:
+    craftengine_id: "alexsmobs:spawn_egg_farseer"
+    display: "Farseer Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_flutter:
+    craftengine_id: "alexsmobs:spawn_egg_flutter"
+    display: "Flutter Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_fly:
+    craftengine_id: "alexsmobs:spawn_egg_fly"
+    display: "Fly Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_flying_fish:
+    craftengine_id: "alexsmobs:spawn_egg_flying_fish"
+    display: "Flying Fish Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_frilled_shark:
+    craftengine_id: "alexsmobs:spawn_egg_frilled_shark"
+    display: "Frilled Shark Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_froststalker:
+    craftengine_id: "alexsmobs:spawn_egg_froststalker"
+    display: "Froststalker Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_gazelle:
+    craftengine_id: "alexsmobs:spawn_egg_gazelle"
+    display: "Gazelle Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_gelada_monkey:
+    craftengine_id: "alexsmobs:spawn_egg_gelada_monkey"
+    display: "Gelada Monkey Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_giant_squid:
+    craftengine_id: "alexsmobs:spawn_egg_giant_squid"
+    display: "Giant Squid Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_gorilla:
+    craftengine_id: "alexsmobs:spawn_egg_gorilla"
+    display: "Gorilla Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_grizzly_bear:
+    craftengine_id: "alexsmobs:spawn_egg_grizzly_bear"
+    display: "Grizzly Bear Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_guster:
+    craftengine_id: "alexsmobs:spawn_egg_guster"
+    display: "Guster Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_hammerhead_shark:
+    craftengine_id: "alexsmobs:spawn_egg_hammerhead_shark"
+    display: "Hammerhead Shark Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_hummingbird:
+    craftengine_id: "alexsmobs:spawn_egg_hummingbird"
+    display: "Hummingbird Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_jerboa:
+    craftengine_id: "alexsmobs:spawn_egg_jerboa"
+    display: "Jerboa Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_kangaroo:
+    craftengine_id: "alexsmobs:spawn_egg_kangaroo"
+    display: "Kangaroo Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_komodo_dragon:
+    craftengine_id: "alexsmobs:spawn_egg_komodo_dragon"
+    display: "Komodo Dragon Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_laviathan:
+    craftengine_id: "alexsmobs:spawn_egg_laviathan"
+    display: "Laviathan Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_leafcutter_ant:
+    craftengine_id: "alexsmobs:spawn_egg_leafcutter_ant"
+    display: "Leafcutter Ant Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_lobster:
+    craftengine_id: "alexsmobs:spawn_egg_lobster"
+    display: "Lobster Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_maned_wolf:
+    craftengine_id: "alexsmobs:spawn_egg_maned_wolf"
+    display: "Maned Wolf Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_mantis_shrimp:
+    craftengine_id: "alexsmobs:spawn_egg_mantis_shrimp"
+    display: "Mantis Shrimp Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_mimic_octopus:
+    craftengine_id: "alexsmobs:spawn_egg_mimic_octopus"
+    display: "Mimic Octopus Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_mimicube:
+    craftengine_id: "alexsmobs:spawn_egg_mimicube"
+    display: "Mimicube Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_moose:
+    craftengine_id: "alexsmobs:spawn_egg_moose"
+    display: "Moose Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_mudskipper:
+    craftengine_id: "alexsmobs:spawn_egg_mudskipper"
+    display: "Mudskipper Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_mungus:
+    craftengine_id: "alexsmobs:spawn_egg_mungus"
+    display: "Mungus Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_murmur:
+    craftengine_id: "alexsmobs:spawn_egg_murmur"
+    display: "Murmur Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_orca:
+    craftengine_id: "alexsmobs:spawn_egg_orca"
+    display: "Orca Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_platypus:
+    craftengine_id: "alexsmobs:spawn_egg_platypus"
+    display: "Platypus Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_potoo:
+    craftengine_id: "alexsmobs:spawn_egg_potoo"
+    display: "Potoo Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_raccoon:
+    craftengine_id: "alexsmobs:spawn_egg_raccoon"
+    display: "Raccoon Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_rain_frog:
+    craftengine_id: "alexsmobs:spawn_egg_rain_frog"
+    display: "Rain Frog Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_rattlesnake:
+    craftengine_id: "alexsmobs:spawn_egg_rattlesnake"
+    display: "Rattlesnake Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_rhinoceros:
+    craftengine_id: "alexsmobs:spawn_egg_rhinoceros"
+    display: "Rhinoceros Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_roadrunner:
+    craftengine_id: "alexsmobs:spawn_egg_roadrunner"
+    display: "Roadrunner Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_rocky_roller:
+    craftengine_id: "alexsmobs:spawn_egg_rocky_roller"
+    display: "Rocky Roller Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_seagull:
+    craftengine_id: "alexsmobs:spawn_egg_seagull"
+    display: "Seagull Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_seal:
+    craftengine_id: "alexsmobs:spawn_egg_seal"
+    display: "Seal Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_shoebill:
+    craftengine_id: "alexsmobs:spawn_egg_shoebill"
+    display: "Shoebill Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_skelewag:
+    craftengine_id: "alexsmobs:spawn_egg_skelewag"
+    display: "Skelewag Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_skreecher:
+    craftengine_id: "alexsmobs:spawn_egg_skreecher"
+    display: "Skreecher Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_skunk:
+    craftengine_id: "alexsmobs:spawn_egg_skunk"
+    display: "Skunk Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_snow_leopard:
+    craftengine_id: "alexsmobs:spawn_egg_snow_leopard"
+    display: "Snow Leopard Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_soul_vulture:
+    craftengine_id: "alexsmobs:spawn_egg_soul_vulture"
+    display: "Soul Vulture Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_spectre:
+    craftengine_id: "alexsmobs:spawn_egg_spectre"
+    display: "Spectre Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_straddler:
+    craftengine_id: "alexsmobs:spawn_egg_straddler"
+    display: "Straddler Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_stradpole:
+    craftengine_id: "alexsmobs:spawn_egg_stradpole"
+    display: "Stradpole Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_sugar_glider:
+    craftengine_id: "alexsmobs:spawn_egg_sugar_glider"
+    display: "Sugar Glider Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_sunbird:
+    craftengine_id: "alexsmobs:spawn_egg_sunbird"
+    display: "Sunbird Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_tarantula_hawk:
+    craftengine_id: "alexsmobs:spawn_egg_tarantula_hawk"
+    display: "Tarantula Hawk Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_tasmanian_devil:
+    craftengine_id: "alexsmobs:spawn_egg_tasmanian_devil"
+    display: "Tasmanian Devil Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_terrapin:
+    craftengine_id: "alexsmobs:spawn_egg_terrapin"
+    display: "Terrapin Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_tiger:
+    craftengine_id: "alexsmobs:spawn_egg_tiger"
+    display: "Tiger Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_toucan:
+    craftengine_id: "alexsmobs:spawn_egg_toucan"
+    display: "Toucan Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_triops:
+    craftengine_id: "alexsmobs:spawn_egg_triops"
+    display: "Triops Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_tusklin:
+    craftengine_id: "alexsmobs:spawn_egg_tusklin"
+    display: "Tusklin Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_underminer:
+    craftengine_id: "alexsmobs:spawn_egg_underminer"
+    display: "Underminer Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_void_worm:
+    craftengine_id: "alexsmobs:spawn_egg_void_worm"
+    display: "Void Worm Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_warped_mosco:
+    craftengine_id: "alexsmobs:spawn_egg_warped_mosco"
+    display: "Warped Mosco Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+  alexsmobs:spawn_egg_warped_toad:
+    craftengine_id: "alexsmobs:spawn_egg_warped_toad"
+    display: "Warped Toad Spawn Egg"
+    type: SPAWN_EGG
+    rarity: COMMON
+
+

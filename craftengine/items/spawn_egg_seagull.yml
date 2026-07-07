@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Seagull
+items:
+  alexsmobs:spawn_egg_seagull:
+    display_name: "Spawn Egg Seagull"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_seagull

@@ -1,0 +1,7 @@
+# CraftEngine Block: Sculk Boomer Open
+blocks:
+  alexsmobs:sculk_boomer_open:
+    display_name: "Sculk Boomer Open"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/sculk_boomer_open

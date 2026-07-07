@@ -1,0 +1,7 @@
+# CraftEngine Block: Caiman Egg
+blocks:
+  alexsmobs:caiman_egg:
+    display_name: "Caiman Egg"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/caiman_egg

@@ -1,0 +1,7 @@
+# CraftEngine Block: Transmutation Table
+blocks:
+  alexsmobs:transmutation_table:
+    display_name: "Transmutation Table"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/transmutation_table

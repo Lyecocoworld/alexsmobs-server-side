@@ -1,0 +1,9 @@
+# CraftEngine Item: Void Worm Mandible
+items:
+  alexsmobs:void_worm_mandible:
+    display_name: "Void Worm Mandible"
+    rarity: EPIC
+    resource:
+      model: alexsmobs:item/void_worm_mandible
+      textures:
+        default: alexsmobs:item/void_worm_mandible

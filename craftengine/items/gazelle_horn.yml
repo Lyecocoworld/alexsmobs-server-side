@@ -1,0 +1,9 @@
+# CraftEngine Item: Gazelle Horn
+items:
+  alexsmobs:gazelle_horn:
+    display_name: "Gazelle Horn"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/gazelle_horn
+      textures:
+        default: alexsmobs:item/gazelle_horn

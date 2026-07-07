@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Cachalot Whale
+items:
+  alexsmobs:spawn_egg_cachalot_whale:
+    display_name: "Spawn Egg Cachalot Whale"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_cachalot_whale

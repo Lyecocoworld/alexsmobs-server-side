@@ -1,0 +1,9 @@
+# CraftEngine Item: Ghostly Pickaxe
+items:
+  alexsmobs:ghostly_pickaxe:
+    display_name: "Ghostly Pickaxe"
+    rarity: EPIC
+    resource:
+      model: alexsmobs:item/ghostly_pickaxe
+      textures:
+        default: alexsmobs:item/ghostly_pickaxe

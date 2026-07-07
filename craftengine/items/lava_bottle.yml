@@ -1,0 +1,9 @@
+# CraftEngine Item: Lava Bottle
+items:
+  alexsmobs:lava_bottle:
+    display_name: "Lava Bottle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/lava_bottle
+      textures:
+        default: alexsmobs:item/lava_bottle

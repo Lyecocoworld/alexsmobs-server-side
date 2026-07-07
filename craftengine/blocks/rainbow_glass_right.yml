@@ -1,0 +1,7 @@
+# CraftEngine Block: Rainbow Glass Right
+blocks:
+  alexsmobs:rainbow_glass_right:
+    display_name: "Rainbow Glass Right"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/rainbow_glass_right

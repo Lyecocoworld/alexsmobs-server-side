@@ -1,826 +1,271 @@
-# Block Registry — Alex's Mobs CraftEngine
-# Auto-generated from assets/models/block/
-# Total: 137 blocks
+# ════════════════════════════════════════════════════════════════
+# GLOBAL BLOCKS REGISTRY — CraftEngine / Alex's Mobs
+# ════════════════════════════════════════════════════════════════
+# Registry central des blocs custom d'Alex's Mobs.
+# Source: assets/models/block/ — variants collapsed into base blocks.
+# ════════════════════════════════════════════════════════════════
 
 blocks:
-  alexsmobs:banana_peel:
-    craftengine_id: "alexsmobs:banana_peel"
-    display: "Banana Peel"
-    has_blockstate: yes
-    has_loot_table: yes
 
-  alexsmobs:banana_slug_slime_block:
-    craftengine_id: "alexsmobs:banana_slug_slime_block"
-    display: "Banana Slug Slime Block"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:banana_slug_slime_block_bubbles:
-    craftengine_id: "alexsmobs:banana_slug_slime_block_bubbles"
-    display: "Banana Slug Slime Block Bubbles"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:banana_slug_slime_block_inventory:
-    craftengine_id: "alexsmobs:banana_slug_slime_block_inventory"
-    display: "Banana Slug Slime Block Inventory"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bird_feeder:
-    craftengine_id: "alexsmobs:bird_feeder"
-    display: "Bird Feeder"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bird_feeder_empty:
-    craftengine_id: "alexsmobs:bird_feeder_empty"
-    display: "Bird Feeder Empty"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bird_feeder_empty_hanging:
-    craftengine_id: "alexsmobs:bird_feeder_empty_hanging"
-    display: "Bird Feeder Empty Hanging"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bird_feeder_filled:
-    craftengine_id: "alexsmobs:bird_feeder_filled"
-    display: "Bird Feeder Filled"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bird_feeder_filled_hanging:
-    craftengine_id: "alexsmobs:bird_feeder_filled_hanging"
-    display: "Bird Feeder Filled Hanging"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bird_feeder_hanging:
-    craftengine_id: "alexsmobs:bird_feeder_hanging"
-    display: "Bird Feeder Hanging"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bird_feeder_sugar:
-    craftengine_id: "alexsmobs:bird_feeder_sugar"
-    display: "Bird Feeder Sugar"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bird_feeder_sugar_hanging:
-    craftengine_id: "alexsmobs:bird_feeder_sugar_hanging"
-    display: "Bird Feeder Sugar Hanging"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bird_feeder_water:
-    craftengine_id: "alexsmobs:bird_feeder_water"
-    display: "Bird Feeder Water"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bird_feeder_water_hanging:
-    craftengine_id: "alexsmobs:bird_feeder_water_hanging"
-    display: "Bird Feeder Water Hanging"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:bison_carpet:
-    craftengine_id: "alexsmobs:bison_carpet"
-    display: "Bison Carpet"
-    has_blockstate: yes
-    has_loot_table: yes
-
+  # ── Blocs de construction ──
   alexsmobs:bison_fur_block:
     craftengine_id: "alexsmobs:bison_fur_block"
     display: "Bison Fur Block"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:caiman_egg:
-    craftengine_id: "alexsmobs:caiman_egg"
-    display: "Caiman Egg"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:capsid:
-    craftengine_id: "alexsmobs:capsid"
-    display: "Capsid"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:crocodile_egg:
-    craftengine_id: "alexsmobs:crocodile_egg"
-    display: "Crocodile Egg"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:crystalized_banana_slug_mucus:
-    craftengine_id: "alexsmobs:crystalized_banana_slug_mucus"
-    display: "Crystalized Banana Slug Mucus"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:end_pirate_door:
-    craftengine_id: "alexsmobs:end_pirate_door"
-    display: "End Pirate Door"
-    has_blockstate: yes
-    has_loot_table: no
-
-  alexsmobs:end_pirate_trapdoor_bottom:
-    craftengine_id: "alexsmobs:end_pirate_trapdoor_bottom"
-    display: "End Pirate Trapdoor Bottom"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:end_pirate_trapdoor_open:
-    craftengine_id: "alexsmobs:end_pirate_trapdoor_open"
-    display: "End Pirate Trapdoor Open"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:end_pirate_trapdoor_top:
-    craftengine_id: "alexsmobs:end_pirate_trapdoor_top"
-    display: "End Pirate Trapdoor Top"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:ender_residue_0:
-    craftengine_id: "alexsmobs:ender_residue_0"
-    display: "Ender Residue 0"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:ender_residue_1:
-    craftengine_id: "alexsmobs:ender_residue_1"
-    display: "Ender Residue 1"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:ender_residue_2:
-    craftengine_id: "alexsmobs:ender_residue_2"
-    display: "Ender Residue 2"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:ender_residue_3:
-    craftengine_id: "alexsmobs:ender_residue_3"
-    display: "Ender Residue 3"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_caiman_eggs:
-    craftengine_id: "alexsmobs:four_caiman_eggs"
-    display: "Four Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_crocodile_eggs:
-    craftengine_id: "alexsmobs:four_crocodile_eggs"
-    display: "Four Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_platypus_eggs:
-    craftengine_id: "alexsmobs:four_platypus_eggs"
-    display: "Four Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_slightly_cracked_caiman_eggs:
-    craftengine_id: "alexsmobs:four_slightly_cracked_caiman_eggs"
-    display: "Four Slightly Cracked Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_slightly_cracked_crocodile_eggs:
-    craftengine_id: "alexsmobs:four_slightly_cracked_crocodile_eggs"
-    display: "Four Slightly Cracked Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_slightly_cracked_platypus_eggs:
-    craftengine_id: "alexsmobs:four_slightly_cracked_platypus_eggs"
-    display: "Four Slightly Cracked Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_slightly_cracked_terrapin_eggs:
-    craftengine_id: "alexsmobs:four_slightly_cracked_terrapin_eggs"
-    display: "Four Slightly Cracked Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_terrapin_eggs:
-    craftengine_id: "alexsmobs:four_terrapin_eggs"
-    display: "Four Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_very_cracked_caiman_eggs:
-    craftengine_id: "alexsmobs:four_very_cracked_caiman_eggs"
-    display: "Four Very Cracked Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_very_cracked_crocodile_eggs:
-    craftengine_id: "alexsmobs:four_very_cracked_crocodile_eggs"
-    display: "Four Very Cracked Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_very_cracked_platypus_eggs:
-    craftengine_id: "alexsmobs:four_very_cracked_platypus_eggs"
-    display: "Four Very Cracked Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:four_very_cracked_terrapin_eggs:
-    craftengine_id: "alexsmobs:four_very_cracked_terrapin_eggs"
-    display: "Four Very Cracked Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:gustmaker:
-    craftengine_id: "alexsmobs:gustmaker"
-    display: "Gustmaker"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:gustmaker_on:
-    craftengine_id: "alexsmobs:gustmaker_on"
-    display: "Gustmaker On"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:gustmaker_vertical:
-    craftengine_id: "alexsmobs:gustmaker_vertical"
-    display: "Gustmaker Vertical"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:gustmaker_vertical_on:
-    craftengine_id: "alexsmobs:gustmaker_vertical_on"
-    display: "Gustmaker Vertical On"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:leafcutter_ant_chamber:
-    craftengine_id: "alexsmobs:leafcutter_ant_chamber"
-    display: "Leafcutter Ant Chamber"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:leafcutter_ant_chamber_fungus:
-    craftengine_id: "alexsmobs:leafcutter_ant_chamber_fungus"
-    display: "Leafcutter Ant Chamber Fungus"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:leafcutter_anthill:
-    craftengine_id: "alexsmobs:leafcutter_anthill"
-    display: "Leafcutter Anthill"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:orientable_with_top:
-    craftengine_id: "alexsmobs:orientable_with_top"
-    display: "Orientable With Top"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:orientable_with_top_vertical:
-    craftengine_id: "alexsmobs:orientable_with_top_vertical"
-    display: "Orientable With Top Vertical"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:phantom_sail_bottom:
-    craftengine_id: "alexsmobs:phantom_sail_bottom"
-    display: "Phantom Sail Bottom"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:phantom_sail_middle:
-    craftengine_id: "alexsmobs:phantom_sail_middle"
-    display: "Phantom Sail Middle"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:phantom_sail_single:
-    craftengine_id: "alexsmobs:phantom_sail_single"
-    display: "Phantom Sail Single"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:phantom_sail_top:
-    craftengine_id: "alexsmobs:phantom_sail_top"
-    display: "Phantom Sail Top"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:platypus_egg:
-    craftengine_id: "alexsmobs:platypus_egg"
-    display: "Platypus Egg"
-    has_blockstate: yes
-    has_loot_table: yes
+    type: BUILDING
+    source_mob: bison
+    rarity: COMMON
 
   alexsmobs:purpur_planks:
     craftengine_id: "alexsmobs:purpur_planks"
     display: "Purpur Planks"
-    has_blockstate: yes
-    has_loot_table: no
-
-  alexsmobs:purpur_planks_inner_stairs:
-    craftengine_id: "alexsmobs:purpur_planks_inner_stairs"
-    display: "Purpur Planks Inner Stairs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:purpur_planks_outer_stairs:
-    craftengine_id: "alexsmobs:purpur_planks_outer_stairs"
-    display: "Purpur Planks Outer Stairs"
-    has_blockstate: no
-    has_loot_table: no
+    type: BUILDING
+    rarity: COMMON
 
   alexsmobs:purpur_planks_slab:
     craftengine_id: "alexsmobs:purpur_planks_slab"
     display: "Purpur Planks Slab"
-    has_blockstate: yes
-    has_loot_table: no
+    type: BUILDING
+    rarity: COMMON
 
   alexsmobs:purpur_planks_stairs:
     craftengine_id: "alexsmobs:purpur_planks_stairs"
     display: "Purpur Planks Stairs"
-    has_blockstate: yes
-    has_loot_table: no
+    type: BUILDING
+    rarity: COMMON
 
-  alexsmobs:purpur_planks_upper_slab:
-    craftengine_id: "alexsmobs:purpur_planks_upper_slab"
-    display: "Purpur Planks Upper Slab"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:purpur_planks_wall_inventory:
-    craftengine_id: "alexsmobs:purpur_planks_wall_inventory"
-    display: "Purpur Planks Wall Inventory"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:purpur_planks_wall_post:
-    craftengine_id: "alexsmobs:purpur_planks_wall_post"
-    display: "Purpur Planks Wall Post"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:purpur_planks_wall_side:
-    craftengine_id: "alexsmobs:purpur_planks_wall_side"
-    display: "Purpur Planks Wall Side"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:purpur_planks_wall_side_tall:
-    craftengine_id: "alexsmobs:purpur_planks_wall_side_tall"
-    display: "Purpur Planks Wall Side Tall"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:purpur_planks_wall:
+    craftengine_id: "alexsmobs:purpur_planks_wall"
+    display: "Purpur Planks Wall"
+    type: BUILDING
+    rarity: COMMON
 
   alexsmobs:rainbow_glass:
     craftengine_id: "alexsmobs:rainbow_glass"
     display: "Rainbow Glass"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:rainbow_glass_all:
-    craftengine_id: "alexsmobs:rainbow_glass_all"
-    display: "Rainbow Glass All"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:rainbow_glass_down:
-    craftengine_id: "alexsmobs:rainbow_glass_down"
-    display: "Rainbow Glass Down"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:rainbow_glass_left:
-    craftengine_id: "alexsmobs:rainbow_glass_left"
-    display: "Rainbow Glass Left"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:rainbow_glass_right:
-    craftengine_id: "alexsmobs:rainbow_glass_right"
-    display: "Rainbow Glass Right"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:rainbow_glass_up:
-    craftengine_id: "alexsmobs:rainbow_glass_up"
-    display: "Rainbow Glass Up"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:red_sand_circle:
-    craftengine_id: "alexsmobs:red_sand_circle"
-    display: "Red Sand Circle"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:sail:
-    craftengine_id: "alexsmobs:sail"
-    display: "Sail"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:sand_circle:
-    craftengine_id: "alexsmobs:sand_circle"
-    display: "Sand Circle"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:sculk_boomer_closed:
-    craftengine_id: "alexsmobs:sculk_boomer_closed"
-    display: "Sculk Boomer Closed"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:sculk_boomer_locked:
-    craftengine_id: "alexsmobs:sculk_boomer_locked"
-    display: "Sculk Boomer Locked"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:sculk_boomer_open:
-    craftengine_id: "alexsmobs:sculk_boomer_open"
-    display: "Sculk Boomer Open"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:skunk_spray:
-    craftengine_id: "alexsmobs:skunk_spray"
-    display: "Skunk Spray"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:slightly_cracked_caiman_egg:
-    craftengine_id: "alexsmobs:slightly_cracked_caiman_egg"
-    display: "Slightly Cracked Caiman Egg"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:slightly_cracked_crocodile_egg:
-    craftengine_id: "alexsmobs:slightly_cracked_crocodile_egg"
-    display: "Slightly Cracked Crocodile Egg"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:slightly_cracked_platypus_egg:
-    craftengine_id: "alexsmobs:slightly_cracked_platypus_egg"
-    display: "Slightly Cracked Platypus Egg"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:slightly_cracked_terrapin_egg:
-    craftengine_id: "alexsmobs:slightly_cracked_terrapin_egg"
-    display: "Slightly Cracked Terrapin Egg"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:spectre_sail_bottom:
-    craftengine_id: "alexsmobs:spectre_sail_bottom"
-    display: "Spectre Sail Bottom"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:spectre_sail_middle:
-    craftengine_id: "alexsmobs:spectre_sail_middle"
-    display: "Spectre Sail Middle"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:spectre_sail_single:
-    craftengine_id: "alexsmobs:spectre_sail_single"
-    display: "Spectre Sail Single"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:spectre_sail_top:
-    craftengine_id: "alexsmobs:spectre_sail_top"
-    display: "Spectre Sail Top"
-    has_blockstate: no
-    has_loot_table: no
+    type: BUILDING
+    rarity: UNCOMMON
 
   alexsmobs:straddlite_block:
     craftengine_id: "alexsmobs:straddlite_block"
     display: "Straddlite Block"
-    has_blockstate: yes
-    has_loot_table: yes
+    type: BUILDING
+    source_mob: straddler
+    rarity: UNCOMMON
 
-  alexsmobs:template_caiman_egg:
-    craftengine_id: "alexsmobs:template_caiman_egg"
-    display: "Template Caiman Egg"
-    has_blockstate: no
-    has_loot_table: no
 
-  alexsmobs:template_crocodile_egg:
-    craftengine_id: "alexsmobs:template_crocodile_egg"
-    display: "Template Crocodile Egg"
-    has_blockstate: no
-    has_loot_table: no
+  # ── Décoration ──
+  alexsmobs:banana_peel:
+    craftengine_id: "alexsmobs:banana_peel"
+    display: "Banana Peel"
+    type: DECORATION
+    source_mob: banana_slug
+    rarity: COMMON
 
-  alexsmobs:template_four_caiman_eggs:
-    craftengine_id: "alexsmobs:template_four_caiman_eggs"
-    display: "Template Four Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:bison_carpet:
+    craftengine_id: "alexsmobs:bison_carpet"
+    display: "Bison Carpet"
+    type: DECORATION
+    source_mob: bison
+    rarity: COMMON
 
-  alexsmobs:template_four_crocodile_eggs:
-    craftengine_id: "alexsmobs:template_four_crocodile_eggs"
-    display: "Template Four Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:crystalized_banana_slug_mucus:
+    craftengine_id: "alexsmobs:crystalized_banana_slug_mucus"
+    display: "Crystalized Banana Slug Mucus"
+    type: DECORATION
+    source_mob: banana_slug
+    rarity: UNCOMMON
 
-  alexsmobs:template_four_platypus_eggs:
-    craftengine_id: "alexsmobs:template_four_platypus_eggs"
-    display: "Template Four Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:ender_residue:
+    craftengine_id: "alexsmobs:ender_residue"
+    display: "Ender Residue"
+    type: DECORATION
+    source_mob: enderiophage
+    rarity: UNCOMMON
 
-  alexsmobs:template_four_terrapin_eggs:
-    craftengine_id: "alexsmobs:template_four_terrapin_eggs"
-    display: "Template Four Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:phantom_sail:
+    craftengine_id: "alexsmobs:phantom_sail"
+    display: "Phantom Sail"
+    type: DECORATION
+    source_mob: soul_vulture
+    rarity: UNCOMMON
 
-  alexsmobs:template_platypus_egg:
-    craftengine_id: "alexsmobs:template_platypus_egg"
-    display: "Template Platypus Egg"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:red_sand_circle:
+    craftengine_id: "alexsmobs:red_sand_circle"
+    display: "Red Sand Circle"
+    type: DECORATION
+    rarity: UNCOMMON
 
-  alexsmobs:template_terrapin_egg:
-    craftengine_id: "alexsmobs:template_terrapin_egg"
-    display: "Template Terrapin Egg"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:sail:
+    craftengine_id: "alexsmobs:sail"
+    display: "Sail"
+    type: DECORATION
+    rarity: COMMON
 
-  alexsmobs:template_three_caiman_eggs:
-    craftengine_id: "alexsmobs:template_three_caiman_eggs"
-    display: "Template Three Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:sand_circle:
+    craftengine_id: "alexsmobs:sand_circle"
+    display: "Sand Circle"
+    type: DECORATION
+    rarity: UNCOMMON
 
-  alexsmobs:template_three_crocodile_eggs:
-    craftengine_id: "alexsmobs:template_three_crocodile_eggs"
-    display: "Template Three Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:spectre_sail:
+    craftengine_id: "alexsmobs:spectre_sail"
+    display: "Spectre Sail"
+    type: DECORATION
+    source_mob: spectre
+    rarity: UNCOMMON
 
-  alexsmobs:template_three_platypus_eggs:
-    craftengine_id: "alexsmobs:template_three_platypus_eggs"
-    display: "Template Three Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:void_worm_beak:
+    craftengine_id: "alexsmobs:void_worm_beak"
+    display: "Void Worm Beak (Block)"
+    type: DECORATION
+    source_mob: void_worm
+    rarity: RARE
 
-  alexsmobs:template_three_terrapin_eggs:
-    craftengine_id: "alexsmobs:template_three_terrapin_eggs"
-    display: "Template Three Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
 
-  alexsmobs:template_two_caiman_eggs:
-    craftengine_id: "alexsmobs:template_two_caiman_eggs"
-    display: "Template Two Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  # ── Blocs fonctionnels ──
+  alexsmobs:bird_feeder:
+    craftengine_id: "alexsmobs:bird_feeder"
+    display: "Bird Feeder"
+    type: FUNCTIONAL
+    rarity: COMMON
 
-  alexsmobs:template_two_crocodile_eggs:
-    craftengine_id: "alexsmobs:template_two_crocodile_eggs"
-    display: "Template Two Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:capsid:
+    craftengine_id: "alexsmobs:capsid"
+    display: "Capsid"
+    type: FUNCTIONAL
+    source_mob: enderiophage
+    rarity: RARE
 
-  alexsmobs:template_two_platypus_eggs:
-    craftengine_id: "alexsmobs:template_two_platypus_eggs"
-    display: "Template Two Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:gustmaker:
+    craftengine_id: "alexsmobs:gustmaker"
+    display: "Gustmaker"
+    type: FUNCTIONAL
+    source_mob: guster
+    rarity: UNCOMMON
 
-  alexsmobs:template_two_terrapin_eggs:
-    craftengine_id: "alexsmobs:template_two_terrapin_eggs"
-    display: "Template Two Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:leafcutter_ant_chamber:
+    craftengine_id: "alexsmobs:leafcutter_ant_chamber"
+    display: "Leafcutter Ant Chamber"
+    type: FUNCTIONAL
+    source_mob: leafcutter_ant
+    rarity: UNCOMMON
 
-  alexsmobs:terrapin_egg:
-    craftengine_id: "alexsmobs:terrapin_egg"
-    display: "Terrapin Egg"
-    has_blockstate: yes
-    has_loot_table: yes
+  alexsmobs:leafcutter_anthill:
+    craftengine_id: "alexsmobs:leafcutter_anthill"
+    display: "Leafcutter Anthill"
+    type: FUNCTIONAL
+    source_mob: leafcutter_ant
+    rarity: UNCOMMON
 
-  alexsmobs:three_caiman_eggs:
-    craftengine_id: "alexsmobs:three_caiman_eggs"
-    display: "Three Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_crocodile_eggs:
-    craftengine_id: "alexsmobs:three_crocodile_eggs"
-    display: "Three Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_platypus_eggs:
-    craftengine_id: "alexsmobs:three_platypus_eggs"
-    display: "Three Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_slightly_cracked_caiman_eggs:
-    craftengine_id: "alexsmobs:three_slightly_cracked_caiman_eggs"
-    display: "Three Slightly Cracked Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_slightly_cracked_crocodile_eggs:
-    craftengine_id: "alexsmobs:three_slightly_cracked_crocodile_eggs"
-    display: "Three Slightly Cracked Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_slightly_cracked_platypus_eggs:
-    craftengine_id: "alexsmobs:three_slightly_cracked_platypus_eggs"
-    display: "Three Slightly Cracked Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_slightly_cracked_terrapin_eggs:
-    craftengine_id: "alexsmobs:three_slightly_cracked_terrapin_eggs"
-    display: "Three Slightly Cracked Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_terrapin_eggs:
-    craftengine_id: "alexsmobs:three_terrapin_eggs"
-    display: "Three Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_very_cracked_caiman_eggs:
-    craftengine_id: "alexsmobs:three_very_cracked_caiman_eggs"
-    display: "Three Very Cracked Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_very_cracked_crocodile_eggs:
-    craftengine_id: "alexsmobs:three_very_cracked_crocodile_eggs"
-    display: "Three Very Cracked Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_very_cracked_platypus_eggs:
-    craftengine_id: "alexsmobs:three_very_cracked_platypus_eggs"
-    display: "Three Very Cracked Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:three_very_cracked_terrapin_eggs:
-    craftengine_id: "alexsmobs:three_very_cracked_terrapin_eggs"
-    display: "Three Very Cracked Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
+  alexsmobs:sculk_boomer:
+    craftengine_id: "alexsmobs:sculk_boomer"
+    display: "Sculk Boomer"
+    type: FUNCTIONAL
+    source_mob: skreecher
+    rarity: RARE
 
   alexsmobs:transmutation_table:
     craftengine_id: "alexsmobs:transmutation_table"
     display: "Transmutation Table"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:triops_eggs:
-    craftengine_id: "alexsmobs:triops_eggs"
-    display: "Triops Eggs"
-    has_blockstate: yes
-    has_loot_table: yes
-
-  alexsmobs:two_caiman_eggs:
-    craftengine_id: "alexsmobs:two_caiman_eggs"
-    display: "Two Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_crocodile_eggs:
-    craftengine_id: "alexsmobs:two_crocodile_eggs"
-    display: "Two Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_platypus_eggs:
-    craftengine_id: "alexsmobs:two_platypus_eggs"
-    display: "Two Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_slightly_cracked_caiman_eggs:
-    craftengine_id: "alexsmobs:two_slightly_cracked_caiman_eggs"
-    display: "Two Slightly Cracked Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_slightly_cracked_crocodile_eggs:
-    craftengine_id: "alexsmobs:two_slightly_cracked_crocodile_eggs"
-    display: "Two Slightly Cracked Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_slightly_cracked_platypus_eggs:
-    craftengine_id: "alexsmobs:two_slightly_cracked_platypus_eggs"
-    display: "Two Slightly Cracked Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_slightly_cracked_terrapin_eggs:
-    craftengine_id: "alexsmobs:two_slightly_cracked_terrapin_eggs"
-    display: "Two Slightly Cracked Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_terrapin_eggs:
-    craftengine_id: "alexsmobs:two_terrapin_eggs"
-    display: "Two Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_very_cracked_caiman_eggs:
-    craftengine_id: "alexsmobs:two_very_cracked_caiman_eggs"
-    display: "Two Very Cracked Caiman Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_very_cracked_crocodile_eggs:
-    craftengine_id: "alexsmobs:two_very_cracked_crocodile_eggs"
-    display: "Two Very Cracked Crocodile Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_very_cracked_platypus_eggs:
-    craftengine_id: "alexsmobs:two_very_cracked_platypus_eggs"
-    display: "Two Very Cracked Platypus Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:two_very_cracked_terrapin_eggs:
-    craftengine_id: "alexsmobs:two_very_cracked_terrapin_eggs"
-    display: "Two Very Cracked Terrapin Eggs"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:very_cracked_caiman_egg:
-    craftengine_id: "alexsmobs:very_cracked_caiman_egg"
-    display: "Very Cracked Caiman Egg"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:very_cracked_crocodile_egg:
-    craftengine_id: "alexsmobs:very_cracked_crocodile_egg"
-    display: "Very Cracked Crocodile Egg"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:very_cracked_platypus_egg:
-    craftengine_id: "alexsmobs:very_cracked_platypus_egg"
-    display: "Very Cracked Platypus Egg"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:very_cracked_terrapin_egg:
-    craftengine_id: "alexsmobs:very_cracked_terrapin_egg"
-    display: "Very Cracked Terrapin Egg"
-    has_blockstate: no
-    has_loot_table: no
-
-  alexsmobs:void_worm_beak:
-    craftengine_id: "alexsmobs:void_worm_beak"
-    display: "Void Worm Beak"
-    has_blockstate: yes
-    has_loot_table: yes
+    type: FUNCTIONAL
+    rarity: RARE
 
   alexsmobs:void_worm_effigy:
     craftengine_id: "alexsmobs:void_worm_effigy"
     display: "Void Worm Effigy"
-    has_blockstate: yes
-    has_loot_table: yes
+    type: FUNCTIONAL
+    source_mob: void_worm
+    rarity: EPIC
 
-  alexsmobs:void_worm_effigy_inventory:
-    craftengine_id: "alexsmobs:void_worm_effigy_inventory"
-    display: "Void Worm Effigy Inventory"
-    has_blockstate: no
-    has_loot_table: no
+
+  # ── Œufs de créatures ──
+  alexsmobs:caiman_egg:
+    craftengine_id: "alexsmobs:caiman_egg"
+    display: "Caiman Egg"
+    type: EGG
+    source_mob: caiman
+    rarity: COMMON
+
+  alexsmobs:crocodile_egg:
+    craftengine_id: "alexsmobs:crocodile_egg"
+    display: "Crocodile Egg"
+    type: EGG
+    source_mob: crocodile
+    rarity: COMMON
+
+  alexsmobs:platypus_egg:
+    craftengine_id: "alexsmobs:platypus_egg"
+    display: "Platypus Egg"
+    type: EGG
+    source_mob: platypus
+    rarity: COMMON
+
+  alexsmobs:terrapin_egg:
+    craftengine_id: "alexsmobs:terrapin_egg"
+    display: "Terrapin Egg"
+    type: EGG
+    source_mob: terrapin
+    rarity: COMMON
+
+  alexsmobs:triops_eggs:
+    craftengine_id: "alexsmobs:triops_eggs"
+    display: "Triops Eggs"
+    type: EGG
+    source_mob: triops
+    rarity: COMMON
+
+
+  # ── Portes / Trapdoors ──
+  alexsmobs:end_pirate_door:
+    craftengine_id: "alexsmobs:end_pirate_door"
+    display: "End Pirate Door"
+    type: DOOR
+    rarity: RARE
+
+
+  # ── Trapdoors ──
+  alexsmobs:end_pirate_trapdoor:
+    craftengine_id: "alexsmobs:end_pirate_trapdoor"
+    display: "End Pirate Trapdoor"
+    type: TRAPDOOR
+    rarity: RARE
+
+
+  # ── Fluides ──
+  alexsmobs:skunk_spray:
+    craftengine_id: "alexsmobs:skunk_spray"
+    display: "Skunk Spray"
+    type: FLUID
+    source_mob: skunk
+    rarity: COMMON
+
+
+  # ── Slime ──
+  alexsmobs:banana_slug_slime_block:
+    craftengine_id: "alexsmobs:banana_slug_slime_block"
+    display: "Banana Slug Slime Block"
+    type: SLIME
+    source_mob: banana_slug
+    rarity: UNCOMMON
+
+
+  # ── Modèles techniques ──
+  alexsmobs:orientable_with_top:
+    craftengine_id: "alexsmobs:orientable_with_top"
+    display: "Orientable With Top"
+    type: TEMPLATE
+    rarity: COMMON
+
+  alexsmobs:orientable_with_top_vertical:
+    craftengine_id: "alexsmobs:orientable_with_top_vertical"
+    display: "Orientable With Top (Vertical)"
+    type: TEMPLATE
+    rarity: COMMON
 
   alexsmobs:wall_inventory:
     craftengine_id: "alexsmobs:wall_inventory"
     display: "Wall Inventory"
-    has_blockstate: no
-    has_loot_table: no
+    type: TEMPLATE
+    rarity: COMMON
+
+

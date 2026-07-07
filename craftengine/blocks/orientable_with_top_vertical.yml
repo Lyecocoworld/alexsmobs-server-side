@@ -1,0 +1,7 @@
+# CraftEngine Block: Orientable With Top Vertical
+blocks:
+  alexsmobs:orientable_with_top_vertical:
+    display_name: "Orientable With Top Vertical"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/orientable_with_top_vertical

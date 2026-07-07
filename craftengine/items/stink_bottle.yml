@@ -1,0 +1,9 @@
+# CraftEngine Item: Stink Bottle
+items:
+  alexsmobs:stink_bottle:
+    display_name: "Stink Bottle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/stink_bottle
+      textures:
+        default: alexsmobs:item/stink_bottle

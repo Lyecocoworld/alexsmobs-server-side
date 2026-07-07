@@ -1,0 +1,9 @@
+# CraftEngine Item: Bear Dust
+items:
+  alexsmobs:bear_dust:
+    display_name: "Bear Dust"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/bear_dust
+      textures:
+        default: alexsmobs:item/bear_dust

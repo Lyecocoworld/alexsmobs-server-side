@@ -1,0 +1,9 @@
+# CraftEngine Item: Hemolymph Blaster
+items:
+  alexsmobs:hemolymph_blaster:
+    display_name: "Hemolymph Blaster"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/hemolymph_blaster
+      textures:
+        default: alexsmobs:item/hemolymph_blaster

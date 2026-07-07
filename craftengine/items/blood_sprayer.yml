@@ -1,0 +1,9 @@
+# CraftEngine Item: Blood Sprayer
+items:
+  alexsmobs:blood_sprayer:
+    display_name: "Blood Sprayer"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/blood_sprayer
+      textures:
+        default: alexsmobs:item/blood_sprayer

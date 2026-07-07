@@ -1,0 +1,9 @@
+# CraftEngine Item: Raccoon Tail
+items:
+  alexsmobs:raccoon_tail:
+    display_name: "Raccoon Tail"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/raccoon_tail
+      textures:
+        default: alexsmobs:item/raccoon_tail

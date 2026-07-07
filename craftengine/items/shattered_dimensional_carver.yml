@@ -1,0 +1,7 @@
+# CraftEngine Item: Shattered Dimensional Carver
+items:
+  alexsmobs:shattered_dimensional_carver:
+    display_name: "Shattered Dimensional Carver"
+    rarity: EPIC
+    resource:
+      model: alexsmobs:item/shattered_dimensional_carver

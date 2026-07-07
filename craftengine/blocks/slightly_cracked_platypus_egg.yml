@@ -1,0 +1,7 @@
+# CraftEngine Block: Slightly Cracked Platypus Egg
+blocks:
+  alexsmobs:slightly_cracked_platypus_egg:
+    display_name: "Slightly Cracked Platypus Egg"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/slightly_cracked_platypus_egg

@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Sugar Glider
+items:
+  alexsmobs:spawn_egg_sugar_glider:
+    display_name: "Spawn Egg Sugar Glider"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_sugar_glider

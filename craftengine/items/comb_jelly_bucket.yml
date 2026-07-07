@@ -1,0 +1,7 @@
+# CraftEngine Item: Comb Jelly Bucket
+items:
+  alexsmobs:comb_jelly_bucket:
+    display_name: "Comb Jelly Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/comb_jelly_bucket

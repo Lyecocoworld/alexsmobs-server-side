@@ -1,0 +1,7 @@
+# CraftEngine Block: Purpur Planks
+blocks:
+  alexsmobs:purpur_planks:
+    display_name: "Purpur Planks"
+    category: WOOD
+    resource:
+      model: alexsmobs:block/purpur_planks

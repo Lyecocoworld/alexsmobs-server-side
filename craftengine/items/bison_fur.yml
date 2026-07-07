@@ -1,0 +1,9 @@
+# CraftEngine Item: Bison Fur
+items:
+  alexsmobs:bison_fur:
+    display_name: "Bison Fur"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/bison_fur
+      textures:
+        default: alexsmobs:item/bison_fur

@@ -1,0 +1,7 @@
+# CraftEngine Item: Rainbow Glass
+items:
+  alexsmobs:rainbow_glass:
+    display_name: "Rainbow Glass"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/rainbow_glass

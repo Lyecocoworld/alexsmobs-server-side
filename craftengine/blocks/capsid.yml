@@ -1,0 +1,7 @@
+# CraftEngine Block: Capsid
+blocks:
+  alexsmobs:capsid:
+    display_name: "Capsid"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/capsid

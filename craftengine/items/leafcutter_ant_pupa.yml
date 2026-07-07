@@ -1,0 +1,9 @@
+# CraftEngine Item: Leafcutter Ant Pupa
+items:
+  alexsmobs:leafcutter_ant_pupa:
+    display_name: "Leafcutter Ant Pupa"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/leafcutter_ant_pupa
+      textures:
+        default: alexsmobs:item/leafcutter_ant_pupa

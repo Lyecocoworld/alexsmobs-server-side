@@ -1,0 +1,7 @@
+# CraftEngine Item: Spectre Sail
+items:
+  alexsmobs:spectre_sail:
+    display_name: "Spectre Sail"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spectre_sail

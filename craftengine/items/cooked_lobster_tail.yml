@@ -1,0 +1,12 @@
+# CraftEngine Item: Cooked Lobster Tail
+items:
+  alexsmobs:cooked_lobster_tail:
+    display_name: "Cooked Lobster Tail"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/cooked_lobster_tail
+      textures:
+        default: alexsmobs:item/cooked_lobster_tail
+    food:
+      nutrition: 8
+      saturation: 0.8

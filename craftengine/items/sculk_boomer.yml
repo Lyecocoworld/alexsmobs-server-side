@@ -1,0 +1,7 @@
+# CraftEngine Item: Sculk Boomer
+items:
+  alexsmobs:sculk_boomer:
+    display_name: "Sculk Boomer"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/sculk_boomer

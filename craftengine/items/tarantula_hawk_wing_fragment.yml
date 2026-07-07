@@ -1,0 +1,9 @@
+# CraftEngine Item: Tarantula Hawk Wing Fragment
+items:
+  alexsmobs:tarantula_hawk_wing_fragment:
+    display_name: "Tarantula Hawk Wing Fragment"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/tarantula_hawk_wing_fragment
+      textures:
+        default: alexsmobs:item/tarantula_hawk_wing_fragment

@@ -1,0 +1,9 @@
+# CraftEngine Item: Crocodile Chestplate
+items:
+  alexsmobs:crocodile_chestplate:
+    display_name: "Crocodile Chestplate"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/crocodile_chestplate
+      textures:
+        default: alexsmobs:item/crocodile_chestplate

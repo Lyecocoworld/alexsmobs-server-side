@@ -1,0 +1,7 @@
+# CraftEngine Block: Two Terrapin Eggs
+blocks:
+  alexsmobs:two_terrapin_eggs:
+    display_name: "Two Terrapin Eggs"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/two_terrapin_eggs

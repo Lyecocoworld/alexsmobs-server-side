@@ -1,0 +1,7 @@
+# CraftEngine Block: Bison Carpet
+blocks:
+  alexsmobs:bison_carpet:
+    display_name: "Bison Carpet"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/bison_carpet

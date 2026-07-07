@@ -1,0 +1,9 @@
+# CraftEngine Item: Lobster Tail
+items:
+  alexsmobs:lobster_tail:
+    display_name: "Lobster Tail"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/lobster_tail
+      textures:
+        default: alexsmobs:item/lobster_tail

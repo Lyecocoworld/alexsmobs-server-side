@@ -1,0 +1,9 @@
+# CraftEngine Item: Soul Heart
+items:
+  alexsmobs:soul_heart:
+    display_name: "Soul Heart"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/soul_heart
+      textures:
+        default: alexsmobs:item/soul_heart

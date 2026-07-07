@@ -1,0 +1,9 @@
+# CraftEngine Item: Vine Lasso
+items:
+  alexsmobs:vine_lasso:
+    display_name: "Vine Lasso"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/vine_lasso
+      textures:
+        default: alexsmobs:item/vine_lasso

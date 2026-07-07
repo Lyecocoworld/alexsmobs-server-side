@@ -1,0 +1,9 @@
+# CraftEngine Item: Cockroach Ootheca
+items:
+  alexsmobs:cockroach_ootheca:
+    display_name: "Cockroach Ootheca"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/cockroach_ootheca
+      textures:
+        default: alexsmobs:item/cockroach_ootheca

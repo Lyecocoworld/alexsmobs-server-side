@@ -1,0 +1,7 @@
+# CraftEngine Block: Purpur Planks Slab
+blocks:
+  alexsmobs:purpur_planks_slab:
+    display_name: "Purpur Planks Slab"
+    category: BUILDING
+    resource:
+      model: alexsmobs:block/purpur_planks_slab

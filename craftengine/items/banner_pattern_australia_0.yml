@@ -1,0 +1,7 @@
+# CraftEngine Item: Banner Pattern Australia 0
+items:
+  alexsmobs:banner_pattern_australia_0:
+    display_name: "Banner Pattern Australia 0"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/banner_pattern_australia_0

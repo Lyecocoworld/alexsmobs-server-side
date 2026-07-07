@@ -1,0 +1,7 @@
+# CraftEngine Item: Hummingbird Feeder
+items:
+  alexsmobs:hummingbird_feeder:
+    display_name: "Hummingbird Feeder"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/hummingbird_feeder

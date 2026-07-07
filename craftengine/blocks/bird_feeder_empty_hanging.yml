@@ -1,0 +1,7 @@
+# CraftEngine Block: Bird Feeder Empty Hanging
+blocks:
+  alexsmobs:bird_feeder_empty_hanging:
+    display_name: "Bird Feeder Empty Hanging"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/bird_feeder_empty_hanging

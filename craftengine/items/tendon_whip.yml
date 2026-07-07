@@ -1,0 +1,9 @@
+# CraftEngine Item: Tendon Whip
+items:
+  alexsmobs:tendon_whip:
+    display_name: "Tendon Whip"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/tendon_whip
+      textures:
+        default: alexsmobs:item/tendon_whip

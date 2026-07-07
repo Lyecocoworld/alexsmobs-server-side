@@ -1,0 +1,9 @@
+# CraftEngine Item: Mosquito Proboscis
+items:
+  alexsmobs:mosquito_proboscis:
+    display_name: "Mosquito Proboscis"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/mosquito_proboscis
+      textures:
+        default: alexsmobs:item/mosquito_proboscis

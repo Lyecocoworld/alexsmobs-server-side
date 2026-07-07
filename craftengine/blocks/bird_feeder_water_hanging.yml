@@ -1,0 +1,7 @@
+# CraftEngine Block: Bird Feeder Water Hanging
+blocks:
+  alexsmobs:bird_feeder_water_hanging:
+    display_name: "Bird Feeder Water Hanging"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/bird_feeder_water_hanging

@@ -1,0 +1,9 @@
+# CraftEngine Item: Emu Leggings
+items:
+  alexsmobs:emu_leggings:
+    display_name: "Emu Leggings"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/emu_leggings
+      textures:
+        default: alexsmobs:item/emu_leggings

@@ -1,0 +1,9 @@
+# CraftEngine Item: Mosquito Repellent Stew
+items:
+  alexsmobs:mosquito_repellent_stew:
+    display_name: "Mosquito Repellent Stew"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/mosquito_repellent_stew
+      textures:
+        default: alexsmobs:item/mosquito_repellent_stew

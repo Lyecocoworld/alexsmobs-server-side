@@ -1,0 +1,9 @@
+# CraftEngine Item: Lobster Bucket
+items:
+  alexsmobs:lobster_bucket:
+    display_name: "Lobster Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/lobster_bucket
+      textures:
+        default: alexsmobs:item/lobster_bucket

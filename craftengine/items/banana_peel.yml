@@ -1,0 +1,9 @@
+# CraftEngine Item: Banana Peel
+items:
+  alexsmobs:banana_peel:
+    display_name: "Banana Peel"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/banana_peel
+      textures:
+        default: alexsmobs:item/banana_peel

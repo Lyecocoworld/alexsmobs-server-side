@@ -1,0 +1,9 @@
+# CraftEngine Item: Kangaroo Burger
+items:
+  alexsmobs:kangaroo_burger:
+    display_name: "Kangaroo Burger"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/kangaroo_burger
+      textures:
+        default: alexsmobs:item/kangaroo_burger

@@ -1,0 +1,7 @@
+# CraftEngine Item: Skelewag Sword Hand
+items:
+  alexsmobs:skelewag_sword_hand:
+    display_name: "Skelewag Sword Hand"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/skelewag_sword_hand

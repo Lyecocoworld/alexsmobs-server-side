@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Gorilla
+items:
+  alexsmobs:spawn_egg_gorilla:
+    display_name: "Spawn Egg Gorilla"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_gorilla

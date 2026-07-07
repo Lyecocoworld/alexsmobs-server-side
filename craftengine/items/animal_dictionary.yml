@@ -1,0 +1,9 @@
+# CraftEngine Item: Animal Dictionary
+items:
+  alexsmobs:animal_dictionary:
+    display_name: "Animal Dictionary"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/animal_dictionary
+      textures:
+        default: alexsmobs:item/animal_dictionary

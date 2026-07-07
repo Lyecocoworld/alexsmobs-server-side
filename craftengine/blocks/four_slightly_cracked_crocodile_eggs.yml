@@ -1,0 +1,7 @@
+# CraftEngine Block: Four Slightly Cracked Crocodile Eggs
+blocks:
+  alexsmobs:four_slightly_cracked_crocodile_eggs:
+    display_name: "Four Slightly Cracked Crocodile Eggs"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/four_slightly_cracked_crocodile_eggs

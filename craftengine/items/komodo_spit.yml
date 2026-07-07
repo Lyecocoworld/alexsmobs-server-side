@@ -1,0 +1,9 @@
+# CraftEngine Item: Komodo Spit
+items:
+  alexsmobs:komodo_spit:
+    display_name: "Komodo Spit"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/komodo_spit
+      textures:
+        default: alexsmobs:item/komodo_spit

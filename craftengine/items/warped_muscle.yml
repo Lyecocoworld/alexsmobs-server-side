@@ -1,0 +1,9 @@
+# CraftEngine Item: Warped Muscle
+items:
+  alexsmobs:warped_muscle:
+    display_name: "Warped Muscle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/warped_muscle
+      textures:
+        default: alexsmobs:item/warped_muscle

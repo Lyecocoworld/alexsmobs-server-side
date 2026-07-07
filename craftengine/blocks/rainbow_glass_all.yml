@@ -1,0 +1,7 @@
+# CraftEngine Block: Rainbow Glass All
+blocks:
+  alexsmobs:rainbow_glass_all:
+    display_name: "Rainbow Glass All"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/rainbow_glass_all

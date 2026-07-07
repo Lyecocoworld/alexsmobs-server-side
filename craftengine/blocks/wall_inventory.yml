@@ -1,0 +1,7 @@
+# CraftEngine Block: Wall Inventory
+blocks:
+  alexsmobs:wall_inventory:
+    display_name: "Wall Inventory"
+    category: BUILDING
+    resource:
+      model: alexsmobs:block/wall_inventory

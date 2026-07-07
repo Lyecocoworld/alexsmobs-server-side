@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Blue Jay
+items:
+  alexsmobs:spawn_egg_blue_jay:
+    display_name: "Spawn Egg Blue Jay"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_blue_jay

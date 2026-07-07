@@ -1,0 +1,7 @@
+# CraftEngine Block: Bird Feeder Filled
+blocks:
+  alexsmobs:bird_feeder_filled:
+    display_name: "Bird Feeder Filled"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/bird_feeder_filled

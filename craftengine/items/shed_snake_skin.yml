@@ -1,0 +1,9 @@
+# CraftEngine Item: Shed Snake Skin
+items:
+  alexsmobs:shed_snake_skin:
+    display_name: "Shed Snake Skin"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/shed_snake_skin
+      textures:
+        default: alexsmobs:item/shed_snake_skin

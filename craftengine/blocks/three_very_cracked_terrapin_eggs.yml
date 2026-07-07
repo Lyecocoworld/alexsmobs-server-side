@@ -1,0 +1,7 @@
+# CraftEngine Block: Three Very Cracked Terrapin Eggs
+blocks:
+  alexsmobs:three_very_cracked_terrapin_eggs:
+    display_name: "Three Very Cracked Terrapin Eggs"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/three_very_cracked_terrapin_eggs

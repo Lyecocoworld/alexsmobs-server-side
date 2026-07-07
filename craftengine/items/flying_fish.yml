@@ -1,0 +1,9 @@
+# CraftEngine Item: Flying Fish
+items:
+  alexsmobs:flying_fish:
+    display_name: "Flying Fish"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/flying_fish
+      textures:
+        default: alexsmobs:item/flying_fish

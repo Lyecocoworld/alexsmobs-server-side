@@ -1,0 +1,7 @@
+# CraftEngine Item: Bison Carpet
+items:
+  alexsmobs:bison_carpet:
+    display_name: "Bison Carpet"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/bison_carpet

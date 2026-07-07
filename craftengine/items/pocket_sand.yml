@@ -1,0 +1,9 @@
+# CraftEngine Item: Pocket Sand
+items:
+  alexsmobs:pocket_sand:
+    display_name: "Pocket Sand"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/pocket_sand
+      textures:
+        default: alexsmobs:item/pocket_sand

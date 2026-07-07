@@ -1,0 +1,9 @@
+# CraftEngine Item: Cockroach Wing
+items:
+  alexsmobs:cockroach_wing:
+    display_name: "Cockroach Wing"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/cockroach_wing
+      textures:
+        default: alexsmobs:item/cockroach_wing

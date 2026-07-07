@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Devils Hole Pupfish
+items:
+  alexsmobs:spawn_egg_devils_hole_pupfish:
+    display_name: "Spawn Egg Devils Hole Pupfish"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_devils_hole_pupfish

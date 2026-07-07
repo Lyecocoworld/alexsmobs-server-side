@@ -1,0 +1,7 @@
+# CraftEngine Item: Banner Pattern New Mexico
+items:
+  alexsmobs:banner_pattern_new_mexico:
+    display_name: "Banner Pattern New Mexico"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/banner_pattern_new_mexico

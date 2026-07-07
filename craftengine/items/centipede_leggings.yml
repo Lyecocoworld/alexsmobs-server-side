@@ -1,0 +1,9 @@
+# CraftEngine Item: Centipede Leggings
+items:
+  alexsmobs:centipede_leggings:
+    display_name: "Centipede Leggings"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/centipede_leggings
+      textures:
+        default: alexsmobs:item/centipede_leggings

@@ -1,0 +1,7 @@
+# CraftEngine Block: Purpur Planks Wall Post
+blocks:
+  alexsmobs:purpur_planks_wall_post:
+    display_name: "Purpur Planks Wall Post"
+    category: BUILDING
+    resource:
+      model: alexsmobs:block/purpur_planks_wall_post

@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Blobfish
+items:
+  alexsmobs:spawn_egg_blobfish:
+    display_name: "Spawn Egg Blobfish"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_blobfish

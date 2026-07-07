@@ -1,0 +1,7 @@
+# CraftEngine Item: Vine Lasso Hand
+items:
+  alexsmobs:vine_lasso_hand:
+    display_name: "Vine Lasso Hand"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/vine_lasso_hand

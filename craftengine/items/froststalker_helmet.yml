@@ -1,0 +1,9 @@
+# CraftEngine Item: Froststalker Helmet
+items:
+  alexsmobs:froststalker_helmet:
+    display_name: "Froststalker Helmet"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/froststalker_helmet
+      textures:
+        default: alexsmobs:item/froststalker_helmet

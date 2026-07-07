@@ -1,0 +1,9 @@
+# CraftEngine Item: Blobfish Bucket
+items:
+  alexsmobs:blobfish_bucket:
+    display_name: "Blobfish Bucket"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/blobfish_bucket
+      textures:
+        default: alexsmobs:item/blobfish_bucket

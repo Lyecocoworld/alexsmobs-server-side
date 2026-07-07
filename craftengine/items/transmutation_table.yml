@@ -1,0 +1,7 @@
+# CraftEngine Item: Transmutation Table
+items:
+  alexsmobs:transmutation_table:
+    display_name: "Transmutation Table"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/transmutation_table

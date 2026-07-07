@@ -1,0 +1,7 @@
+# CraftEngine Block: Purpur Planks Wall Side
+blocks:
+  alexsmobs:purpur_planks_wall_side:
+    display_name: "Purpur Planks Wall Side"
+    category: BUILDING
+    resource:
+      model: alexsmobs:block/purpur_planks_wall_side

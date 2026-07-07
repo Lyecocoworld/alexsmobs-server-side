@@ -1,0 +1,7 @@
+# CraftEngine Block: Gustmaker Vertical On
+blocks:
+  alexsmobs:gustmaker_vertical_on:
+    display_name: "Gustmaker Vertical On"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/gustmaker_vertical_on

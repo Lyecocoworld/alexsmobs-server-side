@@ -1,0 +1,9 @@
+# CraftEngine Item: Frontier Cap
+items:
+  alexsmobs:frontier_cap:
+    display_name: "Frontier Cap"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/frontier_cap
+      textures:
+        default: alexsmobs:item/frontier_cap

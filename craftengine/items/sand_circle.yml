@@ -1,0 +1,7 @@
+# CraftEngine Item: Sand Circle
+items:
+  alexsmobs:sand_circle:
+    display_name: "Sand Circle"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/sand_circle

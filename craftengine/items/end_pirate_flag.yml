@@ -1,0 +1,9 @@
+# CraftEngine Item: End Pirate Flag
+items:
+  alexsmobs:end_pirate_flag:
+    display_name: "End Pirate Flag"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/end_pirate_flag
+      textures:
+        default: alexsmobs:item/end_pirate_flag

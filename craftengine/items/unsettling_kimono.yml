@@ -1,0 +1,9 @@
+# CraftEngine Item: Unsettling Kimono
+items:
+  alexsmobs:unsettling_kimono:
+    display_name: "Unsettling Kimono"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/unsettling_kimono
+      textures:
+        default: alexsmobs:item/unsettling_kimono

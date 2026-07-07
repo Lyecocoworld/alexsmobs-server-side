@@ -1,0 +1,7 @@
+# CraftEngine Item: Tab Icon
+items:
+  alexsmobs:tab_icon:
+    display_name: "Tab Icon"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/tab_icon

@@ -1,0 +1,7 @@
+# CraftEngine Block: Bird Feeder Sugar
+blocks:
+  alexsmobs:bird_feeder_sugar:
+    display_name: "Bird Feeder Sugar"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/bird_feeder_sugar

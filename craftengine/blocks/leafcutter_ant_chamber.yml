@@ -1,0 +1,7 @@
+# CraftEngine Block: Leafcutter Ant Chamber
+blocks:
+  alexsmobs:leafcutter_ant_chamber:
+    display_name: "Leafcutter Ant Chamber"
+    category: SPAWN
+    resource:
+      model: alexsmobs:block/leafcutter_ant_chamber

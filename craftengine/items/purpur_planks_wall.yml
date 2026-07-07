@@ -1,0 +1,7 @@
+# CraftEngine Item: Purpur Planks Wall
+items:
+  alexsmobs:purpur_planks_wall:
+    display_name: "Purpur Planks Wall"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/purpur_planks_wall

@@ -1,0 +1,7 @@
+# CraftEngine Block: End Pirate Trapdoor Bottom
+blocks:
+  alexsmobs:end_pirate_trapdoor_bottom:
+    display_name: "End Pirate Trapdoor Bottom"
+    category: DOOR_FENCE
+    resource:
+      model: alexsmobs:block/end_pirate_trapdoor_bottom

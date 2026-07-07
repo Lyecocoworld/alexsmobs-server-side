@@ -1,0 +1,9 @@
+# CraftEngine Item: Rainbow Jelly
+items:
+  alexsmobs:rainbow_jelly:
+    display_name: "Rainbow Jelly"
+    rarity: UNCOMMON
+    resource:
+      model: alexsmobs:item/rainbow_jelly
+      textures:
+        default: alexsmobs:item/rainbow_jelly

@@ -1,0 +1,9 @@
+# CraftEngine Item: Cockroach Wing Fragment
+items:
+  alexsmobs:cockroach_wing_fragment:
+    display_name: "Cockroach Wing Fragment"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/cockroach_wing_fragment
+      textures:
+        default: alexsmobs:item/cockroach_wing_fragment

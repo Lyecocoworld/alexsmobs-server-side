@@ -1,0 +1,7 @@
+# CraftEngine Item: Skunk Spray
+items:
+  alexsmobs:skunk_spray:
+    display_name: "Skunk Spray"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/skunk_spray

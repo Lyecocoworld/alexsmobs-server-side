@@ -1,0 +1,7 @@
+# CraftEngine Block: Sculk Boomer Closed
+blocks:
+  alexsmobs:sculk_boomer_closed:
+    display_name: "Sculk Boomer Closed"
+    category: DECORATION
+    resource:
+      model: alexsmobs:block/sculk_boomer_closed

@@ -1,0 +1,9 @@
+# CraftEngine Item: Pupfish Locator
+items:
+  alexsmobs:pupfish_locator:
+    display_name: "Pupfish Locator"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/pupfish_locator
+      textures:
+        default: alexsmobs:item/pupfish_locator

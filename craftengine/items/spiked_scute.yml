@@ -1,0 +1,9 @@
+# CraftEngine Item: Spiked Scute
+items:
+  alexsmobs:spiked_scute:
+    display_name: "Spiked Scute"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spiked_scute
+      textures:
+        default: alexsmobs:item/spiked_scute

@@ -1,0 +1,12 @@
+# CraftEngine Item: Kangaroo Meat
+items:
+  alexsmobs:kangaroo_meat:
+    display_name: "Kangaroo Meat"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/kangaroo_meat
+      textures:
+        default: alexsmobs:item/kangaroo_meat
+    food:
+      nutrition: 3
+      saturation: 0.4

@@ -1,0 +1,9 @@
+# CraftEngine Item: Chorus On A Stick
+items:
+  alexsmobs:chorus_on_a_stick:
+    display_name: "Chorus On A Stick"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/chorus_on_a_stick
+      textures:
+        default: alexsmobs:item/chorus_on_a_stick

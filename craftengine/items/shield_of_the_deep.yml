@@ -1,0 +1,7 @@
+# CraftEngine Item: Shield Of The Deep
+items:
+  alexsmobs:shield_of_the_deep:
+    display_name: "Shield Of The Deep"
+    rarity: RARE
+    resource:
+      model: alexsmobs:item/shield_of_the_deep

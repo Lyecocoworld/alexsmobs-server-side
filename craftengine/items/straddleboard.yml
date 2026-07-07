@@ -1,0 +1,9 @@
+# CraftEngine Item: Straddleboard
+items:
+  alexsmobs:straddleboard:
+    display_name: "Straddleboard"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/straddleboard
+      textures:
+        default: alexsmobs:item/straddleboard

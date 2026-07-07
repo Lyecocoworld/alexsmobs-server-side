@@ -1,0 +1,7 @@
+# CraftEngine Item: Spawn Egg Flying Fish
+items:
+  alexsmobs:spawn_egg_flying_fish:
+    display_name: "Spawn Egg Flying Fish"
+    rarity: COMMON
+    resource:
+      model: alexsmobs:item/spawn_egg_flying_fish
