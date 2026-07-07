@@ -1,0 +1,101 @@
+# ════════════════════════════════════════════════════════════════
+# GRIZZLY BEAR (Alex's Mobs)
+# Source: EntityGrizzlyBear.java (822 lignes, branch 1.20)
+# Classification: C2 (AI modérée), P0 (signature mob)
+# ─────────────────────────────────────────────────────────────────
+# Comportements reproduits:
+#   - [x] Tamable (salmon + honey sequence — 30% de chance par saumon si honeyed)
+#   - [x] Neutral mob (anger timer 20-39s, reset universal anger)
+#   - [x] 4 animations d'attaque: Maul (20t), SwipeL (20t), SwipeR (15t), Sniff (12t)
+#   - [x] Stances: idle, standing, sitting, eating, honeyed, snowy
+#   - [x] Snow variant dynamique (neige → texture snowy, vérif toutes 200-600 ticks)
+#   - [x] Bee hive raiding behavior (GrizzlyBearAIBeehive)
+#   - [x] Mountable (tamed + adult + sneak=false)
+#   - [x] Fur drop every 24k-48k ticks (tamed adult only)
+#   - [x] Immune: sting, in_wall
+#   - [x] Command system (cycle 0=wander, 1=follow, 2=sit)
+#   - [x] April Fools "Freddy" mode (6 phases: stalk→scare→blind→music→attack)
+#   - [x] Eating mechanic (picks up food items, heal 4 / heal 10 si honey)
+#   - [x] Persistent anger (NeutralMob interface)
+#   - [x] Hurts foxes and wolves (non-tame target)
+#   - [x] Panic when baby or on fire
+#   - [x] Rider attack (mount → attaque la dernière victime du joueur)
+# ─────────────────────────────────────────────────────────────────
+# Équivalences mod → plugin:
+#   AnimationHandler (Citadel)     → BetterModel animation states (via stance)
+#   SynchedEntityData (7 booleans) → MythicMobs stance + variables
+#   registerGoals() (20 goals)     → AIGoalSelectors + AITargetSelectors
+#   NeutralMob anger (20-39s)      → ThreatTable + threat decay
+#   TAMABLE_ITEMS Ingredient       → MythicMobs item conditions
+#   isSnowingAt() biome check      → MythicMobs biome + weather conditions
+#   AprilFools phases (0-5)        → MythicMobs integer variable + stance
+#   positionRider() offset math    → BetterModel rider offset config
+#   spawnAtLocation(BEAR_FUR)      → MythicMobs onTimer + drop
+# ─────────────────────────═══════════════════════════════════════
+grizzly_bear:
+  Type: polar_bear
+  Display: '&7Grizzly Bear'
+  Modules:
+    ThreatTable: true
+    AIGoalSelectors: true
+    AITargetSelectors: true
+    DamageModifiers: true
+    ImmunityTable: true
+  Health: 55
+  Damage: 8
+  KnockbackResistance: 0.6
+  MovementSpeed: 0.25
+  Faction: creature_grizzly
+  Options:
+    PreventOtherDrops: false
+    Persistent: true
+    FollowRange: 32
+    Silent: true
+    Despawn: true
+    Ageable:
+      BabyAge: 24000                # 20 minutes → adulte
+    PreventRandomEquipment: true
+  AIGoalSelectors:
+    - clear
+    - grizzly_bear_ai
+  AITargetSelectors:
+    - clear
+    - grizzly_bear_targets
+  DamageModifiers:
+    - STING 0.0                     # Immunisé au sting (abeilles/guêpes)
+    - IN_WALL 0.0                   # Immunisé suffocation
+  Drops:
+    - grizzly_bear_drops
+  # ── Skills déclenchés par événements (Folia-safe, region-local) ──
+  Skills:
+    # Tick principal — toutes les 10 ticks (0.5s)
+    # Gère: standing/sitting lerp, eating, snow check, honeyed decay, fur drop
+    - onTimer:10
+    - skill:grizzly_bear_tick @self
+
+    # Au spawn — initialiser les variables
+    - onSpawn:
+      - skill:grizzly_bear_init @self
+
+    # À la mort — relâcher l'item tenu
+    - onDeath:
+      - skill:grizzly_bear_death @self
+
+    # Quand blessé — annuler le sitting forcé, réagir
+    - onDamaged:
+      - skill:grizzly_bear_on_hurt @self
+
+    # Quand attaque une cible
+    - onAttack:
+      - skill:grizzly_bear_on_attack @target
+
+    # Clic droit du joueur
+    - onInteract:
+      - skill:grizzly_bear_on_interact @self
+
+    # Quand un item est ramassé (ITargetsDroppedItems)
+    - onPickupItem:
+      - skill:grizzly_bear_on_pickup_item @self
+  NBT:
+    # Forcer la variante "adult" de polar_bear au spawn
+    PurpurBlobAltSkins: 1

@@ -1,0 +1,40 @@
+# ════════════════════════════════════════════════════════════════
+# GLOBAL ITEMS REGISTRY — Items CraftEngine
+# ════════════════════════════════════════════════════════════════
+# Registry central des items custom d'Alex's Mobs.
+# Ces items sont créés via CraftEngine (ou Nexo en dernier recours).
+#
+# Source: AMItemRegistry.java — 43 items
+# ════════════════════════════════════════════════════════════════
+
+items:
+
+  # ── Drops de créatures ──
+  alexsmobs:bear_fur:
+    craftengine_id: "alexsmobs:bear_fur"
+    display: "Bear Fur"
+    type: MATERIAL
+    source_mob: grizzly_bear
+    rarity: COMMON
+
+  # ── Nourriture ──
+  alexsmobs:salmon_tame:
+    craftengine_id: "alexsmobs:salmon_tame"
+    display: "Salmon (Taming)"
+    type: FOOD
+    food: 2
+    saturation: 0.2
+
+  # ── Outils / Armes ──
+  alexsmobs:bear_dust:
+    craftengine_id: "alexsmobs:bear_dust"
+    display: "Bear Dust"
+    type: MATERIAL
+    rarity: UNCOMMON
+
+  # ── Trading ──
+  alexsmobs:animal_dictionary:
+    craftengine_id: "alexsmobs:animal_dictionary"
+    display: "Animal Dictionary"
+    type: ITEM
+    rarity: UNCOMMON

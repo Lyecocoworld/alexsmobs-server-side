@@ -1,0 +1,181 @@
+# ════════════════════════════════════════════════════════════════
+# GRIZZLY BEAR — Variables persistantes
+# ─────────────────────────────────────────────────────────────────
+# Source: SynchedEntityData + champs privés (EntityGrizzlyBear.java)
+# Toutes les variables sont stockées sur l'entité MythicMobs.
+# Persistent: true dans mob.yml assure la sauvegarde NBT au restart.
+# ════════════════════════════════════════════════════════════════
+# Mapping SynchedEntityData → MythicMobs variable:
+#   STANDING (boolean)      → grizzly_bear.standing
+#   SITTING (boolean)       → grizzly_bear.sitting
+#   HONEYED (boolean)       → grizzly_bear.honeyed
+#   EATING (boolean)        → grizzly_bear.eating
+#   SNOWY (boolean)         → grizzly_bear.snowy
+#   APRIL_FOOLS_MODE (int)  → grizzly_bear.aprilFools
+#   COMMAND (int)           → grizzly_bear.command
+#
+# Champs privés non-synched → variables:
+#   standProgress (float)   → grizzly_bear.standProgress
+#   sitProgress (float)     → grizzly_bear.sitProgress
+#   standingTime (int)      → grizzly_bear.standingTime
+#   sittingTime (int)       → grizzly_bear.sittingTime
+#   maxStandTime (int)      → griskey_bear.maxStandTime
+#   maxSitTime (int)        → grizzly_bear.maxSitTime
+#   eatingTime (int)        → grizzly_bear.eatingTime
+#   honeyedTime (int)       → grizzly_bear.honeyedTime
+#   snowTimer (int)         → grizzly_bear.snowTimer
+#   permSnow (boolean)      → grizzly_bear.permSnow
+#   forcedSit (boolean)     → grizzly_bear.forcedSit
+#   timeUntilNextFur (int)  → grizzly_bear.timeUntilNextFur
+#   salmonThrowerID (UUID)  → grizzly_bear.salmonThrowerID
+# ════════════════════════════════════════════════════════════════
+
+variables:
+  # ── SynchedEntityData (booléens synchronisés client) ──
+  grizzly_bear.standing:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "L'ours est debout sur ses pattes arrière (hitbox 1.7x2.75)"
+
+  grizzly_bear.sitting:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "L'ours est assis"
+
+  grizzly_bear.honeyed:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "L'ours a mangé du miel (buff regen + taming enabled)"
+
+  grizzly_bear.eating:
+    type: BOOLEAN
+    default: false
+    persistent: false                   # Runtime only
+    desc: "L'ours est en train de manger"
+
+  grizzly_bear.snowy:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "L'ours est couvert de neige (texture variant)"
+
+  grizzly_bear.permSnow:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "La neige a été appliquée manuellement (shovel pour retirer)"
+
+  grizzly_bear.forcedSit:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "L'ours est forcé de s'asseoir (command du propriétaire)"
+
+  grizzly_bear.tamed:
+    type: BOOLEAN
+    default: false
+    persistent: true
+    desc: "L'ours est apprivoisé"
+
+  # ── SynchedEntityData (entiers synchronisés) ──
+  grizzly_bear.command:
+    type: INTEGER
+    default: 0
+    persistent: true
+    desc: "Commande actuelle: 0=wander, 1=follow, 2=sit"
+
+  grizzly_bear.aprilFools:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Phase April Fools: 0=normal, 1=stalk, 2+=Freddy"
+
+  # ── Champs runtime (float, progressions d'animation) ──
+  grizzly_bear.standProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation debout (0-10, lerp pour BetterModel)"
+
+  grizzly_bear.sitProgress:
+    type: FLOAT
+    default: 0.0
+    persistent: false
+    desc: "Progression animation assis (0-10, lerp pour BetterModel)"
+
+  # ── Timers (ticks) ──
+  grizzly_bear.standingTime:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Combien de temps l'ours est debout (auto-stand timeout)"
+
+  grizzly_bear.sittingTime:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Combien de temps l'ours est assis (auto-sit timeout)"
+
+  grizzly_bear.maxStandTime:
+    type: INTEGER
+    default: 75
+    persistent: false
+    desc: "Durée max debout (75 + random 0-50)"
+
+  grizzly_bear.maxSitTime:
+    type: INTEGER
+    default: 75
+    persistent: false
+    desc: "Durée max assis (75 + random 0-50)"
+
+  grizzly_bear.eatingTime:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Timer de mangeage (100 ticks → consommer)"
+
+  grizzly_bear.honeyedTime:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Durée restante du buff honeyed (700 ticks)"
+
+  grizzly_bear.snowTimer:
+    type: INTEGER
+    default: 200
+    persistent: false
+    desc: "Compteur avant vérification neige (200-600 ticks)"
+
+  grizzly_bear.timeUntilNextFur:
+    type: INTEGER
+    default: 24000
+    persistent: true                     # Survit au restart
+    desc: "Ticks avant le prochain drop de bear_fur (24k-48k)"
+
+  grizzly_bear.animTick:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Tick actuel de l'animation BetterModel en cours"
+
+  grizzly_bear.animDuration:
+    type: INTEGER
+    default: 0
+    persistent: false
+    desc: "Durée totale de l'animation en cours"
+
+  # ── Données de taming ──
+  grizzly_bear.salmonThrowerID:
+    type: STRING
+    default: "NONE"
+    persistent: false
+    desc: "UUID du joueur qui a lancé le saumon (pour taming)"
+
+  grizzly_bear.owner:
+    type: STRING
+    default: "NONE"
+    persistent: true                     # Le propriétaire survit au restart
+    desc: "UUID du propriétaire (tamed)"

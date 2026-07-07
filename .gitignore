@@ -1,0 +1,30 @@
+# Fichiers JAR de plugins (MythicMobs, BetterModel)
+*.jar
+
+# Build artifacts
+target/
+build/
+out/
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+
+# Assets binaires (seront dans assets/ séparément)
+# assets/**/*.ogg
+# assets/**/*.png
+# assets/**/*.bbmodel

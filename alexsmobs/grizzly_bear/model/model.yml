@@ -1,0 +1,140 @@
+# ════════════════════════════════════════════════════════════════
+# GRIZZLY BEAR — BetterModel Configuration
+# ─────────────────────────────────────────────────────────────────
+# Source: grizzly_bear.bbmodel (Blockbench) + Citadel animation system
+# Le mod utilise 4 animations Citadel:
+#   ANIMATION_MAUL   (20 ticks)
+#   ANIMATION_SNIFF  (12 ticks)
+#   ANIMATION_SWIPE_R (15 ticks)
+#   ANIMATION_SWIPE_L (20 ticks)
+#
+# States lerpés manuellement (pas des animations Citadel):
+#   standProgress (0→10): transition quadrupède→bipède
+#   sitProgress  (0→10): transition debout→assis
+#
+# Variants de texture (mod EntityGrizzlyBear.java):
+#   normal: grizzlybear.png
+#   snowy:  grizzlybearsnow.png (dynamique via isSnowy)
+#   freddy: freddy.png (April Fools, phase 2+)
+#
+# L'animation "eat" n'existe pas dans le mod original — elle est
+# implicite (l'entité est assise avec un item en main). On l'ajoute
+# pour une meilleure fidélité visuelle côté BetterModel.
+# ════════════════════════════════════════════════════════════════
+
+model:
+  bettermodel_id: "alexsmobs:grizzly_bear"
+  type: "polar_bear"                # Vanilla entity base (hitbox/behavior)
+  hitbox:
+    width: 1.4                      # Vanilla polar_bear = 1.4
+    height: 1.4
+    # Le mod définit STANDING_SIZE = scalable(1.7, 2.75) debout
+    standing_width: 1.7
+    standing_height: 2.75
+
+  # ── Modèle Blockbench ──
+  # Le fichier .bbmodel original d'Alex's Mobs est utilisé directement.
+  # Il est converti au format BetterModel via le plugin.
+  blockbench_model: "assets/alexsmobs/blockbench/grizzly_bear.bbmodel"
+
+  # ── Textures ──
+  textures:
+    normal:
+      path: "assets/alexsmobs/textures/entity/grizzly_bear/grizzlybear.png"
+    snowy:
+      path: "assets/alexsmobs/textures/entity/grizzly_bear/grizzlybearsnow.png"
+    freddy:
+      path: "assets/alexsmobs/textures/entity/grizzly_bear/freddy.png"
+
+  # ── Animations ──
+  # Mapping nom interne → animation Blockbench
+  animations:
+    # Animations locomotion (continues)
+    idle:   "animation.grizzly_bear.idle"
+    walk:   "animation.grizzly_bear.walk"
+    run:    "animation.grizzly_bear.run"        # sprint quand target
+    swim:   "animation.grizzly_bear.swim"
+
+    # Animations states (déclenchées par MythicMobs stance)
+    stand:  "animation.grizzly_bear.standing"   # standProgress lerp
+    sit:    "animation.grizzly_bear.sitting"    # sitProgress lerp
+    eat:    "animation.grizzly_bear.eating"
+    sleep:  "animation.grizzly_bear.sleep"
+
+    # Animations d'attaque (déclenchées par setmodelstate)
+    maul:        "animation.grizzly_bear.maul"     # 20 ticks
+    swipe_left:  "animation.grizzly_bear.swipe_left"  # 20 ticks
+    swipe_right: "animation.grizzly_bear.swipe_right" # 15 ticks
+    sniff:       "animation.grizzly_bear.sniff"    # 12 ticks
+
+    # Animation de mort
+    death: "animation.grizzly_bear.death"
+
+  # ── Mapping MythicMobs stance → BetterModel state ──
+  # Quand MythicMobs appelle setmodelstate{state=X}, BetterModel joue
+  # l'animation correspondante et change la texture si applicable.
+  animation_state_mapping:
+    # States principaux
+    idle:   { "animation": "idle",   "texture": "normal", "loop": true }
+    walk:   { "animation": "walk",   "texture": "normal", "loop": true }
+    run:    { "animation": "run",    "texture": "normal", "loop": true }
+    swim:   { "animation": "swim",   "texture": "normal", "loop": true }
+
+    # States posturaux (lerp via standProgress/sitProgress)
+    standing: { "animation": "stand", "texture": "normal", "loop": true }
+    sitting:  { "animation": "sit",   "texture": "normal", "loop": true }
+    eating:   { "animation": "eat",   "texture": "normal", "loop": true }
+
+    # States d'attaque (one-shot, durée fixe)
+    mauling:       { "animation": "maul",        "texture": "normal", "loop": false, "duration": 20 }
+    swiping_left:  { "animation": "swipe_left",  "texture": "normal", "loop": false, "duration": 20 }
+    swiping_right: { "animation": "swipe_right", "texture": "normal", "loop": false, "duration": 15 }
+    sniffing:      { "animation": "sniff",       "texture": "normal", "loop": false, "duration": 12 }
+
+    # State mort
+    death: { "animation": "death", "texture": "normal", "loop": false, "duration": 20 }
+
+  # ── Variantes dynamiques ──
+  # La texture change selon les variables MythicMobs, sans changer l'animation.
+  variants:
+    # Variant neigeux (dynamique, mod ligne 535-543)
+    snowy:
+      texture: snowy
+      condition:
+        # Joue la texture snowy seulement si la variable snowy=true
+        mythicmobs_variable: "grizzly_bear.snowy"
+        value: true
+
+    # Variant Freddy (April Fools, phase >= 2)
+    freddy:
+      texture: freddy
+      condition:
+        mythicmobs_variable: "grizzly_bear.aprilFools"
+        value: ">=2"
+
+  # ── Échelle ──
+  scale:
+    adult: 1.0                       # Échelle normale pour adulte
+    baby: 0.5                        # Mod: getScale() baby = 0.5
+
+  # ── Synchronisation rider ──
+  # Reproduit positionRider() (mod lignes 143-153)
+  rider_offset:
+    # Position du joueur monté, ajustée selon standProgress/sitProgress
+    y_base: -0.3                     # getBbHeight() - 0.3
+    y_stand_add: 0.07                # 0.07 * standProgress
+    y_sit_add: 0.01                  # 0.01 * sitProgress
+    radius_stand: -0.07              # -0.07 * standProgress
+    radius_sit: -0.065               # -0.065 * sitProgress
+
+  # ── Sounds ──
+  # Les sons sont gérés par MythicMobs (skills.yml), pas BetterModel.
+  # Ce mapping est documentaire uniquement.
+  sounds:
+    ambient: "alexsmobs:entity.grizzly_bear.idle"
+    hurt:    "alexsmobs:entity.grizzly_bear.hurt"
+    death:   "alexsmobs:entity.grizzly_bear.death"
+    attack:  "alexsmobs:entity.grizzly_bear.attack"
+    maul:    "alexsmobs:entity.grizzly_bear.maul"
+    swipe:   "alexsmobs:entity.grizzly_bear.swipe"
+    sniff:   "alexsmobs:entity.grizzly_bear.sniff"

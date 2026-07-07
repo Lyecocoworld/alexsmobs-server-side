@@ -1,0 +1,31 @@
+# ════════════════════════════════════════════════════════════════
+# GLOBAL SOUNDS REGISTRY — Toutes les créatures
+# ════════════════════════════════════════════════════════════════
+# Registry central des sons. Les sons sont stockés dans:
+#   assets/alexsmobs/sounds/<mob_name>/
+#
+# Resource pack path: assets/alexsmobs/sounds.json
+# ════════════════════════════════════════════════════════════════
+
+# Format: alexsmobs:entity.<mob_name>.<type>
+# Types standardisés: idle, hurt, death, attack, step, eat, breed, ambient
+
+sounds_registry:
+  # Sons qui ne sont pas spécifiques à une créature
+  global:
+    alexsmobs:item.drop:
+      file: "alexsmobs:global/drop1"
+    alexsmobs:item.pickup:
+      file: "alexsmobs:global/pickup1"
+
+  # ── Sons par créature ──
+  grizzly_bear:
+    idle:   "alexsmobs:grizzly_bear/idle"
+    hurt:   "alexsmobs:grizzly_bear/hurt"
+    death:  "alexsmobs:grizzly_bear/death"
+    attack: "alexsmobs:grizzly_bear/attack"
+    maul:   "alexsmobs:grizzly_bear/maul"
+    swipe:  "alexsmobs:grizzly_bear/swipe"
+    sniff:  "alexsmobs:grizzly_bear/sniff"
+
+  # Les autres créatures seront ajoutées ici au fur et à mesure

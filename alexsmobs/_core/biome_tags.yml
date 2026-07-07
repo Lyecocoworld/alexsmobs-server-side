@@ -1,0 +1,116 @@
+# ════════════════════════════════════════════════════════════════
+# BIOME TAGS — Tags de biomes pour spawns
+# ════════════════════════════════════════════════════════════════
+# Tags personnalisés pour grouper les biomes vanilla par catégorie.
+# Utilisés par les spawners MythicMobs via biome{b=TAG}
+# ════════════════════════════════════════════════════════════════
+
+biome_tags:
+
+  # ── Biomes enneigés ──
+  SNOWY_BIOMES:
+    - SNOWY_PLAINS
+    - ICE_SPIKES
+    - SNOWY_TAIGA
+    - SNOWY_BEACH
+    - FROZEN_OCEAN
+    - DEEP_FROZEN_OCEAN
+    - FROZEN_RIVER
+    - GROVE
+    - SNOWY_SLOPES
+    - JAGGED_PEAKS
+
+  # ── Taigas et forêts ──
+  FOREST_BIOMES:
+    - TAIGA
+    - OLD_GROWTH_TAIGA
+    - OLD_GROWTH_SPRUCE_TAIGA
+    - FOREST
+    - FLOWER_FOREST
+    - DARK_FOREST
+    - BIRCH_FOREST
+    - OLD_GROWTH_BIRCH_FOREST
+
+  # ── Plaines ──
+  PLAINS_BIOMES:
+    - PLAINS
+    - SUNFLOWER_PLAINS
+    - MEADOW
+
+  # ── Savanes ──
+  SAVANNA_BIOMES:
+    - SAVANNA
+    - SAVANNA_PLATEAU
+    - WINDSWEPT_SAVANNA
+
+  # ── Déserts ──
+  DESERT_BIOMES:
+    - DESERT
+
+  # ── Jungles ──
+  JUNGLE_BIOMES:
+    - JUNGLE
+    - SPARSE_JUNGLE
+    - BAMBOO_JUNGLE
+
+  # ── Marais ──
+  SWAMP_BIOMES:
+    - SWAMP
+    - MANGROVE_SWAMP
+
+  # ── Océans ──
+  OCEAN_BIOMES:
+    - OCEAN
+    - DEEP_OCEAN
+    - COLD_OCEAN
+    - DEEP_COLD_OCEAN
+    - FROZEN_OCEAN
+    - DEEP_FROZEN_OCEAN
+    - LUKEWARM_OCEAN
+    - DEEP_LUKEWARM_OCEAN
+    - WARM_OCEAN
+
+  # ── Rivière ──
+  RIVER_BIOMES:
+    - RIVER
+    - FROZEN_RIVER
+
+  # ── Beach ──
+  BEACH_BIOMES:
+    - BEACH
+    - SNOWY_BEACH
+    - STONY_SHORE
+
+  # ── Montagnes ──
+  MOUNTAIN_BIOMES:
+    - WINDSWEPT_HILLS
+    - WINDSWEPT_GRAVELY_HILLS
+    - WINDSWEPT_FOREST
+    - MEADOW
+    - GROVE
+    - SNOWY_SLOPES
+    - JAGGED_PEAKS
+    - FROZEN_PEAKS
+    - STONY_PEAKS
+
+  # ── Nether ──
+  NETHER_BIOMES:
+    - NETHER_WASTES
+    - CRIMSON_FOREST
+    - WARPED_FOREST
+    - SOUL_SAND_VALLEY
+    - BASALT_DELTAS
+
+  # ── End ──
+  END_BIOMES:
+    - END_BARRENS
+    - END_HIGHLANDS
+    - END_MIDLANDS
+    - SMALL_END_ISLANDS
+    - THE_END
+
+  # ── Cavernes ──
+  CAVE_BIOMES:
+    - DRIPSTONE_CAVES
+    - LUSH_CAVES
+    - DEEP_DARK
