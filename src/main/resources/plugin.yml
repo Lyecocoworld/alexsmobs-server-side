@@ -1,0 +1,26 @@
+name: AlexMobsServerSide
+version: '${project.version}'
+main: com.lyecocoworld.alexsmobsserverside.AlexMobsServerSide
+api-version: '1.21'
+folia-supported: true
+authors: [Lyecocoworld]
+description: Native server-side reimplementation of Alex's Mobs for Folia. Requires MythicMobs + BetterModel + CraftEngine.
+website: https://github.com/Lyecocoworld/alexsmobs-server-side
+softdepend:
+  - MythicMobs
+  - BetterModel
+  - CraftEngine
+  - PlaceholderAPI
+  - WorldGuard
+  - WorldEdit
+  - ProtocolLib
+commands:
+  alexmobsserverside:
+    description: Main command for AlexMobsServerSide
+    usage: /alexmobsserverside <reload|install|status|version>
+    aliases: [amss, amsside]
+    permission: alexmobsserverside.admin
+permissions:
+  alexmobsserverside.admin:
+    description: Admin permission
+    default: op

@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.lyecocoworld'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url = 'https://jitpack.io' }
+}
+
+dependencies {
+    // Paper API 1.21.1 (compatible Folia — notre plugin ne fait que de l'I/O fichier + dispatchCommand)
+    compileOnly "io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+processResources {
+    filter {
+        it.replace('${project.version}', project.version.toString())
+    }
+}
+
+jar {
+    archiveBaseName.set('AlexMobsServerSide')
+    archiveClassifier.set('')
+    
+    // Include all resources (alexsmobs configs, craftengine configs, assets, datapack)
+    from('alexsmobs') {
+        into('alexsmobs')
+    }
+    from('craftengine') {
+        into('craftengine')
+    }
+    from('assets') {
+        into('assets')
+    }
+    from('data') {
+        into('data')
+    }
+    from('worldgen_datapack') {
+        into('worldgen_datapack')
+    }
+}
+
+build {
+    dependsOn(jar)
+}
